@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="ca-fr"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opinion | SIG11</title>
+
+    
+  
+    <link href="/favicon.ico" rel="icon" type="image/x-icon" />
+  
+
+
+<link rel="canonical" href="http://localhost:1313/tags/opinion/" />
+
+
+
+<meta name="author" content="Pascal Gauthier" />
+<meta name="description" content="SIG11" />
+
+
+
+<meta name="generator" content="Hugo 0.150.1">
+
+
+<meta property="og:url" content="http://localhost:1313/tags/opinion/">
+  <meta property="og:site_name" content="SIG11">
+  <meta property="og:title" content="Opinion">
+  <meta property="og:description" content="SIG11">
+  <meta property="og:locale" content="ca_fr">
+  <meta property="og:type" content="website">
+    <meta property="og:image" content="http://localhost:1313/img/IMG_20180730_143710.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/img/IMG_20180730_143710.jpg">
+  <meta name="twitter:title" content="Opinion">
+  <meta name="twitter:description" content="SIG11">
+
+
+
+
+<link rel="stylesheet" href="/css/output.css" />
+
+
+
+
+     
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js" integrity="sha256-4EHxtjnR5rL8JzbY12OKQJr81ESm7JBEb49ORPo29AY=" crossorigin="anonymous"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav x-data="{ isSticky: false }"
+  x-init="window.addEventListener('scroll', () => { isSticky = window.scrollY > 30 })"
+  class="sticky top-0 z-30 mt-4 lg:mt-8 py-4"
+  :class="{ 'bg-base-100 shadow-lg dark:border-b dark:border-base-content/30': isSticky }">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:avatar-online" @click="flip = !flip" title="Flip it!">
+        <div class="h-10 rounded-full">
+          <img src="/" alt="SIG11" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="http://localhost:1313/" class="text-lg font-semibold cursor-pointer">
+          SIG11
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">Observation, Experimentation et R&amp;D</div>
+        
+      </div>
+      
+    </section>
+
+    
+    
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-1 shadow-md">
+        
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="Search">
+    <ion-icon name="search"></ion-icon>
+    Search
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="Archives">
+    <ion-icon name="archive"></ion-icon>
+    Archives
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="All Categories">
+    <ion-icon name="grid"></ion-icon>
+    All Categories
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="All Tags">
+    <ion-icon name="pricetags"></ion-icon>
+    All Tags
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+
+      
+      
+
+
+
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="Search">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="Archives">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="All Categories">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="All Tags">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+
+
+<div class="flex flex-col md:flex-row mt-4">
+
+  <div class="md:basis-[200px] lg:basis-[300px] p-4 prose dark:prose-invert">
+    <h1 class="text-2xl">Opinion</h1>
+    <p class="text-sm">19 articles</p>
+    <div class="flex flex-wrap gap-4 mt-6">
+      
+
+      
+      
+      <a href="/tags/aviation/" class="badge h-6 no-underline hover:badge-primary">
+        Aviation
+      </a>
+      
+      
+      
+      <a href="/tags/bike/" class="badge h-6 no-underline hover:badge-primary">
+        Bike
+      </a>
+      
+      
+      
+      <a href="/tags/coding/" class="badge h-6 no-underline hover:badge-primary">
+        Coding
+      </a>
+      
+      
+      
+      <a href="/tags/getting-started/" class="badge h-6 no-underline hover:badge-primary">
+        Getting Started
+      </a>
+      
+      
+      
+      <a href="/tags/histoire/" class="badge h-6 no-underline hover:badge-primary">
+        Histoire
+      </a>
+      
+      
+      
+      <a href="/tags/import-2023-04-08-1732/" class="badge h-6 no-underline hover:badge-primary">
+        Import 2023-04-08 17:32
+      </a>
+      
+      
+      
+      <a href="/tags/informations/" class="badge h-6 no-underline hover:badge-primary">
+        Informations
+      </a>
+      
+      
+      
+      <a href="/tags/news/" class="badge h-6 no-underline hover:badge-primary">
+        News
+      </a>
+      
+      
+      
+      <a href="/tags/observation/" class="badge h-6 no-underline hover:badge-primary">
+        Observation
+      </a>
+      
+      
+      
+      <span class="badge h-6 badge-primary">
+        Opinion
+      </span>
+      
+      
+      
+      <a href="/tags/produit/" class="badge h-6 no-underline hover:badge-primary">
+        Produit
+      </a>
+      
+      
+      
+      <a href="/tags/projet/" class="badge h-6 no-underline hover:badge-primary">
+        Projet
+      </a>
+      
+      
+      
+      <a href="/tags/sante/" class="badge h-6 no-underline hover:badge-primary">
+        Sante
+      </a>
+      
+      
+      
+      <a href="/tags/science/" class="badge h-6 no-underline hover:badge-primary">
+        Science
+      </a>
+      
+      
+      
+      <a href="/tags/technologie/" class="badge h-6 no-underline hover:badge-primary">
+        Technologie
+      </a>
+      
+      
+      
+      <a href="/tags/test/" class="badge h-6 no-underline hover:badge-primary">
+        Test
+      </a>
+      
+      
+    </div>
+  </div>
+  
+  <div class="divider divider-vertical md:divider-horizontal px-4 md:px-0"></div>
+  
+  <div class="flex-1">
+    
+
+    
+      <div class="dream-grid">
+        
+          <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+            <a class="card bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/2025/voila-pourquoi-les-ia-sont-dangereuses/">
+  
+
+  <div class="card-body">
+    <h2 class="card-title">Voila pourquoi les IA sont dangereuses</h2>
+
+    <p class="date text-base-content/60">
+    
+      Saturday, Feb 22, 2025
+    
+    </p>
+
+    <p>Quand tu possèdes assez d&rsquo;argent pour faire ce que bon tu veux, tu peux contrôler l&rsquo;information et créer un réalité alternative. Plus d&rsquo;argent tu possèdes, plus tu es dangereux.</p>
+<p>Articles de la Presse: Musk veut modifier un outil de vérification des faits sur X</p>
+
+    
+    <div class="card-actions justify-between items-center mt-4">
+      
+        <div class="flex items-center">
+  
+  <span>@</span>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    <span itemprop="name">Pascal Gauthier</span>
+  
+  </span>
+</div>
+
+      
+
+      <div class="flex items-center">
+        <ion-icon name="time" class="mr-1"></ion-icon>
+        <span>1 minute read</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+          </div>
+        
+          <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+            <a class="card bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/2025/la-verite-est-rafrachissante/">
+  
+
+  <div class="card-body">
+    <h2 class="card-title">La vérité est rafrachissante</h2>
+
+    <p class="date text-base-content/60">
+    
+      Friday, Jan 31, 2025
+    
+    </p>
+
+    <p>Oui, c&rsquo;est choses doivent être dites et redites. Le temps est venu de se lever, et de se battre pour que la vérité soit répète plus souvent que les mensonges.
+Ce n&rsquo;est que le début!</p>
+
+    
+    <div class="card-actions justify-between items-center mt-4">
+      
+        <div class="flex items-center">
+  
+  <span>@</span>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    <span itemprop="name">Pascal Gauthier</span>
+  
+  </span>
+</div>
+
+      
+
+      <div class="flex items-center">
+        <ion-icon name="time" class="mr-1"></ion-icon>
+        <span>1 minute read</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+          </div>
+        
+          <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+            <a class="card bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/2025/2025-ou-1925/">
+  
+
+  <div class="card-body">
+    <h2 class="card-title">2025 ou 1925</h2>
+
+    <p class="date text-base-content/60">
+    
+      Saturday, Jan 11, 2025
+    
+    </p>
+
+    <p>Je ne sais pas si vieillir nous permet de prendre plus conscience du monde qui nous entoure? Nous rend plus critique? Mais voila, l&rsquo;avenir n’inquiète de plus en plus. On semble avoir terminer un cycle de paix, depuis plusieurs années, j&rsquo;ai l&rsquo;impression qu&rsquo;on glisse vers des temps de guerres.</p>
+<p>Montée de l’autoritarisme partout dans le monde, portée par l&rsquo;individualisme extrême, le populisme et la peur. Ces changements sont amplifier par les réseaux sociaux, qui sont maintenant bien ancrée dans la vie quotidienne de tout le monde, et permet la circulation de mensonges déguiser en vérité, et ne sont plus remis en question, même s&rsquo;il y a des faits pour débusquer ces mensonge. Il n&rsquo;y a desaurmais plus de différence entre des faits et des opinions.</p>
+
+    
+    <div class="card-actions justify-between items-center mt-4">
+      
+        <div class="flex items-center">
+  
+  <span>@</span>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    <span itemprop="name">Pascal Gauthier</span>
+  
+  </span>
+</div>
+
+      
+
+      <div class="flex items-center">
+        <ion-icon name="time" class="mr-1"></ion-icon>
+        <span>1 minute read</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+          </div>
+        
+          <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+            <a class="card bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/2024/ai-independance/">
+  
+
+  <div class="card-body">
+    <h2 class="card-title">AI indépendance</h2>
+
+    <p class="date text-base-content/60">
+    
+      Tuesday, Mar 26, 2024
+    
+    </p>
+
+    <p>La course au AI s’accélère de plus en plus. Notre dépendance a cette technologie deviendra vite une question de sécurité national. Dépendre de AI de compagnie extérieur (OpenAI/Microsoft, Google, Mistral, Anthropic) me semble de bien mauvaise augure. Il me semble logique d&rsquo;avoir une plateforme AI nationale.</p>
+<p>Une fois que vous avez mis en place du AI, et que vous êtes dépendant, vous êtes aussi dépendant de la compagnie qui offre le service. C&rsquo;est encore le farwest, mais nous allons assister a d’éventuelle acquisition. Jouons a imaginer des acquisition: AWS acquiert Antropic, Oracle prend le controle de Inflection AI, etc.</p>
+
+    
+    <div class="card-actions justify-between items-center mt-4">
+      
+        <div class="flex items-center">
+  
+  <span>@</span>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    <span itemprop="name">Pascal Gauthier</span>
+  
+  </span>
+</div>
+
+      
+
+      <div class="flex items-center">
+        <ion-icon name="time" class="mr-1"></ion-icon>
+        <span>1 minute read</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+          </div>
+        
+          <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+            <a class="card bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/2023/nocturnal-depression/">
+  
+
+  <div class="card-body">
+    <h2 class="card-title">Nocturnal Depression</h2>
+
+    <p class="date text-base-content/60">
+    
+      Sunday, Apr 9, 2023
+    
+    </p>
+
+    <p>Decouverte de l&rsquo;automne, groupe Francais de DSBM. Vraiment, mais vraiment bon!</p>
+<iframe width="200" height="113" src="https://www.youtube.com/embed/3S1Cx_E8-90?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen title="06.03.2015 - Nocturnal Depression live - Soundcheck One, Waldbronn"></iframe>
+
+    
+    <div class="card-actions justify-between items-center mt-4">
+      
+        <div class="flex items-center">
+  
+  <span>@</span>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    <span itemprop="name">Pascal Gauthier</span>
+  
+  </span>
+</div>
+
+      
+
+      <div class="flex items-center">
+        <ion-icon name="time" class="mr-1"></ion-icon>
+        <span>1 minute read</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+          </div>
+        
+          <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+            <a class="card bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/2021/spotify-playlist/">
+  
+
+  <div class="card-body">
+    <h2 class="card-title">Spotify playlist</h2>
+
+    <p class="date text-base-content/60">
+    
+      Friday, Oct 15, 2021
+    
+    </p>
+
+    <p>Je vous partage ma playlist de <code>BestOF BlackMetal</code>.</p>
+<iframe width="100%" height="380" title="Spotify Embed: BestOf BlackMetal" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" src="https://open.spotify.com/embed/playlist/3zgZlMMVvIFSlOKfwJDqnc?si=ee8f8a6efb834c51"></iframe>
+<p>Beaucoup de chef d&rsquo;oeuvre de criage extreme!</p>
+
+    
+    <div class="card-actions justify-between items-center mt-4">
+      
+        <div class="flex items-center">
+  
+  <span>@</span>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    <span itemprop="name">Pascal Gauthier</span>
+  
+  </span>
+</div>
+
+      
+
+      <div class="flex items-center">
+        <ion-icon name="time" class="mr-1"></ion-icon>
+        <span>1 minute read</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+          </div>
+        
+          <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+            <a class="card bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/2020/heartwork/">
+  
+
+  <div class="card-body">
+    <h2 class="card-title">Carcass: Heartwork</h2>
+
+    <p class="date text-base-content/60">
+    
+      Saturday, Nov 14, 2020
+    
+    </p>
+
+    <p>Quel album genial, a toute les fois que je reecoute ce chef d&rsquo;oeuvre du metal ca me retransporte dans les annees &lsquo;90. Pas que je retournerai a cette epoque. J&rsquo;entend encore ma mere dire: &ldquo;maudite musique du Diable!!&rdquo;</p>
+<iframe width="459" height="344" src="https://www.youtube.com/embed/ZpbpOgUybBM?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    
+    <div class="card-actions justify-between items-center mt-4">
+      
+        <div class="flex items-center">
+  
+  <span>@</span>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    <span itemprop="name">Pascal Gauthier</span>
+  
+  </span>
+</div>
+
+      
+
+      <div class="flex items-center">
+        <ion-icon name="time" class="mr-1"></ion-icon>
+        <span>1 minute read</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+          </div>
+        
+          <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+            <a class="card bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/2020/the-social-dillema/">
+  
+
+  <div class="card-body">
+    <h2 class="card-title">The Social Dilemma</h2>
+
+    <p class="date text-base-content/60">
+    
+      Tuesday, Sep 15, 2020
+    
+    </p>
+
+    <iframe width="612" height="344" src="https://www.youtube.com/embed/uaaC57tcci0?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    
+    <div class="card-actions justify-between items-center mt-4">
+      
+        <div class="flex items-center">
+  
+  <span>@</span>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    <span itemprop="name">Pascal Gauthier</span>
+  
+  </span>
+</div>
+
+      
+
+      <div class="flex items-center">
+        <ion-icon name="time" class="mr-1"></ion-icon>
+        <span>0 minute read</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+          </div>
+        
+          <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+            <a class="card bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/2020/trilogie-starwars-aftermath/">
+  
+
+  <div class="card-body">
+    <h2 class="card-title">Trilogie Starwars Aftermath</h2>
+
+    <p class="date text-base-content/60">
+    
+      Wednesday, Jul 29, 2020
+    
+    </p>
+
+    <p>Cette triologie se deroulle environ 1 ans apres la bataille d&rsquo;Endor. La Nouvelle Republique est encore fragile et tout n&rsquo;est pas gagner.</p>
+<p>L&rsquo;histoire du premier roman est un peu lente, et on a un peu de misere a s&rsquo;accrocher a l&rsquo;histoire et aux personnages. Ce premier roman se veut plus une introduction aux personnage, ce qui laisse plus de place aux prochains livres pour developper plus les personnages et l&rsquo;histoire.</p>
+
+    
+    <div class="card-actions justify-between items-center mt-4">
+      
+        <div class="flex items-center">
+  
+  <span>@</span>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    <span itemprop="name">Pascal Gauthier</span>
+  
+  </span>
+</div>
+
+      
+
+      <div class="flex items-center">
+        <ion-icon name="time" class="mr-1"></ion-icon>
+        <span>1 minute read</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+          </div>
+        
+          <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+            <a class="card bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/2020/the-great-dictator-speach/">
+  
+
+  <div class="card-body">
+    <h2 class="card-title">The great dictator speach</h2>
+
+    <p class="date text-base-content/60">
+    
+      Wednesday, Jul 8, 2020
+    
+    </p>
+
+    <iframe width="612" height="344" src="https://www.youtube.com/embed/J7GY1Xg6X20?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>Toujours aussi pertinant apres toutes ces annees.</p>
+
+    
+    <div class="card-actions justify-between items-center mt-4">
+      
+        <div class="flex items-center">
+  
+  <span>@</span>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    <span itemprop="name">Pascal Gauthier</span>
+  
+  </span>
+</div>
+
+      
+
+      <div class="flex items-center">
+        <ion-icon name="time" class="mr-1"></ion-icon>
+        <span>1 minute read</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+          </div>
+        
+      </div>
+    
+
+    
+    <div class="flex justify-center pt-8">
+      <div class="join grid grid-cols-2">
+  
+  <button class="join-item btn btn-outline btn-sm" disabled>
+    Previous page
+  </button>
+  
+  
+  <a href="/tags/opinion/page/2/" title="Next page" class="join-item btn btn-outline btn-sm">
+    Next page
+  </a>
+  
+</div>
+
+    </div>
+    
+  </div>
+</div>
+
+
+
+            
+<footer class="flex justify-between items-center gap-2 px-4 py-12">
+
+  <div>
+  
+  <p>© 2025 SIG11</p>
+  
+
+  
+  <p class="text-sm">
+    🌱
+    <span class="text-base-content/60">
+      Powered by <a class="hover:underline" href="https://gohugo.io/" target="_blank">Hugo</a> with theme
+      <a class="hover:underline" href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</span
+    >
+  </p>
+  
+</div>
+
+  <div
+  x-data="{ icons: [
+    { name: 'sunny', status: 'n' },
+    { name: 'moon', status: 'y' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center gap-2 h-[32px] px-2 bg-base-100 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+</footer>
+
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid dream-grid-about">
+  
+
+  
+
+  
+</div>
+
+            
+
+            
+<footer class="flex justify-between items-center gap-2 px-4 py-12">
+
+  <div>
+  
+  <p>© 2025 SIG11</p>
+  
+
+  
+  <p class="text-sm">
+    🌱
+    <span class="text-base-content/60">
+      Powered by <a class="hover:underline" href="https://gohugo.io/" target="_blank">Hugo</a> with theme
+      <a class="hover:underline" href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</span
+    >
+  </p>
+  
+</div>
+
+  <div
+  x-data="{ icons: [
+    { name: 'sunny', status: 'n' },
+    { name: 'moon', status: 'y' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center gap-2 h-[32px] px-2 bg-base-100 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+</footer>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+  <script src="/js/grid.js"></script>
+
+
+
+
+<script src="/js/main.js"></script>
+
+    
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@7.4.0/dist/ionicons/ionicons.esm.js" integrity="sha256-/IFmi82bIhdYWctu0UddSlJqpnzWm7Vh2C4CM32wF/k=" crossorigin="anonymous"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@7.4.0/dist/ionicons/ionicons.js" integrity="sha256-mr7eJMX3VC3F7G32mk4oWp1C6a2tlMYxUdptfT7uKI8=" crossorigin="anonymous"></script>
+  </body>
+</html>

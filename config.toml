@@ -1,0 +1,59 @@
+baseURL = "http://example.org/"
+#disablePathToLower = true
+languageCode = "ca-fr"
+title = "SIG11"
+theme = "dream"
+
+#enableGitInfo = true
+enableRobotsTXT = true
+
+[markup]
+[markup.goldmark.parser]
+wrapStandAloneImageWithinParagraph = false
+[markup.goldmark.parser.attribute]
+block = true
+[markup.goldmark.renderer]
+unsafe = true
+[markup.goldmark.extensions.passthrough]
+enable = true
+[markup.goldmark.extensions.passthrough.delimiters]
+block = [['\[', '\]'], ['$$', '$$']]
+inline = [['\(', '\)'], ['$', '$']]
+[markup.highlight]
+noClasses = false
+
+[params]
+# zenMode = true
+ 
+lightTheme = "emerald"
+darkTheme = "forest"
+ 
+images = ["img/IMG_20180730_143710.jpg"]
+ 
+author = "Pascal Gauthier"
+description = "SIG11"
+#avatar = "img/personal/avatar.jpg"
+headerTitle = "SIG11"
+motto = "Observation, Experimentation et R&D"
+ 
+# footerBottomText = ""
+ 
+rss = true
+ 
+email = "pgauthier@nihilisme.ca"
+ 
+favicon = "favicon.ico"
+
+# Syntax highlighting
+#customSyntaxHighlighting = true
+
+# options
+stickyNav = true
+#reorderNavItems = ["about", "search", "github", "posts", "categories", "tags", "rss"]
+#collapseNavItems = ["posts", "categories", "tags", "rss"]
+noDefaultSummaryCover = true
+showTableOfContents = true
+showSummaryCoverInPost = true
+imageZoomableInPost = true
+showPrevNextPost = true
+reorderShares = []
