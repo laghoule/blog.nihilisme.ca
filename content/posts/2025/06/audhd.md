@@ -23,3 +23,5 @@ Bref, après un diagnostique de TSA+TDAH pour mon garçon, j'ai vite compris que
 Après de pénibles entrevues et tests, le verdict est tombé, sans surprise: TSA+TDAH (auDHD)
 
 J'ai maintenant le man page de mon cerveaux, reste qu'a le lire attentivement (RTFM).
+
+{{< figure src="/posts/2025/06/poly10a.png" >}}
