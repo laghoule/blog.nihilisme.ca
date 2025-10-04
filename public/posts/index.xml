@@ -20,14 +20,14 @@
       <link>http://localhost:1313/posts/2025/06/audhd/</link>
       <pubDate>Thu, 05 Jun 2025 01:32:50 +0000</pubDate>
       <guid>http://localhost:1313/posts/2025/06/audhd/</guid>
-      <description>&lt;p&gt;J&amp;rsquo;ai longtemps chercher a comprendre pourquoi je suis différent des autres. Plusieurs tests de personnalité en ligne, introverti, feeling, perception, thinking, etc, J&amp;rsquo;ai fini par croire que j’étais simplement un weirdo antisocial introverti.&lt;/p&gt;&#xA;&lt;p&gt;Ouais, il y a des choses qui pouvaient sonner des cloches. Un intérêts intense pour la physique des particules a 12 ans. Ben quoi, c&amp;rsquo;est pas ça que les ado ont comme passe temps après l’école? Une passion intense pour les ordinateurs depuis que j&amp;rsquo;ai vu mon premier Tandy 1000 en 1984,&lt;/p&gt;</description>
+      <description>&lt;p&gt;J&amp;rsquo;ai longtemps chercher a comprendre pourquoi je suis différent des autres. Plusieurs tests de personnalité en ligne, introverti, feeling, perception, thinking, etc, J&amp;rsquo;ai fini par croire que j&amp;rsquo;étais simplement un weirdo antisocial introverti.&lt;/p&gt;&#xA;&lt;p&gt;Ouais, il y a des choses qui pouvaient sonner des cloches. Un intérêts intense pour la physique des particules a 12 ans. Ben quoi, c&amp;rsquo;est pas ça que les ado ont comme passe temps après l&amp;rsquo;école? Une passion intense pour les ordinateurs depuis que j&amp;rsquo;ai vu mon premier Tandy 1000 en 1984,&lt;/p&gt;</description>
     </item>
     <item>
       <title>pvcscaler</title>
-      <link>http://localhost:1313/posts/2025/pvcscaler/</link>
+      <link>http://localhost:1313/posts/2025/03/pvcscaler/</link>
       <pubDate>Sun, 30 Mar 2025 23:20:50 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2025/pvcscaler/</guid>
-      <description>&lt;p&gt;Petit outils que j&amp;rsquo;ai créer pour scale down et up mes workloads qui ont des PVC. Très utile pour faire des maintenance sur mon serveur NAS/CSI.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/laghoule/pvcscaler&#34; target=&#34;_blank&#34;&gt;https://github.com/laghoule/pvcscaler&lt;/a&gt;&#xA;&#xA;Binaire disponible pour Linux, MacOS &amp;amp; Windows.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2025/03/pvcscaler/</guid>
+      <description>&lt;p&gt;Petit outils que j&amp;rsquo;ai créer pour scale down et up mes workloads qui ont des PVC. Très utile pour faire des maintenance sur mon serveur NAS/CSI.&lt;/p&gt;&#xA;&lt;p&gt;&lt;figure class=&#34;kg-card kg-bookmark-card&#34;&gt;&#xA;  &lt;a href=&#34;https://github.com/laghoule/pvcscaler&#34; class=&#34;kg-bookmark-container&#34;&gt;&#xA;    &lt;div class=&#34;kg-bookmark-content&#34;&gt;&#xA;      &lt;div class=&#34;kg-bookmark-title&#34;&gt;&lt;/div&gt;&#xA;      &lt;div class=&#34;kg-bookmark-description&#34;&gt;&lt;/div&gt;&#xA;      &lt;div class=&#34;kg-bookmark-metadata&#34;&gt;&#xA;        &#xA;        &#xA;        &#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;    &#xA;    &lt;div class=&#34;kg-bookmark-thumbnail&#34;&gt;&#xA;      &lt;img src=&#34;https://opengraph.githubassets.com/ef607e920731cb02bfb41fdabd7a644c105acb20334031eabdabd724a8d5295b/laghoule/pvcscaler&#34;&gt;&#xA;    &lt;/div&gt;&#xA;    &#xA;  &lt;/a&gt;&#xA;  &#xA;&lt;/figure&gt;&#xA;Binaire disponible pour Linux, MacOS &amp;amp; Windows.&lt;/p&gt;</description>
     </item>
     <item>
       <title>We Are Canadian!</title>
@@ -38,59 +38,59 @@
     </item>
     <item>
       <title>Voila pourquoi les IA sont dangereuses</title>
-      <link>http://localhost:1313/posts/2025/voila-pourquoi-les-ia-sont-dangereuses/</link>
+      <link>http://localhost:1313/posts/2025/02/voila-pourquoi-les-ia-sont-dangereuses/</link>
       <pubDate>Sat, 22 Feb 2025 19:24:35 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2025/voila-pourquoi-les-ia-sont-dangereuses/</guid>
-      <description>&lt;p&gt;Quand tu possèdes assez d&amp;rsquo;argent pour faire ce que bon tu veux, tu peux contrôler l&amp;rsquo;information et créer un réalité alternative. Plus d&amp;rsquo;argent tu possèdes, plus tu es dangereux.&lt;/p&gt;&#xA;&lt;p&gt;Articles de la Presse: Musk veut modifier un outil de vérification des faits sur X&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2025/02/voila-pourquoi-les-ia-sont-dangereuses/</guid>
+      <description>&lt;p&gt;Quand tu possèdes assez d&amp;rsquo;argent pour faire ce que bon tu veux, tu peux contrôler l&amp;rsquo;information et créer un réalité alternative. Plus d&amp;rsquo;argent tu possèdes, plus tu es dangereux.&lt;/p&gt;&#xA;&lt;p&gt;Articles de la Presse: &lt;a href=&#34;https://www.lapresse.ca/affaires/techno/2025-02-20/tensions-avec-kyiv/musk-veut-modifier-un-outil-de-verification-des-faits-sur-x.php&#34; target=&#34;_blank&#34;&gt;Musk veut modifier un outil de vérification des faits sur X&lt;/a&gt;&#xA;&lt;/p&gt;</description>
     </item>
     <item>
       <title>L&#39;envers du décors</title>
-      <link>http://localhost:1313/posts/2025/06/lenvers-du-decors-2/</link>
+      <link>http://localhost:1313/posts/2025/02/lenvers-du-decors-2/</link>
       <pubDate>Sat, 01 Feb 2025 01:55:36 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2025/06/lenvers-du-decors-2/</guid>
-      <description>&lt;p&gt;Ce que vous devez savoir a propos de cette industrie.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2025/02/lenvers-du-decors-2/</guid>
+      <description>&lt;p&gt;Ce que vous devez savoir a propos de cette industrie.&lt;/p&gt;&#xA;&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xA;      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/kOAbmQasTpnO0Ca-?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;&#xA;    &lt;/div&gt;</description>
     </item>
     <item>
       <title>La vérité est rafrachissante</title>
-      <link>http://localhost:1313/posts/2025/la-verite-est-rafrachissante/</link>
+      <link>http://localhost:1313/posts/2025/01/la-verite-est-rafrachissante/</link>
       <pubDate>Fri, 31 Jan 2025 13:24:44 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2025/la-verite-est-rafrachissante/</guid>
-      <description>&lt;p&gt;Oui, c&amp;rsquo;est choses doivent être dites et redites. Le temps est venu de se lever, et de se battre pour que la vérité soit répète plus souvent que les mensonges.&#xA;Ce n&amp;rsquo;est que le début!&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2025/01/la-verite-est-rafrachissante/</guid>
+      <description>&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xA;      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/qq5AuDIvNmMvW_6L?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;&#xA;    &lt;/div&gt;&#xA;&#xA;&lt;p&gt;Oui, c&amp;rsquo;est choses doivent être dites et redites. Le temps est venu de se lever, et de se battre pour que la vérité soit répète plus souvent que les mensonges.&#xA;Ce n&amp;rsquo;est que le début!&lt;/p&gt;</description>
     </item>
     <item>
-      <title>L’ère des Oligarchies en Amérique</title>
-      <link>http://localhost:1313/posts/2025/lere-des-oligarchies-en-amerique/</link>
+      <title>L&#39;ère des Oligarchies en Amérique</title>
+      <link>http://localhost:1313/posts/2025/01/lere-des-oligarchies-en-amerique/</link>
       <pubDate>Fri, 24 Jan 2025 13:36:38 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2025/lere-des-oligarchies-en-amerique/</guid>
-      <description></description>
+      <guid>http://localhost:1313/posts/2025/01/lere-des-oligarchies-en-amerique/</guid>
+      <description>&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xA;      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/7ZObMDPR7CQ?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;&#xA;    &lt;/div&gt;</description>
     </item>
     <item>
       <title>Buy Canadian Act</title>
-      <link>http://localhost:1313/posts/2025/buy-canadian-act/</link>
+      <link>http://localhost:1313/posts/2025/01/buy-canadian-act/</link>
       <pubDate>Fri, 24 Jan 2025 02:18:49 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2025/buy-canadian-act/</guid>
+      <guid>http://localhost:1313/posts/2025/01/buy-canadian-act/</guid>
       <description>&lt;p&gt;Il est grand temps qu&amp;rsquo;on se prennent en mains, qu&amp;rsquo;on ne soit plus entièrement dépendant des États-Unis. Formons des alliance avec les autres nations. Devenons auto-suffisant, serrons nous les coudes et soyons UNIS!&lt;/p&gt;&#xA;&lt;p&gt;OH CANADA!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Intel CPU throttling</title>
-      <link>http://localhost:1313/posts/2025/intel-cpu-throttling/</link>
+      <link>http://localhost:1313/posts/2025/01/intel-cpu-throttling/</link>
       <pubDate>Thu, 23 Jan 2025 02:27:33 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2025/intel-cpu-throttling/</guid>
+      <guid>http://localhost:1313/posts/2025/01/intel-cpu-throttling/</guid>
       <description>&lt;p&gt;Pour la travail j&amp;rsquo;ai un laptop DELL. Celui-ci n&amp;rsquo;aime vraiment pas quand j&amp;rsquo;utilise une power source inférieur a 65W. Dans ce cas, le CPU est ralentie au maxxxiiimmuuummm. J&amp;rsquo;ai l&amp;rsquo;impression d&amp;rsquo;avoir un 386. Après plusieurs essaie infructueuse, la solution consiste a désactiver un module du kernel (Running Average Power Limit):&lt;/p&gt;&#xA;&lt;p&gt;sudo rmmod intel_rapl_msr&lt;/p&gt;</description>
     </item>
     <item>
       <title>AI relationship</title>
-      <link>http://localhost:1313/posts/2025/ai-relationship/</link>
+      <link>http://localhost:1313/posts/2025/01/ai-relationship/</link>
       <pubDate>Sun, 19 Jan 2025 21:49:37 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2025/ai-relationship/</guid>
-      <description>&lt;p&gt;Article plutôt troublant dans le NYT: &lt;a href=&#34;https://www.nytimes.com/2025/01/15/technology/ai-chatgpt-boyfriend-companion.html&#34; target=&#34;_blank&#34;&gt;https://www.nytimes.com/2025/01/15/technology/ai-chatgpt-boyfriend-companion.html&lt;/a&gt;&#xA;. Bien que pas surprenant, je pense que se sera de plus en plus populaire et fera des ravages dans nos société. Pourquoi mettre des efforts dans une relation humaine, quand on peut avoir exactement ce que l&amp;rsquo;on désire d&amp;rsquo;une relation?&lt;/p&gt;&#xA;&lt;p&gt;Les adolescents sont particulièrement a risque. Cet age est un transition importante dans la vie d&amp;rsquo;une personne, et a des conséquence sur le reste de son existence.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2025/01/ai-relationship/</guid>
+      <description>&lt;p&gt;Article plutôt troublant dans le &lt;a href=&#34;https://www.nytimes.com/2025/01/15/technology/ai-chatgpt-boyfriend-companion.html&#34; target=&#34;_blank&#34;&gt;NYT&lt;/a&gt;&#xA;. Bien que pas surprenant, je pense que se sera de plus en plus populaire et fera des ravages dans nos société. Pourquoi mettre des efforts dans une relation humaine, quand on peut avoir exactement ce que l&amp;rsquo;on désire d&amp;rsquo;une relation?&lt;/p&gt;&#xA;&lt;p&gt;Les adolescents sont particulièrement a risque. Cet age est un transition importante dans la vie d&amp;rsquo;une personne, et a des conséquence sur le reste de son existence.&lt;/p&gt;</description>
     </item>
     <item>
       <title>2025 ou 1925</title>
-      <link>http://localhost:1313/posts/2025/2025-ou-1925/</link>
+      <link>http://localhost:1313/posts/2025/01/2025-ou-1925/</link>
       <pubDate>Sat, 11 Jan 2025 15:08:57 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2025/2025-ou-1925/</guid>
-      <description>&lt;p&gt;Je ne sais pas si vieillir nous permet de prendre plus conscience du monde qui nous entoure? Nous rend plus critique? Mais voila, l&amp;rsquo;avenir n’inquiète de plus en plus. On semble avoir terminer un cycle de paix, depuis plusieurs années, j&amp;rsquo;ai l&amp;rsquo;impression qu&amp;rsquo;on glisse vers des temps de guerres.&lt;/p&gt;&#xA;&lt;p&gt;Montée de l’autoritarisme partout dans le monde, portée par l&amp;rsquo;individualisme extrême, le populisme et la peur. Ces changements sont amplifier par les réseaux sociaux, qui sont maintenant bien ancrée dans la vie quotidienne de tout le monde, et permet la circulation de mensonges déguiser en vérité, et ne sont plus remis en question, même s&amp;rsquo;il y a des faits pour débusquer ces mensonge. Il n&amp;rsquo;y a desaurmais plus de différence entre des faits et des opinions.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2025/01/2025-ou-1925/</guid>
+      <description>&lt;p&gt;Je ne sais pas si vieillir nous permet de prendre plus conscience du monde qui nous entoure? Nous rend plus critique? Mais voila, l&amp;rsquo;avenir n&amp;rsquo;inquiète de plus en plus. On semble avoir terminer un cycle de paix, depuis plusieurs années, j&amp;rsquo;ai l&amp;rsquo;impression qu&amp;rsquo;on glisse vers des temps de guerres.&lt;/p&gt;&#xA;&lt;p&gt;Montée de l&amp;rsquo;autoritarisme partout dans le monde, portée par l&amp;rsquo;individualisme extrême, le populisme et la peur. Ces changements sont amplifier par les réseaux sociaux, qui sont maintenant bien ancrée dans la vie quotidienne de tout le monde, et permet la circulation de mensonges déguiser en vérité, et ne sont plus remis en question, même s&amp;rsquo;il y a des faits pour débusquer ces mensonge. Il n&amp;rsquo;y a desaurmais plus de différence entre des faits et des opinions.&lt;/p&gt;</description>
     </item>
     <item>
       <title>AI indépendance</title>
@@ -108,9 +108,9 @@
     </item>
     <item>
       <title>GptProfNewton</title>
-      <link>http://localhost:1313/posts/2023/gptprofnewton/</link>
+      <link>http://localhost:1313/posts/2023/06/gptprofnewton/</link>
       <pubDate>Sat, 03 Jun 2023 23:42:46 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/gptprofnewton/</guid>
+      <guid>http://localhost:1313/posts/2023/06/gptprofnewton/</guid>
       <description>&lt;p&gt;Avec tout le buzz autour d&amp;rsquo;OpenAI, j&amp;rsquo;ai cree un petit assistant pour aider mes enfants avec leurs travaux scolaire:&lt;/p&gt;&#xA;&lt;figure class=&#34;kg-card kg-bookmark-card&#34;&gt;&#xA;  &lt;a href=&#34;https://github.com/laghoule/gptProfNewton&#34; class=&#34;kg-bookmark-container&#34;&gt;&#xA;    &lt;div class=&#34;kg-bookmark-content&#34;&gt;&#xA;      &lt;div class=&#34;kg-bookmark-title&#34;&gt;GitHub - laghoule/gptProfNewton: gptProfNewton est un projet qui utilise le modèle GPT pour simuler un professeur.&lt;/div&gt;&#xA;      &lt;div class=&#34;kg-bookmark-description&#34;&gt;gptProfNewton est un projet qui utilise le modèle GPT pour simuler un professeur. - GitHub - laghoule/gptProfNewton: gptProfNewton est un projet qui utilise le modèle GPT pour simuler un professeur.&lt;/div&gt;&#xA;      &lt;div class=&#34;kg-bookmark-metadata&#34;&gt;&#xA;        &lt;img src=&#34;https://github.com/fluidicon.png&#34; class=&#34;kg-bookmark-icon&#34;&gt;&#xA;        &lt;span class=&#34;kg-bookmark-author&#34;&gt;laghoule&lt;/span&gt;&#xA;        &lt;span class=&#34;kg-bookmark-publisher&#34;&gt;GitHub&lt;/span&gt;&#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;    &#xA;    &lt;div class=&#34;kg-bookmark-thumbnail&#34;&gt;&#xA;      &lt;img src=&#34;https://opengraph.githubassets.com/ef607e920731cb02bfb41fdabd7a644c105acb20334031eabdabd724a8d5295b/laghoule/gptProfNewton&#34;&gt;&#xA;    &lt;/div&gt;&#xA;    &#xA;  &lt;/a&gt;&#xA;  &#xA;&lt;/figure&gt;&#xA;&lt;p&gt;Le client est en mode texte, et permet de rester centrer sur le sujet, et eviter les distraction.&lt;/p&gt;</description>
     </item>
     <item>

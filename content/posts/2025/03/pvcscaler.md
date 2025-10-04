@@ -13,4 +13,5 @@ title = "pvcscaler"
 Petit outils que j'ai créer pour scale down et up mes workloads qui ont des PVC. Très utile pour faire des maintenance sur mon serveur NAS/CSI.
 
 {{< bookmark url="https://github.com/laghoule/pvcscaler" thumbnail="https://opengraph.githubassets.com/ef607e920731cb02bfb41fdabd7a644c105acb20334031eabdabd724a8d5295b/laghoule/pvcscaler" caption="" >}}
+
 Binaire disponible pour Linux, MacOS & Windows.

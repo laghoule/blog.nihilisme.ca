@@ -3,13 +3,12 @@ categories = ["produit"]
 date = 2023-04-09T00:37:47Z
 description = ""
 draft = false
-image = "__GHOST_URL__/content/images/2023/04/k0s-logo-full-color-light.svg"
+image = "/posts/2023/04/k0s-logo-full-color-light.svg"
 slug = "k0s-distribution"
 tags = ["produit"]
 title = "K0S distribution"
 
 +++
-
 
 Avec la popularite de Kubernetes aujourd'hui, de multiples solutions d'installation sont disponible. Une de ces "distributions" est [K0S](https://web.archive.org/web/20230224143959/https://github.com/k0sproject/k0s). Creer au depart par [Mirantis](https://web.archive.org/web/20230224143959/https://www.mirantis.com/), et par la suite donner publier comme logiciel libre.
 
@@ -31,4 +30,3 @@ wrk-03    Ready    <none>          138d   v1.26.0+k0s   192.168.86.23   <none>  
 ```
 
 Note final: 3.5/5
-

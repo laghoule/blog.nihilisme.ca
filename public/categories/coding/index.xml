@@ -10,16 +10,16 @@
     <atom:link href="http://localhost:1313/categories/coding/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>pvcscaler</title>
-      <link>http://localhost:1313/posts/2025/pvcscaler/</link>
+      <link>http://localhost:1313/posts/2025/03/pvcscaler/</link>
       <pubDate>Sun, 30 Mar 2025 23:20:50 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2025/pvcscaler/</guid>
-      <description>&lt;p&gt;Petit outils que j&amp;rsquo;ai créer pour scale down et up mes workloads qui ont des PVC. Très utile pour faire des maintenance sur mon serveur NAS/CSI.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/laghoule/pvcscaler&#34; target=&#34;_blank&#34;&gt;https://github.com/laghoule/pvcscaler&lt;/a&gt;&#xA;&#xA;Binaire disponible pour Linux, MacOS &amp;amp; Windows.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2025/03/pvcscaler/</guid>
+      <description>&lt;p&gt;Petit outils que j&amp;rsquo;ai créer pour scale down et up mes workloads qui ont des PVC. Très utile pour faire des maintenance sur mon serveur NAS/CSI.&lt;/p&gt;&#xA;&lt;p&gt;&lt;figure class=&#34;kg-card kg-bookmark-card&#34;&gt;&#xA;  &lt;a href=&#34;https://github.com/laghoule/pvcscaler&#34; class=&#34;kg-bookmark-container&#34;&gt;&#xA;    &lt;div class=&#34;kg-bookmark-content&#34;&gt;&#xA;      &lt;div class=&#34;kg-bookmark-title&#34;&gt;&lt;/div&gt;&#xA;      &lt;div class=&#34;kg-bookmark-description&#34;&gt;&lt;/div&gt;&#xA;      &lt;div class=&#34;kg-bookmark-metadata&#34;&gt;&#xA;        &#xA;        &#xA;        &#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;    &#xA;    &lt;div class=&#34;kg-bookmark-thumbnail&#34;&gt;&#xA;      &lt;img src=&#34;https://opengraph.githubassets.com/ef607e920731cb02bfb41fdabd7a644c105acb20334031eabdabd724a8d5295b/laghoule/pvcscaler&#34;&gt;&#xA;    &lt;/div&gt;&#xA;    &#xA;  &lt;/a&gt;&#xA;  &#xA;&lt;/figure&gt;&#xA;Binaire disponible pour Linux, MacOS &amp;amp; Windows.&lt;/p&gt;</description>
     </item>
     <item>
       <title>GptProfNewton</title>
-      <link>http://localhost:1313/posts/2023/gptprofnewton/</link>
+      <link>http://localhost:1313/posts/2023/06/gptprofnewton/</link>
       <pubDate>Sat, 03 Jun 2023 23:42:46 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/gptprofnewton/</guid>
+      <guid>http://localhost:1313/posts/2023/06/gptprofnewton/</guid>
       <description>&lt;p&gt;Avec tout le buzz autour d&amp;rsquo;OpenAI, j&amp;rsquo;ai cree un petit assistant pour aider mes enfants avec leurs travaux scolaire:&lt;/p&gt;&#xA;&lt;figure class=&#34;kg-card kg-bookmark-card&#34;&gt;&#xA;  &lt;a href=&#34;https://github.com/laghoule/gptProfNewton&#34; class=&#34;kg-bookmark-container&#34;&gt;&#xA;    &lt;div class=&#34;kg-bookmark-content&#34;&gt;&#xA;      &lt;div class=&#34;kg-bookmark-title&#34;&gt;GitHub - laghoule/gptProfNewton: gptProfNewton est un projet qui utilise le modèle GPT pour simuler un professeur.&lt;/div&gt;&#xA;      &lt;div class=&#34;kg-bookmark-description&#34;&gt;gptProfNewton est un projet qui utilise le modèle GPT pour simuler un professeur. - GitHub - laghoule/gptProfNewton: gptProfNewton est un projet qui utilise le modèle GPT pour simuler un professeur.&lt;/div&gt;&#xA;      &lt;div class=&#34;kg-bookmark-metadata&#34;&gt;&#xA;        &lt;img src=&#34;https://github.com/fluidicon.png&#34; class=&#34;kg-bookmark-icon&#34;&gt;&#xA;        &lt;span class=&#34;kg-bookmark-author&#34;&gt;laghoule&lt;/span&gt;&#xA;        &lt;span class=&#34;kg-bookmark-publisher&#34;&gt;GitHub&lt;/span&gt;&#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;    &#xA;    &lt;div class=&#34;kg-bookmark-thumbnail&#34;&gt;&#xA;      &lt;img src=&#34;https://opengraph.githubassets.com/ef607e920731cb02bfb41fdabd7a644c105acb20334031eabdabd724a8d5295b/laghoule/gptProfNewton&#34;&gt;&#xA;    &lt;/div&gt;&#xA;    &#xA;  &lt;/a&gt;&#xA;  &#xA;&lt;/figure&gt;&#xA;&lt;p&gt;Le client est en mode texte, et permet de rester centrer sur le sujet, et eviter les distraction.&lt;/p&gt;</description>
     </item>
     <item>

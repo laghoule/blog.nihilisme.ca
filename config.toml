@@ -44,9 +44,6 @@ email = "pgauthier@nihilisme.ca"
  
 favicon = "favicon.ico"
 
-# Syntax highlighting
-#customSyntaxHighlighting = true
-
 # options
 stickyNav = true
 #reorderNavItems = ["about", "search", "github", "posts", "categories", "tags", "rss"]
@@ -56,4 +53,4 @@ showTableOfContents = true
 showSummaryCoverInPost = true
 imageZoomableInPost = true
 showPrevNextPost = true
-reorderShares = []
+reorderShares = [""]

@@ -2,7 +2,7 @@
 date = 2025-01-23T02:27:33Z
 description = ""
 draft = false
-image = "__GHOST_URL__/content/images/2025/01/img-Vi1SLlzES3vyYMqFo3FGXlI2.png"
+cover = "/posts/2025/01/img-Vi1SLlzES3vyYMqFo3FGXlI2.png"
 slug = "intel-cpu-throttling"
 title = "Intel CPU throttling"
 
