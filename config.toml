@@ -1,6 +1,5 @@
 baseURL = "http://example.org/"
 #disablePathToLower = true
-languageCode = "ca-fr"
 title = "SIG11"
 theme = "dream"
 

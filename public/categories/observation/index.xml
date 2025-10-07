@@ -1,208 +1,89 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Observation on SIG11</title>
-    <link>http://localhost:1313/categories/observation/</link>
-    <description>Recent content in Observation on SIG11</description>
-    <generator>Hugo</generator>
-    <language>ca-fr</language>
-    <lastBuildDate>Sun, 19 Jan 2025 21:49:37 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/observation/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>AI relationship</title>
-      <link>http://localhost:1313/posts/2025/01/ai-relationship/</link>
-      <pubDate>Sun, 19 Jan 2025 21:49:37 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2025/01/ai-relationship/</guid>
-      <description>&lt;p&gt;Article plutôt troublant dans le &lt;a href=&#34;https://www.nytimes.com/2025/01/15/technology/ai-chatgpt-boyfriend-companion.html&#34; target=&#34;_blank&#34;&gt;NYT&lt;/a&gt;&#xA;. Bien que pas surprenant, je pense que se sera de plus en plus populaire et fera des ravages dans nos société. Pourquoi mettre des efforts dans une relation humaine, quand on peut avoir exactement ce que l&amp;rsquo;on désire d&amp;rsquo;une relation?&lt;/p&gt;&#xA;&lt;p&gt;Les adolescents sont particulièrement a risque. Cet age est un transition importante dans la vie d&amp;rsquo;une personne, et a des conséquence sur le reste de son existence.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>2025 ou 1925</title>
-      <link>http://localhost:1313/posts/2025/01/2025-ou-1925/</link>
-      <pubDate>Sat, 11 Jan 2025 15:08:57 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2025/01/2025-ou-1925/</guid>
-      <description>&lt;p&gt;Je ne sais pas si vieillir nous permet de prendre plus conscience du monde qui nous entoure? Nous rend plus critique? Mais voila, l&amp;rsquo;avenir n&amp;rsquo;inquiète de plus en plus. On semble avoir terminer un cycle de paix, depuis plusieurs années, j&amp;rsquo;ai l&amp;rsquo;impression qu&amp;rsquo;on glisse vers des temps de guerres.&lt;/p&gt;&#xA;&lt;p&gt;Montée de l&amp;rsquo;autoritarisme partout dans le monde, portée par l&amp;rsquo;individualisme extrême, le populisme et la peur. Ces changements sont amplifier par les réseaux sociaux, qui sont maintenant bien ancrée dans la vie quotidienne de tout le monde, et permet la circulation de mensonges déguiser en vérité, et ne sont plus remis en question, même s&amp;rsquo;il y a des faits pour débusquer ces mensonge. Il n&amp;rsquo;y a desaurmais plus de différence entre des faits et des opinions.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Matière a réflexion</title>
-      <link>http://localhost:1313/posts/2023/matiere-a-reflexion/</link>
-      <pubDate>Sat, 14 Oct 2023 01:27:31 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/matiere-a-reflexion/</guid>
-      <description>&lt;iframe width=&#34;200&#34; height=&#34;113&#34; src=&#34;https://www.youtube.com/embed/AaU6tI2pb3M?feature=oembed&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen title=&#34;What Ethical AI Really Means&#34;&gt;&lt;/iframe&gt;&#xA;&lt;p&gt;Documentaire intéressant, avec un regard critique sur l&amp;rsquo;AI.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Lecture 2020</title>
-      <link>http://localhost:1313/posts/2020/lecture-2020/</link>
-      <pubDate>Wed, 16 Dec 2020 18:41:30 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2020/lecture-2020/</guid>
-      <description>&lt;p&gt;J&amp;rsquo;ai jamais ete un grand lecteur, mais en 2020 j&amp;rsquo;ai vraiment accroche aux romans de StarWars. En fait j&amp;rsquo;ai comme mission de lire tous les livre &lt;em&gt;canon&lt;/em&gt; de l&amp;rsquo;univers StarWars.&lt;/p&gt;&#xA;&lt;p&gt;Voici la liste de livre lu cette annee:&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;__GHOST_URL__/content/images/2020/12/Screenshot_2020-12-31_18-19-06.gif&#34;&gt;&#xA;&lt;/figure&gt;</description>
-    </item>
-    <item>
-      <title>Upgrade DOKS 1.18 -&gt; 1.19</title>
-      <link>http://localhost:1313/posts/2020/upgrade-doks-1-18-1-19/</link>
-      <pubDate>Sat, 07 Nov 2020 15:04:09 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2020/upgrade-doks-1-18-1-19/</guid>
-      <description>&lt;p&gt;Premiere experience d&amp;rsquo;upgrade du managed K8S de Digital Ocean. Voici quelques observations:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Appliquer les recommandations que linter d&amp;rsquo;upgrade de DOKS vous propose. AWS EKS devrait s&amp;rsquo;inspirer de ce tools pour proposer quelques choses de similaire.&lt;/li&gt;&#xA;&lt;li&gt;Ne pas utiliser les addons proposer par doks (ingress, grafana, prometheus, etc). Utiliser helm pour installer ces tools, car vous aurez pas de controle (possible d&amp;rsquo;aller recupere les values de leur helm, mais pas trivial) sur de modification que vous voudriez mettre en place (Pod Disruption Budget, node Affinity/AntiAffinity).&lt;/li&gt;&#xA;&lt;li&gt;Si vous avez pas d&amp;rsquo;autoscaler de worker de configurer, manuellement doubler le nombre de worker avant de debuter votre upgrade. Vous allez eviter de manquer de ressources. Scale down quand tout est upgrader.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;L&amp;rsquo;upgrade a ete effectuer assez rapidement, et sans heurt.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>The Social Dilemma</title>
-      <link>http://localhost:1313/posts/2020/the-social-dillema/</link>
-      <pubDate>Tue, 15 Sep 2020 14:31:48 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2020/the-social-dillema/</guid>
-      <description>&lt;iframe width=&#34;612&#34; height=&#34;344&#34; src=&#34;https://www.youtube.com/embed/uaaC57tcci0?feature=oembed&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;</description>
-    </item>
-    <item>
-      <title>Trilogie Starwars Aftermath</title>
-      <link>http://localhost:1313/posts/2020/trilogie-starwars-aftermath/</link>
-      <pubDate>Wed, 29 Jul 2020 14:12:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2020/trilogie-starwars-aftermath/</guid>
-      <description>&lt;p&gt;Cette triologie se deroulle environ 1 ans apres la bataille d&amp;rsquo;Endor. La Nouvelle Republique est encore fragile et tout n&amp;rsquo;est pas gagner.&lt;/p&gt;&#xA;&lt;p&gt;L&amp;rsquo;histoire du premier roman est un peu lente, et on a un peu de misere a s&amp;rsquo;accrocher a l&amp;rsquo;histoire et aux personnages. Ce premier roman se veut plus une introduction aux personnage, ce qui laisse plus de place aux prochains livres pour developper plus les personnages et l&amp;rsquo;histoire.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>The great dictator speach</title>
-      <link>http://localhost:1313/posts/2020/the-great-dictator-speach/</link>
-      <pubDate>Wed, 08 Jul 2020 13:45:47 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2020/the-great-dictator-speach/</guid>
-      <description>&lt;iframe width=&#34;612&#34; height=&#34;344&#34; src=&#34;https://www.youtube.com/embed/J7GY1Xg6X20?feature=oembed&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&#xA;&lt;p&gt;Toujours aussi pertinant apres toutes ces annees.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Black lives matter</title>
-      <link>http://localhost:1313/posts/2020/black-lives-matter/</link>
-      <pubDate>Tue, 02 Jun 2020 15:22:46 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2020/black-lives-matter/</guid>
-      <description>&lt;p&gt;Unissons-nous contre l&amp;rsquo;injustice! Tous ensemble!!&lt;/p&gt;&#xA;&lt;p&gt;Le racisme n&amp;rsquo;a pas sa place dans nos societes.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Covid-19 &amp; services essentiels</title>
-      <link>http://localhost:1313/posts/2020/covid-19-services-essentiels/</link>
-      <pubDate>Sun, 05 Apr 2020 13:26:51 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2020/covid-19-services-essentiels/</guid>
-      <description>&lt;p&gt;Une crise permet toujours de mettre en perspective certain elements que nous prenons pour acquis. Parmis ces elements, certains, meme plusieurs sont negliges. Ici je parle surtout des gens qui s&amp;rsquo;occupent des service essentiels, mais qui sont habituellements mal payes, juges negativement, etc.&lt;/p&gt;&#xA;&lt;p&gt;Ces personnes souvant payees un salaire minimum, avec aucun avantage social. Il faudra bien reflechir dans le future afin de revoir et corriger ces lacunes.&lt;/p&gt;&#xA;&lt;p&gt;Quelques metiers:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Covid-19 &amp; mondialisation</title>
-      <link>http://localhost:1313/posts/2019/covid-19-mondialisation/</link>
-      <pubDate>Sat, 04 Apr 2020 13:55:40 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2019/covid-19-mondialisation/</guid>
-      <description>&lt;p&gt;Le crise actuel, la plus grave depuis la fin de la seconde guerre mondial, nous permet de mettre en evidence certains des problemes, relier a la globalisation des marches. Bien que la modialisation a beaucoup d&amp;rsquo;avantages, en temps de crise, ces avantages ne sont plus aussi attrayant et peuvent meme etre des desavantages.&lt;/p&gt;&#xA;&lt;p&gt;Plusieur service essentiel dependent de l&amp;rsquo;apprivisionnements exterieur:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Alimentations&lt;/li&gt;&#xA;&lt;li&gt;Medicaments&lt;/li&gt;&#xA;&lt;li&gt;Appareil medicaux&lt;/li&gt;&#xA;&lt;li&gt;Energie&lt;/li&gt;&#xA;&lt;li&gt;Textiles&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Une des lessons que nous devrons tirer rapidement de cette crise, sera la mise en place de lois, qui exigerons que nous soyont independant d&amp;rsquo;autres pays (et provinces) dans ces domaines d&amp;rsquo;expertise.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Clone Wars saison 7</title>
-      <link>http://localhost:1313/posts/2020/clone-wars-saison-7/</link>
-      <pubDate>Sun, 26 Jan 2020 16:32:20 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2020/clone-wars-saison-7/</guid>
-      <description>&lt;iframe width=&#34;480&#34; height=&#34;270&#34; src=&#34;https://www.youtube.com/embed/ZLW2jkd6E7g?feature=oembed&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&#xA;&lt;p&gt;Cette derniere saison de Clone Wars risque d&amp;rsquo;etre epique, et aussi tres sombre. Le combat entre Maul et Ahsoka va nous donner des frissons dans le dos assurements.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Tesla ouvre ses brevets</title>
-      <link>http://localhost:1313/posts/2019/tesla-ouvre-ses-brevets/</link>
-      <pubDate>Wed, 18 Dec 2019 13:59:25 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2019/tesla-ouvre-ses-brevets/</guid>
-      <description>&lt;p&gt;Elon Musk a decider d&amp;rsquo;ouvrir ces brevets, ou du moins, ne pas demander de redevance. Pourquoi? Pour accelerer l&amp;rsquo;adoption de vehicules electriques, afin de combattre les changements climatique. Bravo, un tres beau geste, apres l&amp;rsquo;echec cuisant de la COP25 en Espagne.&lt;/p&gt;&#xA;&lt;p&gt;Je ne suis pas un tres grand fan de Musk, mais un geste comme celui-ci est un des gestes qu&amp;rsquo;on devrait voir a l&amp;rsquo;echelle mondial de la part des grandes entreprises.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Algorithme de recommandation</title>
-      <link>http://localhost:1313/posts/2019/algorithme-de-recommandation/</link>
-      <pubDate>Sat, 23 Nov 2019 03:42:10 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2019/algorithme-de-recommandation/</guid>
-      <description>&lt;p&gt;Google News cette semaine m&amp;rsquo;a sortie une nouvelle  extraordinaire&amp;hellip; On a decouvert des insectes sur Mars!&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;__GHOST_URL__/content/images/2019/11/Screenshot_2019-11-22_21-43-31.png&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Comme je ne crois pas n&amp;rsquo;importe quoi, je verifie la source de cette nouvelle: American Association for the Advancement of Science (AAAS). Premier fais a noter, pourquoi la nouvelle ne viens pas de la Nasa, l&amp;rsquo;ESA ou autres agence spaciales serieuse? J&amp;rsquo;ai vite classe cette nouvelle dans la categorie &amp;ldquo;fake news&amp;rdquo; et passer a autres choses.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>DoH &amp;&amp; DoT</title>
-      <link>http://localhost:1313/posts/2019/dos-dot/</link>
-      <pubDate>Tue, 12 Nov 2019 14:58:29 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2019/dos-dot/</guid>
-      <description>&lt;p&gt;Experiementation avec DNS over HTTPS et DNS over TLS cette semaine. DoH est maintenant supporte par Firefox, et les prochaines version vont l&amp;rsquo;activer par default, du moins c&amp;rsquo;est ce qui avait ete annonce, jusqu&amp;rsquo;a ce que ca creer un faux scandale au UK (&lt;a href=&#34;https://www.theregister.co.uk/2019/09/24/mozilla_backtracks_doh_for_uk_users/&#34; target=&#34;_blank&#34;&gt;https://www.theregister.co.uk/2019/09/24/mozilla_backtracks_doh_for_uk_users/&lt;/a&gt;&#xA;). L&amp;rsquo;avantage du support directement dans le browser viens du fait qu&amp;rsquo;il possede son propre client DNS, ce qui permet de ne pas utiliser le resolver systeme. Donc si votre destination utilise HTTPS, c&amp;rsquo;est tres dur de pouvoir vous espionnez, car l&amp;rsquo;espion peux seulement voir l&amp;rsquo;IP du destinataire.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Dark (Netflix)</title>
-      <link>http://localhost:1313/posts/2019/dark-netflix/</link>
-      <pubDate>Fri, 01 Nov 2019 12:26:10 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2019/dark-netflix/</guid>
-      <description>&lt;p&gt;Une serie original de Netflix, qui merite vraiment d&amp;rsquo;etre vue. Produit en Allemagne, c&amp;rsquo;est un genre different des series Americaines. Il faut se fermer les yeux sur certains elements (pas de test d&amp;rsquo;ADN, physique tire par les cheveux), mais une fois que vous avez embarque dans l&amp;rsquo;histoire, c&amp;rsquo;est dur de ne pas continuer l&amp;rsquo;histoire.&lt;/p&gt;&#xA;&lt;p&gt;2 saisons disponible, la prochaine sera la derniere.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Rise of Skywalker</title>
-      <link>http://localhost:1313/posts/2019/rise-of-the-skywalker/</link>
-      <pubDate>Tue, 22 Oct 2019 13:17:09 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2019/rise-of-the-skywalker/</guid>
-      <description>&lt;p&gt;Billet achete, reste a attendre&amp;hellip; voici un petit apercu:&lt;/p&gt;&#xA;&lt;iframe width=&#34;480&#34; height=&#34;270&#34; src=&#34;https://www.youtube.com/embed/8Qn_spdM5Zg?feature=oembed&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;</description>
-    </item>
-    <item>
-      <title>Votez!</title>
-      <link>http://localhost:1313/posts/2019/votez/</link>
-      <pubDate>Mon, 21 Oct 2019 12:40:58 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2019/votez/</guid>
-      <description>&lt;p&gt;C&amp;rsquo;est le temps de vous exprimer, VOTER!&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>e-book</title>
-      <link>http://localhost:1313/posts/2019/e-book/</link>
-      <pubDate>Tue, 15 Oct 2019 12:22:43 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2019/e-book/</guid>
-      <description>&lt;figure&gt;&lt;img src=&#34;__GHOST_URL__/content/images/2019/10/Screenshot_2019-10-15_08-17-18.png&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;The Go Programming Language, 40$ paperback, et 15$ e-book. Je me convertie au e-book, avec l&amp;rsquo;achat d&amp;rsquo;un Kindle. Plus de livres qui trainent partout, et la possibilite d&amp;rsquo;avoir avec soi, toute sa librairie, ou que je soie.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Automne</title>
-      <link>http://localhost:1313/posts/2019/automne/</link>
-      <pubDate>Mon, 14 Oct 2019 20:11:05 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2019/automne/</guid>
-      <description>&lt;p&gt;Couleur d&amp;rsquo;automne sur le bord du fleuve St-Laurent&lt;/p&gt;&#xA;&lt;figure class=&#34;kg-gallery-card kg-width-wide&#34;&gt;&#xA;  &lt;div class=&#34;kg-gallery-container&#34;&gt;&#xA;    &lt;div class=&#34;kg-gallery-row&#34;&gt;&#xA;    &#xA;&#xA;  &lt;div class=&#34;kg-gallery-image&#34;&gt;&#xA;    &lt;img src=&#34;__GHOST_URL__/content/images/2019/10/IMG_20191013_125946-1.jpg&#34; width=&#34;4608&#34; height=&#34;3456&#34;&gt;&#xA;  &lt;/div&gt;&#xA;&#xA;  &lt;div class=&#34;kg-gallery-image&#34;&gt;&#xA;    &lt;img src=&#34;__GHOST_URL__/content/images/2019/10/IMG_20191013_125950.jpg&#34; width=&#34;4608&#34; height=&#34;3456&#34;&gt;&#xA;  &lt;/div&gt;&#xA;&#xA;  &lt;div class=&#34;kg-gallery-image&#34;&gt;&#xA;    &lt;img src=&#34;__GHOST_URL__/content/images/2019/10/IMG_20191013_130155.jpg&#34; width=&#34;4608&#34; height=&#34;3456&#34;&gt;&#xA;  &lt;/div&gt;&#xA;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;kg-gallery-row&#34;&gt;&#xA;&#xA;  &lt;div class=&#34;kg-gallery-image&#34;&gt;&#xA;    &lt;img src=&#34;__GHOST_URL__/content/images/2019/10/IMG_20191013_132018.jpg&#34; width=&#34;4608&#34; height=&#34;3456&#34;&gt;&#xA;  &lt;/div&gt;&#xA;&#xA;    &lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;  &#xA;&lt;/figure&gt;</description>
-    </item>
-    <item>
-      <title>File d&#39;attente</title>
-      <link>http://localhost:1313/posts/2019/fille-dattente/</link>
-      <pubDate>Sat, 27 Apr 2019 13:11:17 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2019/fille-dattente/</guid>
-      <description>&lt;p&gt;Une file d&amp;rsquo;attente en ligne. Oui, oui en 2019 il semble que certaines personnes pensent que c&amp;rsquo;est une bonne idee de proceder de cette facon.&lt;/p&gt;&#xA;&lt;p&gt;Incroyable&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;__GHOST_URL__/content/images/2019/04/Screenshot-2019-04-27-at-09.04.35.png&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Et apres le temps d&amp;rsquo;attente, je tombe sur ceci:&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;__GHOST_URL__/content/images/2019/04/Screenshot-2019-04-27-at-09.30.36.png&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Vraiment patetique.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Opinion</title>
-      <link>http://localhost:1313/posts/2019/opinion/</link>
-      <pubDate>Thu, 24 Jan 2019 13:31:31 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2019/opinion/</guid>
-      <description>&lt;p&gt;Donner son opinion dans le monde d&amp;rsquo;aujourd&amp;rsquo;hui est devenue un acte risque. Peut importe ce que vous dites, quelqu&amp;rsquo;un va souhaiter votre mort.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Revue technologique 2018</title>
-      <link>http://localhost:1313/posts/2018/revue-technologique-2018/</link>
-      <pubDate>Wed, 26 Dec 2018 13:04:43 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2018/revue-technologique-2018/</guid>
-      <description>&lt;p&gt;Deux sujets on particulierement fait parle cette annee: Securite et Kubernetes. L&amp;rsquo;annee 2018 a commence par la publication des fameux bugs de securites des branches de preductions des CPU modernes (Spectre et Meltdown). On peut dire que ce fut un vrai &lt;code&gt;meltdown&lt;/code&gt; de la part d&amp;rsquo;Intel particulierement, qui a reussi a s&amp;rsquo;aliener une bonne partie de la comunaute OpenSource, grace a des pratiques de securite innaproprier pour les modeles &lt;code&gt;Ouvert&lt;/code&gt;. 2019 va continuer avec la decouverte de nouvelles variantes de ces bugs et vecteurs d&amp;rsquo;attaques.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Quand realiserons-nous?</title>
-      <link>http://localhost:1313/posts/2018/quand-realiserons-nous/</link>
-      <pubDate>Fri, 14 Dec 2018 22:28:20 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2018/quand-realiserons-nous/</guid>
-      <description>&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/HzeekxtyFOY&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&#xA;&lt;p&gt;Dure de rester insensible a un tel discours, non?&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Faisabilite des ordinateurs quantique</title>
-      <link>http://localhost:1313/posts/2018/faisabilite-des-ordinateurs-quantique/</link>
-      <pubDate>Mon, 19 Nov 2018 01:09:52 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2018/faisabilite-des-ordinateurs-quantique/</guid>
-      <description>&lt;p&gt;Article interessant ici: &lt;a href=&#34;https://spectrum.ieee.org/computing/hardware/the-case-against-quantum-computing&#34; target=&#34;_blank&#34;&gt;https://spectrum.ieee.org/computing/hardware/the-case-against-quantum-computing&lt;/a&gt;&#xA;, a propos des recheches actuels sur les ordinateurs quantique. L&amp;rsquo;auteur de l&amp;rsquo;article en question est un physicien francais. Il dresse un portrait plutot realiste sur la possibilite d&amp;rsquo;avoir un jour des ordinateurs quantique reellement utiles, et pas simplement des experimentations universitaires ou industriels (IBM, Intel, Google).&lt;/p&gt;&#xA;&lt;p&gt;Parallele avec mon article precedent, je crois qu&amp;rsquo;un ordinateur quantique est possible, mais avec les connaissances et technologies d&amp;rsquo;une civilisation de type II. Pour reference, nous ne sommes pas encore une civilisation de type I.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Les civilisations avances</title>
-      <link>http://localhost:1313/posts/2018/les-civilisations-avances/</link>
-      <pubDate>Sun, 18 Nov 2018 15:00:44 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2018/les-civilisations-avances/</guid>
-      <description>&lt;p&gt;Le paradoxe de Fermi. Pourquoi n&amp;rsquo;avons nous pas encore detecte de traces de civilisations avances?&lt;/p&gt;&#xA;&lt;p&gt;Plus j&amp;rsquo;y reflechie, plus je crois que la regle d&amp;rsquo;or est  l&amp;rsquo;auto-destruction. Presque qu&amp;rsquo;impossible d&amp;rsquo;avoir des civilisations de types II.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://fr.m.wikipedia.org/wiki/Paradoxe_de_Fermi&#34; target=&#34;_blank&#34;&gt;https://fr.m.wikipedia.org/wiki/Paradoxe_de_Fermi&lt;/a&gt;&#xA;&#xA;&lt;a href=&#34;https://fr.m.wikipedia.org/wiki/&#34; target=&#34;_blank&#34;&gt;https://fr.m.wikipedia.org/wiki/&lt;/a&gt;&#xA;Échelle_de_Kardachev&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Everest</title>
-      <link>http://localhost:1313/posts/2018/everest/</link>
-      <pubDate>Mon, 05 Nov 2018 01:41:30 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2018/everest/</guid>
-      <description>&lt;p&gt;On connait rarement les histoires cachees devant de grands exploits. En voici une&amp;hellip;&lt;/p&gt;&#xA;&lt;iframe width=&#34;480&#34; height=&#34;270&#34; src=&#34;https://www.youtube.com/embed/tcmH0__c7aw?feature=oembed&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;</description>
-    </item>
-    <item>
-      <title>Dure realite</title>
-      <link>http://localhost:1313/posts/2018/dure-realite/</link>
-      <pubDate>Tue, 30 Oct 2018 21:29:26 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2018/dure-realite/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://www.theguardian.com/environment/2018/oct/30/humanity-wiped-out-animals-since-1970-major-report-finds&#34; target=&#34;_blank&#34;&gt;https://www.theguardian.com/environment/2018/oct/30/humanity-wiped-out-animals-since-1970-major-report-finds&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;Les prochaines decenies vont etre de plus en plus dure. La terre a connue pire que les humains, par contre les humains ne connaissent que la terre.&lt;/p&gt;&#xA;&lt;p&gt;Triste, tres triste&amp;hellip;&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Observation on SIG11</title><link>http://localhost:1313/categories/observation/</link><description>Recent content in Observation on SIG11</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 19 Jan 2025 21:49:37 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/observation/index.xml" rel="self" type="application/rss+xml"/><item><title>AI relationship</title><link>http://localhost:1313/posts/2025/01/ai-relationship/</link><pubDate>Sun, 19 Jan 2025 21:49:37 +0000</pubDate><guid>http://localhost:1313/posts/2025/01/ai-relationship/</guid><description>&lt;p&gt;Article plutôt troublant dans le &lt;a href="https://www.nytimes.com/2025/01/15/technology/ai-chatgpt-boyfriend-companion.html" target="_blank"&gt;NYT&lt;/a&gt;
+. Bien que pas surprenant, je pense que se sera de plus en plus populaire et fera des ravages dans nos société. Pourquoi mettre des efforts dans une relation humaine, quand on peut avoir exactement ce que l&amp;rsquo;on désire d&amp;rsquo;une relation?&lt;/p&gt;
+&lt;p&gt;Les adolescents sont particulièrement a risque. Cet age est un transition importante dans la vie d&amp;rsquo;une personne, et a des conséquence sur le reste de son existence.&lt;/p&gt;</description></item><item><title>2025 ou 1925</title><link>http://localhost:1313/posts/2025/01/2025-ou-1925/</link><pubDate>Sat, 11 Jan 2025 15:08:57 +0000</pubDate><guid>http://localhost:1313/posts/2025/01/2025-ou-1925/</guid><description>&lt;p&gt;Je ne sais pas si vieillir nous permet de prendre plus conscience du monde qui nous entoure? Nous rend plus critique? Mais voila, l&amp;rsquo;avenir n&amp;rsquo;inquiète de plus en plus. On semble avoir terminer un cycle de paix, depuis plusieurs années, j&amp;rsquo;ai l&amp;rsquo;impression qu&amp;rsquo;on glisse vers des temps de guerres.&lt;/p&gt;
+&lt;p&gt;Montée de l&amp;rsquo;autoritarisme partout dans le monde, portée par l&amp;rsquo;individualisme extrême, le populisme et la peur. Ces changements sont amplifier par les réseaux sociaux, qui sont maintenant bien ancrée dans la vie quotidienne de tout le monde, et permet la circulation de mensonges déguiser en vérité, et ne sont plus remis en question, même s&amp;rsquo;il y a des faits pour débusquer ces mensonge. Il n&amp;rsquo;y a desaurmais plus de différence entre des faits et des opinions.&lt;/p&gt;</description></item><item><title>Matière a réflexion</title><link>http://localhost:1313/posts/2023/matiere-a-reflexion/</link><pubDate>Sat, 14 Oct 2023 01:27:31 +0000</pubDate><guid>http://localhost:1313/posts/2023/matiere-a-reflexion/</guid><description>&lt;iframe width="200" height="113" src="https://www.youtube.com/embed/AaU6tI2pb3M?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen title="What Ethical AI Really Means"&gt;&lt;/iframe&gt;
+&lt;p&gt;Documentaire intéressant, avec un regard critique sur l&amp;rsquo;AI.&lt;/p&gt;</description></item><item><title>Lecture 2020</title><link>http://localhost:1313/posts/2020/lecture-2020/</link><pubDate>Wed, 16 Dec 2020 18:41:30 +0000</pubDate><guid>http://localhost:1313/posts/2020/lecture-2020/</guid><description>&lt;p&gt;J&amp;rsquo;ai jamais ete un grand lecteur, mais en 2020 j&amp;rsquo;ai vraiment accroche aux romans de StarWars. En fait j&amp;rsquo;ai comme mission de lire tous les livre &lt;em&gt;canon&lt;/em&gt; de l&amp;rsquo;univers StarWars.&lt;/p&gt;
+&lt;p&gt;Voici la liste de livre lu cette annee:&lt;/p&gt;
+&lt;figure&gt;&lt;img src="__GHOST_URL__/content/images/2020/12/Screenshot_2020-12-31_18-19-06.gif"&gt;
+&lt;/figure&gt;</description></item><item><title>Upgrade DOKS 1.18 -&gt; 1.19</title><link>http://localhost:1313/posts/2020/upgrade-doks-1-18-1-19/</link><pubDate>Sat, 07 Nov 2020 15:04:09 +0000</pubDate><guid>http://localhost:1313/posts/2020/upgrade-doks-1-18-1-19/</guid><description>&lt;p&gt;Premiere experience d&amp;rsquo;upgrade du managed K8S de Digital Ocean. Voici quelques observations:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Appliquer les recommandations que linter d&amp;rsquo;upgrade de DOKS vous propose. AWS EKS devrait s&amp;rsquo;inspirer de ce tools pour proposer quelques choses de similaire.&lt;/li&gt;
+&lt;li&gt;Ne pas utiliser les addons proposer par doks (ingress, grafana, prometheus, etc). Utiliser helm pour installer ces tools, car vous aurez pas de controle (possible d&amp;rsquo;aller recupere les values de leur helm, mais pas trivial) sur de modification que vous voudriez mettre en place (Pod Disruption Budget, node Affinity/AntiAffinity).&lt;/li&gt;
+&lt;li&gt;Si vous avez pas d&amp;rsquo;autoscaler de worker de configurer, manuellement doubler le nombre de worker avant de debuter votre upgrade. Vous allez eviter de manquer de ressources. Scale down quand tout est upgrader.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;L&amp;rsquo;upgrade a ete effectuer assez rapidement, et sans heurt.&lt;/p&gt;</description></item><item><title>The Social Dilemma</title><link>http://localhost:1313/posts/2020/the-social-dillema/</link><pubDate>Tue, 15 Sep 2020 14:31:48 +0000</pubDate><guid>http://localhost:1313/posts/2020/the-social-dillema/</guid><description>&lt;iframe width="612" height="344" src="https://www.youtube.com/embed/uaaC57tcci0?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</description></item><item><title>Trilogie Starwars Aftermath</title><link>http://localhost:1313/posts/2020/trilogie-starwars-aftermath/</link><pubDate>Wed, 29 Jul 2020 14:12:00 +0000</pubDate><guid>http://localhost:1313/posts/2020/trilogie-starwars-aftermath/</guid><description>&lt;p&gt;Cette triologie se deroulle environ 1 ans apres la bataille d&amp;rsquo;Endor. La Nouvelle Republique est encore fragile et tout n&amp;rsquo;est pas gagner.&lt;/p&gt;
+&lt;p&gt;L&amp;rsquo;histoire du premier roman est un peu lente, et on a un peu de misere a s&amp;rsquo;accrocher a l&amp;rsquo;histoire et aux personnages. Ce premier roman se veut plus une introduction aux personnage, ce qui laisse plus de place aux prochains livres pour developper plus les personnages et l&amp;rsquo;histoire.&lt;/p&gt;</description></item><item><title>The great dictator speach</title><link>http://localhost:1313/posts/2020/the-great-dictator-speach/</link><pubDate>Wed, 08 Jul 2020 13:45:47 +0000</pubDate><guid>http://localhost:1313/posts/2020/the-great-dictator-speach/</guid><description>&lt;iframe width="612" height="344" src="https://www.youtube.com/embed/J7GY1Xg6X20?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;Toujours aussi pertinant apres toutes ces annees.&lt;/p&gt;</description></item><item><title>Black lives matter</title><link>http://localhost:1313/posts/2020/black-lives-matter/</link><pubDate>Tue, 02 Jun 2020 15:22:46 +0000</pubDate><guid>http://localhost:1313/posts/2020/black-lives-matter/</guid><description>&lt;p&gt;Unissons-nous contre l&amp;rsquo;injustice! Tous ensemble!!&lt;/p&gt;
+&lt;p&gt;Le racisme n&amp;rsquo;a pas sa place dans nos societes.&lt;/p&gt;</description></item><item><title>Covid-19 &amp; services essentiels</title><link>http://localhost:1313/posts/2020/covid-19-services-essentiels/</link><pubDate>Sun, 05 Apr 2020 13:26:51 +0000</pubDate><guid>http://localhost:1313/posts/2020/covid-19-services-essentiels/</guid><description>&lt;p&gt;Une crise permet toujours de mettre en perspective certain elements que nous prenons pour acquis. Parmis ces elements, certains, meme plusieurs sont negliges. Ici je parle surtout des gens qui s&amp;rsquo;occupent des service essentiels, mais qui sont habituellements mal payes, juges negativement, etc.&lt;/p&gt;
+&lt;p&gt;Ces personnes souvant payees un salaire minimum, avec aucun avantage social. Il faudra bien reflechir dans le future afin de revoir et corriger ces lacunes.&lt;/p&gt;
+&lt;p&gt;Quelques metiers:&lt;/p&gt;</description></item><item><title>Covid-19 &amp; mondialisation</title><link>http://localhost:1313/posts/2019/covid-19-mondialisation/</link><pubDate>Sat, 04 Apr 2020 13:55:40 +0000</pubDate><guid>http://localhost:1313/posts/2019/covid-19-mondialisation/</guid><description>&lt;p&gt;Le crise actuel, la plus grave depuis la fin de la seconde guerre mondial, nous permet de mettre en evidence certains des problemes, relier a la globalisation des marches. Bien que la modialisation a beaucoup d&amp;rsquo;avantages, en temps de crise, ces avantages ne sont plus aussi attrayant et peuvent meme etre des desavantages.&lt;/p&gt;
+&lt;p&gt;Plusieur service essentiel dependent de l&amp;rsquo;apprivisionnements exterieur:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Alimentations&lt;/li&gt;
+&lt;li&gt;Medicaments&lt;/li&gt;
+&lt;li&gt;Appareil medicaux&lt;/li&gt;
+&lt;li&gt;Energie&lt;/li&gt;
+&lt;li&gt;Textiles&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Une des lessons que nous devrons tirer rapidement de cette crise, sera la mise en place de lois, qui exigerons que nous soyont independant d&amp;rsquo;autres pays (et provinces) dans ces domaines d&amp;rsquo;expertise.&lt;/p&gt;</description></item><item><title>Clone Wars saison 7</title><link>http://localhost:1313/posts/2020/clone-wars-saison-7/</link><pubDate>Sun, 26 Jan 2020 16:32:20 +0000</pubDate><guid>http://localhost:1313/posts/2020/clone-wars-saison-7/</guid><description>&lt;iframe width="480" height="270" src="https://www.youtube.com/embed/ZLW2jkd6E7g?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;Cette derniere saison de Clone Wars risque d&amp;rsquo;etre epique, et aussi tres sombre. Le combat entre Maul et Ahsoka va nous donner des frissons dans le dos assurements.&lt;/p&gt;</description></item><item><title>Tesla ouvre ses brevets</title><link>http://localhost:1313/posts/2019/tesla-ouvre-ses-brevets/</link><pubDate>Wed, 18 Dec 2019 13:59:25 +0000</pubDate><guid>http://localhost:1313/posts/2019/tesla-ouvre-ses-brevets/</guid><description>&lt;p&gt;Elon Musk a decider d&amp;rsquo;ouvrir ces brevets, ou du moins, ne pas demander de redevance. Pourquoi? Pour accelerer l&amp;rsquo;adoption de vehicules electriques, afin de combattre les changements climatique. Bravo, un tres beau geste, apres l&amp;rsquo;echec cuisant de la COP25 en Espagne.&lt;/p&gt;
+&lt;p&gt;Je ne suis pas un tres grand fan de Musk, mais un geste comme celui-ci est un des gestes qu&amp;rsquo;on devrait voir a l&amp;rsquo;echelle mondial de la part des grandes entreprises.&lt;/p&gt;</description></item><item><title>Algorithme de recommandation</title><link>http://localhost:1313/posts/2019/algorithme-de-recommandation/</link><pubDate>Sat, 23 Nov 2019 03:42:10 +0000</pubDate><guid>http://localhost:1313/posts/2019/algorithme-de-recommandation/</guid><description>&lt;p&gt;Google News cette semaine m&amp;rsquo;a sortie une nouvelle extraordinaire&amp;hellip; On a decouvert des insectes sur Mars!&lt;/p&gt;
+&lt;figure&gt;&lt;img src="__GHOST_URL__/content/images/2019/11/Screenshot_2019-11-22_21-43-31.png"&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Comme je ne crois pas n&amp;rsquo;importe quoi, je verifie la source de cette nouvelle: American Association for the Advancement of Science (AAAS). Premier fais a noter, pourquoi la nouvelle ne viens pas de la Nasa, l&amp;rsquo;ESA ou autres agence spaciales serieuse? J&amp;rsquo;ai vite classe cette nouvelle dans la categorie &amp;ldquo;fake news&amp;rdquo; et passer a autres choses.&lt;/p&gt;</description></item><item><title>DoH &amp;&amp; DoT</title><link>http://localhost:1313/posts/2019/dos-dot/</link><pubDate>Tue, 12 Nov 2019 14:58:29 +0000</pubDate><guid>http://localhost:1313/posts/2019/dos-dot/</guid><description>&lt;p&gt;Experiementation avec DNS over HTTPS et DNS over TLS cette semaine. DoH est maintenant supporte par Firefox, et les prochaines version vont l&amp;rsquo;activer par default, du moins c&amp;rsquo;est ce qui avait ete annonce, jusqu&amp;rsquo;a ce que ca creer un faux scandale au UK (&lt;a href="https://www.theregister.co.uk/2019/09/24/mozilla_backtracks_doh_for_uk_users/" target="_blank"&gt;https://www.theregister.co.uk/2019/09/24/mozilla_backtracks_doh_for_uk_users/&lt;/a&gt;
+). L&amp;rsquo;avantage du support directement dans le browser viens du fait qu&amp;rsquo;il possede son propre client DNS, ce qui permet de ne pas utiliser le resolver systeme. Donc si votre destination utilise HTTPS, c&amp;rsquo;est tres dur de pouvoir vous espionnez, car l&amp;rsquo;espion peux seulement voir l&amp;rsquo;IP du destinataire.&lt;/p&gt;</description></item><item><title>Dark (Netflix)</title><link>http://localhost:1313/posts/2019/dark-netflix/</link><pubDate>Fri, 01 Nov 2019 12:26:10 +0000</pubDate><guid>http://localhost:1313/posts/2019/dark-netflix/</guid><description>&lt;p&gt;Une serie original de Netflix, qui merite vraiment d&amp;rsquo;etre vue. Produit en Allemagne, c&amp;rsquo;est un genre different des series Americaines. Il faut se fermer les yeux sur certains elements (pas de test d&amp;rsquo;ADN, physique tire par les cheveux), mais une fois que vous avez embarque dans l&amp;rsquo;histoire, c&amp;rsquo;est dur de ne pas continuer l&amp;rsquo;histoire.&lt;/p&gt;
+&lt;p&gt;2 saisons disponible, la prochaine sera la derniere.&lt;/p&gt;</description></item><item><title>Rise of Skywalker</title><link>http://localhost:1313/posts/2019/rise-of-the-skywalker/</link><pubDate>Tue, 22 Oct 2019 13:17:09 +0000</pubDate><guid>http://localhost:1313/posts/2019/rise-of-the-skywalker/</guid><description>&lt;p&gt;Billet achete, reste a attendre&amp;hellip; voici un petit apercu:&lt;/p&gt;
+&lt;iframe width="480" height="270" src="https://www.youtube.com/embed/8Qn_spdM5Zg?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</description></item><item><title>Votez!</title><link>http://localhost:1313/posts/2019/votez/</link><pubDate>Mon, 21 Oct 2019 12:40:58 +0000</pubDate><guid>http://localhost:1313/posts/2019/votez/</guid><description>&lt;p&gt;C&amp;rsquo;est le temps de vous exprimer, VOTER!&lt;/p&gt;</description></item><item><title>e-book</title><link>http://localhost:1313/posts/2019/e-book/</link><pubDate>Tue, 15 Oct 2019 12:22:43 +0000</pubDate><guid>http://localhost:1313/posts/2019/e-book/</guid><description>&lt;figure&gt;&lt;img src="__GHOST_URL__/content/images/2019/10/Screenshot_2019-10-15_08-17-18.png"&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The Go Programming Language, 40$ paperback, et 15$ e-book. Je me convertie au e-book, avec l&amp;rsquo;achat d&amp;rsquo;un Kindle. Plus de livres qui trainent partout, et la possibilite d&amp;rsquo;avoir avec soi, toute sa librairie, ou que je soie.&lt;/p&gt;</description></item><item><title>Automne</title><link>http://localhost:1313/posts/2019/automne/</link><pubDate>Mon, 14 Oct 2019 20:11:05 +0000</pubDate><guid>http://localhost:1313/posts/2019/automne/</guid><description>&lt;p&gt;Couleur d&amp;rsquo;automne sur le bord du fleuve St-Laurent&lt;/p&gt;
+&lt;figure class="kg-gallery-card kg-width-wide"&gt;
+ &lt;div class="kg-gallery-container"&gt;
+ &lt;div class="kg-gallery-row"&gt;
+ 
+
+ &lt;div class="kg-gallery-image"&gt;
+ &lt;img src="__GHOST_URL__/content/images/2019/10/IMG_20191013_125946-1.jpg" width="4608" height="3456"&gt;
+ &lt;/div&gt;
+
+ &lt;div class="kg-gallery-image"&gt;
+ &lt;img src="__GHOST_URL__/content/images/2019/10/IMG_20191013_125950.jpg" width="4608" height="3456"&gt;
+ &lt;/div&gt;
+
+ &lt;div class="kg-gallery-image"&gt;
+ &lt;img src="__GHOST_URL__/content/images/2019/10/IMG_20191013_130155.jpg" width="4608" height="3456"&gt;
+ &lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="kg-gallery-row"&gt;
+
+ &lt;div class="kg-gallery-image"&gt;
+ &lt;img src="__GHOST_URL__/content/images/2019/10/IMG_20191013_132018.jpg" width="4608" height="3456"&gt;
+ &lt;/div&gt;
+
+ &lt;/div&gt;
+ &lt;/div&gt;
+ 
+&lt;/figure&gt;</description></item><item><title>File d'attente</title><link>http://localhost:1313/posts/2019/fille-dattente/</link><pubDate>Sat, 27 Apr 2019 13:11:17 +0000</pubDate><guid>http://localhost:1313/posts/2019/fille-dattente/</guid><description>&lt;p&gt;Une file d&amp;rsquo;attente en ligne. Oui, oui en 2019 il semble que certaines personnes pensent que c&amp;rsquo;est une bonne idee de proceder de cette facon.&lt;/p&gt;
+&lt;p&gt;Incroyable&lt;/p&gt;
+&lt;figure&gt;&lt;img src="__GHOST_URL__/content/images/2019/04/Screenshot-2019-04-27-at-09.04.35.png"&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Et apres le temps d&amp;rsquo;attente, je tombe sur ceci:&lt;/p&gt;
+&lt;figure&gt;&lt;img src="__GHOST_URL__/content/images/2019/04/Screenshot-2019-04-27-at-09.30.36.png"&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Vraiment patetique.&lt;/p&gt;</description></item><item><title>Opinion</title><link>http://localhost:1313/posts/2019/opinion/</link><pubDate>Thu, 24 Jan 2019 13:31:31 +0000</pubDate><guid>http://localhost:1313/posts/2019/opinion/</guid><description>&lt;p&gt;Donner son opinion dans le monde d&amp;rsquo;aujourd&amp;rsquo;hui est devenue un acte risque. Peut importe ce que vous dites, quelqu&amp;rsquo;un va souhaiter votre mort.&lt;/p&gt;</description></item><item><title>Revue technologique 2018</title><link>http://localhost:1313/posts/2018/revue-technologique-2018/</link><pubDate>Wed, 26 Dec 2018 13:04:43 +0000</pubDate><guid>http://localhost:1313/posts/2018/revue-technologique-2018/</guid><description>&lt;p&gt;Deux sujets on particulierement fait parle cette annee: Securite et Kubernetes. L&amp;rsquo;annee 2018 a commence par la publication des fameux bugs de securites des branches de preductions des CPU modernes (Spectre et Meltdown). On peut dire que ce fut un vrai &lt;code&gt;meltdown&lt;/code&gt; de la part d&amp;rsquo;Intel particulierement, qui a reussi a s&amp;rsquo;aliener une bonne partie de la comunaute OpenSource, grace a des pratiques de securite innaproprier pour les modeles &lt;code&gt;Ouvert&lt;/code&gt;. 2019 va continuer avec la decouverte de nouvelles variantes de ces bugs et vecteurs d&amp;rsquo;attaques.&lt;/p&gt;</description></item><item><title>Quand realiserons-nous?</title><link>http://localhost:1313/posts/2018/quand-realiserons-nous/</link><pubDate>Fri, 14 Dec 2018 22:28:20 +0000</pubDate><guid>http://localhost:1313/posts/2018/quand-realiserons-nous/</guid><description>&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/HzeekxtyFOY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;Dure de rester insensible a un tel discours, non?&lt;/p&gt;</description></item><item><title>Faisabilite des ordinateurs quantique</title><link>http://localhost:1313/posts/2018/faisabilite-des-ordinateurs-quantique/</link><pubDate>Mon, 19 Nov 2018 01:09:52 +0000</pubDate><guid>http://localhost:1313/posts/2018/faisabilite-des-ordinateurs-quantique/</guid><description>&lt;p&gt;Article interessant ici: &lt;a href="https://spectrum.ieee.org/computing/hardware/the-case-against-quantum-computing" target="_blank"&gt;https://spectrum.ieee.org/computing/hardware/the-case-against-quantum-computing&lt;/a&gt;
+, a propos des recheches actuels sur les ordinateurs quantique. L&amp;rsquo;auteur de l&amp;rsquo;article en question est un physicien francais. Il dresse un portrait plutot realiste sur la possibilite d&amp;rsquo;avoir un jour des ordinateurs quantique reellement utiles, et pas simplement des experimentations universitaires ou industriels (IBM, Intel, Google).&lt;/p&gt;
+&lt;p&gt;Parallele avec mon article precedent, je crois qu&amp;rsquo;un ordinateur quantique est possible, mais avec les connaissances et technologies d&amp;rsquo;une civilisation de type II. Pour reference, nous ne sommes pas encore une civilisation de type I.&lt;/p&gt;</description></item><item><title>Les civilisations avances</title><link>http://localhost:1313/posts/2018/les-civilisations-avances/</link><pubDate>Sun, 18 Nov 2018 15:00:44 +0000</pubDate><guid>http://localhost:1313/posts/2018/les-civilisations-avances/</guid><description>&lt;p&gt;Le paradoxe de Fermi. Pourquoi n&amp;rsquo;avons nous pas encore detecte de traces de civilisations avances?&lt;/p&gt;
+&lt;p&gt;Plus j&amp;rsquo;y reflechie, plus je crois que la regle d&amp;rsquo;or est l&amp;rsquo;auto-destruction. Presque qu&amp;rsquo;impossible d&amp;rsquo;avoir des civilisations de types II.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://fr.m.wikipedia.org/wiki/Paradoxe_de_Fermi" target="_blank"&gt;https://fr.m.wikipedia.org/wiki/Paradoxe_de_Fermi&lt;/a&gt;
+
+&lt;a href="https://fr.m.wikipedia.org/wiki/" target="_blank"&gt;https://fr.m.wikipedia.org/wiki/&lt;/a&gt;
+Échelle_de_Kardachev&lt;/p&gt;</description></item><item><title>Everest</title><link>http://localhost:1313/posts/2018/everest/</link><pubDate>Mon, 05 Nov 2018 01:41:30 +0000</pubDate><guid>http://localhost:1313/posts/2018/everest/</guid><description>&lt;p&gt;On connait rarement les histoires cachees devant de grands exploits. En voici une&amp;hellip;&lt;/p&gt;
+&lt;iframe width="480" height="270" src="https://www.youtube.com/embed/tcmH0__c7aw?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</description></item><item><title>Dure realite</title><link>http://localhost:1313/posts/2018/dure-realite/</link><pubDate>Tue, 30 Oct 2018 21:29:26 +0000</pubDate><guid>http://localhost:1313/posts/2018/dure-realite/</guid><description>&lt;p&gt;&lt;a href="https://www.theguardian.com/environment/2018/oct/30/humanity-wiped-out-animals-since-1970-major-report-finds" target="_blank"&gt;https://www.theguardian.com/environment/2018/oct/30/humanity-wiped-out-animals-since-1970-major-report-finds&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;Les prochaines decenies vont etre de plus en plus dure. La terre a connue pire que les humains, par contre les humains ne connaissent que la terre.&lt;/p&gt;
+&lt;p&gt;Triste, tres triste&amp;hellip;&lt;/p&gt;</description></item></channel></rss>

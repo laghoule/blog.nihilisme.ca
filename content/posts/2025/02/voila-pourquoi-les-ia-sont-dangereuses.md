@@ -1,7 +1,7 @@
 +++
 categories = ["opinion", "informations"]
 date = 2025-02-22T19:24:35Z
-description = ""
+description = "Qui controle l'informations, controlle le monde."
 draft = false
 cover = "https://images.unsplash.com/photo-1457052271742-6b6b66887aeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDJ8fGtpbmd8ZW58MHx8fHwxNzQwMjUyMTY4fDA&ixlib=rb-4.0.3&q=80&w=2000"
 slug = "voila-pourquoi-les-ia-sont-dangereuses"

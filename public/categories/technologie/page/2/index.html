@@ -1,803 +1,102 @@
-<!DOCTYPE html>
-<html lang="ca-fr"
-  x-data
-  :class="$store.darkMode.class()"
-  :data-theme="$store.darkMode.theme()">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Technologie | SIG11</title>
-
-    
-  
-    <link href="/favicon.ico" rel="icon" type="image/x-icon" />
-  
-
-
-<link rel="canonical" href="http://localhost:1313/categories/technologie/" />
-
-
-
-<meta name="author" content="Pascal Gauthier" />
-<meta name="description" content="SIG11" />
-
-
-
-<meta name="generator" content="Hugo 0.151.0">
-
-
-<meta property="og:url" content="http://localhost:1313/categories/technologie/">
-  <meta property="og:site_name" content="SIG11">
-  <meta property="og:title" content="Technologie">
-  <meta property="og:description" content="SIG11">
-  <meta property="og:locale" content="ca_fr">
-  <meta property="og:type" content="website">
-    <meta property="og:image" content="http://localhost:1313/img/IMG_20180730_143710.jpg">
-
-
-
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/img/IMG_20180730_143710.jpg">
-  <meta name="twitter:title" content="Technologie">
-  <meta name="twitter:description" content="SIG11">
-
-
-
-
-<link rel="stylesheet" href="/css/output.css" />
-
-
-
-
-     
-
-    
-
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js" integrity="sha256-4EHxtjnR5rL8JzbY12OKQJr81ESm7JBEb49ORPo29AY=" crossorigin="anonymous"></script>
-  </head>
-
-  <body x-data="{
+<!doctype html><html lang=en x-data :class=$store.darkMode.class() :data-theme=$store.darkMode.theme()><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Technologie | SIG11</title><link href=/favicon.ico rel=icon type=image/x-icon><link rel=canonical href=http://localhost:1313/categories/technologie/><meta name=author content="Pascal Gauthier"><meta name=description content="SIG11"><meta name=generator content="Hugo 0.151.0"><meta property="og:url" content="http://localhost:1313/categories/technologie/"><meta property="og:site_name" content="SIG11"><meta property="og:title" content="Technologie"><meta property="og:description" content="SIG11"><meta property="og:locale" content="en"><meta property="og:type" content="website"><meta property="og:image" content="http://localhost:1313/img/IMG_20180730_143710.jpg"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="http://localhost:1313/img/IMG_20180730_143710.jpg"><meta name=twitter:title content="Technologie"><meta name=twitter:description content="SIG11"><link rel=stylesheet href=/css/output.css><script defer src=https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js integrity="sha256-4EHxtjnR5rL8JzbY12OKQJr81ESm7JBEb49ORPo29AY=" crossorigin=anonymous></script></head><body x-data="{
     flip: false,
-  }">
-    
-    <div id="dream-global-bg"></div>
-
-    
-<nav x-data="{ isSticky: false }"
-  x-init="window.addEventListener('scroll', () => { isSticky = window.scrollY > 30 })"
-  class="sticky top-0 z-30 mt-4 lg:mt-8 py-4"
-  :class="{ 'bg-base-100 shadow-lg dark:border-b dark:border-base-content/30': isSticky }">
-
-  
-  <div class="container flex justify-between px-4">
-  
-    <section class="flex items-center gap-4">
-      <div class="avatar cursor-pointer hover:avatar-online" @click="flip = !flip" title="Flip it!">
-        <div class="h-10 rounded-full">
-          <img src="/" alt="SIG11" />
-        </div>
-      </div>
-
-      
-      <div>
-        
-        <a href="http://localhost:1313/" class="text-lg font-semibold cursor-pointer">
-          SIG11
-        </a>
-        
-        
-        <div class="text-base-content/60 text-sm">Observation, Experimentation et R&amp;D</div>
-        
-      </div>
-      
-    </section>
-
-    
-    
-
-    <div class="dropdown dropdown-end sm:hidden">
-      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
-        <ion-icon name="menu" class="text-2xl"></ion-icon>
-      </div>
-      <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-1 shadow-md">
-        
-
-
-
-
-
-
-
-
-
-
-<li>
-  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="Search">
-    <ion-icon name="search"></ion-icon>
-    Search
-  </a>
-</li>
-
-
-
-
-<li>
-  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
-    <ion-icon name="logo-rss"></ion-icon>
-    RSS
-  </a>
-</li>
-
-
-
-
-<li>
-  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="Archives">
-    <ion-icon name="archive"></ion-icon>
-    Archives
-  </a>
-</li>
-
-
-
-
-<li>
-  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="All Categories">
-    <ion-icon name="grid"></ion-icon>
-    All Categories
-  </a>
-</li>
-
-
-
-
-<li>
-  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="All Tags">
-    <ion-icon name="pricetags"></ion-icon>
-    All Tags
-  </a>
-</li>
-
-
-
-
-
-
-      </ul>
-    </div>
-    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
-      
-
-      
-      
-
-
-
-
-
-      
-      
-<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="Search">
-  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
-</a>
-
-
-      
-      
-<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
-  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
-</a>
-
-
-      
-      
-<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="Archives">
-  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
-</a>
-
-
-      
-      
-<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="All Categories">
-  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
-</a>
-
-
-      
-      
-<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="All Tags">
-  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
-</a>
-
-
-      
-
-      
-
-      
-    </section>
-  </div>
-</nav>
-
-
-    <div class="flip-container" :class="{ 'flip-it': flip }">
-      <div class="flipper">
-        <div class="front">
-          <div class="container">
-            
-
-
-<div class="flex flex-col md:flex-row mt-4">
-
-  <div class="md:basis-[200px] lg:basis-[300px] p-4 prose dark:prose-invert">
-    <h1 class="text-2xl">Technologie</h1>
-    <p class="text-sm">24 articles</p>
-    <div class="flex flex-wrap gap-4 mt-6">
-      
-
-      
-      
-      <a href="/categories/aviation/" class="badge h-6 no-underline hover:badge-primary">
-        Aviation
-      </a>
-      
-      
-      
-      <a href="/categories/bike/" class="badge h-6 no-underline hover:badge-primary">
-        Bike
-      </a>
-      
-      
-      
-      <a href="/categories/coding/" class="badge h-6 no-underline hover:badge-primary">
-        Coding
-      </a>
-      
-      
-      
-      <a href="/categories/getting-started/" class="badge h-6 no-underline hover:badge-primary">
-        Getting Started
-      </a>
-      
-      
-      
-      <a href="/categories/histoire/" class="badge h-6 no-underline hover:badge-primary">
-        Histoire
-      </a>
-      
-      
-      
-      <a href="/categories/import-2023-04-08-1732/" class="badge h-6 no-underline hover:badge-primary">
-        Import 2023-04-08 17:32
-      </a>
-      
-      
-      
-      <a href="/categories/informations/" class="badge h-6 no-underline hover:badge-primary">
-        Informations
-      </a>
-      
-      
-      
-      <a href="/categories/news/" class="badge h-6 no-underline hover:badge-primary">
-        News
-      </a>
-      
-      
-      
-      <a href="/categories/observation/" class="badge h-6 no-underline hover:badge-primary">
-        Observation
-      </a>
-      
-      
-      
-      <a href="/categories/opinion/" class="badge h-6 no-underline hover:badge-primary">
-        Opinion
-      </a>
-      
-      
-      
-      <a href="/categories/produit/" class="badge h-6 no-underline hover:badge-primary">
-        Produit
-      </a>
-      
-      
-      
-      <a href="/categories/projet/" class="badge h-6 no-underline hover:badge-primary">
-        Projet
-      </a>
-      
-      
-      
-      <a href="/categories/sante/" class="badge h-6 no-underline hover:badge-primary">
-        Sante
-      </a>
-      
-      
-      
-      <a href="/categories/science/" class="badge h-6 no-underline hover:badge-primary">
-        Science
-      </a>
-      
-      
-      
-      <span class="badge h-6 badge-primary">
-        Technologie
-      </span>
-      
-      
-      
-      <a href="/categories/test/" class="badge h-6 no-underline hover:badge-primary">
-        Test
-      </a>
-      
-      
-    </div>
-  </div>
-  
-  <div class="divider divider-vertical md:divider-horizontal px-4 md:px-0"></div>
-  
-  <div class="flex-1">
-    
-
-    
-      <div class="dream-grid">
-        
-          <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
-            <a class="card bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/2020/petit-tool-pour-garder-vos-manifeste-k8s-a-jour/">
-  
-
-  <div class="card-body">
-    <h2 class="card-title">Petit tool pour garder vos manifestes K8S a jour</h2>
-
-    <p class="date text-base-content/60">
-    
-      Saturday, May 30, 2020
-    
-    </p>
-
-    <p>Cette semaine j&rsquo;ai <a href="https://github.com/FairwindsOps/pluto/pull/79" target="_blank">contribue</a>
- a un petit projet qui permet de vous indiquer les manifestes qui sont a remplacer avant de faire un upgrade de Kubernetes. Ce projet s&rsquo;appele <a href="https://github.com/FairwindsOps/pluto" target="_blank">Pluto</a>
-.</p>
-<p>K8S 1.16 a fait un gros menage dans leurs supports d&rsquo;anciennes versions d&rsquo;api. Beaucoup de personnes on eu la mauvaise surprise de voir leurs applications interrompus. Soyez pas cette personne ;)</p>
-
-    
-    <div class="card-actions justify-between items-center mt-4">
-      
-        <div class="flex items-center">
-  
-  <span>@</span>
-  
-
-  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
-  
-    <span itemprop="name">Pascal Gauthier</span>
-  
-  </span>
-</div>
-
-      
-
-      <div class="flex items-center">
-        <ion-icon name="time" class="mr-1"></ion-icon>
-        <span>1 minute read</span>
-      </div>
-    </div>
-  </div>
-</a>
-
-          </div>
-        
-          <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
-            <a class="card bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/2020/support-de-rancheros-pour-kured/">
-  
-
-  <div class="card-body">
-    <h2 class="card-title">Support de RancherOS pour Kured</h2>
-
-    <p class="date text-base-content/60">
-    
-      Sunday, May 17, 2020
-    
-    </p>
-
-    <p>Pour ceux qui utilisent RKE/RancherOS pour leur cluster Kubernetes, j&rsquo;ai de quoi pour vous. Un patch a Kured qui permet de gerer les updates de RancherOS de facon securitaire.</p>
-<figure class="kg-card kg-bookmark-card">
-  <a href="https://github.com/laghoule/kured" class="kg-bookmark-container">
-    <div class="kg-bookmark-content">
-      <div class="kg-bookmark-title">laghoule/kured</div>
-      <div class="kg-bookmark-description">Kubernetes Reboot Daemon. Contribute to laghoule/kured development by creating an account on GitHub.</div>
-      <div class="kg-bookmark-metadata">
-        <img src="https://github.githubassets.com/favicons/favicon.svg" class="kg-bookmark-icon">
-        <span class="kg-bookmark-author">laghoule</span>
-        <span class="kg-bookmark-publisher">GitHub</span>
-      </div>
-    </div>
-    
-    <div class="kg-bookmark-thumbnail">
-      <img src="https://avatars3.githubusercontent.com/u/1598055?s=400&amp;v=4">
-    </div>
-    
-  </a>
-  
-</figure>
-<p>Comment ca fonctionne? Voici une config cloud-init pour updater et rebooter un node:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">write_files</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># Script to upgrade image OS if available (no reboot)</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># Reboot is handled by K8S kured daemonset</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l">/var/lib/rancher/os-updater.sh</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">permissions</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;0755&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l">root</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">content</span><span class="p">:</span><span class="w"> </span><span class="p">|</span><span class="sd">
-</span></span></span><span class="line"><span class="cl"><span class="sd">      #!/bin/sh
-</span></span></span><span class="line"><span class="cl"><span class="sd">
-</span></span></span><span class="line"><span class="cl"><span class="sd">      source /usr/share/ros/os-release
-</span></span></span><span class="line"><span class="cl"><span class="sd">
-</span></span></span><span class="line"><span class="cl"><span class="sd">      STATUS=0
-</span></span></span><span class="line"><span class="cl"><span class="sd">      OS_LOCATION=`sudo ros os list | head -n1 | awk {&#39;print $2&#39;}`
-</span></span></span><span class="line"><span class="cl"><span class="sd">      OS_VERSION=`sudo ros os list | head -n1 | awk {&#39;print $1&#39;} | cut -d : -f 2`
-</span></span></span><span class="line"><span class="cl"><span class="sd">
-</span></span></span><span class="line"><span class="cl"><span class="sd">      if [ &#34;$OS_LOCATION&#34; == &#34;local&#34; ] &amp;&amp; [ &#34;$OS_VERSION&#34; != &#34;$VERSION&#34; ]; then
-</span></span></span><span class="line"><span class="cl"><span class="sd">        echo &#34;Upgrade available&#34;
-</span></span></span><span class="line"><span class="cl"><span class="sd">        sudo ros os upgrade -f --no-reboot &amp;&gt;&gt; /var/log/os-updater.log
-</span></span></span><span class="line"><span class="cl"><span class="sd">        STATUS=$?
-</span></span></span><span class="line"><span class="cl"><span class="sd">        if [ $STATUS -eq 0 ]; then
-</span></span></span><span class="line"><span class="cl"><span class="sd">          sudo touch /var/lib/rancher/update/need_to_reboot
-</span></span></span><span class="line"><span class="cl"><span class="sd">        else
-</span></span></span><span class="line"><span class="cl"><span class="sd">          echo &#34;Upgrade failed&#34;
-</span></span></span><span class="line"><span class="cl"><span class="sd">        fi
-</span></span></span><span class="line"><span class="cl"><span class="sd">      else
-</span></span></span><span class="line"><span class="cl"><span class="sd">        echo &#34;No upgrade available&#34;
-</span></span></span><span class="line"><span class="cl"><span class="sd">      fi
-</span></span></span><span class="line"><span class="cl"><span class="sd">
-</span></span></span><span class="line"><span class="cl"><span class="sd">      exit $STATUS</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># Check if it&#39;s a good time to reboot</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l">/var/lib/rancher/os-rebooter.sh</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">permissions</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;0755&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l">root</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">content</span><span class="p">:</span><span class="w"> </span><span class="p">|</span><span class="sd">
-</span></span></span><span class="line"><span class="cl"><span class="sd">      #!/bin/sh
-</span></span></span><span class="line"><span class="cl"><span class="sd">      if [ -f /var/lib/rancher/update/reboot_now ] &amp;&amp; [ -f /var/lib/rancher/update/need_to_reboot ]; then
-</span></span></span><span class="line"><span class="cl"><span class="sd">        sudo rm /var/lib/rancher/update/need_to_reboot
-</span></span></span><span class="line"><span class="cl"><span class="sd">        sudo rm /var/lib/rancher/update/reboot_now
-</span></span></span><span class="line"><span class="cl"><span class="sd">        sudo reboot
-</span></span></span><span class="line"><span class="cl"><span class="sd">      fi</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># Rancher cronjob</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">rancher</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">services</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c"># os-updater CRONJOB @hourly</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">os-updater</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">rancher/os-base:v1.5.5</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="l">/var/lib/rancher/os-updater.sh</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">labels</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">io.rancher.os.scope</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;system&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">cron.schedule</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;0 0 * * * ?&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">pid</span><span class="p">:</span><span class="w"> </span><span class="l">host</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">privileged</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">volumes_from</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span>- <span class="l">all-volumes</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c"># os-rebooter CRONJOB @minute</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">os-rebooter</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">rancher/os-base:v1.5.5</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="l">/var/lib/rancher/os-rebooter.sh</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">labels</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">io.rancher.os.scope</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;system&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">cron.schedule</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;0 * * * * ?&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">pid</span><span class="p">:</span><span class="w"> </span><span class="l">host</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">privileged</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">volumes_from</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span>- <span class="l">all-volumes</span><span class="w">
-</span></span></span></code></pre></div><p>Par la suite, avec mon fork de Kured, si le fichier &ndash;reboot-sentinel existe, il creera le fichier &ndash;host-sentinel, qui lui sera gerer par la cronjob systeme <code>os-rebooter</code>.</p>
-
-    
-    <div class="card-actions justify-between items-center mt-4">
-      
-        <div class="flex items-center">
-  
-  <span>@</span>
-  
-
-  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
-  
-    <span itemprop="name">Pascal Gauthier</span>
-  
-  </span>
-</div>
-
-      
-
-      <div class="flex items-center">
-        <ion-icon name="time" class="mr-1"></ion-icon>
-        <span>2 minute read</span>
-      </div>
-    </div>
-  </div>
-</a>
-
-          </div>
-        
-          <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
-            <a class="card bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/2019/tesla-ouvre-ses-brevets/">
-  
-
-  <div class="card-body">
-    <h2 class="card-title">Tesla ouvre ses brevets</h2>
-
-    <p class="date text-base-content/60">
-    
-      Wednesday, Dec 18, 2019
-    
-    </p>
-
-    <p>Elon Musk a decider d&rsquo;ouvrir ces brevets, ou du moins, ne pas demander de redevance. Pourquoi? Pour accelerer l&rsquo;adoption de vehicules electriques, afin de combattre les changements climatique. Bravo, un tres beau geste, apres l&rsquo;echec cuisant de la COP25 en Espagne.</p>
-<p>Je ne suis pas un tres grand fan de Musk, mais un geste comme celui-ci est un des gestes qu&rsquo;on devrait voir a l&rsquo;echelle mondial de la part des grandes entreprises.</p>
-
-    
-    <div class="card-actions justify-between items-center mt-4">
-      
-        <div class="flex items-center">
-  
-  <span>@</span>
-  
-
-  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
-  
-    <span itemprop="name">Pascal Gauthier</span>
-  
-  </span>
-</div>
-
-      
-
-      <div class="flex items-center">
-        <ion-icon name="time" class="mr-1"></ion-icon>
-        <span>1 minute read</span>
-      </div>
-    </div>
-  </div>
-</a>
-
-          </div>
-        
-          <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
-            <a class="card bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/2019/algorithme-de-recommandation/">
-  
-
-  <div class="card-body">
-    <h2 class="card-title">Algorithme de recommandation</h2>
-
-    <p class="date text-base-content/60">
-    
-      Saturday, Nov 23, 2019
-    
-    </p>
-
-    <p>Google News cette semaine m&rsquo;a sortie une nouvelle  extraordinaire&hellip; On a decouvert des insectes sur Mars!</p>
-<figure><img src="__GHOST_URL__/content/images/2019/11/Screenshot_2019-11-22_21-43-31.png">
-</figure>
-
-<p>Comme je ne crois pas n&rsquo;importe quoi, je verifie la source de cette nouvelle: American Association for the Advancement of Science (AAAS). Premier fais a noter, pourquoi la nouvelle ne viens pas de la Nasa, l&rsquo;ESA ou autres agence spaciales serieuse? J&rsquo;ai vite classe cette nouvelle dans la categorie &ldquo;fake news&rdquo; et passer a autres choses.</p>
-
-    
-    <div class="card-actions justify-between items-center mt-4">
-      
-        <div class="flex items-center">
-  
-  <span>@</span>
-  
-
-  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
-  
-    <span itemprop="name">Pascal Gauthier</span>
-  
-  </span>
-</div>
-
-      
-
-      <div class="flex items-center">
-        <ion-icon name="time" class="mr-1"></ion-icon>
-        <span>1 minute read</span>
-      </div>
-    </div>
-  </div>
-</a>
-
-          </div>
-        
-          <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
-            <a class="card bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/2019/dos-dot/">
-  
-
-  <div class="card-body">
-    <h2 class="card-title">DoH &amp;&amp; DoT</h2>
-
-    <p class="date text-base-content/60">
-    
-      Tuesday, Nov 12, 2019
-    
-    </p>
-
-    <p>Experiementation avec DNS over HTTPS et DNS over TLS cette semaine. DoH est maintenant supporte par Firefox, et les prochaines version vont l&rsquo;activer par default, du moins c&rsquo;est ce qui avait ete annonce, jusqu&rsquo;a ce que ca creer un faux scandale au UK (<a href="https://www.theregister.co.uk/2019/09/24/mozilla_backtracks_doh_for_uk_users/" target="_blank">https://www.theregister.co.uk/2019/09/24/mozilla_backtracks_doh_for_uk_users/</a>
-). L&rsquo;avantage du support directement dans le browser viens du fait qu&rsquo;il possede son propre client DNS, ce qui permet de ne pas utiliser le resolver systeme. Donc si votre destination utilise HTTPS, c&rsquo;est tres dur de pouvoir vous espionnez, car l&rsquo;espion peux seulement voir l&rsquo;IP du destinataire.</p>
-
-    
-    <div class="card-actions justify-between items-center mt-4">
-      
-        <div class="flex items-center">
-  
-  <span>@</span>
-  
-
-  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
-  
-    <span itemprop="name">Pascal Gauthier</span>
-  
-  </span>
-</div>
-
-      
-
-      <div class="flex items-center">
-        <ion-icon name="time" class="mr-1"></ion-icon>
-        <span>2 minute read</span>
-      </div>
-    </div>
-  </div>
-</a>
-
-          </div>
-        
-          <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
-            <a class="card bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/2019/transformer-un-vieux-t520-en-chromebook/">
-  
-
-  <div class="card-body">
-    <h2 class="card-title">Transformer un vieux T520 en Chromebook</h2>
-
-    <p class="date text-base-content/60">
-    
-      Tuesday, Oct 8, 2019
-    
-    </p>
-
-    <p>C&rsquo;est possible avec CloudReady, un fork de ChromeOS. Pour redonner vie a un vieux laptop de 2011, ca fait la job. Voici quelques bemols:</p>
-<ul>
-<li>Pas de support pour Google Play (application Android), parce que c&rsquo;est proprietaire (DUH)</li>
-<li>Viens avec VirtualBox, pourquoi?? quand KVM est natif et 100 fois mieux?</li>
-</ul>
-
-    
-    <div class="card-actions justify-between items-center mt-4">
-      
-        <div class="flex items-center">
-  
-  <span>@</span>
-  
-
-  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
-  
-    <span itemprop="name">Pascal Gauthier</span>
-  
-  </span>
-</div>
-
-      
-
-      <div class="flex items-center">
-        <ion-icon name="time" class="mr-1"></ion-icon>
-        <span>1 minute read</span>
-      </div>
-    </div>
-  </div>
-</a>
-
-          </div>
-        
-          <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
-            <a class="card bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/2019/comment-recuperer-un-license-windows-dun-bios-de-laptop/">
-  
-
-  <div class="card-body">
-    <h2 class="card-title">Comment recuperer une license Windows d&#39;un bios de laptop</h2>
-
-    <p class="date text-base-content/60">
-    
-      Wednesday, Oct 2, 2019
-    
-    </p>
-
-    <p>TADA: <code>sudo xxd /sys/firmware/acpi/tables/MSDM</code></p>
-
-    
-    <div class="card-actions justify-between items-center mt-4">
-      
-        <div class="flex items-center">
-  
-  <span>@</span>
-  
-
-  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
-  
-    <span itemprop="name">Pascal Gauthier</span>
-  
-  </span>
-</div>
-
-      
-
-      <div class="flex items-center">
-        <ion-icon name="time" class="mr-1"></ion-icon>
-        <span>1 minute read</span>
-      </div>
-    </div>
-  </div>
-</a>
-
-          </div>
-        
-          <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
-            <a class="card bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/2019/supression-de-facebook/">
-  
-
-  <div class="card-body">
-    <h2 class="card-title">Supression de Facebook</h2>
-
-    <p class="date text-base-content/60">
-    
-      Tuesday, Aug 27, 2019
-    
-    </p>
-
-    <p>Ca y est, c&rsquo;est fait. Compte Facebook supprimer. J&rsquo;ai erradique ce cancer qui cruge peu a peu ce monde &ldquo;moderne&rdquo;.</p>
-
-    
-    <div class="card-actions justify-between items-center mt-4">
-      
-        <div class="flex items-center">
-  
-  <span>@</span>
-  
-
-  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
-  
-    <span itemprop="name">Pascal Gauthier</span>
-  
-  </span>
-</div>
-
-      
-
-      <div class="flex items-center">
-        <ion-icon name="time" class="mr-1"></ion-icon>
-        <span>1 minute read</span>
-      </div>
-    </div>
-  </div>
-</a>
-
-          </div>
-        
-          <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
-            <a class="card bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/2019/amber-orange-light-on-tacx-vortex/">
-  
-
-  <div class="card-body">
-    <h2 class="card-title">Amber/Orange light on Tacx Vortex (T2180)</h2>
-
-    <p class="date text-base-content/60">
-    
-      Friday, Feb 22, 2019
-    
-    </p>
-
-    <p>In case you have this unfortunate event, and are unable to update your firmware. I provide you the restoration procedure sent to me by Tacx support. But before going into this process, I suggest you read this <a href="https://zwiftinsider.com/updating-your-tacx-smart-brake-firmware/" target="_blank">post</a>
-.</p>
-<p>** USE AT YOUR OWN RISK **</p>
-<pre tabindex="0"><code>Can you please try attached download firmware link on your smart trainer with the Tacx Utility app.
+  }"><div id=dream-global-bg></div><nav x-data="{ isSticky: false }" x-init="window.addEventListener('scroll', () => { isSticky = window.scrollY > 30 })" class="sticky top-0 z-30 mt-4 lg:mt-8 py-4" :class="{ 'bg-base-100 shadow-lg dark:border-b dark:border-base-content/30': isSticky }"><div class="container flex justify-between px-4"><section class="flex items-center gap-4"><div class="avatar cursor-pointer hover:avatar-online" @click="flip = !flip" title="Flip it!"><div class="h-10 rounded-full"><img src=/ alt=SIG11></div></div><div><a href=http://localhost:1313/ class="text-lg font-semibold cursor-pointer">SIG11</a><div class="text-base-content/60 text-sm">Observation, Experimentation et R&amp;D</div></div></section><div class="dropdown dropdown-end sm:hidden"><div tabindex=0 role=button class="btn btn-ghost btn-square" aria-label="Select an option"><ion-icon name=menu class=text-2xl></ion-icon></div><ul tabindex=0 class="dropdown-content menu w-36 bg-base-100 rounded-box z-1 shadow-md"><li><a class="group inline-flex items-center p-2 cursor-pointer" href=/search title=Search><ion-icon name=search></ion-icon>Search</a></li><li><a class="inline-flex items-center p-2 cursor-pointer" href=/index.xml title=RSS><ion-icon name=logo-rss></ion-icon>RSS</a></li><li><a class="inline-flex items-center p-2 cursor-pointer" href=/posts title=Archives><ion-icon name=archive></ion-icon>Archives</a></li><li><a class="inline-flex items-center p-2 cursor-pointer" href=/categories title="All Categories"><ion-icon name=grid></ion-icon>All Categories</a></li><li><a class="inline-flex items-center p-2 cursor-pointer" href=/tags title="All Tags"><ion-icon name=pricetags></ion-icon>All Tags</a></li></ul></div><section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4"><a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href=/search title=Search><ion-icon class=group-hover:text-primary-content name=search></ion-icon></a><a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href=/index.xml title=RSS><ion-icon class=group-hover:text-primary-content name=logo-rss></ion-icon></a><a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href=/posts title=Archives><ion-icon class=group-hover:text-primary-content name=archive></ion-icon></a><a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href=/categories title="All Categories"><ion-icon class=group-hover:text-primary-content name=grid></ion-icon></a><a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href=/tags title="All Tags"><ion-icon class=group-hover:text-primary-content name=pricetags></ion-icon></a></section></div></nav><div class=flip-container :class="{ 'flip-it': flip }"><div class=flipper><div class=front><div class=container><div class="flex flex-col md:flex-row mt-4"><div class="md:basis-[200px] lg:basis-[300px] p-4 prose dark:prose-invert"><h1 class=text-2xl>Technologie</h1><p class=text-sm>24 articles</p><div class="flex flex-wrap gap-4 mt-6"><a href=/categories/aviation/ class="badge h-6 no-underline hover:badge-primary">Aviation
+</a><a href=/categories/bike/ class="badge h-6 no-underline hover:badge-primary">Bike
+</a><a href=/categories/coding/ class="badge h-6 no-underline hover:badge-primary">Coding
+</a><a href=/categories/getting-started/ class="badge h-6 no-underline hover:badge-primary">Getting Started
+</a><a href=/categories/histoire/ class="badge h-6 no-underline hover:badge-primary">Histoire
+</a><a href=/categories/import-2023-04-08-1732/ class="badge h-6 no-underline hover:badge-primary">Import 2023-04-08 17:32
+</a><a href=/categories/informations/ class="badge h-6 no-underline hover:badge-primary">Informations
+</a><a href=/categories/news/ class="badge h-6 no-underline hover:badge-primary">News
+</a><a href=/categories/observation/ class="badge h-6 no-underline hover:badge-primary">Observation
+</a><a href=/categories/opinion/ class="badge h-6 no-underline hover:badge-primary">Opinion
+</a><a href=/categories/produit/ class="badge h-6 no-underline hover:badge-primary">Produit
+</a><a href=/categories/projet/ class="badge h-6 no-underline hover:badge-primary">Projet
+</a><a href=/categories/sante/ class="badge h-6 no-underline hover:badge-primary">Sante
+</a><a href=/categories/science/ class="badge h-6 no-underline hover:badge-primary">Science
+</a><span class="badge h-6 badge-primary">Technologie
+</span><a href=/categories/test/ class="badge h-6 no-underline hover:badge-primary">Test</a></div></div><div class="divider divider-vertical md:divider-horizontal px-4 md:px-0"></div><div class=flex-1><div class=dream-grid><div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column"><a class="card bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href=/posts/2020/petit-tool-pour-garder-vos-manifeste-k8s-a-jour/><div class=card-body><h2 class=card-title>Petit tool pour garder vos manifestes K8S a jour</h2><p class="date text-base-content/60">Saturday, May 30, 2020</p><p>Cette semaine j&rsquo;ai <a href=https://github.com/FairwindsOps/pluto/pull/79 target=_blank>contribue</a>
+a un petit projet qui permet de vous indiquer les manifestes qui sont a remplacer avant de faire un upgrade de Kubernetes. Ce projet s&rsquo;appele <a href=https://github.com/FairwindsOps/pluto target=_blank>Pluto</a>
+.</p><p>K8S 1.16 a fait un gros menage dans leurs supports d&rsquo;anciennes versions d&rsquo;api. Beaucoup de personnes on eu la mauvaise surprise de voir leurs applications interrompus. Soyez pas cette personne ;)</p><div class="card-actions justify-between items-center mt-4"><div class="flex items-center"><span>@</span>
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=name>Pascal Gauthier</span></span></div><div class="flex items-center"><ion-icon name=time class=mr-1></ion-icon><span>1 minute read</span></div></div></div></a></div><div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column"><a class="card bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href=/posts/2020/support-de-rancheros-pour-kured/><div class=card-body><h2 class=card-title>Support de RancherOS pour Kured</h2><p class="date text-base-content/60">Sunday, May 17, 2020</p><p>Pour ceux qui utilisent RKE/RancherOS pour leur cluster Kubernetes, j&rsquo;ai de quoi pour vous. Un patch a Kured qui permet de gerer les updates de RancherOS de facon securitaire.</p><figure class="kg-card kg-bookmark-card"><a href=https://github.com/laghoule/kured class=kg-bookmark-container><div class=kg-bookmark-content><div class=kg-bookmark-title>laghoule/kured</div><div class=kg-bookmark-description>Kubernetes Reboot Daemon. Contribute to laghoule/kured development by creating an account on GitHub.</div><div class=kg-bookmark-metadata><img src=https://github.githubassets.com/favicons/favicon.svg class=kg-bookmark-icon>
+<span class=kg-bookmark-author>laghoule</span>
+<span class=kg-bookmark-publisher>GitHub</span></div></div><div class=kg-bookmark-thumbnail><img src="https://avatars3.githubusercontent.com/u/1598055?s=400&amp;v=4"></div></a></figure><p>Comment ca fonctionne? Voici une config cloud-init pour updater et rebooter un node:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-yaml data-lang=yaml><span class=line><span class=cl><span class=nt>write_files</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>  </span><span class=c># Script to upgrade image OS if available (no reboot)</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>  </span><span class=c># Reboot is handled by K8S kured daemonset</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>  </span>- <span class=nt>path</span><span class=p>:</span><span class=w> </span><span class=l>/var/lib/rancher/os-updater.sh</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=nt>permissions</span><span class=p>:</span><span class=w> </span><span class=s2>&#34;0755&#34;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=nt>owner</span><span class=p>:</span><span class=w> </span><span class=l>root</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=nt>content</span><span class=p>:</span><span class=w> </span><span class=p>|</span><span class=sd>
+</span></span></span><span class=line><span class=cl><span class=sd>      #!/bin/sh
+</span></span></span><span class=line><span class=cl><span class=sd>
+</span></span></span><span class=line><span class=cl><span class=sd>      source /usr/share/ros/os-release
+</span></span></span><span class=line><span class=cl><span class=sd>
+</span></span></span><span class=line><span class=cl><span class=sd>      STATUS=0
+</span></span></span><span class=line><span class=cl><span class=sd>      OS_LOCATION=`sudo ros os list | head -n1 | awk {&#39;print $2&#39;}`
+</span></span></span><span class=line><span class=cl><span class=sd>      OS_VERSION=`sudo ros os list | head -n1 | awk {&#39;print $1&#39;} | cut -d : -f 2`
+</span></span></span><span class=line><span class=cl><span class=sd>
+</span></span></span><span class=line><span class=cl><span class=sd>      if [ &#34;$OS_LOCATION&#34; == &#34;local&#34; ] &amp;&amp; [ &#34;$OS_VERSION&#34; != &#34;$VERSION&#34; ]; then
+</span></span></span><span class=line><span class=cl><span class=sd>        echo &#34;Upgrade available&#34;
+</span></span></span><span class=line><span class=cl><span class=sd>        sudo ros os upgrade -f --no-reboot &amp;&gt;&gt; /var/log/os-updater.log
+</span></span></span><span class=line><span class=cl><span class=sd>        STATUS=$?
+</span></span></span><span class=line><span class=cl><span class=sd>        if [ $STATUS -eq 0 ]; then
+</span></span></span><span class=line><span class=cl><span class=sd>          sudo touch /var/lib/rancher/update/need_to_reboot
+</span></span></span><span class=line><span class=cl><span class=sd>        else
+</span></span></span><span class=line><span class=cl><span class=sd>          echo &#34;Upgrade failed&#34;
+</span></span></span><span class=line><span class=cl><span class=sd>        fi
+</span></span></span><span class=line><span class=cl><span class=sd>      else
+</span></span></span><span class=line><span class=cl><span class=sd>        echo &#34;No upgrade available&#34;
+</span></span></span><span class=line><span class=cl><span class=sd>      fi
+</span></span></span><span class=line><span class=cl><span class=sd>
+</span></span></span><span class=line><span class=cl><span class=sd>      exit $STATUS</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>  </span><span class=c># Check if it&#39;s a good time to reboot</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>  </span>- <span class=nt>path</span><span class=p>:</span><span class=w> </span><span class=l>/var/lib/rancher/os-rebooter.sh</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=nt>permissions</span><span class=p>:</span><span class=w> </span><span class=s2>&#34;0755&#34;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=nt>owner</span><span class=p>:</span><span class=w> </span><span class=l>root</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=nt>content</span><span class=p>:</span><span class=w> </span><span class=p>|</span><span class=sd>
+</span></span></span><span class=line><span class=cl><span class=sd>      #!/bin/sh
+</span></span></span><span class=line><span class=cl><span class=sd>      if [ -f /var/lib/rancher/update/reboot_now ] &amp;&amp; [ -f /var/lib/rancher/update/need_to_reboot ]; then
+</span></span></span><span class=line><span class=cl><span class=sd>        sudo rm /var/lib/rancher/update/need_to_reboot
+</span></span></span><span class=line><span class=cl><span class=sd>        sudo rm /var/lib/rancher/update/reboot_now
+</span></span></span><span class=line><span class=cl><span class=sd>        sudo reboot
+</span></span></span><span class=line><span class=cl><span class=sd>      fi</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=c># Rancher cronjob</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=nt>rancher</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>  </span><span class=nt>services</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=c># os-updater CRONJOB @hourly</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=nt>os-updater</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>      </span><span class=nt>image</span><span class=p>:</span><span class=w> </span><span class=l>rancher/os-base:v1.5.5</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>      </span><span class=nt>command</span><span class=p>:</span><span class=w> </span><span class=l>/var/lib/rancher/os-updater.sh</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>      </span><span class=nt>labels</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=nt>io.rancher.os.scope</span><span class=p>:</span><span class=w> </span><span class=s2>&#34;system&#34;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=nt>cron.schedule</span><span class=p>:</span><span class=w> </span><span class=s2>&#34;0 0 * * * ?&#34;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>      </span><span class=nt>pid</span><span class=p>:</span><span class=w> </span><span class=l>host</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>      </span><span class=nt>privileged</span><span class=p>:</span><span class=w> </span><span class=kc>true</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>      </span><span class=nt>volumes_from</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span>- <span class=l>all-volumes</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=c># os-rebooter CRONJOB @minute</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=nt>os-rebooter</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>      </span><span class=nt>image</span><span class=p>:</span><span class=w> </span><span class=l>rancher/os-base:v1.5.5</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>      </span><span class=nt>command</span><span class=p>:</span><span class=w> </span><span class=l>/var/lib/rancher/os-rebooter.sh</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>      </span><span class=nt>labels</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=nt>io.rancher.os.scope</span><span class=p>:</span><span class=w> </span><span class=s2>&#34;system&#34;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=nt>cron.schedule</span><span class=p>:</span><span class=w> </span><span class=s2>&#34;0 * * * * ?&#34;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>      </span><span class=nt>pid</span><span class=p>:</span><span class=w> </span><span class=l>host</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>      </span><span class=nt>privileged</span><span class=p>:</span><span class=w> </span><span class=kc>true</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>      </span><span class=nt>volumes_from</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span>- <span class=l>all-volumes</span><span class=w>
+</span></span></span></code></pre></div><p>Par la suite, avec mon fork de Kured, si le fichier &ndash;reboot-sentinel existe, il creera le fichier &ndash;host-sentinel, qui lui sera gerer par la cronjob systeme <code>os-rebooter</code>.</p><div class="card-actions justify-between items-center mt-4"><div class="flex items-center"><span>@</span>
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=name>Pascal Gauthier</span></span></div><div class="flex items-center"><ion-icon name=time class=mr-1></ion-icon><span>2 minute read</span></div></div></div></a></div><div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column"><a class="card bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href=/posts/2019/tesla-ouvre-ses-brevets/><div class=card-body><h2 class=card-title>Tesla ouvre ses brevets</h2><p class="date text-base-content/60">Wednesday, Dec 18, 2019</p><p>Elon Musk a decider d&rsquo;ouvrir ces brevets, ou du moins, ne pas demander de redevance. Pourquoi? Pour accelerer l&rsquo;adoption de vehicules electriques, afin de combattre les changements climatique. Bravo, un tres beau geste, apres l&rsquo;echec cuisant de la COP25 en Espagne.</p><p>Je ne suis pas un tres grand fan de Musk, mais un geste comme celui-ci est un des gestes qu&rsquo;on devrait voir a l&rsquo;echelle mondial de la part des grandes entreprises.</p><div class="card-actions justify-between items-center mt-4"><div class="flex items-center"><span>@</span>
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=name>Pascal Gauthier</span></span></div><div class="flex items-center"><ion-icon name=time class=mr-1></ion-icon><span>1 minute read</span></div></div></div></a></div><div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column"><a class="card bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href=/posts/2019/algorithme-de-recommandation/><div class=card-body><h2 class=card-title>Algorithme de recommandation</h2><p class="date text-base-content/60">Saturday, Nov 23, 2019</p><p>Google News cette semaine m&rsquo;a sortie une nouvelle extraordinaire&mldr; On a decouvert des insectes sur Mars!</p><figure><img src=__GHOST_URL__/content/images/2019/11/Screenshot_2019-11-22_21-43-31.png></figure><p>Comme je ne crois pas n&rsquo;importe quoi, je verifie la source de cette nouvelle: American Association for the Advancement of Science (AAAS). Premier fais a noter, pourquoi la nouvelle ne viens pas de la Nasa, l&rsquo;ESA ou autres agence spaciales serieuse? J&rsquo;ai vite classe cette nouvelle dans la categorie &ldquo;fake news&rdquo; et passer a autres choses.</p><div class="card-actions justify-between items-center mt-4"><div class="flex items-center"><span>@</span>
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=name>Pascal Gauthier</span></span></div><div class="flex items-center"><ion-icon name=time class=mr-1></ion-icon><span>1 minute read</span></div></div></div></a></div><div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column"><a class="card bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href=/posts/2019/dos-dot/><div class=card-body><h2 class=card-title>DoH && DoT</h2><p class="date text-base-content/60">Tuesday, Nov 12, 2019</p><p>Experiementation avec DNS over HTTPS et DNS over TLS cette semaine. DoH est maintenant supporte par Firefox, et les prochaines version vont l&rsquo;activer par default, du moins c&rsquo;est ce qui avait ete annonce, jusqu&rsquo;a ce que ca creer un faux scandale au UK (<a href=https://www.theregister.co.uk/2019/09/24/mozilla_backtracks_doh_for_uk_users/ target=_blank>https://www.theregister.co.uk/2019/09/24/mozilla_backtracks_doh_for_uk_users/</a>
+). L&rsquo;avantage du support directement dans le browser viens du fait qu&rsquo;il possede son propre client DNS, ce qui permet de ne pas utiliser le resolver systeme. Donc si votre destination utilise HTTPS, c&rsquo;est tres dur de pouvoir vous espionnez, car l&rsquo;espion peux seulement voir l&rsquo;IP du destinataire.</p><div class="card-actions justify-between items-center mt-4"><div class="flex items-center"><span>@</span>
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=name>Pascal Gauthier</span></span></div><div class="flex items-center"><ion-icon name=time class=mr-1></ion-icon><span>2 minute read</span></div></div></div></a></div><div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column"><a class="card bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href=/posts/2019/transformer-un-vieux-t520-en-chromebook/><div class=card-body><h2 class=card-title>Transformer un vieux T520 en Chromebook</h2><p class="date text-base-content/60">Tuesday, Oct 8, 2019</p><p>C&rsquo;est possible avec CloudReady, un fork de ChromeOS. Pour redonner vie a un vieux laptop de 2011, ca fait la job. Voici quelques bemols:</p><ul><li>Pas de support pour Google Play (application Android), parce que c&rsquo;est proprietaire (DUH)</li><li>Viens avec VirtualBox, pourquoi?? quand KVM est natif et 100 fois mieux?</li></ul><div class="card-actions justify-between items-center mt-4"><div class="flex items-center"><span>@</span>
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=name>Pascal Gauthier</span></span></div><div class="flex items-center"><ion-icon name=time class=mr-1></ion-icon><span>1 minute read</span></div></div></div></a></div><div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column"><a class="card bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href=/posts/2019/comment-recuperer-un-license-windows-dun-bios-de-laptop/><div class=card-body><h2 class=card-title>Comment recuperer une license Windows d'un bios de laptop</h2><p class="date text-base-content/60">Wednesday, Oct 2, 2019</p><p>TADA: <code>sudo xxd /sys/firmware/acpi/tables/MSDM</code></p><div class="card-actions justify-between items-center mt-4"><div class="flex items-center"><span>@</span>
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=name>Pascal Gauthier</span></span></div><div class="flex items-center"><ion-icon name=time class=mr-1></ion-icon><span>1 minute read</span></div></div></div></a></div><div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column"><a class="card bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href=/posts/2019/supression-de-facebook/><div class=card-body><h2 class=card-title>Supression de Facebook</h2><p class="date text-base-content/60">Tuesday, Aug 27, 2019</p><p>Ca y est, c&rsquo;est fait. Compte Facebook supprimer. J&rsquo;ai erradique ce cancer qui cruge peu a peu ce monde &ldquo;moderne&rdquo;.</p><div class="card-actions justify-between items-center mt-4"><div class="flex items-center"><span>@</span>
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=name>Pascal Gauthier</span></span></div><div class="flex items-center"><ion-icon name=time class=mr-1></ion-icon><span>1 minute read</span></div></div></div></a></div><div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column"><a class="card bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href=/posts/2019/amber-orange-light-on-tacx-vortex/><div class=card-body><h2 class=card-title>Amber/Orange light on Tacx Vortex (T2180)</h2><p class="date text-base-content/60">Friday, Feb 22, 2019</p><p>In case you have this unfortunate event, and are unable to update your firmware. I provide you the restoration procedure sent to me by Tacx support. But before going into this process, I suggest you read this <a href=https://zwiftinsider.com/updating-your-tacx-smart-brake-firmware/ target=_blank>post</a>
+.</p><p>** USE AT YOUR OWN RISK **</p><pre tabindex=0><code>Can you please try attached download firmware link on your smart trainer with the Tacx Utility app.
 
 Forward his email to an mail address that you can access on your smart phone.
 Now open the email on your smartphone and click on the link below:
@@ -810,251 +109,19 @@ Choose to open this file with the Tacx Utility app and connect your trainer (wai
 When your trainer is connected choose &#34;Update&#34; to begin the firmware installation.
 Wait for the firmware installation to complete and follow the instructions on screen when necessary.
 Once the firmware is installed, you can use your trainer again.
-</code></pre><p>The procedure take about 10 min to flash, and the final result:</p>
-
-    
-    <div class="card-actions justify-between items-center mt-4">
-      
-        <div class="flex items-center">
-  
-  <span>@</span>
-  
-
-  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
-  
-    <span itemprop="name">Pascal Gauthier</span>
-  
-  </span>
-</div>
-
-      
-
-      <div class="flex items-center">
-        <ion-icon name="time" class="mr-1"></ion-icon>
-        <span>1 minute read</span>
-      </div>
-    </div>
-  </div>
-</a>
-
-          </div>
-        
-          <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
-            <a class="card bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/2018/revue-technologique-2018/">
-  
-
-  <div class="card-body">
-    <h2 class="card-title">Revue technologique 2018</h2>
-
-    <p class="date text-base-content/60">
-    
-      Wednesday, Dec 26, 2018
-    
-    </p>
-
-    <p>Deux sujets on particulierement fait parle cette annee: Securite et Kubernetes. L&rsquo;annee 2018 a commence par la publication des fameux bugs de securites des branches de preductions des CPU modernes (Spectre et Meltdown). On peut dire que ce fut un vrai <code>meltdown</code> de la part d&rsquo;Intel particulierement, qui a reussi a s&rsquo;aliener une bonne partie de la comunaute OpenSource, grace a des pratiques de securite innaproprier pour les modeles <code>Ouvert</code>. 2019 va continuer avec la decouverte de nouvelles variantes de ces bugs et vecteurs d&rsquo;attaques.</p>
-
-    
-    <div class="card-actions justify-between items-center mt-4">
-      
-        <div class="flex items-center">
-  
-  <span>@</span>
-  
-
-  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
-  
-    <span itemprop="name">Pascal Gauthier</span>
-  
-  </span>
-</div>
-
-      
-
-      <div class="flex items-center">
-        <ion-icon name="time" class="mr-1"></ion-icon>
-        <span>2 minute read</span>
-      </div>
-    </div>
-  </div>
-</a>
-
-          </div>
-        
-      </div>
-    
-
-    
-    <div class="flex justify-center pt-8">
-      <div class="join grid grid-cols-2">
-  
-  <a href="/categories/technologie/" title=Previous&#32;page class="join-item btn btn-outline btn-sm">
-    Previous page
-  </a>
-  
-  
-  <a href="/categories/technologie/page/3/" title="Next page" class="join-item btn btn-outline btn-sm">
-    Next page
-  </a>
-  
-</div>
-
-    </div>
-    
-  </div>
-</div>
-
-
-
-            
-<footer class="flex justify-between items-center gap-2 px-4 py-12">
-
-  <div>
-  
-  <p>© 2025 SIG11</p>
-  
-
-  
-  <p class="text-sm">
-    🌱
-    <span class="text-base-content/60">
-      Powered by <a class="hover:underline" href="https://gohugo.io/" target="_blank">Hugo</a> with theme
-      <a class="hover:underline" href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</span
-    >
-  </p>
-  
-</div>
-
-  <div
-  x-data="{ icons: [
+</code></pre><p>The procedure take about 10 min to flash, and the final result:</p><div class="card-actions justify-between items-center mt-4"><div class="flex items-center"><span>@</span>
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=name>Pascal Gauthier</span></span></div><div class="flex items-center"><ion-icon name=time class=mr-1></ion-icon><span>1 minute read</span></div></div></div></a></div><div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column"><a class="card bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href=/posts/2018/revue-technologique-2018/><div class=card-body><h2 class=card-title>Revue technologique 2018</h2><p class="date text-base-content/60">Wednesday, Dec 26, 2018</p><p>Deux sujets on particulierement fait parle cette annee: Securite et Kubernetes. L&rsquo;annee 2018 a commence par la publication des fameux bugs de securites des branches de preductions des CPU modernes (Spectre et Meltdown). On peut dire que ce fut un vrai <code>meltdown</code> de la part d&rsquo;Intel particulierement, qui a reussi a s&rsquo;aliener une bonne partie de la comunaute OpenSource, grace a des pratiques de securite innaproprier pour les modeles <code>Ouvert</code>. 2019 va continuer avec la decouverte de nouvelles variantes de ces bugs et vecteurs d&rsquo;attaques.</p><div class="card-actions justify-between items-center mt-4"><div class="flex items-center"><span>@</span>
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=name>Pascal Gauthier</span></span></div><div class="flex items-center"><ion-icon name=time class=mr-1></ion-icon><span>2 minute read</span></div></div></div></a></div></div><div class="flex justify-center pt-8"><div class="join grid grid-cols-2"><a href=/categories/technologie/ title="Previous page" class="join-item btn btn-outline btn-sm">Previous page
+</a><a href=/categories/technologie/page/3/ title="Next page" class="join-item btn btn-outline btn-sm">Next page</a></div></div></div></div><footer class="flex justify-between items-center gap-2 px-4 py-12"><div><p>© 2025 SIG11</p><p class=text-sm>🌱
+<span class=text-base-content/60>Powered by <a class=hover:underline href=https://gohugo.io/ target=_blank>Hugo</a> with theme
+<a class=hover:underline href=https://github.com/g1eny0ung/hugo-theme-dream target=_blank>Dream</a>.</span></p></div><div x-data="{ icons: [
     { name: 'sunny', status: 'n' },
     { name: 'moon', status: 'y' },
     { name: 'desktop', status: 'auto' }
-  ] }"
-  class="flex items-center gap-2 h-[32px] px-2 bg-base-100 border border-base-content/30 rounded-full"
->
-  <template x-for="icon in icons">
-    <div
-      role="button"
-      tabindex="0"
-      :aria-label="'Select ' + icon.name + ' mode'"
-      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
-      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
-      @click="$store.darkMode.toggle(icon.status)"
-    >
-      <ion-icon
-        :name="`${icon.name}-outline`"
-        class="group-hover:text-primary-content"
-        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
-      >
-      </ion-icon>
-    </div>
-  </template>
-</div>
-
-</footer>
-
-          </div>
-        </div>
-        <div class="back">
-          <div class="container">
-            
-            <div class="dream-grid dream-grid-about">
-  
-
-  
-
-  
-</div>
-
-            
-
-            
-<footer class="flex justify-between items-center gap-2 px-4 py-12">
-
-  <div>
-  
-  <p>© 2025 SIG11</p>
-  
-
-  
-  <p class="text-sm">
-    🌱
-    <span class="text-base-content/60">
-      Powered by <a class="hover:underline" href="https://gohugo.io/" target="_blank">Hugo</a> with theme
-      <a class="hover:underline" href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</span
-    >
-  </p>
-  
-</div>
-
-  <div
-  x-data="{ icons: [
+  ] }" class="flex items-center gap-2 h-[32px] px-2 bg-base-100 border border-base-content/30 rounded-full"><template x-for="icon in icons"><div role=button tabindex=0 :aria-label="'Select ' + icon.name + ' mode'" class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary" :class="$store.darkMode.icon() === icon.name && 'bg-primary'" @click=$store.darkMode.toggle(icon.status)><ion-icon :name="`${icon.name}-outline`" class=group-hover:text-primary-content :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"></ion-icon></div></template></div></footer></div></div><div class=back><div class=container><div class="dream-grid dream-grid-about"></div><footer class="flex justify-between items-center gap-2 px-4 py-12"><div><p>© 2025 SIG11</p><p class=text-sm>🌱
+<span class=text-base-content/60>Powered by <a class=hover:underline href=https://gohugo.io/ target=_blank>Hugo</a> with theme
+<a class=hover:underline href=https://github.com/g1eny0ung/hugo-theme-dream target=_blank>Dream</a>.</span></p></div><div x-data="{ icons: [
     { name: 'sunny', status: 'n' },
     { name: 'moon', status: 'y' },
     { name: 'desktop', status: 'auto' }
-  ] }"
-  class="flex items-center gap-2 h-[32px] px-2 bg-base-100 border border-base-content/30 rounded-full"
->
-  <template x-for="icon in icons">
-    <div
-      role="button"
-      tabindex="0"
-      :aria-label="'Select ' + icon.name + ' mode'"
-      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
-      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
-      @click="$store.darkMode.toggle(icon.status)"
-    >
-      <ion-icon
-        :name="`${icon.name}-outline`"
-        class="group-hover:text-primary-content"
-        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
-      >
-      </ion-icon>
-    </div>
-  </template>
-</div>
-
-</footer>
-
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <script>
-  window.lightTheme = "emerald"
-  window.darkTheme = "forest"
-</script>
-
-
-  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
-
-  
-  
-  <script src="/js/grid.js"></script>
-
-
-
-
-<script src="/js/main.js"></script>
-
-    
-
-
-
-
-
-    
-
-    
-
-    
-
-    
-
-    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@7.4.0/dist/ionicons/ionicons.esm.js" integrity="sha256-/IFmi82bIhdYWctu0UddSlJqpnzWm7Vh2C4CM32wF/k=" crossorigin="anonymous"></script>
-    <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@7.4.0/dist/ionicons/ionicons.js" integrity="sha256-mr7eJMX3VC3F7G32mk4oWp1C6a2tlMYxUdptfT7uKI8=" crossorigin="anonymous"></script>
-  </body>
-</html>
+  ] }" class="flex items-center gap-2 h-[32px] px-2 bg-base-100 border border-base-content/30 rounded-full"><template x-for="icon in icons"><div role=button tabindex=0 :aria-label="'Select ' + icon.name + ' mode'" class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary" :class="$store.darkMode.icon() === icon.name && 'bg-primary'" @click=$store.darkMode.toggle(icon.status)><ion-icon :name="`${icon.name}-outline`" class=group-hover:text-primary-content :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"></ion-icon></div></template></div></footer></div></div></div></div><script>window.lightTheme="emerald",window.darkTheme="forest"</script><script src=https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin=anonymous></script><script src=https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin=anonymous></script><script src=/js/grid.js></script><script src=/js/main.js></script><script type=module src=https://cdn.jsdelivr.net/npm/ionicons@7.4.0/dist/ionicons/ionicons.esm.js integrity="sha256-/IFmi82bIhdYWctu0UddSlJqpnzWm7Vh2C4CM32wF/k=" crossorigin=anonymous></script><script nomodule src=https://cdn.jsdelivr.net/npm/ionicons@7.4.0/dist/ionicons/ionicons.js integrity="sha256-mr7eJMX3VC3F7G32mk4oWp1C6a2tlMYxUdptfT7uKI8=" crossorigin=anonymous></script></body></html>

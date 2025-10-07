@@ -1,68 +1,40 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Produit on SIG11</title>
-    <link>http://localhost:1313/tags/produit/</link>
-    <description>Recent content in Produit on SIG11</description>
-    <generator>Hugo</generator>
-    <language>ca-fr</language>
-    <lastBuildDate>Sun, 09 Apr 2023 00:39:56 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/produit/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>T14 Gen 3 (AMD)</title>
-      <link>http://localhost:1313/posts/2023/t14-gen-3-amd/</link>
-      <pubDate>Sun, 09 Apr 2023 00:39:56 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/t14-gen-3-amd/</guid>
-      <description>&lt;p&gt;J&amp;rsquo;ai dernierement change mon Lenovo T470 par le nouveau Lenovo T14 Gen3 (AMD). Pourquoi? Bien que mon ancien laptop etait parfaitement capable de faire la job, je voullais avoir plus de cores, et de RAM.&lt;/p&gt;&#xA;&lt;p&gt;Le CPU Ryzen 7 6850U offre d&amp;rsquo;excellente performance avec son 8 cores, 16 threads. Pour un prix abordable.&lt;/p&gt;&#xA;&lt;p&gt;Je passe a 32G de RAM, ce qui permet de loader plusieurs VM, et containers. C&amp;rsquo;est maintenant possible de tester un cluster Kubernetes, avec multiple composantes installees (prometheus, grafana, loki, etc).&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>K0S distribution</title>
-      <link>http://localhost:1313/posts/2023/k0s-distribution/</link>
-      <pubDate>Sun, 09 Apr 2023 00:37:47 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023/k0s-distribution/</guid>
-      <description>&lt;p&gt;Avec la popularite de Kubernetes aujourd&amp;rsquo;hui, de multiples solutions d&amp;rsquo;installation sont disponible. Une de ces &amp;ldquo;distributions&amp;rdquo; est &lt;a href=&#34;https://web.archive.org/web/20230224143959/https://github.com/k0sproject/k0s&#34; target=&#34;_blank&#34;&gt;K0S&lt;/a&gt;&#xA;. Creer au depart par &lt;a href=&#34;https://web.archive.org/web/20230224143959/https://www.mirantis.com/&#34; target=&#34;_blank&#34;&gt;Mirantis&lt;/a&gt;&#xA;, et par la suite donner publier comme logiciel libre.&lt;/p&gt;&#xA;&lt;p&gt;Apres quelques tests sur un cluster de dev, j&amp;rsquo;ai decider de poursuivre avec cette distribution pour mon home cluster &amp;ldquo;prod&amp;rdquo;.&lt;/p&gt;&#xA;&lt;p&gt;La configuration et l&amp;rsquo;installation est tres simple. Si vous avez deja utilise Rancher RKE1, c&amp;rsquo;est pratiquement la meme approche.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Migration a DOKS</title>
-      <link>http://localhost:1313/posts/2020/golang/</link>
-      <pubDate>Mon, 24 Aug 2020 18:17:28 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2020/golang/</guid>
-      <description>&lt;p&gt;J&amp;rsquo;ai decide de migrer vers DOKS (DigitalOcean Kubernetes) pour hoster mon blog, et mes projets personnel. Ayant toucher a plusieurs &amp;ldquo;managed&amp;rdquo; Kubernetes, je dois dire que je suis agreablement surpris.&lt;/p&gt;&#xA;&lt;p&gt;external-dns et Cloudflare marche bien aussi, etant plus habituer a utiliser Route53.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Hello world</title>
-      <link>http://localhost:1313/posts/2019/hello-world/</link>
-      <pubDate>Fri, 06 Dec 2019 00:42:43 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2019/hello-world/</guid>
-      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-golang&#34; data-lang=&#34;golang&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;package&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;fmt&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;fmt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;Println&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;Hello World&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;figure&gt;&lt;img src=&#34;__GHOST_URL__/content/images/2019/12/IMG_20191205_150502-3.jpg&#34;&#xA;    alt=&#34;go run main.go&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;p&gt;go run main.go&lt;/p&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;</description>
-    </item>
-    <item>
-      <title>Bob Ibex 28 plus</title>
-      <link>http://localhost:1313/posts/2019/bob-ibex-28-plus/</link>
-      <pubDate>Sun, 10 Mar 2019 20:44:18 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2019/bob-ibex-28-plus/</guid>
-      <description>&lt;p&gt;Ca fait longtemps que j&amp;rsquo;y pensais, c&amp;rsquo;est maintenant fait. Le gros avantage de ce trailer, il fit sur tout mes velo (avec l&amp;rsquo;achat d&amp;rsquo;un adapteur pour mes velo de montagne). Je peux faire du singletrack, ou de la route.&#xA;&lt;a href=&#34;https://youtu.be/5aMFgMuBXvI&#34; target=&#34;_blank&#34;&gt;&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;iframe width=&#34;459&#34; height=&#34;344&#34; src=&#34;https://www.youtube.com/embed/5aMFgMuBXvI?feature=oembed&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;</description>
-    </item>
-    <item>
-      <title>Amber/Orange light on Tacx Vortex (T2180)</title>
-      <link>http://localhost:1313/posts/2019/amber-orange-light-on-tacx-vortex/</link>
-      <pubDate>Fri, 22 Feb 2019 01:17:12 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2019/amber-orange-light-on-tacx-vortex/</guid>
-      <description>&lt;p&gt;In case you have this unfortunate event, and are unable to update your firmware. I provide you the restoration procedure sent to me by Tacx support. But before going into this process, I suggest you read this &lt;a href=&#34;https://zwiftinsider.com/updating-your-tacx-smart-brake-firmware/&#34; target=&#34;_blank&#34;&gt;post&lt;/a&gt;&#xA;.&lt;/p&gt;&#xA;&lt;p&gt;** USE AT YOUR OWN RISK **&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Can you please try attached download firmware link on your smart trainer with the Tacx Utility app.&#xA;&#xA;Forward his email to an mail address that you can access on your smart phone.&#xA;Now open the email on your smartphone and click on the link below:&#xA;&#xA;https://drive.google.com/file/d/1aqXF87xR-YqtD-Y7kCcHBm-Ev70ZlrGD/view?usp=sharing&#xA;&#xA;Be sure to click on the download button (marked by a red circle in the image below).&#xA;&#xA;Choose to open this file with the Tacx Utility app and connect your trainer (wait for the circle to become green).&#xA;When your trainer is connected choose &amp;#34;Update&amp;#34; to begin the firmware installation.&#xA;Wait for the firmware installation to complete and follow the instructions on screen when necessary.&#xA;Once the firmware is installed, you can use your trainer again.&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The procedure take about 10 min to flash, and the final result:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Motivation: Zwift</title>
-      <link>http://localhost:1313/posts/2018/motivation-zwift/</link>
-      <pubDate>Sun, 16 Dec 2018 13:33:21 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2018/motivation-zwift/</guid>
-      <description>&lt;iframe width=&#34;480&#34; height=&#34;270&#34; src=&#34;https://www.youtube.com/embed/q8fArWR-CsE?feature=oembed&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&#xA;&lt;p&gt;Pour me motiver a reprendre l&amp;rsquo;entrainnement, j&amp;rsquo;ai decide de joindre le &amp;ldquo;mouvement&amp;rdquo; Zwift. J&amp;rsquo;ai donc du changer de bike trainer, car pour utiliser Zwift, il faut setup un peu plus evoluer. J&amp;rsquo;ai opte pour un Tacx Vortex smart. C&amp;rsquo;est un model de base, mais ca fera l&amp;rsquo;affaire (c&amp;rsquo;est un hobby, pas une profession).&lt;/p&gt;&#xA;&lt;p&gt;Comme je n&amp;rsquo;ai pas d&amp;rsquo;ordinateur Windows ou Mac, j&amp;rsquo;ai installe l&amp;rsquo;application mobile Android, qui se trouve encore en mode beta. L&amp;rsquo;application semble avoir ete porter sur android, sans trop de regard au fais que ca roulle sur un telephone. Une option que j&amp;rsquo;aimerais vraiment voir eventuellement, c&amp;rsquo;est la possibilite de &amp;ldquo;caster&amp;rdquo; sur une TV. Presentement le seul moyen est de caste le telephone sur le TV. Ca fonctionne, mais le telephone doit rester ouvert tout le long de la session.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Ghost</title>
-      <link>http://localhost:1313/posts/2018/ghost-post/</link>
-      <pubDate>Wed, 24 Oct 2018 12:24:28 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2018/ghost-post/</guid>
-      <description>&lt;p&gt;Simple &amp;amp; rapide et decidemment plus secure que Wordpress. L&amp;rsquo;installation via les droplets preconfigure de Digital Ocean est un plus.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Produit on SIG11</title><link>http://localhost:1313/tags/produit/</link><description>Recent content in Produit on SIG11</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 09 Apr 2023 00:39:56 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/produit/index.xml" rel="self" type="application/rss+xml"/><item><title>T14 Gen 3 (AMD)</title><link>http://localhost:1313/posts/2023/t14-gen-3-amd/</link><pubDate>Sun, 09 Apr 2023 00:39:56 +0000</pubDate><guid>http://localhost:1313/posts/2023/t14-gen-3-amd/</guid><description>&lt;p&gt;J&amp;rsquo;ai dernierement change mon Lenovo T470 par le nouveau Lenovo T14 Gen3 (AMD). Pourquoi? Bien que mon ancien laptop etait parfaitement capable de faire la job, je voullais avoir plus de cores, et de RAM.&lt;/p&gt;
+&lt;p&gt;Le CPU Ryzen 7 6850U offre d&amp;rsquo;excellente performance avec son 8 cores, 16 threads. Pour un prix abordable.&lt;/p&gt;
+&lt;p&gt;Je passe a 32G de RAM, ce qui permet de loader plusieurs VM, et containers. C&amp;rsquo;est maintenant possible de tester un cluster Kubernetes, avec multiple composantes installees (prometheus, grafana, loki, etc).&lt;/p&gt;</description></item><item><title>K0S distribution</title><link>http://localhost:1313/posts/2023/k0s-distribution/</link><pubDate>Sun, 09 Apr 2023 00:37:47 +0000</pubDate><guid>http://localhost:1313/posts/2023/k0s-distribution/</guid><description>&lt;p&gt;Avec la popularite de Kubernetes aujourd&amp;rsquo;hui, de multiples solutions d&amp;rsquo;installation sont disponible. Une de ces &amp;ldquo;distributions&amp;rdquo; est &lt;a href="https://web.archive.org/web/20230224143959/https://github.com/k0sproject/k0s" target="_blank"&gt;K0S&lt;/a&gt;
+. Creer au depart par &lt;a href="https://web.archive.org/web/20230224143959/https://www.mirantis.com/" target="_blank"&gt;Mirantis&lt;/a&gt;
+, et par la suite donner publier comme logiciel libre.&lt;/p&gt;
+&lt;p&gt;Apres quelques tests sur un cluster de dev, j&amp;rsquo;ai decider de poursuivre avec cette distribution pour mon home cluster &amp;ldquo;prod&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;La configuration et l&amp;rsquo;installation est tres simple. Si vous avez deja utilise Rancher RKE1, c&amp;rsquo;est pratiquement la meme approche.&lt;/p&gt;</description></item><item><title>Migration a DOKS</title><link>http://localhost:1313/posts/2020/golang/</link><pubDate>Mon, 24 Aug 2020 18:17:28 +0000</pubDate><guid>http://localhost:1313/posts/2020/golang/</guid><description>&lt;p&gt;J&amp;rsquo;ai decide de migrer vers DOKS (DigitalOcean Kubernetes) pour hoster mon blog, et mes projets personnel. Ayant toucher a plusieurs &amp;ldquo;managed&amp;rdquo; Kubernetes, je dois dire que je suis agreablement surpris.&lt;/p&gt;
+&lt;p&gt;external-dns et Cloudflare marche bien aussi, etant plus habituer a utiliser Route53.&lt;/p&gt;</description></item><item><title>Hello world</title><link>http://localhost:1313/posts/2019/hello-world/</link><pubDate>Fri, 06 Dec 2019 00:42:43 +0000</pubDate><guid>http://localhost:1313/posts/2019/hello-world/</guid><description>&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-golang" data-lang="golang"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kn"&gt;package&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;main&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;#34;fmt&amp;#34;&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="kd"&gt;func&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;fmt&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;Println&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#34;Hello World&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;figure&gt;&lt;img src="__GHOST_URL__/content/images/2019/12/IMG_20191205_150502-3.jpg"
+ alt="go run main.go"&gt;&lt;figcaption&gt;
+ &lt;p&gt;go run main.go&lt;/p&gt;
+ &lt;/figcaption&gt;
+&lt;/figure&gt;</description></item><item><title>Bob Ibex 28 plus</title><link>http://localhost:1313/posts/2019/bob-ibex-28-plus/</link><pubDate>Sun, 10 Mar 2019 20:44:18 +0000</pubDate><guid>http://localhost:1313/posts/2019/bob-ibex-28-plus/</guid><description>&lt;p&gt;Ca fait longtemps que j&amp;rsquo;y pensais, c&amp;rsquo;est maintenant fait. Le gros avantage de ce trailer, il fit sur tout mes velo (avec l&amp;rsquo;achat d&amp;rsquo;un adapteur pour mes velo de montagne). Je peux faire du singletrack, ou de la route.
+&lt;a href="https://youtu.be/5aMFgMuBXvI" target="_blank"&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;iframe width="459" height="344" src="https://www.youtube.com/embed/5aMFgMuBXvI?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</description></item><item><title>Amber/Orange light on Tacx Vortex (T2180)</title><link>http://localhost:1313/posts/2019/amber-orange-light-on-tacx-vortex/</link><pubDate>Fri, 22 Feb 2019 01:17:12 +0000</pubDate><guid>http://localhost:1313/posts/2019/amber-orange-light-on-tacx-vortex/</guid><description>&lt;p&gt;In case you have this unfortunate event, and are unable to update your firmware. I provide you the restoration procedure sent to me by Tacx support. But before going into this process, I suggest you read this &lt;a href="https://zwiftinsider.com/updating-your-tacx-smart-brake-firmware/" target="_blank"&gt;post&lt;/a&gt;
+.&lt;/p&gt;
+&lt;p&gt;** USE AT YOUR OWN RISK **&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;Can you please try attached download firmware link on your smart trainer with the Tacx Utility app.
+
+Forward his email to an mail address that you can access on your smart phone.
+Now open the email on your smartphone and click on the link below:
+
+https://drive.google.com/file/d/1aqXF87xR-YqtD-Y7kCcHBm-Ev70ZlrGD/view?usp=sharing
+
+Be sure to click on the download button (marked by a red circle in the image below).
+
+Choose to open this file with the Tacx Utility app and connect your trainer (wait for the circle to become green).
+When your trainer is connected choose &amp;#34;Update&amp;#34; to begin the firmware installation.
+Wait for the firmware installation to complete and follow the instructions on screen when necessary.
+Once the firmware is installed, you can use your trainer again.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The procedure take about 10 min to flash, and the final result:&lt;/p&gt;</description></item><item><title>Motivation: Zwift</title><link>http://localhost:1313/posts/2018/motivation-zwift/</link><pubDate>Sun, 16 Dec 2018 13:33:21 +0000</pubDate><guid>http://localhost:1313/posts/2018/motivation-zwift/</guid><description>&lt;iframe width="480" height="270" src="https://www.youtube.com/embed/q8fArWR-CsE?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;Pour me motiver a reprendre l&amp;rsquo;entrainnement, j&amp;rsquo;ai decide de joindre le &amp;ldquo;mouvement&amp;rdquo; Zwift. J&amp;rsquo;ai donc du changer de bike trainer, car pour utiliser Zwift, il faut setup un peu plus evoluer. J&amp;rsquo;ai opte pour un Tacx Vortex smart. C&amp;rsquo;est un model de base, mais ca fera l&amp;rsquo;affaire (c&amp;rsquo;est un hobby, pas une profession).&lt;/p&gt;
+&lt;p&gt;Comme je n&amp;rsquo;ai pas d&amp;rsquo;ordinateur Windows ou Mac, j&amp;rsquo;ai installe l&amp;rsquo;application mobile Android, qui se trouve encore en mode beta. L&amp;rsquo;application semble avoir ete porter sur android, sans trop de regard au fais que ca roulle sur un telephone. Une option que j&amp;rsquo;aimerais vraiment voir eventuellement, c&amp;rsquo;est la possibilite de &amp;ldquo;caster&amp;rdquo; sur une TV. Presentement le seul moyen est de caste le telephone sur le TV. Ca fonctionne, mais le telephone doit rester ouvert tout le long de la session.&lt;/p&gt;</description></item><item><title>Ghost</title><link>http://localhost:1313/posts/2018/ghost-post/</link><pubDate>Wed, 24 Oct 2018 12:24:28 +0000</pubDate><guid>http://localhost:1313/posts/2018/ghost-post/</guid><description>&lt;p&gt;Simple &amp;amp; rapide et decidemment plus secure que Wordpress. L&amp;rsquo;installation via les droplets preconfigure de Digital Ocean est un plus.&lt;/p&gt;</description></item></channel></rss>

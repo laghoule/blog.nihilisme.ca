@@ -1,7 +1,7 @@
 +++
 categories = ["projet", "coding", "technologie"]
 date = 2025-03-30T23:20:50Z
-description = ""
+description = "Petit projet personel pour scaler des workload avec des PVC."
 draft = false
 cover = "posts/2025/03/Untitled.png"
 slug = "pvcscaler"
