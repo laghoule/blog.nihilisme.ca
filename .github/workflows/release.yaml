@@ -15,7 +15,7 @@ jobs:
         env:
           VERSION: ${{ env.VERSION }}
         with:
-          name: laghoule/blog
+          name: laghoule/blog.nihilisme.ca
           username: ${{ secrets.DOCKERHUB_USER }}
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
           buildargs: VERSION
