@@ -1,331 +1,544 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Import 2023-04-08 17:32 on SIG11</title><link>http://localhost:1313/tags/import-2023-04-08-1732/</link><description>Recent content in Import 2023-04-08 17:32 on SIG11</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 25 Dec 2021 01:24:58 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/import-2023-04-08-1732/index.xml" rel="self" type="application/rss+xml"/><item><title>Quintessence 2021</title><link>http://localhost:1313/posts/2021/quintessence/</link><pubDate>Sat, 25 Dec 2021 01:24:58 +0000</pubDate><guid>http://localhost:1313/posts/2021/quintessence/</guid><description>&lt;iframe width="200" height="113" src="https://www.youtube.com/embed/i5XJVY6YzWE?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;p&gt;Je pense que ca represente bien l&amp;rsquo;annee 2021&amp;hellip;&lt;/p&gt;</description></item><item><title>Short on space in /boot?</title><link>http://localhost:1313/posts/2021/short-on-space-in-boot/</link><pubDate>Fri, 15 Oct 2021 01:12:42 +0000</pubDate><guid>http://localhost:1313/posts/2021/short-on-space-in-boot/</guid><description>&lt;p&gt;Edit /etc/initramfs-tools/initramfs.conf (Debian) and replace &lt;code&gt;MODULES=dep&lt;/code&gt; with &lt;code&gt;MODULES=dep&lt;/code&gt;. This will reduce the size of the initrd.img image by guessing modules to include.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;#
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;# MODULES: [ most | netboot | dep | list ]
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;#
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;# most - Add most filesystem and all harddrive drivers.
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;#
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;# dep - Try and guess which modules to load.
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;#
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;# netboot - Add the base modules, network modules, but skip block devices.
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;#
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;# list - Only include modules from the &amp;#39;additional modules&amp;#39; list
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;#
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;MODULES=dep
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;em&gt;PS: Use at your own risk&lt;/em&gt;&lt;/p&gt;</description></item><item><title>Spotify playlist</title><link>http://localhost:1313/posts/2021/spotify-playlist/</link><pubDate>Fri, 15 Oct 2021 00:58:48 +0000</pubDate><guid>http://localhost:1313/posts/2021/spotify-playlist/</guid><description>&lt;p&gt;Je vous partage ma playlist de &lt;code&gt;BestOF BlackMetal&lt;/code&gt;.&lt;/p&gt;
-&lt;iframe width="100%" height="380" title="Spotify Embed: BestOf BlackMetal" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" src="https://open.spotify.com/embed/playlist/3zgZlMMVvIFSlOKfwJDqnc?si=ee8f8a6efb834c51"&gt;&lt;/iframe&gt;
-&lt;p&gt;Beaucoup de chef d&amp;rsquo;oeuvre de criage extreme!&lt;/p&gt;</description></item><item><title>Roussillon cycling club</title><link>http://localhost:1313/posts/2021/roussillon-cycling-club/</link><pubDate>Wed, 17 Mar 2021 19:48:54 +0000</pubDate><guid>http://localhost:1313/posts/2021/roussillon-cycling-club/</guid><description>&lt;p&gt;J&amp;rsquo;ai crer un groupe de velo pour la MRC de Roussillon, si vous etes de la region: &lt;a href="https://roussillon-cycling-club.ca" target="_blank"&gt;https://roussillon-cycling-club.ca&lt;/a&gt;
-&lt;/p&gt;</description></item><item><title>N+1</title><link>http://localhost:1313/posts/2021/n-1/</link><pubDate>Sun, 07 Mar 2021 18:06:54 +0000</pubDate><guid>http://localhost:1313/posts/2021/n-1/</guid><description>&lt;p&gt;Nouvelle addition pour la saison 2021:&lt;/p&gt;
-&lt;figure&gt;&lt;img src="__GHOST_URL__/content/images/2021/03/Screenshot_2021-03-07_11-33-52.png"&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Comme je passe beaucoup plus de temps sur la route que dans la montagne, j&amp;rsquo;ai decide d&amp;rsquo;investire sur un meilleur velo de route. Bien que j&amp;rsquo;aime mieux le velo de montagne, la route est plus accessible que la montagne (Bromont est quand meme a 1hr de route de chez moi).&lt;/p&gt;</description></item><item><title>Copy&amp;Paste pour XTerm</title><link>http://localhost:1313/posts/2021/copy-paste-pour-xterm/</link><pubDate>Fri, 05 Mar 2021 14:20:26 +0000</pubDate><guid>http://localhost:1313/posts/2021/copy-paste-pour-xterm/</guid><description>&lt;p&gt;Si vous etes un bizarre comme moi qui utilise XTerm au lieux d&amp;rsquo;une fancy console dans XWindows, voici une ressource utile pour vous facilite la vie avec les Copy&amp;amp;Paste: &lt;a href="https://wiki.archlinux.org/index.php/Xterm#Copy_and_paste" target="_blank"&gt;https://wiki.archlinux.org/index.php/Xterm#Copy_and_paste&lt;/a&gt;
-&lt;/p&gt;
-&lt;p&gt;Faut donner ca a Arch Linux, ils ont une excellente documentation technique.&lt;/p&gt;</description></item><item><title>Stats velo 2020</title><link>http://localhost:1313/posts/2021/stats-velo-2020/</link><pubDate>Tue, 05 Jan 2021 19:46:26 +0000</pubDate><guid>http://localhost:1313/posts/2021/stats-velo-2020/</guid><description>&lt;figure&gt;&lt;img src="__GHOST_URL__/content/images/2021/01/Screenshot_20210103-164734.gif"&gt;
-&lt;/figure&gt;</description></item><item><title>Lecture 2020</title><link>http://localhost:1313/posts/2020/lecture-2020/</link><pubDate>Wed, 16 Dec 2020 18:41:30 +0000</pubDate><guid>http://localhost:1313/posts/2020/lecture-2020/</guid><description>&lt;p&gt;J&amp;rsquo;ai jamais ete un grand lecteur, mais en 2020 j&amp;rsquo;ai vraiment accroche aux romans de StarWars. En fait j&amp;rsquo;ai comme mission de lire tous les livre &lt;em&gt;canon&lt;/em&gt; de l&amp;rsquo;univers StarWars.&lt;/p&gt;
-&lt;p&gt;Voici la liste de livre lu cette annee:&lt;/p&gt;
-&lt;figure&gt;&lt;img src="__GHOST_URL__/content/images/2020/12/Screenshot_2020-12-31_18-19-06.gif"&gt;
-&lt;/figure&gt;</description></item><item><title>Carcass: Heartwork</title><link>http://localhost:1313/posts/2020/heartwork/</link><pubDate>Sat, 14 Nov 2020 02:16:14 +0000</pubDate><guid>http://localhost:1313/posts/2020/heartwork/</guid><description>&lt;p&gt;Quel album genial, a toute les fois que je reecoute ce chef d&amp;rsquo;oeuvre du metal ca me retransporte dans les annees &amp;lsquo;90. Pas que je retournerai a cette epoque. J&amp;rsquo;entend encore ma mere dire: &amp;ldquo;maudite musique du Diable!!&amp;rdquo;&lt;/p&gt;
-&lt;iframe width="459" height="344" src="https://www.youtube.com/embed/ZpbpOgUybBM?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</description></item><item><title>Upgrade DOKS 1.18 -&gt; 1.19</title><link>http://localhost:1313/posts/2020/upgrade-doks-1-18-1-19/</link><pubDate>Sat, 07 Nov 2020 15:04:09 +0000</pubDate><guid>http://localhost:1313/posts/2020/upgrade-doks-1-18-1-19/</guid><description>&lt;p&gt;Premiere experience d&amp;rsquo;upgrade du managed K8S de Digital Ocean. Voici quelques observations:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Appliquer les recommandations que linter d&amp;rsquo;upgrade de DOKS vous propose. AWS EKS devrait s&amp;rsquo;inspirer de ce tools pour proposer quelques choses de similaire.&lt;/li&gt;
-&lt;li&gt;Ne pas utiliser les addons proposer par doks (ingress, grafana, prometheus, etc). Utiliser helm pour installer ces tools, car vous aurez pas de controle (possible d&amp;rsquo;aller recupere les values de leur helm, mais pas trivial) sur de modification que vous voudriez mettre en place (Pod Disruption Budget, node Affinity/AntiAffinity).&lt;/li&gt;
-&lt;li&gt;Si vous avez pas d&amp;rsquo;autoscaler de worker de configurer, manuellement doubler le nombre de worker avant de debuter votre upgrade. Vous allez eviter de manquer de ressources. Scale down quand tout est upgrader.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;L&amp;rsquo;upgrade a ete effectuer assez rapidement, et sans heurt.&lt;/p&gt;</description></item><item><title>Timezone et golang</title><link>http://localhost:1313/posts/2020/timezone-et-golang/</link><pubDate>Thu, 17 Sep 2020 21:54:58 +0000</pubDate><guid>http://localhost:1313/posts/2020/timezone-et-golang/</guid><description>&lt;p&gt;J&amp;rsquo;ai trouve cette petite lib &lt;a href="https://github.com/uniplaces/carbon" target="_blank"&gt;https://github.com/uniplaces/carbon&lt;/a&gt;
- pour manipuler/comparer facilement des dates/times en go.&lt;/p&gt;
-&lt;p&gt;Ca m&amp;rsquo;as evite un mal de block&lt;/p&gt;</description></item><item><title>The Social Dilemma</title><link>http://localhost:1313/posts/2020/the-social-dillema/</link><pubDate>Tue, 15 Sep 2020 14:31:48 +0000</pubDate><guid>http://localhost:1313/posts/2020/the-social-dillema/</guid><description>&lt;iframe width="612" height="344" src="https://www.youtube.com/embed/uaaC57tcci0?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</description></item><item><title>Migration a DOKS</title><link>http://localhost:1313/posts/2020/golang/</link><pubDate>Mon, 24 Aug 2020 18:17:28 +0000</pubDate><guid>http://localhost:1313/posts/2020/golang/</guid><description>&lt;p&gt;J&amp;rsquo;ai decide de migrer vers DOKS (DigitalOcean Kubernetes) pour hoster mon blog, et mes projets personnel. Ayant toucher a plusieurs &amp;ldquo;managed&amp;rdquo; Kubernetes, je dois dire que je suis agreablement surpris.&lt;/p&gt;
-&lt;p&gt;external-dns et Cloudflare marche bien aussi, etant plus habituer a utiliser Route53.&lt;/p&gt;</description></item><item><title>Trilogie Starwars Aftermath</title><link>http://localhost:1313/posts/2020/trilogie-starwars-aftermath/</link><pubDate>Wed, 29 Jul 2020 14:12:00 +0000</pubDate><guid>http://localhost:1313/posts/2020/trilogie-starwars-aftermath/</guid><description>&lt;p&gt;Cette triologie se deroulle environ 1 ans apres la bataille d&amp;rsquo;Endor. La Nouvelle Republique est encore fragile et tout n&amp;rsquo;est pas gagner.&lt;/p&gt;
-&lt;p&gt;L&amp;rsquo;histoire du premier roman est un peu lente, et on a un peu de misere a s&amp;rsquo;accrocher a l&amp;rsquo;histoire et aux personnages. Ce premier roman se veut plus une introduction aux personnage, ce qui laisse plus de place aux prochains livres pour developper plus les personnages et l&amp;rsquo;histoire.&lt;/p&gt;</description></item><item><title>The great dictator speach</title><link>http://localhost:1313/posts/2020/the-great-dictator-speach/</link><pubDate>Wed, 08 Jul 2020 13:45:47 +0000</pubDate><guid>http://localhost:1313/posts/2020/the-great-dictator-speach/</guid><description>&lt;iframe width="612" height="344" src="https://www.youtube.com/embed/J7GY1Xg6X20?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;p&gt;Toujours aussi pertinant apres toutes ces annees.&lt;/p&gt;</description></item><item><title>Black lives matter</title><link>http://localhost:1313/posts/2020/black-lives-matter/</link><pubDate>Tue, 02 Jun 2020 15:22:46 +0000</pubDate><guid>http://localhost:1313/posts/2020/black-lives-matter/</guid><description>&lt;p&gt;Unissons-nous contre l&amp;rsquo;injustice! Tous ensemble!!&lt;/p&gt;
-&lt;p&gt;Le racisme n&amp;rsquo;a pas sa place dans nos societes.&lt;/p&gt;</description></item><item><title>Petit tool pour garder vos manifestes K8S a jour</title><link>http://localhost:1313/posts/2020/petit-tool-pour-garder-vos-manifeste-k8s-a-jour/</link><pubDate>Sat, 30 May 2020 13:46:02 +0000</pubDate><guid>http://localhost:1313/posts/2020/petit-tool-pour-garder-vos-manifeste-k8s-a-jour/</guid><description>&lt;p&gt;Cette semaine j&amp;rsquo;ai &lt;a href="https://github.com/FairwindsOps/pluto/pull/79" target="_blank"&gt;contribue&lt;/a&gt;
- a un petit projet qui permet de vous indiquer les manifestes qui sont a remplacer avant de faire un upgrade de Kubernetes. Ce projet s&amp;rsquo;appele &lt;a href="https://github.com/FairwindsOps/pluto" target="_blank"&gt;Pluto&lt;/a&gt;
-.&lt;/p&gt;
-&lt;p&gt;K8S 1.16 a fait un gros menage dans leurs supports d&amp;rsquo;anciennes versions d&amp;rsquo;api. Beaucoup de personnes on eu la mauvaise surprise de voir leurs applications interrompus. Soyez pas cette personne ;)&lt;/p&gt;</description></item><item><title>Support de RancherOS pour Kured</title><link>http://localhost:1313/posts/2020/support-de-rancheros-pour-kured/</link><pubDate>Sun, 17 May 2020 02:11:31 +0000</pubDate><guid>http://localhost:1313/posts/2020/support-de-rancheros-pour-kured/</guid><description>&lt;p&gt;Pour ceux qui utilisent RKE/RancherOS pour leur cluster Kubernetes, j&amp;rsquo;ai de quoi pour vous. Un patch a Kured qui permet de gerer les updates de RancherOS de facon securitaire.&lt;/p&gt;
-&lt;figure class="kg-card kg-bookmark-card"&gt;
- &lt;a href="https://github.com/laghoule/kured" class="kg-bookmark-container"&gt;
- &lt;div class="kg-bookmark-content"&gt;
- &lt;div class="kg-bookmark-title"&gt;laghoule/kured&lt;/div&gt;
- &lt;div class="kg-bookmark-description"&gt;Kubernetes Reboot Daemon. Contribute to laghoule/kured development by creating an account on GitHub.&lt;/div&gt;
- &lt;div class="kg-bookmark-metadata"&gt;
- &lt;img src="https://github.githubassets.com/favicons/favicon.svg" class="kg-bookmark-icon"&gt;
- &lt;span class="kg-bookmark-author"&gt;laghoule&lt;/span&gt;
- &lt;span class="kg-bookmark-publisher"&gt;GitHub&lt;/span&gt;
- &lt;/div&gt;
- &lt;/div&gt;
- 
- &lt;div class="kg-bookmark-thumbnail"&gt;
- &lt;img src="https://avatars3.githubusercontent.com/u/1598055?s=400&amp;amp;v=4"&gt;
- &lt;/div&gt;
- 
- &lt;/a&gt;
- 
-&lt;/figure&gt;
-&lt;p&gt;Comment ca fonctionne? Voici une config cloud-init pour updater et rebooter un node:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-yaml" data-lang="yaml"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nt"&gt;write_files&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="c"&gt;# Script to upgrade image OS if available (no reboot)&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="c"&gt;# Reboot is handled by K8S kured daemonset&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;- &lt;span class="nt"&gt;path&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l"&gt;/var/lib/rancher/os-updater.sh&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;permissions&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;0755&amp;#34;&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;owner&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l"&gt;root&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;content&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;|&lt;/span&gt;&lt;span class="sd"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="sd"&gt; #!/bin/sh
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="sd"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="sd"&gt; source /usr/share/ros/os-release
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="sd"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="sd"&gt; STATUS=0
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="sd"&gt; OS_LOCATION=`sudo ros os list | head -n1 | awk {&amp;#39;print $2&amp;#39;}`
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="sd"&gt; OS_VERSION=`sudo ros os list | head -n1 | awk {&amp;#39;print $1&amp;#39;} | cut -d : -f 2`
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="sd"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="sd"&gt; if [ &amp;#34;$OS_LOCATION&amp;#34; == &amp;#34;local&amp;#34; ] &amp;amp;&amp;amp; [ &amp;#34;$OS_VERSION&amp;#34; != &amp;#34;$VERSION&amp;#34; ]; then
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="sd"&gt; echo &amp;#34;Upgrade available&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="sd"&gt; sudo ros os upgrade -f --no-reboot &amp;amp;&amp;gt;&amp;gt; /var/log/os-updater.log
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="sd"&gt; STATUS=$?
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="sd"&gt; if [ $STATUS -eq 0 ]; then
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="sd"&gt; sudo touch /var/lib/rancher/update/need_to_reboot
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="sd"&gt; else
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="sd"&gt; echo &amp;#34;Upgrade failed&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="sd"&gt; fi
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="sd"&gt; else
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="sd"&gt; echo &amp;#34;No upgrade available&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="sd"&gt; fi
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="sd"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="sd"&gt; exit $STATUS&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="c"&gt;# Check if it&amp;#39;s a good time to reboot&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;- &lt;span class="nt"&gt;path&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l"&gt;/var/lib/rancher/os-rebooter.sh&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;permissions&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;0755&amp;#34;&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;owner&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l"&gt;root&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;content&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;|&lt;/span&gt;&lt;span class="sd"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="sd"&gt; #!/bin/sh
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="sd"&gt; if [ -f /var/lib/rancher/update/reboot_now ] &amp;amp;&amp;amp; [ -f /var/lib/rancher/update/need_to_reboot ]; then
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="sd"&gt; sudo rm /var/lib/rancher/update/need_to_reboot
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="sd"&gt; sudo rm /var/lib/rancher/update/reboot_now
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="sd"&gt; sudo reboot
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="sd"&gt; fi&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="c"&gt;# Rancher cronjob&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="nt"&gt;rancher&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;services&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="c"&gt;# os-updater CRONJOB @hourly&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;os-updater&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;image&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l"&gt;rancher/os-base:v1.5.5&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;command&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l"&gt;/var/lib/rancher/os-updater.sh&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;labels&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;io.rancher.os.scope&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;system&amp;#34;&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;cron.schedule&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;0 0 * * * ?&amp;#34;&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;pid&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l"&gt;host&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;privileged&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;volumes_from&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;- &lt;span class="l"&gt;all-volumes&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="c"&gt;# os-rebooter CRONJOB @minute&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;os-rebooter&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;image&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l"&gt;rancher/os-base:v1.5.5&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;command&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l"&gt;/var/lib/rancher/os-rebooter.sh&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;labels&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;io.rancher.os.scope&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;system&amp;#34;&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;cron.schedule&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;0 * * * * ?&amp;#34;&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;pid&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="l"&gt;host&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;privileged&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;volumes_from&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;- &lt;span class="l"&gt;all-volumes&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Par la suite, avec mon fork de Kured, si le fichier &amp;ndash;reboot-sentinel existe, il creera le fichier &amp;ndash;host-sentinel, qui lui sera gerer par la cronjob systeme &lt;code&gt;os-rebooter&lt;/code&gt;.&lt;/p&gt;</description></item><item><title>Covid-19 &amp; services essentiels</title><link>http://localhost:1313/posts/2020/covid-19-services-essentiels/</link><pubDate>Sun, 05 Apr 2020 13:26:51 +0000</pubDate><guid>http://localhost:1313/posts/2020/covid-19-services-essentiels/</guid><description>&lt;p&gt;Une crise permet toujours de mettre en perspective certain elements que nous prenons pour acquis. Parmis ces elements, certains, meme plusieurs sont negliges. Ici je parle surtout des gens qui s&amp;rsquo;occupent des service essentiels, mais qui sont habituellements mal payes, juges negativement, etc.&lt;/p&gt;
-&lt;p&gt;Ces personnes souvant payees un salaire minimum, avec aucun avantage social. Il faudra bien reflechir dans le future afin de revoir et corriger ces lacunes.&lt;/p&gt;
-&lt;p&gt;Quelques metiers:&lt;/p&gt;</description></item><item><title>Covid-19 &amp; mondialisation</title><link>http://localhost:1313/posts/2019/covid-19-mondialisation/</link><pubDate>Sat, 04 Apr 2020 13:55:40 +0000</pubDate><guid>http://localhost:1313/posts/2019/covid-19-mondialisation/</guid><description>&lt;p&gt;Le crise actuel, la plus grave depuis la fin de la seconde guerre mondial, nous permet de mettre en evidence certains des problemes, relier a la globalisation des marches. Bien que la modialisation a beaucoup d&amp;rsquo;avantages, en temps de crise, ces avantages ne sont plus aussi attrayant et peuvent meme etre des desavantages.&lt;/p&gt;
-&lt;p&gt;Plusieur service essentiel dependent de l&amp;rsquo;apprivisionnements exterieur:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Alimentations&lt;/li&gt;
-&lt;li&gt;Medicaments&lt;/li&gt;
-&lt;li&gt;Appareil medicaux&lt;/li&gt;
-&lt;li&gt;Energie&lt;/li&gt;
-&lt;li&gt;Textiles&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Une des lessons que nous devrons tirer rapidement de cette crise, sera la mise en place de lois, qui exigerons que nous soyont independant d&amp;rsquo;autres pays (et provinces) dans ces domaines d&amp;rsquo;expertise.&lt;/p&gt;</description></item><item><title>Clone Wars saison 7</title><link>http://localhost:1313/posts/2020/clone-wars-saison-7/</link><pubDate>Sun, 26 Jan 2020 16:32:20 +0000</pubDate><guid>http://localhost:1313/posts/2020/clone-wars-saison-7/</guid><description>&lt;iframe width="480" height="270" src="https://www.youtube.com/embed/ZLW2jkd6E7g?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;p&gt;Cette derniere saison de Clone Wars risque d&amp;rsquo;etre epique, et aussi tres sombre. Le combat entre Maul et Ahsoka va nous donner des frissons dans le dos assurements.&lt;/p&gt;</description></item><item><title>Tesla ouvre ses brevets</title><link>http://localhost:1313/posts/2019/tesla-ouvre-ses-brevets/</link><pubDate>Wed, 18 Dec 2019 13:59:25 +0000</pubDate><guid>http://localhost:1313/posts/2019/tesla-ouvre-ses-brevets/</guid><description>&lt;p&gt;Elon Musk a decider d&amp;rsquo;ouvrir ces brevets, ou du moins, ne pas demander de redevance. Pourquoi? Pour accelerer l&amp;rsquo;adoption de vehicules electriques, afin de combattre les changements climatique. Bravo, un tres beau geste, apres l&amp;rsquo;echec cuisant de la COP25 en Espagne.&lt;/p&gt;
-&lt;p&gt;Je ne suis pas un tres grand fan de Musk, mais un geste comme celui-ci est un des gestes qu&amp;rsquo;on devrait voir a l&amp;rsquo;echelle mondial de la part des grandes entreprises.&lt;/p&gt;</description></item><item><title>pgauthier.dev</title><link>http://localhost:1313/posts/2019/pgauthier-dev/</link><pubDate>Tue, 17 Dec 2019 19:42:47 +0000</pubDate><guid>http://localhost:1313/posts/2019/pgauthier-dev/</guid><description>&lt;p&gt;Dernierement j&amp;rsquo;ai achete le domaine pgauthier.dev. Je vais eventuellement creer quelques choses, c&amp;rsquo;est pas encore claire, mais tout sera hoster sur DKS (Digital Ocean Kubernetes).&lt;/p&gt;
-&lt;p&gt;Stay tuned&amp;hellip;&lt;/p&gt;</description></item><item><title>Hello world</title><link>http://localhost:1313/posts/2019/hello-world/</link><pubDate>Fri, 06 Dec 2019 00:42:43 +0000</pubDate><guid>http://localhost:1313/posts/2019/hello-world/</guid><description>&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-golang" data-lang="golang"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kn"&gt;package&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;main&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;#34;fmt&amp;#34;&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="kd"&gt;func&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;fmt&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;Println&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#34;Hello World&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;figure&gt;&lt;img src="__GHOST_URL__/content/images/2019/12/IMG_20191205_150502-3.jpg"
- alt="go run main.go"&gt;&lt;figcaption&gt;
- &lt;p&gt;go run main.go&lt;/p&gt;
- &lt;/figcaption&gt;
-&lt;/figure&gt;</description></item><item><title>Suppression de Twitter</title><link>http://localhost:1313/posts/2019/suppression-de-twitter/</link><pubDate>Mon, 02 Dec 2019 01:04:43 +0000</pubDate><guid>http://localhost:1313/posts/2019/suppression-de-twitter/</guid><description>&lt;p&gt;Deuxieme etape de la suppression de reseaux sociaux: Twitter. Bien que Twitter soi moins intrusif dans nos vies privees, il est neanmoins une source de propagandes et de bullies de toutes sortes.&lt;/p&gt;</description></item><item><title>Algorithme de recommandation</title><link>http://localhost:1313/posts/2019/algorithme-de-recommandation/</link><pubDate>Sat, 23 Nov 2019 03:42:10 +0000</pubDate><guid>http://localhost:1313/posts/2019/algorithme-de-recommandation/</guid><description>&lt;p&gt;Google News cette semaine m&amp;rsquo;a sortie une nouvelle extraordinaire&amp;hellip; On a decouvert des insectes sur Mars!&lt;/p&gt;
-&lt;figure&gt;&lt;img src="__GHOST_URL__/content/images/2019/11/Screenshot_2019-11-22_21-43-31.png"&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Comme je ne crois pas n&amp;rsquo;importe quoi, je verifie la source de cette nouvelle: American Association for the Advancement of Science (AAAS). Premier fais a noter, pourquoi la nouvelle ne viens pas de la Nasa, l&amp;rsquo;ESA ou autres agence spaciales serieuse? J&amp;rsquo;ai vite classe cette nouvelle dans la categorie &amp;ldquo;fake news&amp;rdquo; et passer a autres choses.&lt;/p&gt;</description></item><item><title>Tesla Cybertruck VS Homer car</title><link>http://localhost:1313/posts/2019/tesla-cybertruck-vs-homer-car/</link><pubDate>Fri, 22 Nov 2019 19:13:03 +0000</pubDate><guid>http://localhost:1313/posts/2019/tesla-cybertruck-vs-homer-car/</guid><description>&lt;p&gt;Un sentiment de deja vue ici&amp;hellip;&lt;/p&gt;
-&lt;figure&gt;&lt;img src="__GHOST_URL__/content/images/2019/11/tesla2-e1574437380471.jpg"&gt;
-&lt;/figure&gt;</description></item><item><title>The Mandalorian</title><link>http://localhost:1313/posts/2019/the-mandalorian/</link><pubDate>Fri, 15 Nov 2019 20:26:18 +0000</pubDate><guid>http://localhost:1313/posts/2019/the-mandalorian/</guid><description>&lt;p&gt;Le Mandalorian est maintenant disponible en streaming sur Disney+, sous la formule 1 episode par semaine. C&amp;rsquo;est une bonne strategie pour faire en sorte de rester abonner a leur service le plus longtemp possible. A 30 minutes l&amp;rsquo;episode, c&amp;rsquo;est un peu court par contre.&lt;/p&gt;
-&lt;p&gt;Bon, est-ce que ce show en vaut la chandelle? oui. C&amp;rsquo;est une bonne serie, probablement plus pour les fan de StarWars que pour des non initier. De belle surprise sont au rendez-vous, du moins pour les deux episode que j&amp;rsquo;ai eu la chance de voir.&lt;/p&gt;</description></item><item><title>DoH &amp;&amp; DoT</title><link>http://localhost:1313/posts/2019/dos-dot/</link><pubDate>Tue, 12 Nov 2019 14:58:29 +0000</pubDate><guid>http://localhost:1313/posts/2019/dos-dot/</guid><description>&lt;p&gt;Experiementation avec DNS over HTTPS et DNS over TLS cette semaine. DoH est maintenant supporte par Firefox, et les prochaines version vont l&amp;rsquo;activer par default, du moins c&amp;rsquo;est ce qui avait ete annonce, jusqu&amp;rsquo;a ce que ca creer un faux scandale au UK (&lt;a href="https://www.theregister.co.uk/2019/09/24/mozilla_backtracks_doh_for_uk_users/" target="_blank"&gt;https://www.theregister.co.uk/2019/09/24/mozilla_backtracks_doh_for_uk_users/&lt;/a&gt;
-). L&amp;rsquo;avantage du support directement dans le browser viens du fait qu&amp;rsquo;il possede son propre client DNS, ce qui permet de ne pas utiliser le resolver systeme. Donc si votre destination utilise HTTPS, c&amp;rsquo;est tres dur de pouvoir vous espionnez, car l&amp;rsquo;espion peux seulement voir l&amp;rsquo;IP du destinataire.&lt;/p&gt;</description></item><item><title>Dark (Netflix)</title><link>http://localhost:1313/posts/2019/dark-netflix/</link><pubDate>Fri, 01 Nov 2019 12:26:10 +0000</pubDate><guid>http://localhost:1313/posts/2019/dark-netflix/</guid><description>&lt;p&gt;Une serie original de Netflix, qui merite vraiment d&amp;rsquo;etre vue. Produit en Allemagne, c&amp;rsquo;est un genre different des series Americaines. Il faut se fermer les yeux sur certains elements (pas de test d&amp;rsquo;ADN, physique tire par les cheveux), mais une fois que vous avez embarque dans l&amp;rsquo;histoire, c&amp;rsquo;est dur de ne pas continuer l&amp;rsquo;histoire.&lt;/p&gt;
-&lt;p&gt;2 saisons disponible, la prochaine sera la derniere.&lt;/p&gt;</description></item><item><title>Rise of Skywalker</title><link>http://localhost:1313/posts/2019/rise-of-the-skywalker/</link><pubDate>Tue, 22 Oct 2019 13:17:09 +0000</pubDate><guid>http://localhost:1313/posts/2019/rise-of-the-skywalker/</guid><description>&lt;p&gt;Billet achete, reste a attendre&amp;hellip; voici un petit apercu:&lt;/p&gt;
-&lt;iframe width="480" height="270" src="https://www.youtube.com/embed/8Qn_spdM5Zg?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</description></item><item><title>Votez!</title><link>http://localhost:1313/posts/2019/votez/</link><pubDate>Mon, 21 Oct 2019 12:40:58 +0000</pubDate><guid>http://localhost:1313/posts/2019/votez/</guid><description>&lt;p&gt;C&amp;rsquo;est le temps de vous exprimer, VOTER!&lt;/p&gt;</description></item><item><title>DCS World</title><link>http://localhost:1313/posts/2019/dcs-world/</link><pubDate>Wed, 16 Oct 2019 13:21:08 +0000</pubDate><guid>http://localhost:1313/posts/2019/dcs-world/</guid><description>&lt;iframe width="480" height="270" src="https://www.youtube.com/embed/732Y62VZIGc?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;p&gt;J&amp;rsquo;ai decouvert recemment DCS World, un simulateur d&amp;rsquo;avion de chasse. Ce simulateur est tres realiste (selon les dires meme d&amp;rsquo;un ancien pilote), et propose plusieurs types d&amp;rsquo;avions, dont le F-18C et le F-5. Deux avions de chasses que le Canada utilisent, ou utilisaient (F-5). Plein de tutoriaux sont disponibles sur Youtube, et de simulations de combats.&lt;/p&gt;
-&lt;figure class="kg-gallery-card kg-width-wide"&gt;
- &lt;div class="kg-gallery-container"&gt;
- &lt;div class="kg-gallery-row"&gt;
- 
-
- &lt;div class="kg-gallery-image"&gt;
- &lt;img src="__GHOST_URL__/content/images/2019/10/IMG_20170916_120117-1.jpg" width="4160" height="3120"&gt;
- &lt;/div&gt;
-
- &lt;div class="kg-gallery-image"&gt;
- &lt;img src="__GHOST_URL__/content/images/2019/10/IMG_20180331_123926.jpg" width="4160" height="3120"&gt;
- &lt;/div&gt;
-
- &lt;div class="kg-gallery-image"&gt;
- &lt;img src="__GHOST_URL__/content/images/2019/10/IMG_20180730_143231-1.jpg" width="4160" height="3120"&gt;
- &lt;/div&gt;
-
-&lt;/div&gt;
-&lt;div class="kg-gallery-row"&gt;
-
- &lt;/div&gt;
- &lt;/div&gt;
- 
-&lt;/figure&gt;
-&lt;p&gt;Ce simulateur est ce qui se rapproche le plus de mon reve d&amp;rsquo;enfance d&amp;rsquo;etre pilote de chasse.&lt;/p&gt;</description></item><item><title>e-book</title><link>http://localhost:1313/posts/2019/e-book/</link><pubDate>Tue, 15 Oct 2019 12:22:43 +0000</pubDate><guid>http://localhost:1313/posts/2019/e-book/</guid><description>&lt;figure&gt;&lt;img src="__GHOST_URL__/content/images/2019/10/Screenshot_2019-10-15_08-17-18.png"&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;The Go Programming Language, 40$ paperback, et 15$ e-book. Je me convertie au e-book, avec l&amp;rsquo;achat d&amp;rsquo;un Kindle. Plus de livres qui trainent partout, et la possibilite d&amp;rsquo;avoir avec soi, toute sa librairie, ou que je soie.&lt;/p&gt;</description></item><item><title>Automne</title><link>http://localhost:1313/posts/2019/automne/</link><pubDate>Mon, 14 Oct 2019 20:11:05 +0000</pubDate><guid>http://localhost:1313/posts/2019/automne/</guid><description>&lt;p&gt;Couleur d&amp;rsquo;automne sur le bord du fleuve St-Laurent&lt;/p&gt;
-&lt;figure class="kg-gallery-card kg-width-wide"&gt;
- &lt;div class="kg-gallery-container"&gt;
- &lt;div class="kg-gallery-row"&gt;
- 
-
- &lt;div class="kg-gallery-image"&gt;
- &lt;img src="__GHOST_URL__/content/images/2019/10/IMG_20191013_125946-1.jpg" width="4608" height="3456"&gt;
- &lt;/div&gt;
-
- &lt;div class="kg-gallery-image"&gt;
- &lt;img src="__GHOST_URL__/content/images/2019/10/IMG_20191013_125950.jpg" width="4608" height="3456"&gt;
- &lt;/div&gt;
-
- &lt;div class="kg-gallery-image"&gt;
- &lt;img src="__GHOST_URL__/content/images/2019/10/IMG_20191013_130155.jpg" width="4608" height="3456"&gt;
- &lt;/div&gt;
-
-&lt;/div&gt;
-&lt;div class="kg-gallery-row"&gt;
-
- &lt;div class="kg-gallery-image"&gt;
- &lt;img src="__GHOST_URL__/content/images/2019/10/IMG_20191013_132018.jpg" width="4608" height="3456"&gt;
- &lt;/div&gt;
-
- &lt;/div&gt;
- &lt;/div&gt;
- 
-&lt;/figure&gt;</description></item><item><title>Endossement</title><link>http://localhost:1313/posts/2019/endossement/</link><pubDate>Sat, 12 Oct 2019 20:30:21 +0000</pubDate><guid>http://localhost:1313/posts/2019/endossement/</guid><description>&lt;p&gt;Je suis avec Jameet Singh, je vote NDP!&lt;/p&gt;</description></item><item><title>Premiere contribution a eksctl</title><link>http://localhost:1313/posts/2019/premiere-contribution-a-eksctl/</link><pubDate>Thu, 10 Oct 2019 01:02:15 +0000</pubDate><guid>http://localhost:1313/posts/2019/premiere-contribution-a-eksctl/</guid><description>&lt;figure&gt;&lt;img src="__GHOST_URL__/content/images/2019/10/Screenshot_2019-10-09_20-54-59.png"&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Bon, c&amp;rsquo;est pas grand chose, mais ca fix un bug qui nous affectais a la job. Surment plein d&amp;rsquo;autres personnes aussi, parce que les PDB sont de plus en plus utilises dans Kubernetes.&lt;/p&gt;</description></item><item><title>Transformer un vieux T520 en Chromebook</title><link>http://localhost:1313/posts/2019/transformer-un-vieux-t520-en-chromebook/</link><pubDate>Tue, 08 Oct 2019 00:42:27 +0000</pubDate><guid>http://localhost:1313/posts/2019/transformer-un-vieux-t520-en-chromebook/</guid><description>&lt;p&gt;C&amp;rsquo;est possible avec CloudReady, un fork de ChromeOS. Pour redonner vie a un vieux laptop de 2011, ca fait la job. Voici quelques bemols:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Pas de support pour Google Play (application Android), parce que c&amp;rsquo;est proprietaire (DUH)&lt;/li&gt;
-&lt;li&gt;Viens avec VirtualBox, pourquoi?? quand KVM est natif et 100 fois mieux?&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Comment recuperer une license Windows d'un bios de laptop</title><link>http://localhost:1313/posts/2019/comment-recuperer-un-license-windows-dun-bios-de-laptop/</link><pubDate>Wed, 02 Oct 2019 01:28:12 +0000</pubDate><guid>http://localhost:1313/posts/2019/comment-recuperer-un-license-windows-dun-bios-de-laptop/</guid><description>&lt;p&gt;TADA: &lt;code&gt;sudo xxd /sys/firmware/acpi/tables/MSDM&lt;/code&gt;&lt;/p&gt;</description></item><item><title>Supression de Facebook</title><link>http://localhost:1313/posts/2019/supression-de-facebook/</link><pubDate>Tue, 27 Aug 2019 01:35:51 +0000</pubDate><guid>http://localhost:1313/posts/2019/supression-de-facebook/</guid><description>&lt;p&gt;Ca y est, c&amp;rsquo;est fait. Compte Facebook supprimer. J&amp;rsquo;ai erradique ce cancer qui cruge peu a peu ce monde &amp;ldquo;moderne&amp;rdquo;.&lt;/p&gt;</description></item><item><title>File d'attente</title><link>http://localhost:1313/posts/2019/fille-dattente/</link><pubDate>Sat, 27 Apr 2019 13:11:17 +0000</pubDate><guid>http://localhost:1313/posts/2019/fille-dattente/</guid><description>&lt;p&gt;Une file d&amp;rsquo;attente en ligne. Oui, oui en 2019 il semble que certaines personnes pensent que c&amp;rsquo;est une bonne idee de proceder de cette facon.&lt;/p&gt;
-&lt;p&gt;Incroyable&lt;/p&gt;
-&lt;figure&gt;&lt;img src="__GHOST_URL__/content/images/2019/04/Screenshot-2019-04-27-at-09.04.35.png"&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Et apres le temps d&amp;rsquo;attente, je tombe sur ceci:&lt;/p&gt;
-&lt;figure&gt;&lt;img src="__GHOST_URL__/content/images/2019/04/Screenshot-2019-04-27-at-09.30.36.png"&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Vraiment patetique.&lt;/p&gt;</description></item><item><title>Bob Ibex 28 plus</title><link>http://localhost:1313/posts/2019/bob-ibex-28-plus/</link><pubDate>Sun, 10 Mar 2019 20:44:18 +0000</pubDate><guid>http://localhost:1313/posts/2019/bob-ibex-28-plus/</guid><description>&lt;p&gt;Ca fait longtemps que j&amp;rsquo;y pensais, c&amp;rsquo;est maintenant fait. Le gros avantage de ce trailer, il fit sur tout mes velo (avec l&amp;rsquo;achat d&amp;rsquo;un adapteur pour mes velo de montagne). Je peux faire du singletrack, ou de la route.
-&lt;a href="https://youtu.be/5aMFgMuBXvI" target="_blank"&gt;&lt;/a&gt;
-&lt;/p&gt;
-&lt;iframe width="459" height="344" src="https://www.youtube.com/embed/5aMFgMuBXvI?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</description></item><item><title>Amber/Orange light on Tacx Vortex (T2180)</title><link>http://localhost:1313/posts/2019/amber-orange-light-on-tacx-vortex/</link><pubDate>Fri, 22 Feb 2019 01:17:12 +0000</pubDate><guid>http://localhost:1313/posts/2019/amber-orange-light-on-tacx-vortex/</guid><description>&lt;p&gt;In case you have this unfortunate event, and are unable to update your firmware. I provide you the restoration procedure sent to me by Tacx support. But before going into this process, I suggest you read this &lt;a href="https://zwiftinsider.com/updating-your-tacx-smart-brake-firmware/" target="_blank"&gt;post&lt;/a&gt;
-.&lt;/p&gt;
-&lt;p&gt;** USE AT YOUR OWN RISK **&lt;/p&gt;
-&lt;pre tabindex="0"&gt;&lt;code&gt;Can you please try attached download firmware link on your smart trainer with the Tacx Utility app.
-
-Forward his email to an mail address that you can access on your smart phone.
-Now open the email on your smartphone and click on the link below:
-
-https://drive.google.com/file/d/1aqXF87xR-YqtD-Y7kCcHBm-Ev70ZlrGD/view?usp=sharing
-
-Be sure to click on the download button (marked by a red circle in the image below).
-
-Choose to open this file with the Tacx Utility app and connect your trainer (wait for the circle to become green).
-When your trainer is connected choose &amp;#34;Update&amp;#34; to begin the firmware installation.
-Wait for the firmware installation to complete and follow the instructions on screen when necessary.
-Once the firmware is installed, you can use your trainer again.
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The procedure take about 10 min to flash, and the final result:&lt;/p&gt;</description></item><item><title>Les effets positifs du velo</title><link>http://localhost:1313/posts/2019/les-effets-positifs-de-velo/</link><pubDate>Sun, 10 Feb 2019 20:56:28 +0000</pubDate><guid>http://localhost:1313/posts/2019/les-effets-positifs-de-velo/</guid><description>&lt;iframe width="480" height="270" src="https://www.youtube.com/embed/Mr4m7ZoVfwc?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</description></item><item><title>Tour de Zwift</title><link>http://localhost:1313/posts/2019/tour-de-zwift/</link><pubDate>Mon, 04 Feb 2019 00:46:21 +0000</pubDate><guid>http://localhost:1313/posts/2019/tour-de-zwift/</guid><description>&lt;p&gt;Complete le tour de Zwift aujourd&amp;rsquo;hui. Tres cool ce genre de simulation. Bonne facon de motiver un rider!&lt;/p&gt;</description></item><item><title>Opinion</title><link>http://localhost:1313/posts/2019/opinion/</link><pubDate>Thu, 24 Jan 2019 13:31:31 +0000</pubDate><guid>http://localhost:1313/posts/2019/opinion/</guid><description>&lt;p&gt;Donner son opinion dans le monde d&amp;rsquo;aujourd&amp;rsquo;hui est devenue un acte risque. Peut importe ce que vous dites, quelqu&amp;rsquo;un va souhaiter votre mort.&lt;/p&gt;</description></item><item><title>Zwift review</title><link>http://localhost:1313/posts/2019/zwift-review/</link><pubDate>Mon, 21 Jan 2019 01:31:02 +0000</pubDate><guid>http://localhost:1313/posts/2019/zwift-review/</guid><description>&lt;p&gt;Apres un peu plus d&amp;rsquo;un mois d&amp;rsquo;essaie, 15 hr et 500 km plus tard, mon verdict. Et bien, c&amp;rsquo;est positif, meme a 18$/mois. Zwift rend l&amp;rsquo;experience beaucoup moins penible, et ca peut meme etre agreable de souffrir dans son sous-sol, avec plusieurs milliers d&amp;rsquo;adepte en ligne.&lt;/p&gt;
-&lt;p&gt;L&amp;rsquo;experience peut-etre tres differente tout dependant de l&amp;rsquo;equipement que vous possedez. Pour ma part j&amp;rsquo;ai optez pour un smart trainner d&amp;rsquo;entree de gamme. Pour beneficier d&amp;rsquo;un comportement plus realiste, un trainner plus haut de gamme est recommander. Mon but premier etant de rendre l&amp;rsquo;entrainement interieur moins penible, et c&amp;rsquo;est reussi.&lt;/p&gt;</description></item><item><title>THE ABSA CAPE EPIC WORKOUT SERIES</title><link>http://localhost:1313/posts/2019/the-absa-cape-epic-workout-series/</link><pubDate>Thu, 10 Jan 2019 22:22:33 +0000</pubDate><guid>http://localhost:1313/posts/2019/the-absa-cape-epic-workout-series/</guid><description>&lt;p&gt;Ca c&amp;rsquo;est trop hot: &lt;a href="https://zwift.com/events/series/the-absa-cape-epic-workout-series/" target="_blank"&gt;https://zwift.com/events/series/the-absa-cape-epic-workout-series/&lt;/a&gt;
-&lt;/p&gt;</description></item><item><title>LHC run II</title><link>http://localhost:1313/posts/2018/lhc-run-ii/</link><pubDate>Sun, 30 Dec 2018 13:15:02 +0000</pubDate><guid>http://localhost:1313/posts/2018/lhc-run-ii/</guid><description>&lt;p&gt;Article interessant de Sabine Hossenfelder a propos de la non-decouverte de nouvelles particules elementaires au LHC: &lt;a href="http://backreaction.blogspot.com/2018/12/how-lhc-may-spell-end-of-particle.html" target="_blank"&gt;http://backreaction.blogspot.com/2018/12/how-lhc-may-spell-end-of-particle.html&lt;/a&gt;
-. On est decidement a la croise des chemins pour le domaine de la physique des particules. Un analyse et un correction est de mise, mais beaucoup refusent de voir les faits dans le data accumules au cours de ces dernieres annees.&lt;/p&gt;
-&lt;p&gt;C&amp;rsquo;est quand meme ironique quand on pense que des scientifiques regardent les experimentations, mais rejettent les resultats, et demande un autre accelerateurs encore plus puissant, et surtout, tres couteux (10 milliard). Je crois qu&amp;rsquo;il serait plus judicieux de consolider notre savoir existant, entre autre sur la physique des neutrinos, et ceci qui risque de nous ouvrir de nouvelles portes.&lt;/p&gt;</description></item><item><title>Revue technologique 2018</title><link>http://localhost:1313/posts/2018/revue-technologique-2018/</link><pubDate>Wed, 26 Dec 2018 13:04:43 +0000</pubDate><guid>http://localhost:1313/posts/2018/revue-technologique-2018/</guid><description>&lt;p&gt;Deux sujets on particulierement fait parle cette annee: Securite et Kubernetes. L&amp;rsquo;annee 2018 a commence par la publication des fameux bugs de securites des branches de preductions des CPU modernes (Spectre et Meltdown). On peut dire que ce fut un vrai &lt;code&gt;meltdown&lt;/code&gt; de la part d&amp;rsquo;Intel particulierement, qui a reussi a s&amp;rsquo;aliener une bonne partie de la comunaute OpenSource, grace a des pratiques de securite innaproprier pour les modeles &lt;code&gt;Ouvert&lt;/code&gt;. 2019 va continuer avec la decouverte de nouvelles variantes de ces bugs et vecteurs d&amp;rsquo;attaques.&lt;/p&gt;</description></item><item><title>Motivation: Zwift</title><link>http://localhost:1313/posts/2018/motivation-zwift/</link><pubDate>Sun, 16 Dec 2018 13:33:21 +0000</pubDate><guid>http://localhost:1313/posts/2018/motivation-zwift/</guid><description>&lt;iframe width="480" height="270" src="https://www.youtube.com/embed/q8fArWR-CsE?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;p&gt;Pour me motiver a reprendre l&amp;rsquo;entrainnement, j&amp;rsquo;ai decide de joindre le &amp;ldquo;mouvement&amp;rdquo; Zwift. J&amp;rsquo;ai donc du changer de bike trainer, car pour utiliser Zwift, il faut setup un peu plus evoluer. J&amp;rsquo;ai opte pour un Tacx Vortex smart. C&amp;rsquo;est un model de base, mais ca fera l&amp;rsquo;affaire (c&amp;rsquo;est un hobby, pas une profession).&lt;/p&gt;
-&lt;p&gt;Comme je n&amp;rsquo;ai pas d&amp;rsquo;ordinateur Windows ou Mac, j&amp;rsquo;ai installe l&amp;rsquo;application mobile Android, qui se trouve encore en mode beta. L&amp;rsquo;application semble avoir ete porter sur android, sans trop de regard au fais que ca roulle sur un telephone. Une option que j&amp;rsquo;aimerais vraiment voir eventuellement, c&amp;rsquo;est la possibilite de &amp;ldquo;caster&amp;rdquo; sur une TV. Presentement le seul moyen est de caste le telephone sur le TV. Ca fonctionne, mais le telephone doit rester ouvert tout le long de la session.&lt;/p&gt;</description></item><item><title>Never give up</title><link>http://localhost:1313/posts/2018/never-give-up/</link><pubDate>Sat, 15 Dec 2018 13:08:01 +0000</pubDate><guid>http://localhost:1313/posts/2018/never-give-up/</guid><description>&lt;img src="__GHOST_URL__/content/images/2018/12/IMG_20181215_080538.jpg" alt=""&gt;</description></item><item><title>Quand realiserons-nous?</title><link>http://localhost:1313/posts/2018/quand-realiserons-nous/</link><pubDate>Fri, 14 Dec 2018 22:28:20 +0000</pubDate><guid>http://localhost:1313/posts/2018/quand-realiserons-nous/</guid><description>&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/HzeekxtyFOY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;p&gt;Dure de rester insensible a un tel discours, non?&lt;/p&gt;</description></item><item><title>6 dec</title><link>http://localhost:1313/posts/2018/6-dec/</link><pubDate>Thu, 06 Dec 2018 22:36:48 +0000</pubDate><guid>http://localhost:1313/posts/2018/6-dec/</guid><description>&lt;p&gt;Geneviève Bergeron
-Hélène Colgan
-Nathalie Croteau
-Barbara Daigneault
-Anne-Marie Edward
-Maud Haviernick
-Maryse Laganière
-Maryse Leclair
-Anne-Marie Lemay
-Sonia Pelletier
-Michèle Richard
-Annie St-Arneault
-Annie Turcotte
-Barbara Klucznik-Widajewicz
-&lt;img src="__GHOST_URL__/content/images/2018/12/IMG_20181206_173213.jpg" alt="Geneviève Bergeron
-Hélène Colgan
-Nathalie Croteau
-Barbara Daigneault
-Anne-Marie Edward
-Maud Haviernick
-Maryse Laganière
-Maryse Leclair
-Anne-Marie Lemay
-Sonia Pelletier
-Michèle Richard
-Annie St-Arneault
-Annie Turcotte
-Barbara Klucznik-Widajewicz"&gt;&lt;/p&gt;</description></item><item><title>Harry Leslie Smith</title><link>http://localhost:1313/posts/2018/harry-leslie-smith/</link><pubDate>Wed, 28 Nov 2018 13:27:48 +0000</pubDate><guid>http://localhost:1313/posts/2018/harry-leslie-smith/</guid><description>&lt;p&gt;Se souvenir du passe, pour ne pas repeter ces erreurs, et honorer la memoire de ceux qui se sont battus pour nos acquis du present.&lt;/p&gt;
-&lt;p&gt;Repose en paix Harry&lt;/p&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/huWBcsQS2vE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</description></item><item><title>Fatbike</title><link>http://localhost:1313/posts/2018/fatbike/</link><pubDate>Sat, 24 Nov 2018 20:59:16 +0000</pubDate><guid>http://localhost:1313/posts/2018/fatbike/</guid><description>&lt;p&gt;Premiere sortie en fatbike cet automne, et preparation de l&amp;rsquo;entrainement pour 2019. Etablire les objectifs et les courses pour la prochaine saison. En 2018 j&amp;rsquo;ai pas participe a des courses de fatbike, mais 2019 devrait etre different, enfin, j&amp;rsquo;espere.&lt;/p&gt;
-&lt;figure&gt;&lt;img src="__GHOST_URL__/content/images/2018/11/IMG_20181124_131340.jpg"
- alt="Bordure du fleuve St-Laurent"&gt;&lt;figcaption&gt;
- &lt;p&gt;Bordure du fleuve St-Laurent&lt;/p&gt;
- &lt;/figcaption&gt;
-&lt;/figure&gt;</description></item><item><title>Fuchsia VS Android/Linux</title><link>http://localhost:1313/posts/2018/fuchsia-vs-android-linux/</link><pubDate>Sat, 24 Nov 2018 02:38:57 +0000</pubDate><guid>http://localhost:1313/posts/2018/fuchsia-vs-android-linux/</guid><description>&lt;p&gt;Pourquoi Google developpe Fuchsia? Pour plusieurs raisons et voici selon moi les motivations:&lt;/p&gt;
-&lt;p&gt;Securite: Linux contient des dixaines de millions de lignes de codes. Plus de codes, plus de bugs. Une fraction de ces lignes de codes est vraiment necessaires pour un systeme embarque comme un telephone, tablette ou autres.&lt;/p&gt;
-&lt;p&gt;Controle: Linux est dirige par un systeme de mainteneurs, et le grand boss est Linus Torvald. Google doit passer par les memes procedures que les autres pour l&amp;rsquo;inclusion de nouveaux codes, et il doit se conformer aux directives demande par les mainteneurs et Linus au final. Android est donc un fork du kernel, et c&amp;rsquo;est un travails de longue halleine d&amp;rsquo;etre &amp;ldquo;in-sync&amp;rdquo; avec le mainline kernel.&lt;/p&gt;</description></item><item><title>blb (distributed storage)</title><link>http://localhost:1313/posts/2018/blb-distributed-storage/</link><pubDate>Wed, 21 Nov 2018 13:28:11 +0000</pubDate><guid>http://localhost:1313/posts/2018/blb-distributed-storage/</guid><description>&lt;p&gt;Nouveau clone de Ceph, ecrit en Go, et mis OpenSource par WesternDigital. Semble assez simple, mais plus utilise par WesternDigital, car le fruit d&amp;rsquo;un acquisition. Ce veut eductatif pour le moment, car plus maintenu par son acquereur, WD.&lt;/p&gt;
-&lt;p&gt;Je trouve ca vraiment bien qu&amp;rsquo;une compagnie decide d&amp;rsquo;ouvrir les sources dans ces cas particuliers, car les devs qui ont travailles sur ce projet voient pas leur travail jette a la poubelle.&lt;/p&gt;</description></item><item><title>Pilote de chasse</title><link>http://localhost:1313/posts/2018/pilote-de-chasse/</link><pubDate>Tue, 20 Nov 2018 22:17:38 +0000</pubDate><guid>http://localhost:1313/posts/2018/pilote-de-chasse/</guid><description>&lt;p&gt;Apparament il manque de pilotes de CF-18. Un de mes reves d&amp;rsquo;enfance depuis que j&amp;rsquo;ai assiste a une demonstration des snowbirds dans les annees 80. Le Canada venait d&amp;rsquo;acquerir des CF-18 tout neuf.&lt;/p&gt;
-&lt;p&gt;J&amp;rsquo;ai eu la chance de m&amp;rsquo;assoir dans un CF-18 mis a la retraite cet ete. J&amp;rsquo;aurais passe des heures la si j&amp;rsquo;aurais pu.&lt;/p&gt;
-&lt;p&gt;La photo principal de ce site est un CF-101 Voodoo. Tres bel appareil aussi.&lt;/p&gt;</description></item><item><title>Faisabilite des ordinateurs quantique</title><link>http://localhost:1313/posts/2018/faisabilite-des-ordinateurs-quantique/</link><pubDate>Mon, 19 Nov 2018 01:09:52 +0000</pubDate><guid>http://localhost:1313/posts/2018/faisabilite-des-ordinateurs-quantique/</guid><description>&lt;p&gt;Article interessant ici: &lt;a href="https://spectrum.ieee.org/computing/hardware/the-case-against-quantum-computing" target="_blank"&gt;https://spectrum.ieee.org/computing/hardware/the-case-against-quantum-computing&lt;/a&gt;
-, a propos des recheches actuels sur les ordinateurs quantique. L&amp;rsquo;auteur de l&amp;rsquo;article en question est un physicien francais. Il dresse un portrait plutot realiste sur la possibilite d&amp;rsquo;avoir un jour des ordinateurs quantique reellement utiles, et pas simplement des experimentations universitaires ou industriels (IBM, Intel, Google).&lt;/p&gt;
-&lt;p&gt;Parallele avec mon article precedent, je crois qu&amp;rsquo;un ordinateur quantique est possible, mais avec les connaissances et technologies d&amp;rsquo;une civilisation de type II. Pour reference, nous ne sommes pas encore une civilisation de type I.&lt;/p&gt;</description></item><item><title>Les civilisations avances</title><link>http://localhost:1313/posts/2018/les-civilisations-avances/</link><pubDate>Sun, 18 Nov 2018 15:00:44 +0000</pubDate><guid>http://localhost:1313/posts/2018/les-civilisations-avances/</guid><description>&lt;p&gt;Le paradoxe de Fermi. Pourquoi n&amp;rsquo;avons nous pas encore detecte de traces de civilisations avances?&lt;/p&gt;
-&lt;p&gt;Plus j&amp;rsquo;y reflechie, plus je crois que la regle d&amp;rsquo;or est l&amp;rsquo;auto-destruction. Presque qu&amp;rsquo;impossible d&amp;rsquo;avoir des civilisations de types II.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://fr.m.wikipedia.org/wiki/Paradoxe_de_Fermi" target="_blank"&gt;https://fr.m.wikipedia.org/wiki/Paradoxe_de_Fermi&lt;/a&gt;
-
-&lt;a href="https://fr.m.wikipedia.org/wiki/" target="_blank"&gt;https://fr.m.wikipedia.org/wiki/&lt;/a&gt;
-Échelle_de_Kardachev&lt;/p&gt;</description></item><item><title>Supermasive blackhole</title><link>http://localhost:1313/posts/2018/supermasive-blackhole/</link><pubDate>Sat, 10 Nov 2018 15:02:50 +0000</pubDate><guid>http://localhost:1313/posts/2018/supermasive-blackhole/</guid><description>&lt;p&gt;Petite animation des etoiles au centre de notre galaxie:&lt;/p&gt;
-&lt;img src="__GHOST_URL__/content/images/2018/11/Black-hole-workable.gif" alt=""&gt;&lt;p&gt;Je pense qu&amp;rsquo;il y a quelque chose de super massif ;)&lt;/p&gt;</description></item><item><title>Lise Meitner</title><link>http://localhost:1313/posts/2018/lise-meitner/</link><pubDate>Thu, 08 Nov 2018 13:40:00 +0000</pubDate><guid>http://localhost:1313/posts/2018/lise-meitner/</guid><description>&lt;p&gt;Un peu d&amp;rsquo;histoire ce matin, pour se souvenir d&amp;rsquo;une des figures importantes en science, Lise Meitner.&lt;/p&gt;
-&lt;p&gt;Etant une femme et juive, son chemin a ete particulierement difficile.&lt;/p&gt;
-&lt;p&gt;Voyez son parcours sur wikipedia: &lt;a href="https://en.m.wikipedia.org/wiki/Lise_Meitner" target="_blank"&gt;https://en.m.wikipedia.org/wiki/Lise_Meitner&lt;/a&gt;
-&lt;/p&gt;</description></item><item><title>Meilleur projet github</title><link>http://localhost:1313/posts/2018/meilleur-projet-githum/</link><pubDate>Wed, 07 Nov 2018 22:34:26 +0000</pubDate><guid>http://localhost:1313/posts/2018/meilleur-projet-githum/</guid><description>&lt;p&gt;&lt;a href="https://github.com/kelseyhightower/nocode" target="_blank"&gt;https://github.com/kelseyhightower/nocode&lt;/a&gt;
-&lt;/p&gt;</description></item><item><title>Everest</title><link>http://localhost:1313/posts/2018/everest/</link><pubDate>Mon, 05 Nov 2018 01:41:30 +0000</pubDate><guid>http://localhost:1313/posts/2018/everest/</guid><description>&lt;p&gt;On connait rarement les histoires cachees devant de grands exploits. En voici une&amp;hellip;&lt;/p&gt;
-&lt;iframe width="480" height="270" src="https://www.youtube.com/embed/tcmH0__c7aw?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</description></item><item><title>ChromeOS 70</title><link>http://localhost:1313/posts/2018/chromeos-70/</link><pubDate>Fri, 02 Nov 2018 12:21:46 +0000</pubDate><guid>http://localhost:1313/posts/2018/chromeos-70/</guid><description>&lt;p&gt;Je l&amp;rsquo;attendais depuis plusieurs jours, la version 70 de ChromOS. Ce que j&amp;rsquo;attendais en fait, c&amp;rsquo;est le support de Crostini, qui permet de rouller des applications Linux.&lt;/p&gt;
-&lt;p&gt;Ca fonctionne, et donne access a un shell bash, qui se trouve a rouller dans une VM Debian. C&amp;rsquo;est pas tres rapide, normal, avec ce genre de CPU et seulement 4G de RAM. J&amp;rsquo;ai installe VSCode, golang et je peux maintenant coder nativement, sans passer par un cloud IDE.&lt;/p&gt;</description></item><item><title>Fausses ondes gravitationnels?</title><link>http://localhost:1313/posts/2018/fausses-ondes-gravitationnels/</link><pubDate>Wed, 31 Oct 2018 12:22:08 +0000</pubDate><guid>http://localhost:1313/posts/2018/fausses-ondes-gravitationnels/</guid><description>&lt;p&gt;&lt;a href="https://www.newscientist.com/article/mg24032022-600-exclusive-grave-doubts-over-ligos-discovery-of-gravitational-waves/amp/" target="_blank"&gt;https://www.newscientist.com/article/mg24032022-600-exclusive-grave-doubts-over-ligos-discovery-of-gravitational-waves/amp/&lt;/a&gt;
-&lt;/p&gt;
-&lt;p&gt;C&amp;rsquo;est un processus sain et normal en science de toujours remettre en question. Incapable de voir le reste de l&amp;rsquo;article, il est cache derriere un paywall :(&lt;/p&gt;</description></item><item><title>Dure realite</title><link>http://localhost:1313/posts/2018/dure-realite/</link><pubDate>Tue, 30 Oct 2018 21:29:26 +0000</pubDate><guid>http://localhost:1313/posts/2018/dure-realite/</guid><description>&lt;p&gt;&lt;a href="https://www.theguardian.com/environment/2018/oct/30/humanity-wiped-out-animals-since-1970-major-report-finds" target="_blank"&gt;https://www.theguardian.com/environment/2018/oct/30/humanity-wiped-out-animals-since-1970-major-report-finds&lt;/a&gt;
-&lt;/p&gt;
-&lt;p&gt;Les prochaines decenies vont etre de plus en plus dure. La terre a connue pire que les humains, par contre les humains ne connaissent que la terre.&lt;/p&gt;
-&lt;p&gt;Triste, tres triste&amp;hellip;&lt;/p&gt;</description></item><item><title>Cloud9</title><link>http://localhost:1313/posts/2018/cloud9/</link><pubDate>Sun, 28 Oct 2018 13:42:46 +0000</pubDate><guid>http://localhost:1313/posts/2018/cloud9/</guid><description>&lt;p&gt;Dans ma liste de Cloud IDE a essayer ce trouve Cloud9, l&amp;rsquo;IDE developpe par AWS. Mon premier constat est le fait que c&amp;rsquo;est pas bien integre avec Github, et c&amp;rsquo;est vraiment un point a ameliorer, car c&amp;rsquo;est vraiment penible. Sur ce point, Gitpod est de loins tres superieur.&lt;/p&gt;</description></item><item><title>Projet Golang</title><link>http://localhost:1313/posts/2018/projet-golang/</link><pubDate>Sat, 27 Oct 2018 20:38:29 +0000</pubDate><guid>http://localhost:1313/posts/2018/projet-golang/</guid><description>&lt;p&gt;Apres plusieurs jours de reflexions sur le genre de projets que je veux entreprendre pour apprendre GO, j&amp;rsquo;ai finalement eu une bonne idee, du moins selon moi.&lt;/p&gt;
-&lt;p&gt;Mon projet consistrera a ecrire un agent client en GO pour calculer le temps reponse d&amp;rsquo;une site web, ou un api. Cet agent pourra etre executer dans un Lambda AWS, dans plusieurs region AWS. Je vais creer les ressources Terraform necessaire pour l&amp;rsquo;installation rapide et securitaire. Comme le cout d&amp;rsquo;utilisation d&amp;rsquo;une Lambda est a la seconde, il sera possible de rouller selon un laps de temps, et un interfal predefinie.&lt;/p&gt;</description></item><item><title>Gitpod</title><link>http://localhost:1313/posts/2018/gitpod/</link><pubDate>Fri, 26 Oct 2018 12:21:09 +0000</pubDate><guid>http://localhost:1313/posts/2018/gitpod/</guid><description>&lt;p&gt;J&amp;rsquo;ai achete un ChromeBook en partie pour pouvoir coder de petits projets. Je savais bien qu&amp;rsquo;il faudrait que je me trouve un editeur web, car mon Acer R11 ne supporte pas encore la technolohie Crostini (prochaine release de ChromeOS). Gitpod me semble prometteur, mon premier essaie (30 min), semble m&amp;rsquo;indiquer que c&amp;rsquo;est tres inpire de VS Code. Pas encore trouver la commande/touche pour compiller mon petit &amp;ldquo;Hello World&amp;rdquo;!&lt;/p&gt;
-&lt;p&gt;Gratuit pour 10 hrs par mois, sinon 19$/mois pour 100 hrs. Je trouve ca pas mal cher pas contre.&lt;/p&gt;</description></item><item><title>Supplements</title><link>http://localhost:1313/posts/2018/supplements/</link><pubDate>Thu, 25 Oct 2018 12:35:35 +0000</pubDate><guid>http://localhost:1313/posts/2018/supplements/</guid><description>&lt;p&gt;&lt;a href="https://www.bbc.co.uk/news/amp/stories-45971416" target="_blank"&gt;https://www.bbc.co.uk/news/amp/stories-45971416&lt;/a&gt;
-&lt;/p&gt;
-&lt;p&gt;Ahhhh, les supplements alimentaires&amp;hellip;
-Les racourcies menent rarement a bon port!&lt;/p&gt;</description></item><item><title>Katacoda</title><link>http://localhost:1313/posts/2018/katacoda/</link><pubDate>Thu, 25 Oct 2018 00:48:19 +0000</pubDate><guid>http://localhost:1313/posts/2018/katacoda/</guid><description>&lt;p&gt;Vraiment un bon petit site pour se familiariser avec certaines technologies, sans avoir a lire des centaines de pages de documentations, et tout oublier apres 2 jours ;)&lt;/p&gt;</description></item><item><title>Cloudflare</title><link>http://localhost:1313/posts/2018/cloudflare/</link><pubDate>Wed, 24 Oct 2018 23:44:58 +0000</pubDate><guid>http://localhost:1313/posts/2018/cloudflare/</guid><description>&lt;p&gt;J&amp;rsquo;ai demenage les dns de mon domaines pour faire des tests avec leurs produits. Ca me semble vraiment bien. Plus de details a venir&amp;hellip;&lt;/p&gt;</description></item><item><title>Neff chez Trek Factory Racing</title><link>http://localhost:1313/posts/2018/neff-chez-trek-factory-racing/</link><pubDate>Wed, 24 Oct 2018 12:41:50 +0000</pubDate><guid>http://localhost:1313/posts/2018/neff-chez-trek-factory-racing/</guid><description>&lt;p&gt;&lt;a href="https://racing.trekbikes.com/sport/mountainbike/2018/world-cup-champion-jolanda-neff-joins-trek-factory-racing-xc/" target="_blank"&gt;https://racing.trekbikes.com/sport/mountainbike/2018/world-cup-champion-jolanda-neff-joins-trek-factory-racing-xc/&lt;/a&gt;
-&lt;/p&gt;</description></item><item><title>Ghost</title><link>http://localhost:1313/posts/2018/ghost-post/</link><pubDate>Wed, 24 Oct 2018 12:24:28 +0000</pubDate><guid>http://localhost:1313/posts/2018/ghost-post/</guid><description>&lt;p&gt;Simple &amp;amp; rapide et decidemment plus secure que Wordpress. L&amp;rsquo;installation via les droplets preconfigure de Digital Ocean est un plus.&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Import 2023-04-08 17:32 on SIG11</title>
+    <link>http://localhost:1313/tags/import-2023-04-08-1732/</link>
+    <description>Recent content in Import 2023-04-08 17:32 on SIG11</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 25 Dec 2021 01:24:58 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/import-2023-04-08-1732/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Quintessence 2021</title>
+      <link>http://localhost:1313/posts/2021/quintessence/</link>
+      <pubDate>Sat, 25 Dec 2021 01:24:58 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2021/quintessence/</guid>
+      <description>&lt;iframe width=&#34;200&#34; height=&#34;113&#34; src=&#34;https://www.youtube.com/embed/i5XJVY6YzWE?feature=oembed&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&#xA;&lt;p&gt;Je pense que ca represente bien l&amp;rsquo;annee 2021&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Short on space in /boot?</title>
+      <link>http://localhost:1313/posts/2021/short-on-space-in-boot/</link>
+      <pubDate>Fri, 15 Oct 2021 01:12:42 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2021/short-on-space-in-boot/</guid>
+      <description>&lt;p&gt;Edit /etc/initramfs-tools/initramfs.conf (Debian) and replace &lt;code&gt;MODULES=dep&lt;/code&gt; with &lt;code&gt;MODULES=dep&lt;/code&gt;. This will reduce the size of the initrd.img image by guessing modules to include.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;#&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;# MODULES: [ most | netboot | dep | list ]&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;#&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;# most - Add most filesystem and all harddrive drivers.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;#&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;# dep - Try and guess which modules to load.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;#&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;# netboot - Add the base modules, network modules, but skip block devices.&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;#&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;# list - Only include modules from the &amp;#39;additional modules&amp;#39; list&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;#&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;MODULES=dep&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;em&gt;PS: Use at your own risk&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Spotify playlist</title>
+      <link>http://localhost:1313/posts/2021/spotify-playlist/</link>
+      <pubDate>Fri, 15 Oct 2021 00:58:48 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2021/spotify-playlist/</guid>
+      <description>&lt;p&gt;Je vous partage ma playlist de &lt;code&gt;BestOF BlackMetal&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;iframe width=&#34;100%&#34; height=&#34;380&#34; title=&#34;Spotify Embed: BestOf BlackMetal&#34; frameborder=&#34;0&#34; allowfullscreen allow=&#34;autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture&#34; src=&#34;https://open.spotify.com/embed/playlist/3zgZlMMVvIFSlOKfwJDqnc?si=ee8f8a6efb834c51&#34;&gt;&lt;/iframe&gt;&#xA;&lt;p&gt;Beaucoup de chef d&amp;rsquo;oeuvre de criage extreme!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Roussillon cycling club</title>
+      <link>http://localhost:1313/posts/2021/roussillon-cycling-club/</link>
+      <pubDate>Wed, 17 Mar 2021 19:48:54 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2021/roussillon-cycling-club/</guid>
+      <description>&lt;p&gt;J&amp;rsquo;ai crer un groupe de velo pour la MRC de Roussillon, si vous etes de la region: &lt;a href=&#34;https://roussillon-cycling-club.ca&#34; target=&#34;_blank&#34;&gt;https://roussillon-cycling-club.ca&lt;/a&gt;&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>N&#43;1</title>
+      <link>http://localhost:1313/posts/2021/n-1/</link>
+      <pubDate>Sun, 07 Mar 2021 18:06:54 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2021/n-1/</guid>
+      <description>&lt;p&gt;Nouvelle addition pour la saison 2021:&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;__GHOST_URL__/content/images/2021/03/Screenshot_2021-03-07_11-33-52.png&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Comme je passe beaucoup plus de temps sur la route que dans la montagne, j&amp;rsquo;ai decide d&amp;rsquo;investire sur un meilleur velo de route. Bien que j&amp;rsquo;aime mieux le velo de montagne, la route est plus accessible que la montagne (Bromont est quand meme a 1hr de route de chez moi).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Copy&amp;Paste pour XTerm</title>
+      <link>http://localhost:1313/posts/2021/copy-paste-pour-xterm/</link>
+      <pubDate>Fri, 05 Mar 2021 14:20:26 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2021/copy-paste-pour-xterm/</guid>
+      <description>&lt;p&gt;Si vous etes un bizarre comme moi qui utilise XTerm au lieux d&amp;rsquo;une fancy console dans XWindows, voici une ressource utile pour vous facilite la vie avec les Copy&amp;amp;Paste: &lt;a href=&#34;https://wiki.archlinux.org/index.php/Xterm#Copy_and_paste&#34; target=&#34;_blank&#34;&gt;https://wiki.archlinux.org/index.php/Xterm#Copy_and_paste&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;Faut donner ca a Arch Linux, ils ont une excellente documentation technique.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Stats velo 2020</title>
+      <link>http://localhost:1313/posts/2021/stats-velo-2020/</link>
+      <pubDate>Tue, 05 Jan 2021 19:46:26 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2021/stats-velo-2020/</guid>
+      <description>&lt;figure&gt;&lt;img src=&#34;__GHOST_URL__/content/images/2021/01/Screenshot_20210103-164734.gif&#34;&gt;&#xA;&lt;/figure&gt;</description>
+    </item>
+    <item>
+      <title>Lecture 2020</title>
+      <link>http://localhost:1313/posts/2020/lecture-2020/</link>
+      <pubDate>Wed, 16 Dec 2020 18:41:30 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2020/lecture-2020/</guid>
+      <description>&lt;p&gt;J&amp;rsquo;ai jamais ete un grand lecteur, mais en 2020 j&amp;rsquo;ai vraiment accroche aux romans de StarWars. En fait j&amp;rsquo;ai comme mission de lire tous les livre &lt;em&gt;canon&lt;/em&gt; de l&amp;rsquo;univers StarWars.&lt;/p&gt;&#xA;&lt;p&gt;Voici la liste de livre lu cette annee:&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;__GHOST_URL__/content/images/2020/12/Screenshot_2020-12-31_18-19-06.gif&#34;&gt;&#xA;&lt;/figure&gt;</description>
+    </item>
+    <item>
+      <title>Carcass: Heartwork</title>
+      <link>http://localhost:1313/posts/2020/heartwork/</link>
+      <pubDate>Sat, 14 Nov 2020 02:16:14 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2020/heartwork/</guid>
+      <description>&lt;p&gt;Quel album genial, a toute les fois que je reecoute ce chef d&amp;rsquo;oeuvre du metal ca me retransporte dans les annees &amp;lsquo;90. Pas que je retournerai a cette epoque. J&amp;rsquo;entend encore ma mere dire: &amp;ldquo;maudite musique du Diable!!&amp;rdquo;&lt;/p&gt;&#xA;&lt;iframe width=&#34;459&#34; height=&#34;344&#34; src=&#34;https://www.youtube.com/embed/ZpbpOgUybBM?feature=oembed&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;</description>
+    </item>
+    <item>
+      <title>Upgrade DOKS 1.18 -&gt; 1.19</title>
+      <link>http://localhost:1313/posts/2020/upgrade-doks-1-18-1-19/</link>
+      <pubDate>Sat, 07 Nov 2020 15:04:09 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2020/upgrade-doks-1-18-1-19/</guid>
+      <description>&lt;p&gt;Premiere experience d&amp;rsquo;upgrade du managed K8S de Digital Ocean. Voici quelques observations:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Appliquer les recommandations que linter d&amp;rsquo;upgrade de DOKS vous propose. AWS EKS devrait s&amp;rsquo;inspirer de ce tools pour proposer quelques choses de similaire.&lt;/li&gt;&#xA;&lt;li&gt;Ne pas utiliser les addons proposer par doks (ingress, grafana, prometheus, etc). Utiliser helm pour installer ces tools, car vous aurez pas de controle (possible d&amp;rsquo;aller recupere les values de leur helm, mais pas trivial) sur de modification que vous voudriez mettre en place (Pod Disruption Budget, node Affinity/AntiAffinity).&lt;/li&gt;&#xA;&lt;li&gt;Si vous avez pas d&amp;rsquo;autoscaler de worker de configurer, manuellement doubler le nombre de worker avant de debuter votre upgrade. Vous allez eviter de manquer de ressources. Scale down quand tout est upgrader.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;L&amp;rsquo;upgrade a ete effectuer assez rapidement, et sans heurt.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Timezone et golang</title>
+      <link>http://localhost:1313/posts/2020/timezone-et-golang/</link>
+      <pubDate>Thu, 17 Sep 2020 21:54:58 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2020/timezone-et-golang/</guid>
+      <description>&lt;p&gt;J&amp;rsquo;ai trouve cette petite lib &lt;a href=&#34;https://github.com/uniplaces/carbon&#34; target=&#34;_blank&#34;&gt;https://github.com/uniplaces/carbon&lt;/a&gt;&#xA; pour manipuler/comparer facilement des dates/times en go.&lt;/p&gt;&#xA;&lt;p&gt;Ca m&amp;rsquo;as evite un mal de block&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Social Dilemma</title>
+      <link>http://localhost:1313/posts/2020/the-social-dillema/</link>
+      <pubDate>Tue, 15 Sep 2020 14:31:48 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2020/the-social-dillema/</guid>
+      <description>&lt;iframe width=&#34;612&#34; height=&#34;344&#34; src=&#34;https://www.youtube.com/embed/uaaC57tcci0?feature=oembed&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;</description>
+    </item>
+    <item>
+      <title>Migration a DOKS</title>
+      <link>http://localhost:1313/posts/2020/golang/</link>
+      <pubDate>Mon, 24 Aug 2020 18:17:28 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2020/golang/</guid>
+      <description>&lt;p&gt;J&amp;rsquo;ai decide de migrer vers DOKS (DigitalOcean Kubernetes) pour hoster mon blog, et mes projets personnel. Ayant toucher a plusieurs &amp;ldquo;managed&amp;rdquo; Kubernetes, je dois dire que je suis agreablement surpris.&lt;/p&gt;&#xA;&lt;p&gt;external-dns et Cloudflare marche bien aussi, etant plus habituer a utiliser Route53.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Trilogie Starwars Aftermath</title>
+      <link>http://localhost:1313/posts/2020/trilogie-starwars-aftermath/</link>
+      <pubDate>Wed, 29 Jul 2020 14:12:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2020/trilogie-starwars-aftermath/</guid>
+      <description>&lt;p&gt;Cette triologie se deroulle environ 1 ans apres la bataille d&amp;rsquo;Endor. La Nouvelle Republique est encore fragile et tout n&amp;rsquo;est pas gagner.&lt;/p&gt;&#xA;&lt;p&gt;L&amp;rsquo;histoire du premier roman est un peu lente, et on a un peu de misere a s&amp;rsquo;accrocher a l&amp;rsquo;histoire et aux personnages. Ce premier roman se veut plus une introduction aux personnage, ce qui laisse plus de place aux prochains livres pour developper plus les personnages et l&amp;rsquo;histoire.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The great dictator speach</title>
+      <link>http://localhost:1313/posts/2020/the-great-dictator-speach/</link>
+      <pubDate>Wed, 08 Jul 2020 13:45:47 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2020/the-great-dictator-speach/</guid>
+      <description>&lt;iframe width=&#34;612&#34; height=&#34;344&#34; src=&#34;https://www.youtube.com/embed/J7GY1Xg6X20?feature=oembed&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&#xA;&lt;p&gt;Toujours aussi pertinant apres toutes ces annees.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Black lives matter</title>
+      <link>http://localhost:1313/posts/2020/black-lives-matter/</link>
+      <pubDate>Tue, 02 Jun 2020 15:22:46 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2020/black-lives-matter/</guid>
+      <description>&lt;p&gt;Unissons-nous contre l&amp;rsquo;injustice! Tous ensemble!!&lt;/p&gt;&#xA;&lt;p&gt;Le racisme n&amp;rsquo;a pas sa place dans nos societes.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Petit tool pour garder vos manifestes K8S a jour</title>
+      <link>http://localhost:1313/posts/2020/petit-tool-pour-garder-vos-manifeste-k8s-a-jour/</link>
+      <pubDate>Sat, 30 May 2020 13:46:02 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2020/petit-tool-pour-garder-vos-manifeste-k8s-a-jour/</guid>
+      <description>&lt;p&gt;Cette semaine j&amp;rsquo;ai &lt;a href=&#34;https://github.com/FairwindsOps/pluto/pull/79&#34; target=&#34;_blank&#34;&gt;contribue&lt;/a&gt;&#xA; a un petit projet qui permet de vous indiquer les manifestes qui sont a remplacer avant de faire un upgrade de Kubernetes. Ce projet s&amp;rsquo;appele &lt;a href=&#34;https://github.com/FairwindsOps/pluto&#34; target=&#34;_blank&#34;&gt;Pluto&lt;/a&gt;&#xA;.&lt;/p&gt;&#xA;&lt;p&gt;K8S 1.16 a fait un gros menage dans leurs supports d&amp;rsquo;anciennes versions d&amp;rsquo;api. Beaucoup de personnes on eu la mauvaise surprise de voir leurs applications interrompus. Soyez pas cette personne ;)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Support de RancherOS pour Kured</title>
+      <link>http://localhost:1313/posts/2020/support-de-rancheros-pour-kured/</link>
+      <pubDate>Sun, 17 May 2020 02:11:31 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2020/support-de-rancheros-pour-kured/</guid>
+      <description>&lt;p&gt;Pour ceux qui utilisent RKE/RancherOS pour leur cluster Kubernetes, j&amp;rsquo;ai de quoi pour vous. Un patch a Kured qui permet de gerer les updates de RancherOS de facon securitaire.&lt;/p&gt;&#xA;&lt;figure class=&#34;kg-card kg-bookmark-card&#34;&gt;&#xA;  &lt;a href=&#34;https://github.com/laghoule/kured&#34; class=&#34;kg-bookmark-container&#34;&gt;&#xA;    &lt;div class=&#34;kg-bookmark-content&#34;&gt;&#xA;      &lt;div class=&#34;kg-bookmark-title&#34;&gt;laghoule/kured&lt;/div&gt;&#xA;      &lt;div class=&#34;kg-bookmark-description&#34;&gt;Kubernetes Reboot Daemon. Contribute to laghoule/kured development by creating an account on GitHub.&lt;/div&gt;&#xA;      &lt;div class=&#34;kg-bookmark-metadata&#34;&gt;&#xA;        &lt;img src=&#34;https://github.githubassets.com/favicons/favicon.svg&#34; class=&#34;kg-bookmark-icon&#34;&gt;&#xA;        &lt;span class=&#34;kg-bookmark-author&#34;&gt;laghoule&lt;/span&gt;&#xA;        &lt;span class=&#34;kg-bookmark-publisher&#34;&gt;GitHub&lt;/span&gt;&#xA;      &lt;/div&gt;&#xA;    &lt;/div&gt;&#xA;    &#xA;    &lt;div class=&#34;kg-bookmark-thumbnail&#34;&gt;&#xA;      &lt;img src=&#34;https://avatars3.githubusercontent.com/u/1598055?s=400&amp;amp;v=4&#34;&gt;&#xA;    &lt;/div&gt;&#xA;    &#xA;  &lt;/a&gt;&#xA;  &#xA;&lt;/figure&gt;&#xA;&lt;p&gt;Comment ca fonctionne? Voici une config cloud-init pour updater et rebooter un node:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;write_files&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;c&#34;&gt;# Script to upgrade image OS if available (no reboot)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;c&#34;&gt;# Reboot is handled by K8S kured daemonset&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;- &lt;span class=&#34;nt&#34;&gt;path&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;/var/lib/rancher/os-updater.sh&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;permissions&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;0755&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;owner&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;root&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;content&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;sd&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;      #!/bin/sh&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;      source /usr/share/ros/os-release&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;      STATUS=0&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;      OS_LOCATION=`sudo ros os list | head -n1 | awk {&amp;#39;print $2&amp;#39;}`&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;      OS_VERSION=`sudo ros os list | head -n1 | awk {&amp;#39;print $1&amp;#39;} | cut -d : -f 2`&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;      if [ &amp;#34;$OS_LOCATION&amp;#34; == &amp;#34;local&amp;#34; ] &amp;amp;&amp;amp; [ &amp;#34;$OS_VERSION&amp;#34; != &amp;#34;$VERSION&amp;#34; ]; then&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;        echo &amp;#34;Upgrade available&amp;#34;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;        sudo ros os upgrade -f --no-reboot &amp;amp;&amp;gt;&amp;gt; /var/log/os-updater.log&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;        STATUS=$?&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;        if [ $STATUS -eq 0 ]; then&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;          sudo touch /var/lib/rancher/update/need_to_reboot&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;        else&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;          echo &amp;#34;Upgrade failed&amp;#34;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;        fi&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;      else&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;        echo &amp;#34;No upgrade available&amp;#34;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;      fi&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;      exit $STATUS&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;c&#34;&gt;# Check if it&amp;#39;s a good time to reboot&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;- &lt;span class=&#34;nt&#34;&gt;path&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;/var/lib/rancher/os-rebooter.sh&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;permissions&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;0755&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;owner&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;root&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;content&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;&lt;span class=&#34;sd&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;      #!/bin/sh&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;      if [ -f /var/lib/rancher/update/reboot_now ] &amp;amp;&amp;amp; [ -f /var/lib/rancher/update/need_to_reboot ]; then&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;        sudo rm /var/lib/rancher/update/need_to_reboot&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;        sudo rm /var/lib/rancher/update/reboot_now&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;        sudo reboot&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sd&#34;&gt;      fi&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;# Rancher cronjob&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;rancher&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;services&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;c&#34;&gt;# os-updater CRONJOB @hourly&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;os-updater&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;image&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;rancher/os-base:v1.5.5&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;command&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;/var/lib/rancher/os-updater.sh&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;labels&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;io.rancher.os.scope&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;system&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;cron.schedule&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;0 0 * * * ?&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;pid&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;host&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;privileged&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;volumes_from&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;all-volumes&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;c&#34;&gt;# os-rebooter CRONJOB @minute&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;os-rebooter&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;image&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;rancher/os-base:v1.5.5&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;command&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;/var/lib/rancher/os-rebooter.sh&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;labels&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;io.rancher.os.scope&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;system&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;cron.schedule&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;0 * * * * ?&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;pid&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;host&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;privileged&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;volumes_from&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;all-volumes&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Par la suite, avec mon fork de Kured, si le fichier &amp;ndash;reboot-sentinel existe, il creera le fichier &amp;ndash;host-sentinel, qui lui sera gerer par la cronjob systeme &lt;code&gt;os-rebooter&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Covid-19 &amp; services essentiels</title>
+      <link>http://localhost:1313/posts/2020/covid-19-services-essentiels/</link>
+      <pubDate>Sun, 05 Apr 2020 13:26:51 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2020/covid-19-services-essentiels/</guid>
+      <description>&lt;p&gt;Une crise permet toujours de mettre en perspective certain elements que nous prenons pour acquis. Parmis ces elements, certains, meme plusieurs sont negliges. Ici je parle surtout des gens qui s&amp;rsquo;occupent des service essentiels, mais qui sont habituellements mal payes, juges negativement, etc.&lt;/p&gt;&#xA;&lt;p&gt;Ces personnes souvant payees un salaire minimum, avec aucun avantage social. Il faudra bien reflechir dans le future afin de revoir et corriger ces lacunes.&lt;/p&gt;&#xA;&lt;p&gt;Quelques metiers:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Covid-19 &amp; mondialisation</title>
+      <link>http://localhost:1313/posts/2019/covid-19-mondialisation/</link>
+      <pubDate>Sat, 04 Apr 2020 13:55:40 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2019/covid-19-mondialisation/</guid>
+      <description>&lt;p&gt;Le crise actuel, la plus grave depuis la fin de la seconde guerre mondial, nous permet de mettre en evidence certains des problemes, relier a la globalisation des marches. Bien que la modialisation a beaucoup d&amp;rsquo;avantages, en temps de crise, ces avantages ne sont plus aussi attrayant et peuvent meme etre des desavantages.&lt;/p&gt;&#xA;&lt;p&gt;Plusieur service essentiel dependent de l&amp;rsquo;apprivisionnements exterieur:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Alimentations&lt;/li&gt;&#xA;&lt;li&gt;Medicaments&lt;/li&gt;&#xA;&lt;li&gt;Appareil medicaux&lt;/li&gt;&#xA;&lt;li&gt;Energie&lt;/li&gt;&#xA;&lt;li&gt;Textiles&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Une des lessons que nous devrons tirer rapidement de cette crise, sera la mise en place de lois, qui exigerons que nous soyont independant d&amp;rsquo;autres pays (et provinces) dans ces domaines d&amp;rsquo;expertise.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Clone Wars saison 7</title>
+      <link>http://localhost:1313/posts/2020/clone-wars-saison-7/</link>
+      <pubDate>Sun, 26 Jan 2020 16:32:20 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2020/clone-wars-saison-7/</guid>
+      <description>&lt;iframe width=&#34;480&#34; height=&#34;270&#34; src=&#34;https://www.youtube.com/embed/ZLW2jkd6E7g?feature=oembed&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&#xA;&lt;p&gt;Cette derniere saison de Clone Wars risque d&amp;rsquo;etre epique, et aussi tres sombre. Le combat entre Maul et Ahsoka va nous donner des frissons dans le dos assurements.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Tesla ouvre ses brevets</title>
+      <link>http://localhost:1313/posts/2019/tesla-ouvre-ses-brevets/</link>
+      <pubDate>Wed, 18 Dec 2019 13:59:25 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2019/tesla-ouvre-ses-brevets/</guid>
+      <description>&lt;p&gt;Elon Musk a decider d&amp;rsquo;ouvrir ces brevets, ou du moins, ne pas demander de redevance. Pourquoi? Pour accelerer l&amp;rsquo;adoption de vehicules electriques, afin de combattre les changements climatique. Bravo, un tres beau geste, apres l&amp;rsquo;echec cuisant de la COP25 en Espagne.&lt;/p&gt;&#xA;&lt;p&gt;Je ne suis pas un tres grand fan de Musk, mais un geste comme celui-ci est un des gestes qu&amp;rsquo;on devrait voir a l&amp;rsquo;echelle mondial de la part des grandes entreprises.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>pgauthier.dev</title>
+      <link>http://localhost:1313/posts/2019/pgauthier-dev/</link>
+      <pubDate>Tue, 17 Dec 2019 19:42:47 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2019/pgauthier-dev/</guid>
+      <description>&lt;p&gt;Dernierement j&amp;rsquo;ai achete le domaine pgauthier.dev. Je vais eventuellement creer quelques choses, c&amp;rsquo;est pas encore claire, mais tout sera hoster sur DKS (Digital Ocean Kubernetes).&lt;/p&gt;&#xA;&lt;p&gt;Stay tuned&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hello world</title>
+      <link>http://localhost:1313/posts/2019/hello-world/</link>
+      <pubDate>Fri, 06 Dec 2019 00:42:43 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2019/hello-world/</guid>
+      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-golang&#34; data-lang=&#34;golang&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;package&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;fmt&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;fmt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;Println&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;Hello World&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;figure&gt;&lt;img src=&#34;__GHOST_URL__/content/images/2019/12/IMG_20191205_150502-3.jpg&#34;&#xA;    alt=&#34;go run main.go&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;p&gt;go run main.go&lt;/p&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;</description>
+    </item>
+    <item>
+      <title>Suppression de Twitter</title>
+      <link>http://localhost:1313/posts/2019/suppression-de-twitter/</link>
+      <pubDate>Mon, 02 Dec 2019 01:04:43 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2019/suppression-de-twitter/</guid>
+      <description>&lt;p&gt;Deuxieme etape de la suppression de reseaux sociaux: Twitter. Bien que Twitter soi moins intrusif dans nos vies privees, il est neanmoins une source de propagandes et de bullies de toutes sortes.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Algorithme de recommandation</title>
+      <link>http://localhost:1313/posts/2019/algorithme-de-recommandation/</link>
+      <pubDate>Sat, 23 Nov 2019 03:42:10 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2019/algorithme-de-recommandation/</guid>
+      <description>&lt;p&gt;Google News cette semaine m&amp;rsquo;a sortie une nouvelle  extraordinaire&amp;hellip; On a decouvert des insectes sur Mars!&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;__GHOST_URL__/content/images/2019/11/Screenshot_2019-11-22_21-43-31.png&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Comme je ne crois pas n&amp;rsquo;importe quoi, je verifie la source de cette nouvelle: American Association for the Advancement of Science (AAAS). Premier fais a noter, pourquoi la nouvelle ne viens pas de la Nasa, l&amp;rsquo;ESA ou autres agence spaciales serieuse? J&amp;rsquo;ai vite classe cette nouvelle dans la categorie &amp;ldquo;fake news&amp;rdquo; et passer a autres choses.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Tesla Cybertruck VS Homer car</title>
+      <link>http://localhost:1313/posts/2019/tesla-cybertruck-vs-homer-car/</link>
+      <pubDate>Fri, 22 Nov 2019 19:13:03 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2019/tesla-cybertruck-vs-homer-car/</guid>
+      <description>&lt;p&gt;Un sentiment de deja vue ici&amp;hellip;&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;__GHOST_URL__/content/images/2019/11/tesla2-e1574437380471.jpg&#34;&gt;&#xA;&lt;/figure&gt;</description>
+    </item>
+    <item>
+      <title>The Mandalorian</title>
+      <link>http://localhost:1313/posts/2019/the-mandalorian/</link>
+      <pubDate>Fri, 15 Nov 2019 20:26:18 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2019/the-mandalorian/</guid>
+      <description>&lt;p&gt;Le Mandalorian est maintenant disponible en streaming sur Disney+, sous la formule 1 episode par semaine. C&amp;rsquo;est une bonne strategie pour faire en sorte de rester abonner a leur service le plus longtemp possible. A 30 minutes l&amp;rsquo;episode, c&amp;rsquo;est un peu court par contre.&lt;/p&gt;&#xA;&lt;p&gt;Bon, est-ce que ce show en vaut la chandelle? oui. C&amp;rsquo;est une bonne serie, probablement plus pour les fan de StarWars que pour des non initier. De belle surprise sont au rendez-vous, du moins pour les deux episode que j&amp;rsquo;ai eu la chance de voir.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>DoH &amp;&amp; DoT</title>
+      <link>http://localhost:1313/posts/2019/dos-dot/</link>
+      <pubDate>Tue, 12 Nov 2019 14:58:29 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2019/dos-dot/</guid>
+      <description>&lt;p&gt;Experiementation avec DNS over HTTPS et DNS over TLS cette semaine. DoH est maintenant supporte par Firefox, et les prochaines version vont l&amp;rsquo;activer par default, du moins c&amp;rsquo;est ce qui avait ete annonce, jusqu&amp;rsquo;a ce que ca creer un faux scandale au UK (&lt;a href=&#34;https://www.theregister.co.uk/2019/09/24/mozilla_backtracks_doh_for_uk_users/&#34; target=&#34;_blank&#34;&gt;https://www.theregister.co.uk/2019/09/24/mozilla_backtracks_doh_for_uk_users/&lt;/a&gt;&#xA;). L&amp;rsquo;avantage du support directement dans le browser viens du fait qu&amp;rsquo;il possede son propre client DNS, ce qui permet de ne pas utiliser le resolver systeme. Donc si votre destination utilise HTTPS, c&amp;rsquo;est tres dur de pouvoir vous espionnez, car l&amp;rsquo;espion peux seulement voir l&amp;rsquo;IP du destinataire.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Dark (Netflix)</title>
+      <link>http://localhost:1313/posts/2019/dark-netflix/</link>
+      <pubDate>Fri, 01 Nov 2019 12:26:10 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2019/dark-netflix/</guid>
+      <description>&lt;p&gt;Une serie original de Netflix, qui merite vraiment d&amp;rsquo;etre vue. Produit en Allemagne, c&amp;rsquo;est un genre different des series Americaines. Il faut se fermer les yeux sur certains elements (pas de test d&amp;rsquo;ADN, physique tire par les cheveux), mais une fois que vous avez embarque dans l&amp;rsquo;histoire, c&amp;rsquo;est dur de ne pas continuer l&amp;rsquo;histoire.&lt;/p&gt;&#xA;&lt;p&gt;2 saisons disponible, la prochaine sera la derniere.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Rise of Skywalker</title>
+      <link>http://localhost:1313/posts/2019/rise-of-the-skywalker/</link>
+      <pubDate>Tue, 22 Oct 2019 13:17:09 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2019/rise-of-the-skywalker/</guid>
+      <description>&lt;p&gt;Billet achete, reste a attendre&amp;hellip; voici un petit apercu:&lt;/p&gt;&#xA;&lt;iframe width=&#34;480&#34; height=&#34;270&#34; src=&#34;https://www.youtube.com/embed/8Qn_spdM5Zg?feature=oembed&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;</description>
+    </item>
+    <item>
+      <title>Votez!</title>
+      <link>http://localhost:1313/posts/2019/votez/</link>
+      <pubDate>Mon, 21 Oct 2019 12:40:58 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2019/votez/</guid>
+      <description>&lt;p&gt;C&amp;rsquo;est le temps de vous exprimer, VOTER!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>DCS World</title>
+      <link>http://localhost:1313/posts/2019/dcs-world/</link>
+      <pubDate>Wed, 16 Oct 2019 13:21:08 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2019/dcs-world/</guid>
+      <description>&lt;iframe width=&#34;480&#34; height=&#34;270&#34; src=&#34;https://www.youtube.com/embed/732Y62VZIGc?feature=oembed&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&#xA;&lt;p&gt;J&amp;rsquo;ai decouvert recemment DCS World, un simulateur d&amp;rsquo;avion de chasse. Ce simulateur est tres realiste (selon les dires meme d&amp;rsquo;un ancien pilote), et propose plusieurs types d&amp;rsquo;avions, dont le F-18C et le F-5. Deux avions de chasses que le Canada utilisent, ou utilisaient (F-5). Plein de tutoriaux sont disponibles sur Youtube, et de simulations de combats.&lt;/p&gt;&#xA;&lt;figure class=&#34;kg-gallery-card kg-width-wide&#34;&gt;&#xA;  &lt;div class=&#34;kg-gallery-container&#34;&gt;&#xA;    &lt;div class=&#34;kg-gallery-row&#34;&gt;&#xA;    &#xA;&#xA;  &lt;div class=&#34;kg-gallery-image&#34;&gt;&#xA;    &lt;img src=&#34;__GHOST_URL__/content/images/2019/10/IMG_20170916_120117-1.jpg&#34; width=&#34;4160&#34; height=&#34;3120&#34;&gt;&#xA;  &lt;/div&gt;&#xA;&#xA;  &lt;div class=&#34;kg-gallery-image&#34;&gt;&#xA;    &lt;img src=&#34;__GHOST_URL__/content/images/2019/10/IMG_20180331_123926.jpg&#34; width=&#34;4160&#34; height=&#34;3120&#34;&gt;&#xA;  &lt;/div&gt;&#xA;&#xA;  &lt;div class=&#34;kg-gallery-image&#34;&gt;&#xA;    &lt;img src=&#34;__GHOST_URL__/content/images/2019/10/IMG_20180730_143231-1.jpg&#34; width=&#34;4160&#34; height=&#34;3120&#34;&gt;&#xA;  &lt;/div&gt;&#xA;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;kg-gallery-row&#34;&gt;&#xA;&#xA;    &lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;  &#xA;&lt;/figure&gt;&#xA;&lt;p&gt;Ce simulateur est ce qui se rapproche le plus de mon reve d&amp;rsquo;enfance d&amp;rsquo;etre pilote de chasse.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>e-book</title>
+      <link>http://localhost:1313/posts/2019/e-book/</link>
+      <pubDate>Tue, 15 Oct 2019 12:22:43 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2019/e-book/</guid>
+      <description>&lt;figure&gt;&lt;img src=&#34;__GHOST_URL__/content/images/2019/10/Screenshot_2019-10-15_08-17-18.png&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;The Go Programming Language, 40$ paperback, et 15$ e-book. Je me convertie au e-book, avec l&amp;rsquo;achat d&amp;rsquo;un Kindle. Plus de livres qui trainent partout, et la possibilite d&amp;rsquo;avoir avec soi, toute sa librairie, ou que je soie.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Automne</title>
+      <link>http://localhost:1313/posts/2019/automne/</link>
+      <pubDate>Mon, 14 Oct 2019 20:11:05 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2019/automne/</guid>
+      <description>&lt;p&gt;Couleur d&amp;rsquo;automne sur le bord du fleuve St-Laurent&lt;/p&gt;&#xA;&lt;figure class=&#34;kg-gallery-card kg-width-wide&#34;&gt;&#xA;  &lt;div class=&#34;kg-gallery-container&#34;&gt;&#xA;    &lt;div class=&#34;kg-gallery-row&#34;&gt;&#xA;    &#xA;&#xA;  &lt;div class=&#34;kg-gallery-image&#34;&gt;&#xA;    &lt;img src=&#34;__GHOST_URL__/content/images/2019/10/IMG_20191013_125946-1.jpg&#34; width=&#34;4608&#34; height=&#34;3456&#34;&gt;&#xA;  &lt;/div&gt;&#xA;&#xA;  &lt;div class=&#34;kg-gallery-image&#34;&gt;&#xA;    &lt;img src=&#34;__GHOST_URL__/content/images/2019/10/IMG_20191013_125950.jpg&#34; width=&#34;4608&#34; height=&#34;3456&#34;&gt;&#xA;  &lt;/div&gt;&#xA;&#xA;  &lt;div class=&#34;kg-gallery-image&#34;&gt;&#xA;    &lt;img src=&#34;__GHOST_URL__/content/images/2019/10/IMG_20191013_130155.jpg&#34; width=&#34;4608&#34; height=&#34;3456&#34;&gt;&#xA;  &lt;/div&gt;&#xA;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;kg-gallery-row&#34;&gt;&#xA;&#xA;  &lt;div class=&#34;kg-gallery-image&#34;&gt;&#xA;    &lt;img src=&#34;__GHOST_URL__/content/images/2019/10/IMG_20191013_132018.jpg&#34; width=&#34;4608&#34; height=&#34;3456&#34;&gt;&#xA;  &lt;/div&gt;&#xA;&#xA;    &lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;  &#xA;&lt;/figure&gt;</description>
+    </item>
+    <item>
+      <title>Endossement</title>
+      <link>http://localhost:1313/posts/2019/endossement/</link>
+      <pubDate>Sat, 12 Oct 2019 20:30:21 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2019/endossement/</guid>
+      <description>&lt;p&gt;Je suis avec Jameet Singh, je vote NDP!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Premiere contribution a eksctl</title>
+      <link>http://localhost:1313/posts/2019/premiere-contribution-a-eksctl/</link>
+      <pubDate>Thu, 10 Oct 2019 01:02:15 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2019/premiere-contribution-a-eksctl/</guid>
+      <description>&lt;figure&gt;&lt;img src=&#34;__GHOST_URL__/content/images/2019/10/Screenshot_2019-10-09_20-54-59.png&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Bon, c&amp;rsquo;est pas grand chose, mais ca fix un bug qui nous affectais a la job. Surment plein d&amp;rsquo;autres personnes aussi, parce que les PDB sont de plus en plus utilises dans Kubernetes.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Transformer un vieux T520 en Chromebook</title>
+      <link>http://localhost:1313/posts/2019/transformer-un-vieux-t520-en-chromebook/</link>
+      <pubDate>Tue, 08 Oct 2019 00:42:27 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2019/transformer-un-vieux-t520-en-chromebook/</guid>
+      <description>&lt;p&gt;C&amp;rsquo;est possible avec CloudReady, un fork de ChromeOS. Pour redonner vie a un vieux laptop de 2011, ca fait la job. Voici quelques bemols:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Pas de support pour Google Play (application Android), parce que c&amp;rsquo;est proprietaire (DUH)&lt;/li&gt;&#xA;&lt;li&gt;Viens avec VirtualBox, pourquoi?? quand KVM est natif et 100 fois mieux?&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Comment recuperer une license Windows d&#39;un bios de laptop</title>
+      <link>http://localhost:1313/posts/2019/comment-recuperer-un-license-windows-dun-bios-de-laptop/</link>
+      <pubDate>Wed, 02 Oct 2019 01:28:12 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2019/comment-recuperer-un-license-windows-dun-bios-de-laptop/</guid>
+      <description>&lt;p&gt;TADA: &lt;code&gt;sudo xxd /sys/firmware/acpi/tables/MSDM&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Supression de Facebook</title>
+      <link>http://localhost:1313/posts/2019/supression-de-facebook/</link>
+      <pubDate>Tue, 27 Aug 2019 01:35:51 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2019/supression-de-facebook/</guid>
+      <description>&lt;p&gt;Ca y est, c&amp;rsquo;est fait. Compte Facebook supprimer. J&amp;rsquo;ai erradique ce cancer qui cruge peu a peu ce monde &amp;ldquo;moderne&amp;rdquo;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>File d&#39;attente</title>
+      <link>http://localhost:1313/posts/2019/fille-dattente/</link>
+      <pubDate>Sat, 27 Apr 2019 13:11:17 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2019/fille-dattente/</guid>
+      <description>&lt;p&gt;Une file d&amp;rsquo;attente en ligne. Oui, oui en 2019 il semble que certaines personnes pensent que c&amp;rsquo;est une bonne idee de proceder de cette facon.&lt;/p&gt;&#xA;&lt;p&gt;Incroyable&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;__GHOST_URL__/content/images/2019/04/Screenshot-2019-04-27-at-09.04.35.png&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Et apres le temps d&amp;rsquo;attente, je tombe sur ceci:&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;__GHOST_URL__/content/images/2019/04/Screenshot-2019-04-27-at-09.30.36.png&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Vraiment patetique.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Bob Ibex 28 plus</title>
+      <link>http://localhost:1313/posts/2019/bob-ibex-28-plus/</link>
+      <pubDate>Sun, 10 Mar 2019 20:44:18 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2019/bob-ibex-28-plus/</guid>
+      <description>&lt;p&gt;Ca fait longtemps que j&amp;rsquo;y pensais, c&amp;rsquo;est maintenant fait. Le gros avantage de ce trailer, il fit sur tout mes velo (avec l&amp;rsquo;achat d&amp;rsquo;un adapteur pour mes velo de montagne). Je peux faire du singletrack, ou de la route.&#xA;&lt;a href=&#34;https://youtu.be/5aMFgMuBXvI&#34; target=&#34;_blank&#34;&gt;&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;iframe width=&#34;459&#34; height=&#34;344&#34; src=&#34;https://www.youtube.com/embed/5aMFgMuBXvI?feature=oembed&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;</description>
+    </item>
+    <item>
+      <title>Amber/Orange light on Tacx Vortex (T2180)</title>
+      <link>http://localhost:1313/posts/2019/amber-orange-light-on-tacx-vortex/</link>
+      <pubDate>Fri, 22 Feb 2019 01:17:12 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2019/amber-orange-light-on-tacx-vortex/</guid>
+      <description>&lt;p&gt;In case you have this unfortunate event, and are unable to update your firmware. I provide you the restoration procedure sent to me by Tacx support. But before going into this process, I suggest you read this &lt;a href=&#34;https://zwiftinsider.com/updating-your-tacx-smart-brake-firmware/&#34; target=&#34;_blank&#34;&gt;post&lt;/a&gt;&#xA;.&lt;/p&gt;&#xA;&lt;p&gt;** USE AT YOUR OWN RISK **&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Can you please try attached download firmware link on your smart trainer with the Tacx Utility app.&#xA;&#xA;Forward his email to an mail address that you can access on your smart phone.&#xA;Now open the email on your smartphone and click on the link below:&#xA;&#xA;https://drive.google.com/file/d/1aqXF87xR-YqtD-Y7kCcHBm-Ev70ZlrGD/view?usp=sharing&#xA;&#xA;Be sure to click on the download button (marked by a red circle in the image below).&#xA;&#xA;Choose to open this file with the Tacx Utility app and connect your trainer (wait for the circle to become green).&#xA;When your trainer is connected choose &amp;#34;Update&amp;#34; to begin the firmware installation.&#xA;Wait for the firmware installation to complete and follow the instructions on screen when necessary.&#xA;Once the firmware is installed, you can use your trainer again.&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The procedure take about 10 min to flash, and the final result:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Les effets positifs du velo</title>
+      <link>http://localhost:1313/posts/2019/les-effets-positifs-de-velo/</link>
+      <pubDate>Sun, 10 Feb 2019 20:56:28 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2019/les-effets-positifs-de-velo/</guid>
+      <description>&lt;iframe width=&#34;480&#34; height=&#34;270&#34; src=&#34;https://www.youtube.com/embed/Mr4m7ZoVfwc?feature=oembed&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;</description>
+    </item>
+    <item>
+      <title>Tour de Zwift</title>
+      <link>http://localhost:1313/posts/2019/tour-de-zwift/</link>
+      <pubDate>Mon, 04 Feb 2019 00:46:21 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2019/tour-de-zwift/</guid>
+      <description>&lt;p&gt;Complete le tour de Zwift aujourd&amp;rsquo;hui. Tres cool ce genre de simulation. Bonne facon de motiver un rider!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Opinion</title>
+      <link>http://localhost:1313/posts/2019/opinion/</link>
+      <pubDate>Thu, 24 Jan 2019 13:31:31 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2019/opinion/</guid>
+      <description>&lt;p&gt;Donner son opinion dans le monde d&amp;rsquo;aujourd&amp;rsquo;hui est devenue un acte risque. Peut importe ce que vous dites, quelqu&amp;rsquo;un va souhaiter votre mort.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Zwift review</title>
+      <link>http://localhost:1313/posts/2019/zwift-review/</link>
+      <pubDate>Mon, 21 Jan 2019 01:31:02 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2019/zwift-review/</guid>
+      <description>&lt;p&gt;Apres un peu plus d&amp;rsquo;un mois d&amp;rsquo;essaie, 15 hr et 500 km plus tard, mon verdict. Et bien, c&amp;rsquo;est positif, meme a 18$/mois. Zwift rend l&amp;rsquo;experience beaucoup moins penible, et ca peut meme etre agreable de souffrir dans son sous-sol, avec plusieurs milliers d&amp;rsquo;adepte en ligne.&lt;/p&gt;&#xA;&lt;p&gt;L&amp;rsquo;experience peut-etre tres differente tout dependant de l&amp;rsquo;equipement que vous possedez. Pour ma part j&amp;rsquo;ai optez pour un smart trainner d&amp;rsquo;entree de gamme. Pour beneficier d&amp;rsquo;un comportement plus realiste, un trainner plus haut de gamme est recommander. Mon but premier etant de rendre l&amp;rsquo;entrainement interieur moins penible,  et c&amp;rsquo;est reussi.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>THE ABSA CAPE EPIC WORKOUT SERIES</title>
+      <link>http://localhost:1313/posts/2019/the-absa-cape-epic-workout-series/</link>
+      <pubDate>Thu, 10 Jan 2019 22:22:33 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2019/the-absa-cape-epic-workout-series/</guid>
+      <description>&lt;p&gt;Ca c&amp;rsquo;est trop hot: &lt;a href=&#34;https://zwift.com/events/series/the-absa-cape-epic-workout-series/&#34; target=&#34;_blank&#34;&gt;https://zwift.com/events/series/the-absa-cape-epic-workout-series/&lt;/a&gt;&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>LHC run II</title>
+      <link>http://localhost:1313/posts/2018/lhc-run-ii/</link>
+      <pubDate>Sun, 30 Dec 2018 13:15:02 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2018/lhc-run-ii/</guid>
+      <description>&lt;p&gt;Article interessant de Sabine Hossenfelder a propos de la non-decouverte de nouvelles particules elementaires au LHC: &lt;a href=&#34;http://backreaction.blogspot.com/2018/12/how-lhc-may-spell-end-of-particle.html&#34; target=&#34;_blank&#34;&gt;http://backreaction.blogspot.com/2018/12/how-lhc-may-spell-end-of-particle.html&lt;/a&gt;&#xA;. On est decidement a la croise des chemins pour le domaine de la physique des particules. Un analyse et un correction est de mise, mais beaucoup refusent de voir les faits dans le data accumules au cours de ces dernieres annees.&lt;/p&gt;&#xA;&lt;p&gt;C&amp;rsquo;est quand meme ironique quand on pense que des scientifiques regardent les experimentations, mais rejettent les resultats, et demande un autre accelerateurs encore plus puissant, et surtout, tres couteux (10 milliard). Je crois qu&amp;rsquo;il serait plus judicieux de consolider notre savoir existant, entre autre sur la physique des neutrinos, et ceci qui risque de nous ouvrir de nouvelles portes.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Revue technologique 2018</title>
+      <link>http://localhost:1313/posts/2018/revue-technologique-2018/</link>
+      <pubDate>Wed, 26 Dec 2018 13:04:43 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2018/revue-technologique-2018/</guid>
+      <description>&lt;p&gt;Deux sujets on particulierement fait parle cette annee: Securite et Kubernetes. L&amp;rsquo;annee 2018 a commence par la publication des fameux bugs de securites des branches de preductions des CPU modernes (Spectre et Meltdown). On peut dire que ce fut un vrai &lt;code&gt;meltdown&lt;/code&gt; de la part d&amp;rsquo;Intel particulierement, qui a reussi a s&amp;rsquo;aliener une bonne partie de la comunaute OpenSource, grace a des pratiques de securite innaproprier pour les modeles &lt;code&gt;Ouvert&lt;/code&gt;. 2019 va continuer avec la decouverte de nouvelles variantes de ces bugs et vecteurs d&amp;rsquo;attaques.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Motivation: Zwift</title>
+      <link>http://localhost:1313/posts/2018/motivation-zwift/</link>
+      <pubDate>Sun, 16 Dec 2018 13:33:21 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2018/motivation-zwift/</guid>
+      <description>&lt;iframe width=&#34;480&#34; height=&#34;270&#34; src=&#34;https://www.youtube.com/embed/q8fArWR-CsE?feature=oembed&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&#xA;&lt;p&gt;Pour me motiver a reprendre l&amp;rsquo;entrainnement, j&amp;rsquo;ai decide de joindre le &amp;ldquo;mouvement&amp;rdquo; Zwift. J&amp;rsquo;ai donc du changer de bike trainer, car pour utiliser Zwift, il faut setup un peu plus evoluer. J&amp;rsquo;ai opte pour un Tacx Vortex smart. C&amp;rsquo;est un model de base, mais ca fera l&amp;rsquo;affaire (c&amp;rsquo;est un hobby, pas une profession).&lt;/p&gt;&#xA;&lt;p&gt;Comme je n&amp;rsquo;ai pas d&amp;rsquo;ordinateur Windows ou Mac, j&amp;rsquo;ai installe l&amp;rsquo;application mobile Android, qui se trouve encore en mode beta. L&amp;rsquo;application semble avoir ete porter sur android, sans trop de regard au fais que ca roulle sur un telephone. Une option que j&amp;rsquo;aimerais vraiment voir eventuellement, c&amp;rsquo;est la possibilite de &amp;ldquo;caster&amp;rdquo; sur une TV. Presentement le seul moyen est de caste le telephone sur le TV. Ca fonctionne, mais le telephone doit rester ouvert tout le long de la session.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Never give up</title>
+      <link>http://localhost:1313/posts/2018/never-give-up/</link>
+      <pubDate>Sat, 15 Dec 2018 13:08:01 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2018/never-give-up/</guid>
+      <description>&lt;img src=&#34;__GHOST_URL__/content/images/2018/12/IMG_20181215_080538.jpg&#34; alt=&#34;&#34;&gt;</description>
+    </item>
+    <item>
+      <title>Quand realiserons-nous?</title>
+      <link>http://localhost:1313/posts/2018/quand-realiserons-nous/</link>
+      <pubDate>Fri, 14 Dec 2018 22:28:20 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2018/quand-realiserons-nous/</guid>
+      <description>&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/HzeekxtyFOY&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&#xA;&lt;p&gt;Dure de rester insensible a un tel discours, non?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>6 dec</title>
+      <link>http://localhost:1313/posts/2018/6-dec/</link>
+      <pubDate>Thu, 06 Dec 2018 22:36:48 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2018/6-dec/</guid>
+      <description>&lt;p&gt;Geneviève Bergeron&#xA;Hélène Colgan&#xA;Nathalie Croteau&#xA;Barbara Daigneault&#xA;Anne-Marie Edward&#xA;Maud Haviernick&#xA;Maryse Laganière&#xA;Maryse Leclair&#xA;Anne-Marie Lemay&#xA;Sonia Pelletier&#xA;Michèle Richard&#xA;Annie St-Arneault&#xA;Annie Turcotte&#xA;Barbara Klucznik-Widajewicz&#xA;&lt;img src=&#34;__GHOST_URL__/content/images/2018/12/IMG_20181206_173213.jpg&#34; alt=&#34;Geneviève Bergeron&#xA;Hélène Colgan&#xA;Nathalie Croteau&#xA;Barbara Daigneault&#xA;Anne-Marie Edward&#xA;Maud Haviernick&#xA;Maryse Laganière&#xA;Maryse Leclair&#xA;Anne-Marie Lemay&#xA;Sonia Pelletier&#xA;Michèle Richard&#xA;Annie St-Arneault&#xA;Annie Turcotte&#xA;Barbara Klucznik-Widajewicz&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Harry Leslie Smith</title>
+      <link>http://localhost:1313/posts/2018/harry-leslie-smith/</link>
+      <pubDate>Wed, 28 Nov 2018 13:27:48 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2018/harry-leslie-smith/</guid>
+      <description>&lt;p&gt;Se souvenir du passe, pour ne pas repeter ces erreurs, et honorer la memoire de ceux qui se sont battus pour nos acquis du present.&lt;/p&gt;&#xA;&lt;p&gt;Repose en paix Harry&lt;/p&gt;&#xA;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/huWBcsQS2vE&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;</description>
+    </item>
+    <item>
+      <title>Fatbike</title>
+      <link>http://localhost:1313/posts/2018/fatbike/</link>
+      <pubDate>Sat, 24 Nov 2018 20:59:16 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2018/fatbike/</guid>
+      <description>&lt;p&gt;Premiere sortie en fatbike cet automne, et preparation de l&amp;rsquo;entrainement pour 2019. Etablire les objectifs et les courses pour la prochaine saison. En 2018 j&amp;rsquo;ai pas participe a des courses de fatbike, mais 2019 devrait etre different, enfin, j&amp;rsquo;espere.&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;__GHOST_URL__/content/images/2018/11/IMG_20181124_131340.jpg&#34;&#xA;    alt=&#34;Bordure du fleuve St-Laurent&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;p&gt;Bordure du fleuve St-Laurent&lt;/p&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;</description>
+    </item>
+    <item>
+      <title>Fuchsia VS Android/Linux</title>
+      <link>http://localhost:1313/posts/2018/fuchsia-vs-android-linux/</link>
+      <pubDate>Sat, 24 Nov 2018 02:38:57 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2018/fuchsia-vs-android-linux/</guid>
+      <description>&lt;p&gt;Pourquoi Google developpe Fuchsia? Pour plusieurs raisons et voici selon moi les motivations:&lt;/p&gt;&#xA;&lt;p&gt;Securite: Linux contient des dixaines de millions de lignes de codes. Plus de codes, plus de bugs. Une fraction de ces lignes de codes est vraiment necessaires pour un systeme embarque comme un telephone, tablette ou autres.&lt;/p&gt;&#xA;&lt;p&gt;Controle: Linux est dirige par un systeme de mainteneurs, et le grand boss est Linus Torvald. Google doit passer par les memes procedures que les autres pour l&amp;rsquo;inclusion de nouveaux codes, et il doit se conformer aux directives demande par les mainteneurs et Linus au final. Android est donc un fork du kernel, et c&amp;rsquo;est un travails de longue halleine d&amp;rsquo;etre &amp;ldquo;in-sync&amp;rdquo; avec le mainline kernel.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>blb (distributed storage)</title>
+      <link>http://localhost:1313/posts/2018/blb-distributed-storage/</link>
+      <pubDate>Wed, 21 Nov 2018 13:28:11 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2018/blb-distributed-storage/</guid>
+      <description>&lt;p&gt;Nouveau clone de Ceph, ecrit en Go, et mis OpenSource par WesternDigital. Semble assez simple, mais plus utilise par WesternDigital, car le fruit d&amp;rsquo;un acquisition. Ce veut eductatif pour le moment, car plus maintenu par son acquereur, WD.&lt;/p&gt;&#xA;&lt;p&gt;Je trouve ca vraiment bien qu&amp;rsquo;une compagnie decide d&amp;rsquo;ouvrir les sources dans ces cas particuliers, car les devs qui ont travailles sur ce projet voient pas leur travail jette a la poubelle.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Pilote de chasse</title>
+      <link>http://localhost:1313/posts/2018/pilote-de-chasse/</link>
+      <pubDate>Tue, 20 Nov 2018 22:17:38 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2018/pilote-de-chasse/</guid>
+      <description>&lt;p&gt;Apparament il manque de pilotes de CF-18. Un de mes reves d&amp;rsquo;enfance depuis que j&amp;rsquo;ai assiste a une demonstration des snowbirds dans les annees 80. Le Canada venait d&amp;rsquo;acquerir des CF-18 tout neuf.&lt;/p&gt;&#xA;&lt;p&gt;J&amp;rsquo;ai eu la chance de m&amp;rsquo;assoir dans un CF-18 mis a la retraite cet ete. J&amp;rsquo;aurais passe des heures la si j&amp;rsquo;aurais pu.&lt;/p&gt;&#xA;&lt;p&gt;La photo principal de ce site est un CF-101 Voodoo. Tres bel appareil aussi.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Faisabilite des ordinateurs quantique</title>
+      <link>http://localhost:1313/posts/2018/faisabilite-des-ordinateurs-quantique/</link>
+      <pubDate>Mon, 19 Nov 2018 01:09:52 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2018/faisabilite-des-ordinateurs-quantique/</guid>
+      <description>&lt;p&gt;Article interessant ici: &lt;a href=&#34;https://spectrum.ieee.org/computing/hardware/the-case-against-quantum-computing&#34; target=&#34;_blank&#34;&gt;https://spectrum.ieee.org/computing/hardware/the-case-against-quantum-computing&lt;/a&gt;&#xA;, a propos des recheches actuels sur les ordinateurs quantique. L&amp;rsquo;auteur de l&amp;rsquo;article en question est un physicien francais. Il dresse un portrait plutot realiste sur la possibilite d&amp;rsquo;avoir un jour des ordinateurs quantique reellement utiles, et pas simplement des experimentations universitaires ou industriels (IBM, Intel, Google).&lt;/p&gt;&#xA;&lt;p&gt;Parallele avec mon article precedent, je crois qu&amp;rsquo;un ordinateur quantique est possible, mais avec les connaissances et technologies d&amp;rsquo;une civilisation de type II. Pour reference, nous ne sommes pas encore une civilisation de type I.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Les civilisations avances</title>
+      <link>http://localhost:1313/posts/2018/les-civilisations-avances/</link>
+      <pubDate>Sun, 18 Nov 2018 15:00:44 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2018/les-civilisations-avances/</guid>
+      <description>&lt;p&gt;Le paradoxe de Fermi. Pourquoi n&amp;rsquo;avons nous pas encore detecte de traces de civilisations avances?&lt;/p&gt;&#xA;&lt;p&gt;Plus j&amp;rsquo;y reflechie, plus je crois que la regle d&amp;rsquo;or est  l&amp;rsquo;auto-destruction. Presque qu&amp;rsquo;impossible d&amp;rsquo;avoir des civilisations de types II.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://fr.m.wikipedia.org/wiki/Paradoxe_de_Fermi&#34; target=&#34;_blank&#34;&gt;https://fr.m.wikipedia.org/wiki/Paradoxe_de_Fermi&lt;/a&gt;&#xA;&#xA;&lt;a href=&#34;https://fr.m.wikipedia.org/wiki/&#34; target=&#34;_blank&#34;&gt;https://fr.m.wikipedia.org/wiki/&lt;/a&gt;&#xA;Échelle_de_Kardachev&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Supermasive blackhole</title>
+      <link>http://localhost:1313/posts/2018/supermasive-blackhole/</link>
+      <pubDate>Sat, 10 Nov 2018 15:02:50 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2018/supermasive-blackhole/</guid>
+      <description>&lt;p&gt;Petite animation des etoiles au centre de notre galaxie:&lt;/p&gt;&#xA;&lt;img src=&#34;__GHOST_URL__/content/images/2018/11/Black-hole-workable.gif&#34; alt=&#34;&#34;&gt;&lt;p&gt;Je pense qu&amp;rsquo;il y a quelque chose de super massif ;)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lise Meitner</title>
+      <link>http://localhost:1313/posts/2018/lise-meitner/</link>
+      <pubDate>Thu, 08 Nov 2018 13:40:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2018/lise-meitner/</guid>
+      <description>&lt;p&gt;Un peu d&amp;rsquo;histoire ce matin, pour se souvenir d&amp;rsquo;une       des figures importantes en science, Lise Meitner.&lt;/p&gt;&#xA;&lt;p&gt;Etant une femme et juive, son chemin a ete particulierement difficile.&lt;/p&gt;&#xA;&lt;p&gt;Voyez son parcours sur wikipedia: &lt;a href=&#34;https://en.m.wikipedia.org/wiki/Lise_Meitner&#34; target=&#34;_blank&#34;&gt;https://en.m.wikipedia.org/wiki/Lise_Meitner&lt;/a&gt;&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Meilleur projet github</title>
+      <link>http://localhost:1313/posts/2018/meilleur-projet-githum/</link>
+      <pubDate>Wed, 07 Nov 2018 22:34:26 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2018/meilleur-projet-githum/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/kelseyhightower/nocode&#34; target=&#34;_blank&#34;&gt;https://github.com/kelseyhightower/nocode&lt;/a&gt;&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Everest</title>
+      <link>http://localhost:1313/posts/2018/everest/</link>
+      <pubDate>Mon, 05 Nov 2018 01:41:30 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2018/everest/</guid>
+      <description>&lt;p&gt;On connait rarement les histoires cachees devant de grands exploits. En voici une&amp;hellip;&lt;/p&gt;&#xA;&lt;iframe width=&#34;480&#34; height=&#34;270&#34; src=&#34;https://www.youtube.com/embed/tcmH0__c7aw?feature=oembed&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;</description>
+    </item>
+    <item>
+      <title>ChromeOS 70</title>
+      <link>http://localhost:1313/posts/2018/chromeos-70/</link>
+      <pubDate>Fri, 02 Nov 2018 12:21:46 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2018/chromeos-70/</guid>
+      <description>&lt;p&gt;Je l&amp;rsquo;attendais depuis plusieurs jours, la version 70 de ChromOS. Ce que j&amp;rsquo;attendais en fait, c&amp;rsquo;est le support de Crostini, qui permet de rouller des applications Linux.&lt;/p&gt;&#xA;&lt;p&gt;Ca fonctionne, et donne access a un shell bash, qui se trouve a rouller dans une VM Debian. C&amp;rsquo;est pas tres rapide, normal, avec ce genre de CPU et seulement 4G de RAM. J&amp;rsquo;ai installe VSCode, golang et je peux maintenant coder nativement, sans passer par un cloud IDE.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Fausses ondes gravitationnels?</title>
+      <link>http://localhost:1313/posts/2018/fausses-ondes-gravitationnels/</link>
+      <pubDate>Wed, 31 Oct 2018 12:22:08 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2018/fausses-ondes-gravitationnels/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.newscientist.com/article/mg24032022-600-exclusive-grave-doubts-over-ligos-discovery-of-gravitational-waves/amp/&#34; target=&#34;_blank&#34;&gt;https://www.newscientist.com/article/mg24032022-600-exclusive-grave-doubts-over-ligos-discovery-of-gravitational-waves/amp/&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;C&amp;rsquo;est un processus sain et normal en science de toujours remettre en question. Incapable de voir le reste de l&amp;rsquo;article, il est cache derriere un paywall :(&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Dure realite</title>
+      <link>http://localhost:1313/posts/2018/dure-realite/</link>
+      <pubDate>Tue, 30 Oct 2018 21:29:26 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2018/dure-realite/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.theguardian.com/environment/2018/oct/30/humanity-wiped-out-animals-since-1970-major-report-finds&#34; target=&#34;_blank&#34;&gt;https://www.theguardian.com/environment/2018/oct/30/humanity-wiped-out-animals-since-1970-major-report-finds&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;Les prochaines decenies vont etre de plus en plus dure. La terre a connue pire que les humains, par contre les humains ne connaissent que la terre.&lt;/p&gt;&#xA;&lt;p&gt;Triste, tres triste&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cloud9</title>
+      <link>http://localhost:1313/posts/2018/cloud9/</link>
+      <pubDate>Sun, 28 Oct 2018 13:42:46 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2018/cloud9/</guid>
+      <description>&lt;p&gt;Dans ma liste de Cloud IDE a essayer ce trouve Cloud9, l&amp;rsquo;IDE developpe par AWS. Mon premier constat est le fait que c&amp;rsquo;est pas bien integre avec Github, et c&amp;rsquo;est vraiment un point a ameliorer, car c&amp;rsquo;est vraiment penible. Sur ce point, Gitpod est de loins tres superieur.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Projet Golang</title>
+      <link>http://localhost:1313/posts/2018/projet-golang/</link>
+      <pubDate>Sat, 27 Oct 2018 20:38:29 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2018/projet-golang/</guid>
+      <description>&lt;p&gt;Apres plusieurs jours de reflexions sur le genre de projets que je veux entreprendre pour apprendre GO, j&amp;rsquo;ai finalement eu une bonne idee, du moins selon moi.&lt;/p&gt;&#xA;&lt;p&gt;Mon projet consistrera a ecrire un agent client en GO pour calculer le temps reponse d&amp;rsquo;une site web, ou un api. Cet agent pourra etre executer dans un Lambda AWS, dans plusieurs region AWS. Je vais creer les ressources Terraform necessaire pour l&amp;rsquo;installation rapide et securitaire. Comme le cout d&amp;rsquo;utilisation d&amp;rsquo;une Lambda est a la seconde, il sera possible de rouller selon un laps de temps, et un interfal predefinie.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Gitpod</title>
+      <link>http://localhost:1313/posts/2018/gitpod/</link>
+      <pubDate>Fri, 26 Oct 2018 12:21:09 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2018/gitpod/</guid>
+      <description>&lt;p&gt;J&amp;rsquo;ai achete un ChromeBook en partie pour pouvoir coder de petits projets. Je savais bien qu&amp;rsquo;il faudrait que je me trouve un editeur web, car mon Acer R11 ne supporte pas encore la technolohie Crostini (prochaine release de ChromeOS). Gitpod me semble prometteur, mon premier essaie (30 min), semble m&amp;rsquo;indiquer que c&amp;rsquo;est tres inpire de VS Code. Pas encore trouver la commande/touche pour compiller mon petit &amp;ldquo;Hello World&amp;rdquo;!&lt;/p&gt;&#xA;&lt;p&gt;Gratuit pour 10 hrs par mois, sinon 19$/mois pour 100 hrs. Je trouve ca pas mal cher pas contre.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Supplements</title>
+      <link>http://localhost:1313/posts/2018/supplements/</link>
+      <pubDate>Thu, 25 Oct 2018 12:35:35 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2018/supplements/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.bbc.co.uk/news/amp/stories-45971416&#34; target=&#34;_blank&#34;&gt;https://www.bbc.co.uk/news/amp/stories-45971416&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;Ahhhh, les supplements alimentaires&amp;hellip;&#xA;Les racourcies menent rarement a bon port!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Katacoda</title>
+      <link>http://localhost:1313/posts/2018/katacoda/</link>
+      <pubDate>Thu, 25 Oct 2018 00:48:19 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2018/katacoda/</guid>
+      <description>&lt;p&gt;Vraiment un bon petit site pour se familiariser avec certaines technologies, sans avoir a lire des centaines de pages de documentations, et tout oublier apres 2 jours ;)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cloudflare</title>
+      <link>http://localhost:1313/posts/2018/cloudflare/</link>
+      <pubDate>Wed, 24 Oct 2018 23:44:58 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2018/cloudflare/</guid>
+      <description>&lt;p&gt;J&amp;rsquo;ai demenage les dns de mon domaines pour faire des tests avec leurs produits. Ca me semble vraiment bien. Plus de details a venir&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Neff chez Trek Factory Racing</title>
+      <link>http://localhost:1313/posts/2018/neff-chez-trek-factory-racing/</link>
+      <pubDate>Wed, 24 Oct 2018 12:41:50 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2018/neff-chez-trek-factory-racing/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://racing.trekbikes.com/sport/mountainbike/2018/world-cup-champion-jolanda-neff-joins-trek-factory-racing-xc/&#34; target=&#34;_blank&#34;&gt;https://racing.trekbikes.com/sport/mountainbike/2018/world-cup-champion-jolanda-neff-joins-trek-factory-racing-xc/&lt;/a&gt;&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ghost</title>
+      <link>http://localhost:1313/posts/2018/ghost-post/</link>
+      <pubDate>Wed, 24 Oct 2018 12:24:28 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2018/ghost-post/</guid>
+      <description>&lt;p&gt;Simple &amp;amp; rapide et decidemment plus secure que Wordpress. L&amp;rsquo;installation via les droplets preconfigure de Digital Ocean est un plus.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

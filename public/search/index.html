@@ -1,442 +1,641 @@
-<!doctype html><html lang=en x-data :class=$store.darkMode.class() :data-theme=$store.darkMode.theme()><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Search | SIG11</title><link href=/favicon.ico rel=icon type=image/x-icon><link rel=canonical href=http://localhost:1313/search/><meta name=author content="Pascal Gauthier"><meta name=description content="SIG11"><meta name=generator content="Hugo 0.151.0"><meta property="og:url" content="http://localhost:1313/search/"><meta property="og:site_name" content="SIG11"><meta property="og:title" content="SIG11"><meta property="og:description" content="SIG11"><meta property="og:locale" content="en"><meta property="og:type" content="website"><meta property="og:image" content="http://localhost:1313/img/IMG_20180730_143710.jpg"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="http://localhost:1313/img/IMG_20180730_143710.jpg"><meta name=twitter:title content="SIG11"><meta name=twitter:description content="SIG11"><link rel=stylesheet href=/css/output.css><script defer src=https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js integrity="sha256-4EHxtjnR5rL8JzbY12OKQJr81ESm7JBEb49ORPo29AY=" crossorigin=anonymous></script></head><body x-data="{
+<!DOCTYPE html>
+<html lang="en"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search | SIG11</title>
+
+    
+  
+    <link href="/favicon.ico" rel="icon" type="image/x-icon" />
+  
+
+
+<link rel="canonical" href="http://localhost:1313/search/" />
+
+
+
+<meta name="author" content="Pascal Gauthier" />
+<meta name="description" content="SIG11" />
+
+
+
+<meta name="generator" content="Hugo 0.151.0">
+
+
+<meta property="og:url" content="http://localhost:1313/search/">
+  <meta property="og:site_name" content="SIG11">
+  <meta property="og:title" content="SIG11">
+  <meta property="og:description" content="SIG11">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="website">
+    <meta property="og:image" content="http://localhost:1313/img/IMG_20180730_143710.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/img/IMG_20180730_143710.jpg">
+  <meta name="twitter:title" content="SIG11">
+  <meta name="twitter:description" content="SIG11">
+
+
+
+
+<link rel="stylesheet" href="/css/output.css" />
+
+
+
+
+     
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js" integrity="sha256-4EHxtjnR5rL8JzbY12OKQJr81ESm7JBEb49ORPo29AY=" crossorigin="anonymous"></script>
+  </head>
+
+  <body x-data="{
     flip: false,
-  }"><div id=dream-global-bg></div><nav x-data="{ isSticky: false }" x-init="window.addEventListener('scroll', () => { isSticky = window.scrollY > 30 })" class="sticky top-0 z-30 mt-4 lg:mt-8 py-4" :class="{ 'bg-base-100 shadow-lg dark:border-b dark:border-base-content/30': isSticky }"><div class="container flex justify-between px-4"><section class="flex items-center gap-4"><div class="avatar cursor-pointer hover:avatar-online" @click="flip = !flip" title="Flip it!"><div class="h-10 rounded-full"><img src=/ alt=SIG11></div></div><div><a href=http://localhost:1313/ class="text-lg font-semibold cursor-pointer">SIG11</a><div class="text-base-content/60 text-sm">Observation, Experimentation et R&amp;D</div></div></section><div class="dropdown dropdown-end sm:hidden"><div tabindex=0 role=button class="btn btn-ghost btn-square" aria-label="Select an option"><ion-icon name=menu class=text-2xl></ion-icon></div><ul tabindex=0 class="dropdown-content menu w-36 bg-base-100 rounded-box z-1 shadow-md"><li><a class="group inline-flex items-center p-2 cursor-pointer" href=/search title=Search><ion-icon name=search></ion-icon>Search</a></li><li><a class="inline-flex items-center p-2 cursor-pointer" href=/index.xml title=RSS><ion-icon name=logo-rss></ion-icon>RSS</a></li><li><a class="inline-flex items-center p-2 cursor-pointer" href=/posts title=Archives><ion-icon name=archive></ion-icon>Archives</a></li><li><a class="inline-flex items-center p-2 cursor-pointer" href=/categories title="All Categories"><ion-icon name=grid></ion-icon>All Categories</a></li><li><a class="inline-flex items-center p-2 cursor-pointer" href=/tags title="All Tags"><ion-icon name=pricetags></ion-icon>All Tags</a></li></ul></div><section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4"><a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href=/search title=Search><ion-icon class=group-hover:text-primary-content name=search></ion-icon></a><a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href=/index.xml title=RSS><ion-icon class=group-hover:text-primary-content name=logo-rss></ion-icon></a><a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href=/posts title=Archives><ion-icon class=group-hover:text-primary-content name=archive></ion-icon></a><a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href=/categories title="All Categories"><ion-icon class=group-hover:text-primary-content name=grid></ion-icon></a><a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href=/tags title="All Tags"><ion-icon class=group-hover:text-primary-content name=pricetags></ion-icon></a></section></div></nav><div class=flip-container :class="{ 'flip-it': flip }"><div class=flipper><div class=front><div class=container><div class="mt-8 lg:mt-12 px-4" x-data="{
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav x-data="{ isSticky: false }"
+  x-init="window.addEventListener('scroll', () => { isSticky = window.scrollY > 30 })"
+  class="sticky top-0 z-30 mt-4 lg:mt-8 py-4"
+  :class="{ 'bg-base-100 shadow-lg dark:border-b dark:border-base-content/30': isSticky }">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:avatar-online" @click="flip = !flip" title="Flip it!">
+        <div class="h-10 rounded-full">
+          <img src="/" alt="SIG11" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="http://localhost:1313/" class="text-lg font-semibold cursor-pointer">
+          SIG11
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">Observation, Experimentation et R&amp;D</div>
+        
+      </div>
+      
+    </section>
+
+    
+    
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-1 shadow-md">
+        
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="Search">
+    <ion-icon name="search"></ion-icon>
+    Search
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="Archives">
+    <ion-icon name="archive"></ion-icon>
+    Archives
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="All Categories">
+    <ion-icon name="grid"></ion-icon>
+    All Categories
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="All Tags">
+    <ion-icon name="pricetags"></ion-icon>
+    All Tags
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+
+      
+      
+
+
+
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="Search">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="Archives">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="All Categories">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="All Tags">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+
+
+<div class="mt-8 lg:mt-12 px-4"
+
+x-data="{
   search: '',
   get posts() { return this.search !== '' ? window.fuse.search(this.search) : [] },
-}"><label for=search class="input w-full"><input id=search name=search type=text class=grow placeholder=Search x-model.debounce=search>
-<ion-icon name=search></ion-icon></label><div class="mt-8 space-y-4"><template x-for="post in posts"><a class="card bg-base-100 hover:bg-base-content/10 cursor-pointer border border-base-content/30" :href=post.item.url><div class=card-body><h2 class=card-title x-text=post.item.title></h2><div x-html=post.item.description></div><div class="card-actions justify-between items-center mt-4"><div class="flex items-center"><template x-if=post.item.avatar><div class="avatar mr-1"><div class="w-8 rounded-full"><img class=my-0 :src=post.item.avatar :alt=post.item.author></div></div></template><template x-if=!post.item.avatar><span>@</span>
-</template><template x-if=post.item.author><span x-text=post.item.author></span>
-</template><template x-if=!post.item.author><span>Pascal Gauthier</span></template></span></div><div class="inline-flex items-center"><ion-icon name=time class=mr-1></ion-icon><span><span x-text=post.item.readingTime></span> minute read</span></div></div></div></a></template></div></div><footer class="flex justify-between items-center gap-2 px-4 py-12"><div><p>© 2025 SIG11</p><p class=text-sm>🌱
-<span class=text-base-content/60>Powered by <a class=hover:underline href=https://gohugo.io/ target=_blank>Hugo</a> with theme
-<a class=hover:underline href=https://github.com/g1eny0ung/hugo-theme-dream target=_blank>Dream</a>.</span></p></div><div x-data="{ icons: [
+}">
+  <label for="search" class="input w-full">
+    <input id="search" name="search" type="text" class="grow" placeholder="Search" x-model.debounce="search" />
+    <ion-icon name="search"></ion-icon>
+  </label>
+
+  <div class="mt-8 space-y-4">
+  <template x-for="post in posts">
+    <a class="card bg-base-100 hover:bg-base-content/10 cursor-pointer border border-base-content/30" :href="post.item.url">
+      <div class="card-body">
+        <h2 class="card-title" x-text="post.item.title"></h2>
+
+        <div x-html="post.item.description"></div>
+
+        <div class="card-actions justify-between items-center mt-4">
+          <div class="flex items-center">
+            <template x-if="post.item.avatar">
+            <div class="avatar mr-1">
+              <div class="w-8 rounded-full">
+                <img class="my-0" :src="post.item.avatar" :alt="post.item.author" />
+              </div>
+            </div>
+            </template>
+            <template x-if="!post.item.avatar">
+            <span>@</span>
+            </template>
+
+            <template x-if="post.item.author">
+            <span x-text="post.item.author"></span>
+            </template>
+            <template x-if="!post.item.author">
+            <span>Pascal Gauthier</span>
+            </template>
+            </span>
+          </div>
+
+          <div class="inline-flex items-center">
+            <ion-icon name="time" class="mr-1"></ion-icon>
+            <span><span x-text="post.item.readingTime"></span> minute read</span>
+          </div>
+        </div>
+      </div>
+    </a>
+  </template>
+  </div>
+</div>
+
+
+
+            
+<footer class="flex justify-between items-center gap-2 px-4 py-12">
+
+  <div>
+  
+  <p>© 2025 SIG11</p>
+  
+
+  
+  <p class="text-sm">
+    🌱
+    <span class="text-base-content/60">
+      Powered by <a class="hover:underline" href="https://gohugo.io/" target="_blank">Hugo</a> with theme
+      <a class="hover:underline" href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</span
+    >
+  </p>
+  
+</div>
+
+  <div
+  x-data="{ icons: [
     { name: 'sunny', status: 'n' },
     { name: 'moon', status: 'y' },
     { name: 'desktop', status: 'auto' }
-  ] }" class="flex items-center gap-2 h-[32px] px-2 bg-base-100 border border-base-content/30 rounded-full"><template x-for="icon in icons"><div role=button tabindex=0 :aria-label="'Select ' + icon.name + ' mode'" class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary" :class="$store.darkMode.icon() === icon.name && 'bg-primary'" @click=$store.darkMode.toggle(icon.status)><ion-icon :name="`${icon.name}-outline`" class=group-hover:text-primary-content :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"></ion-icon></div></template></div></footer></div></div><div class=back><div class=container><div class="dream-grid dream-grid-about"></div><footer class="flex justify-between items-center gap-2 px-4 py-12"><div><p>© 2025 SIG11</p><p class=text-sm>🌱
-<span class=text-base-content/60>Powered by <a class=hover:underline href=https://gohugo.io/ target=_blank>Hugo</a> with theme
-<a class=hover:underline href=https://github.com/g1eny0ung/hugo-theme-dream target=_blank>Dream</a>.</span></p></div><div x-data="{ icons: [
+  ] }"
+  class="flex items-center gap-2 h-[32px] px-2 bg-base-100 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+</footer>
+
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid dream-grid-about">
+  
+
+  
+
+  
+</div>
+
+            
+
+            
+<footer class="flex justify-between items-center gap-2 px-4 py-12">
+
+  <div>
+  
+  <p>© 2025 SIG11</p>
+  
+
+  
+  <p class="text-sm">
+    🌱
+    <span class="text-base-content/60">
+      Powered by <a class="hover:underline" href="https://gohugo.io/" target="_blank">Hugo</a> with theme
+      <a class="hover:underline" href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</span
+    >
+  </p>
+  
+</div>
+
+  <div
+  x-data="{ icons: [
     { name: 'sunny', status: 'n' },
     { name: 'moon', status: 'y' },
     { name: 'desktop', status: 'auto' }
-  ] }" class="flex items-center gap-2 h-[32px] px-2 bg-base-100 border border-base-content/30 rounded-full"><template x-for="icon in icons"><div role=button tabindex=0 :aria-label="'Select ' + icon.name + ' mode'" class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary" :class="$store.darkMode.icon() === icon.name && 'bg-primary'" @click=$store.darkMode.toggle(icon.status)><ion-icon :name="`${icon.name}-outline`" class=group-hover:text-primary-content :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"></ion-icon></div></template></div></footer></div></div></div></div><script>window.lightTheme="emerald",window.darkTheme="forest"</script><script src=https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin=anonymous></script><script src=https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin=anonymous></script><script src=/js/grid.js></script><script src=/js/main.js></script><script src=https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js integrity="sha256-42IbU8t3tOwwbexB7ZVRHm3YDRf65aBPPjRtIUufj5I=" crossorigin=anonymous></script><script>var fuseData=[{author:null,avatar:null,categories:["informations"],description:"pgauthier - Profil de fonctionnement et guide d'interaction",readingTime:3,tags:["informations"],title:"man page",url:"/posts/2025/08/man-page/"},{author:null,avatar:null,categories:["News"],description:`<p>J&rsquo;ai longtemps chercher a comprendre pourquoi je suis différent des autres. Plusieurs tests de personnalité en ligne, introverti, feeling, perception, thinking, etc, J&rsquo;ai fini par croire que j&rsquo;étais simplement un weirdo antisocial introverti.</p>
-<p>Ouais, il y a des choses qui pouvaient sonner des cloches. Un intérêts intense pour la physique des particules a 12 ans. Ben quoi, c&rsquo;est pas ça que les ado ont comme passe temps après l&rsquo;école? Une passion intense pour les ordinateurs depuis que j&rsquo;ai vu mon premier Tandy 1000 en 1984,</p>`,readingTime:1,tags:["News"],title:"AuDHD",url:"/posts/2025/06/audhd/"},{author:null,avatar:null,categories:["projet","coding","technologie"],description:`<p>Petit outils que j&rsquo;ai créer pour scale down et up mes workloads qui ont des PVC. Très utile pour faire des maintenance sur mon serveur NAS/CSI.</p>
-<figure class="kg-card kg-bookmark-card">
-  <a href="https://github.com/laghoule/pvcscaler" class="kg-bookmark-container">
-    <div class="kg-bookmark-content">
-      <div class="kg-bookmark-title"></div>
-      <div class="kg-bookmark-description"></div>
-      <div class="kg-bookmark-metadata">
-        
-        
-        
-      </div>
+  ] }"
+  class="flex items-center gap-2 h-[32px] px-2 bg-base-100 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
     </div>
-    
-    <div class="kg-bookmark-thumbnail">
-      <img src="https://opengraph.githubassets.com/ef607e920731cb02bfb41fdabd7a644c105acb20334031eabdabd724a8d5295b/laghoule/pvcscaler">
-    </div>
-    
-  </a>
-  
-</figure>
-<p>Binaire disponible pour Linux, MacOS &amp; Windows.</p>`,readingTime:1,tags:["projet","coding","technologie"],title:"pvcscaler",url:"/posts/2025/03/pvcscaler/"},{author:null,avatar:null,categories:null,description:"Yes we are!",readingTime:0,tags:null,title:"We Are Canadian!",url:"/posts/2025/03/we-are-canadian/"},{author:null,avatar:null,categories:["opinion","informations"],description:`<p>Quand tu possèdes assez d&rsquo;argent pour faire ce que bon tu veux, tu peux contrôler l&rsquo;information et créer un réalité alternative. Plus d&rsquo;argent tu possèdes, plus tu es dangereux.</p>
-<p>Articles de la Presse: <a href="https://www.lapresse.ca/affaires/techno/2025-02-20/tensions-avec-kyiv/musk-veut-modifier-un-outil-de-verification-des-faits-sur-x.php" target="_blank">Musk veut modifier un outil de vérification des faits sur X</a>
-</p>`,readingTime:1,tags:["opinion","informations"],title:"Voila pourquoi les IA sont dangereuses",url:"/posts/2025/02/voila-pourquoi-les-ia-sont-dangereuses/"},{author:null,avatar:null,categories:null,description:`<p>Ce que vous devez savoir a propos de cette industrie.</p>
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/kOAbmQasTpnO0Ca-?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
-    </div>`,readingTime:1,tags:null,title:"L'envers du décors",url:"/posts/2025/02/lenvers-du-decors-2/"},{author:null,avatar:null,categories:["opinion","technologie"],description:`<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/qq5AuDIvNmMvW_6L?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
-    </div>
-
-<p>Oui, c&rsquo;est choses doivent être dites et redites. Le temps est venu de se lever, et de se battre pour que la vérité soit répète plus souvent que les mensonges.
-Ce n&rsquo;est que le début!</p>`,readingTime:1,tags:["opinion","technologie"],title:"La vérité est rafrachissante",url:"/posts/2025/01/la-verite-est-rafrachissante/"},{author:null,avatar:null,categories:null,description:`<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/7ZObMDPR7CQ?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
-    </div>`,readingTime:0,tags:null,title:"L'ère des Oligarchies en Amérique",url:"/posts/2025/01/lere-des-oligarchies-en-amerique/"},{author:null,avatar:null,categories:null,description:`<p>Il est grand temps qu&rsquo;on se prennent en mains, qu&rsquo;on ne soit plus entièrement dépendant des États-Unis. Formons des alliance avec les autres nations. Devenons auto-suffisant, serrons nous les coudes et soyons UNIS!</p>
-<p>OH CANADA!</p>`,readingTime:1,tags:null,title:"Buy Canadian Act",url:"/posts/2025/01/buy-canadian-act/"},{author:null,avatar:null,categories:null,description:`<p>Pour la travail j&rsquo;ai un laptop DELL. Celui-ci n&rsquo;aime vraiment pas quand j&rsquo;utilise une power source inférieur a 65W. Dans ce cas, le CPU est ralentie au maxxxiiimmuuummm. J&rsquo;ai l&rsquo;impression d&rsquo;avoir un 386. Après plusieurs essaie infructueuse, la solution consiste a désactiver un module du kernel (Running Average Power Limit):</p>
-<p>sudo rmmod intel_rapl_msr</p>`,readingTime:1,tags:null,title:"Intel CPU throttling",url:"/posts/2025/01/intel-cpu-throttling/"},{author:null,avatar:null,categories:["observation"],description:`<p>Article plutôt troublant dans le <a href="https://www.nytimes.com/2025/01/15/technology/ai-chatgpt-boyfriend-companion.html" target="_blank">NYT</a>
-. Bien que pas surprenant, je pense que se sera de plus en plus populaire et fera des ravages dans nos société. Pourquoi mettre des efforts dans une relation humaine, quand on peut avoir exactement ce que l&rsquo;on désire d&rsquo;une relation?</p>
-<p>Les adolescents sont particulièrement a risque. Cet age est un transition importante dans la vie d&rsquo;une personne, et a des conséquence sur le reste de son existence.</p>`,readingTime:1,tags:["observation"],title:"AI relationship",url:"/posts/2025/01/ai-relationship/"},{author:null,avatar:null,categories:["observation","opinion"],description:`<p>Je ne sais pas si vieillir nous permet de prendre plus conscience du monde qui nous entoure? Nous rend plus critique? Mais voila, l&rsquo;avenir n&rsquo;inquiète de plus en plus. On semble avoir terminer un cycle de paix, depuis plusieurs années, j&rsquo;ai l&rsquo;impression qu&rsquo;on glisse vers des temps de guerres.</p>
-<p>Montée de l&rsquo;autoritarisme partout dans le monde, portée par l&rsquo;individualisme extrême, le populisme et la peur. Ces changements sont amplifier par les réseaux sociaux, qui sont maintenant bien ancrée dans la vie quotidienne de tout le monde, et permet la circulation de mensonges déguiser en vérité, et ne sont plus remis en question, même s&rsquo;il y a des faits pour débusquer ces mensonge. Il n&rsquo;y a desaurmais plus de différence entre des faits et des opinions.</p>`,readingTime:1,tags:["observation","opinion"],title:"2025 ou 1925",url:"/posts/2025/01/2025-ou-1925/"},{author:null,avatar:null,categories:["opinion","technologie"],description:`<p>La course au AI s’accélère de plus en plus. Notre dépendance a cette technologie deviendra vite une question de sécurité national. Dépendre de AI de compagnie extérieur (OpenAI/Microsoft, Google, Mistral, Anthropic) me semble de bien mauvaise augure. Il me semble logique d&rsquo;avoir une plateforme AI nationale.</p>
-<p>Une fois que vous avez mis en place du AI, et que vous êtes dépendant, vous êtes aussi dépendant de la compagnie qui offre le service. C&rsquo;est encore le farwest, mais nous allons assister a d’éventuelle acquisition. Jouons a imaginer des acquisition: AWS acquiert Antropic, Oracle prend le controle de Inflection AI, etc.</p>`,readingTime:1,tags:["opinion","technologie"],title:"AI indépendance",url:"/posts/2024/ai-independance/"},{author:null,avatar:null,categories:["technologie","observation"],description:`<iframe width="200" height="113" src="https://www.youtube.com/embed/AaU6tI2pb3M?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen title="What Ethical AI Really Means"></iframe>
-<p>Documentaire intéressant, avec un regard critique sur l&rsquo;AI.</p>`,readingTime:1,tags:["technologie","observation"],title:"Matière a réflexion",url:"/posts/2023/matiere-a-reflexion/"},{author:null,avatar:null,categories:["coding","projet","technologie"],description:`<p>Avec tout le buzz autour d&rsquo;OpenAI, j&rsquo;ai cree un petit assistant pour aider mes enfants avec leurs travaux scolaire:</p>
-<figure class="kg-card kg-bookmark-card">
-  <a href="https://github.com/laghoule/gptProfNewton" class="kg-bookmark-container">
-    <div class="kg-bookmark-content">
-      <div class="kg-bookmark-title">GitHub - laghoule/gptProfNewton: gptProfNewton est un projet qui utilise le modèle GPT pour simuler un professeur.</div>
-      <div class="kg-bookmark-description">gptProfNewton est un projet qui utilise le modèle GPT pour simuler un professeur. - GitHub - laghoule/gptProfNewton: gptProfNewton est un projet qui utilise le modèle GPT pour simuler un professeur.</div>
-      <div class="kg-bookmark-metadata">
-        <img src="https://github.com/fluidicon.png" class="kg-bookmark-icon">
-        <span class="kg-bookmark-author">laghoule</span>
-        <span class="kg-bookmark-publisher">GitHub</span>
-      </div>
-    </div>
-    
-    <div class="kg-bookmark-thumbnail">
-      <img src="https://opengraph.githubassets.com/ef607e920731cb02bfb41fdabd7a644c105acb20334031eabdabd724a8d5295b/laghoule/gptProfNewton">
-    </div>
-    
-  </a>
-  
-</figure>
-<p>Le client est en mode texte, et permet de rester centrer sur le sujet, et eviter les distraction.</p>`,readingTime:1,tags:["coding","projet","technologie"],title:"GptProfNewton",url:"/posts/2023/06/gptprofnewton/"},{author:null,avatar:null,categories:["produit"],description:`<p>J&rsquo;ai dernierement change mon Lenovo T470 par le nouveau Lenovo T14 Gen3 (AMD). Pourquoi? Bien que mon ancien laptop etait parfaitement capable de faire la job, je voullais avoir plus de cores, et de RAM.</p>
-<p>Le CPU Ryzen 7 6850U offre d&rsquo;excellente performance avec son 8 cores, 16 threads. Pour un prix abordable.</p>
-<p>Je passe a 32G de RAM, ce qui permet de loader plusieurs VM, et containers. C&rsquo;est maintenant possible de tester un cluster Kubernetes, avec multiple composantes installees (prometheus, grafana, loki, etc).</p>`,readingTime:1,tags:["produit"],title:"T14 Gen 3 (AMD)",url:"/posts/2023/t14-gen-3-amd/"},{author:null,avatar:null,categories:["produit"],description:`<p>Avec la popularite de Kubernetes aujourd&rsquo;hui, de multiples solutions d&rsquo;installation sont disponible. Une de ces &ldquo;distributions&rdquo; est <a href="https://web.archive.org/web/20230224143959/https://github.com/k0sproject/k0s" target="_blank">K0S</a>
-. Creer au depart par <a href="https://web.archive.org/web/20230224143959/https://www.mirantis.com/" target="_blank">Mirantis</a>
-, et par la suite donner publier comme logiciel libre.</p>
-<p>Apres quelques tests sur un cluster de dev, j&rsquo;ai decider de poursuivre avec cette distribution pour mon home cluster &ldquo;prod&rdquo;.</p>
-<p>La configuration et l&rsquo;installation est tres simple. Si vous avez deja utilise Rancher RKE1, c&rsquo;est pratiquement la meme approche.</p>`,readingTime:1,tags:["produit"],title:"K0S distribution",url:"/posts/2023/k0s-distribution/"},{author:null,avatar:null,categories:["coding"],description:`<p>Petit outils pour rapidement visualiser le contenue de secrets Kubernetes. Rien de bien extraordinaire, mais pratique quand faut consulter souvant des secrets.</p>
-<figure class="kg-card kg-bookmark-card">
-  <a href="https://github.com/laghoule/k64dec" class="kg-bookmark-container">
-    <div class="kg-bookmark-content">
-      <div class="kg-bookmark-title">GitHub - laghoule/k64dec: Decode base64 secrets</div>
-      <div class="kg-bookmark-description">Decode base64 secrets. Contribute to laghoule/k64dec development by creating an account on GitHub.</div>
-      <div class="kg-bookmark-metadata">
-        <img src="https://github.com/fluidicon.png" class="kg-bookmark-icon">
-        <span class="kg-bookmark-author">laghoule</span>
-        <span class="kg-bookmark-publisher">GitHub</span>
-      </div>
-    </div>
-    
-    <div class="kg-bookmark-thumbnail">
-      <img src="https://opengraph.githubassets.com/607808088c45a41a1d78476b96b7f2d39a6ba820162c3cd53958489a9403a24e/laghoule/k64dec">
-    </div>
-    
-  </a>
-  
-</figure>`,readingTime:1,tags:["coding"],title:"k64dec",url:"/posts/2023/k64dec/"},{author:null,avatar:null,categories:["opinion"],description:`<p>Decouverte de l&rsquo;automne, groupe Francais de DSBM. Vraiment, mais vraiment bon!</p>
-<iframe width="200" height="113" src="https://www.youtube.com/embed/3S1Cx_E8-90?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen title="06.03.2015 - Nocturnal Depression live - Soundcheck One, Waldbronn"></iframe>`,readingTime:1,tags:["opinion"],title:"Nocturnal Depression",url:"/posts/2023/nocturnal-depression/"},{author:null,avatar:null,categories:null,description:`<p>Et oui, le temps des coupures est arriver, je migre mon cluster K8S vers mon propre cluster Kubernetes a la maison.</p>
-<p>Plus de details a venir, mais un petit apercu:</p>
-<ul>
-<li>Un Control-plane (oui, oui c&rsquo;est pas en HA): 1 Celeron 4 core, 8G RAM, 128G nvme</li>
-<li>Trois worker: 1 Celeron (11 gen) 4 core, 16G RAM, 500G nvme</li>
-</ul>`,readingTime:1,tags:null,title:"Migration de DOKS -> cluster K8S@home",url:"/posts/2023/migration-de-doks-cluster-k8s-home/"},{author:null,avatar:null,categories:["Import 2023-04-08 17:32"],description:`<iframe width="200" height="113" src="https://www.youtube.com/embed/i5XJVY6YzWE?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<p>Je pense que ca represente bien l&rsquo;annee 2021&hellip;</p>`,readingTime:1,tags:["Import 2023-04-08 17:32"],title:"Quintessence 2021",url:"/posts/2021/quintessence/"},{author:null,avatar:null,categories:["technologie","Import 2023-04-08 17:32"],description:`<p>Edit /etc/initramfs-tools/initramfs.conf (Debian) and replace <code>MODULES=dep</code> with <code>MODULES=dep</code>. This will reduce the size of the initrd.img image by guessing modules to include.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">#
-</span></span><span class="line"><span class="cl"># MODULES: [ most | netboot | dep | list ]
-</span></span><span class="line"><span class="cl">#
-</span></span><span class="line"><span class="cl"># most - Add most filesystem and all harddrive drivers.
-</span></span><span class="line"><span class="cl">#
-</span></span><span class="line"><span class="cl"># dep - Try and guess which modules to load.
-</span></span><span class="line"><span class="cl">#
-</span></span><span class="line"><span class="cl"># netboot - Add the base modules, network modules, but skip block devices.
-</span></span><span class="line"><span class="cl">#
-</span></span><span class="line"><span class="cl"># list - Only include modules from the &#39;additional modules&#39; list
-</span></span><span class="line"><span class="cl">#
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">MODULES=dep
-</span></span></code></pre></div><p><em>PS: Use at your own risk</em></p>`,readingTime:1,tags:["technologie","Import 2023-04-08 17:32"],title:"Short on space in /boot?",url:"/posts/2021/short-on-space-in-boot/"},{author:null,avatar:null,categories:["opinion","Import 2023-04-08 17:32"],description:`<p>Je vous partage ma playlist de <code>BestOF BlackMetal</code>.</p>
-<iframe width="100%" height="380" title="Spotify Embed: BestOf BlackMetal" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" src="https://open.spotify.com/embed/playlist/3zgZlMMVvIFSlOKfwJDqnc?si=ee8f8a6efb834c51"></iframe>
-<p>Beaucoup de chef d&rsquo;oeuvre de criage extreme!</p>`,readingTime:1,tags:["opinion","Import 2023-04-08 17:32"],title:"Spotify playlist",url:"/posts/2021/spotify-playlist/"},{author:null,avatar:null,categories:["Import 2023-04-08 17:32"],description:`<p>J&rsquo;ai crer un groupe de velo pour la MRC de Roussillon, si vous etes de la region: <a href="https://roussillon-cycling-club.ca" target="_blank">https://roussillon-cycling-club.ca</a>
-</p>`,readingTime:1,tags:["Import 2023-04-08 17:32"],title:"Roussillon cycling club",url:"/posts/2021/roussillon-cycling-club/"},{author:null,avatar:null,categories:["bike","Import 2023-04-08 17:32"],description:`<p>Nouvelle addition pour la saison 2021:</p>
-<figure><img src="__GHOST_URL__/content/images/2021/03/Screenshot_2021-03-07_11-33-52.png">
-</figure>
-
-<p>Comme je passe beaucoup plus de temps sur la route que dans la montagne, j&rsquo;ai decide d&rsquo;investire sur un meilleur velo de route. Bien que j&rsquo;aime mieux le velo de montagne, la route est plus accessible que la montagne (Bromont est quand meme a 1hr de route de chez moi).</p>`,readingTime:1,tags:["bike","Import 2023-04-08 17:32"],title:"N+1",url:"/posts/2021/n-1/"},{author:null,avatar:null,categories:["informations","technologie","Import 2023-04-08 17:32"],description:`<p>Si vous etes un bizarre comme moi qui utilise XTerm au lieux d&rsquo;une fancy console dans XWindows, voici une ressource utile pour vous facilite la vie avec les Copy&amp;Paste: <a href="https://wiki.archlinux.org/index.php/Xterm#Copy_and_paste" target="_blank">https://wiki.archlinux.org/index.php/Xterm#Copy_and_paste</a>
-</p>
-<p>Faut donner ca a Arch Linux, ils ont une excellente documentation technique.</p>`,readingTime:1,tags:["informations","technologie","Import 2023-04-08 17:32"],title:"Copy&Paste pour XTerm",url:"/posts/2021/copy-paste-pour-xterm/"},{author:null,avatar:null,categories:["Import 2023-04-08 17:32"],description:`<figure><img src="__GHOST_URL__/content/images/2021/01/Screenshot_20210103-164734.gif">
-</figure>`,readingTime:0,tags:["Import 2023-04-08 17:32"],title:"Stats velo 2020",url:"/posts/2021/stats-velo-2020/"},{author:null,avatar:null,categories:["observation","Import 2023-04-08 17:32"],description:`<p>J&rsquo;ai jamais ete un grand lecteur, mais en 2020 j&rsquo;ai vraiment accroche aux romans de StarWars. En fait j&rsquo;ai comme mission de lire tous les livre <em>canon</em> de l&rsquo;univers StarWars.</p>
-<p>Voici la liste de livre lu cette annee:</p>
-<figure><img src="__GHOST_URL__/content/images/2020/12/Screenshot_2020-12-31_18-19-06.gif">
-</figure>`,readingTime:1,tags:["observation","Import 2023-04-08 17:32"],title:"Lecture 2020",url:"/posts/2020/lecture-2020/"},{author:null,avatar:null,categories:["opinion","Import 2023-04-08 17:32"],description:`<p>Quel album genial, a toute les fois que je reecoute ce chef d&rsquo;oeuvre du metal ca me retransporte dans les annees &lsquo;90. Pas que je retournerai a cette epoque. J&rsquo;entend encore ma mere dire: &ldquo;maudite musique du Diable!!&rdquo;</p>
-<iframe width="459" height="344" src="https://www.youtube.com/embed/ZpbpOgUybBM?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,readingTime:1,tags:["opinion","Import 2023-04-08 17:32"],title:"Carcass: Heartwork",url:"/posts/2020/heartwork/"},{author:null,avatar:null,categories:["observation","technologie","Import 2023-04-08 17:32"],description:`<p>Premiere experience d&rsquo;upgrade du managed K8S de Digital Ocean. Voici quelques observations:</p>
-<ul>
-<li>Appliquer les recommandations que linter d&rsquo;upgrade de DOKS vous propose. AWS EKS devrait s&rsquo;inspirer de ce tools pour proposer quelques choses de similaire.</li>
-<li>Ne pas utiliser les addons proposer par doks (ingress, grafana, prometheus, etc). Utiliser helm pour installer ces tools, car vous aurez pas de controle (possible d&rsquo;aller recupere les values de leur helm, mais pas trivial) sur de modification que vous voudriez mettre en place (Pod Disruption Budget, node Affinity/AntiAffinity).</li>
-<li>Si vous avez pas d&rsquo;autoscaler de worker de configurer, manuellement doubler le nombre de worker avant de debuter votre upgrade. Vous allez eviter de manquer de ressources. Scale down quand tout est upgrader.</li>
-</ul>
-<p>L&rsquo;upgrade a ete effectuer assez rapidement, et sans heurt.</p>`,readingTime:1,tags:["observation","technologie","Import 2023-04-08 17:32"],title:"Upgrade DOKS 1.18 -> 1.19",url:"/posts/2020/upgrade-doks-1-18-1-19/"},{author:null,avatar:null,categories:["coding","informations","Import 2023-04-08 17:32"],description:`<p>J&rsquo;ai trouve cette petite lib <a href="https://github.com/uniplaces/carbon" target="_blank">https://github.com/uniplaces/carbon</a>
- pour manipuler/comparer facilement des dates/times en go.</p>
-<p>Ca m&rsquo;as evite un mal de block</p>`,readingTime:1,tags:["coding","informations","Import 2023-04-08 17:32"],title:"Timezone et golang",url:"/posts/2020/timezone-et-golang/"},{author:null,avatar:null,categories:["observation","opinion","technologie","Import 2023-04-08 17:32"],description:'<iframe width="612" height="344" src="https://www.youtube.com/embed/uaaC57tcci0?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',readingTime:0,tags:["observation","opinion","technologie","Import 2023-04-08 17:32"],title:"The Social Dilemma",url:"/posts/2020/the-social-dillema/"},{author:null,avatar:null,categories:["informations","produit","projet","technologie","Import 2023-04-08 17:32"],description:`<p>J&rsquo;ai decide de migrer vers DOKS (DigitalOcean Kubernetes) pour hoster mon blog, et mes projets personnel. Ayant toucher a plusieurs &ldquo;managed&rdquo; Kubernetes, je dois dire que je suis agreablement surpris.</p>
-<p>external-dns et Cloudflare marche bien aussi, etant plus habituer a utiliser Route53.</p>`,readingTime:1,tags:["informations","produit","projet","technologie","Import 2023-04-08 17:32"],title:"Migration a DOKS",url:"/posts/2020/golang/"},{author:null,avatar:null,categories:["opinion","observation","Import 2023-04-08 17:32"],description:`<p>Cette triologie se deroulle environ 1 ans apres la bataille d&rsquo;Endor. La Nouvelle Republique est encore fragile et tout n&rsquo;est pas gagner.</p>
-<p>L&rsquo;histoire du premier roman est un peu lente, et on a un peu de misere a s&rsquo;accrocher a l&rsquo;histoire et aux personnages. Ce premier roman se veut plus une introduction aux personnage, ce qui laisse plus de place aux prochains livres pour developper plus les personnages et l&rsquo;histoire.</p>`,readingTime:1,tags:["opinion","observation","Import 2023-04-08 17:32"],title:"Trilogie Starwars Aftermath",url:"/posts/2020/trilogie-starwars-aftermath/"},{author:null,avatar:null,categories:["histoire","observation","opinion","Import 2023-04-08 17:32"],description:`<iframe width="612" height="344" src="https://www.youtube.com/embed/J7GY1Xg6X20?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<p>Toujours aussi pertinant apres toutes ces annees.</p>`,readingTime:1,tags:["histoire","observation","opinion","Import 2023-04-08 17:32"],title:"The great dictator speach",url:"/posts/2020/the-great-dictator-speach/"},{author:null,avatar:null,categories:["observation","opinion","Import 2023-04-08 17:32"],description:`<p>Unissons-nous contre l&rsquo;injustice! Tous ensemble!!</p>
-<p>Le racisme n&rsquo;a pas sa place dans nos societes.</p>`,readingTime:1,tags:["observation","opinion","Import 2023-04-08 17:32"],title:"Black lives matter",url:"/posts/2020/black-lives-matter/"},{author:null,avatar:null,categories:["coding","projet","technologie","Import 2023-04-08 17:32"],description:`<p>Cette semaine j&rsquo;ai <a href="https://github.com/FairwindsOps/pluto/pull/79" target="_blank">contribue</a>
- a un petit projet qui permet de vous indiquer les manifestes qui sont a remplacer avant de faire un upgrade de Kubernetes. Ce projet s&rsquo;appele <a href="https://github.com/FairwindsOps/pluto" target="_blank">Pluto</a>
-.</p>
-<p>K8S 1.16 a fait un gros menage dans leurs supports d&rsquo;anciennes versions d&rsquo;api. Beaucoup de personnes on eu la mauvaise surprise de voir leurs applications interrompus. Soyez pas cette personne ;)</p>`,readingTime:1,tags:["coding","projet","technologie","Import 2023-04-08 17:32"],title:"Petit tool pour garder vos manifestes K8S a jour",url:"/posts/2020/petit-tool-pour-garder-vos-manifeste-k8s-a-jour/"},{author:null,avatar:null,categories:["coding","projet","technologie","Import 2023-04-08 17:32"],description:`<p>Pour ceux qui utilisent RKE/RancherOS pour leur cluster Kubernetes, j&rsquo;ai de quoi pour vous. Un patch a Kured qui permet de gerer les updates de RancherOS de facon securitaire.</p>
-<figure class="kg-card kg-bookmark-card">
-  <a href="https://github.com/laghoule/kured" class="kg-bookmark-container">
-    <div class="kg-bookmark-content">
-      <div class="kg-bookmark-title">laghoule/kured</div>
-      <div class="kg-bookmark-description">Kubernetes Reboot Daemon. Contribute to laghoule/kured development by creating an account on GitHub.</div>
-      <div class="kg-bookmark-metadata">
-        <img src="https://github.githubassets.com/favicons/favicon.svg" class="kg-bookmark-icon">
-        <span class="kg-bookmark-author">laghoule</span>
-        <span class="kg-bookmark-publisher">GitHub</span>
-      </div>
-    </div>
-    
-    <div class="kg-bookmark-thumbnail">
-      <img src="https://avatars3.githubusercontent.com/u/1598055?s=400&amp;v=4">
-    </div>
-    
-  </a>
-  
-</figure>
-<p>Comment ca fonctionne? Voici une config cloud-init pour updater et rebooter un node:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">write_files</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># Script to upgrade image OS if available (no reboot)</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># Reboot is handled by K8S kured daemonset</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l">/var/lib/rancher/os-updater.sh</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">permissions</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;0755&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l">root</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">content</span><span class="p">:</span><span class="w"> </span><span class="p">|</span><span class="sd">
-</span></span></span><span class="line"><span class="cl"><span class="sd">      #!/bin/sh
-</span></span></span><span class="line"><span class="cl"><span class="sd">
-</span></span></span><span class="line"><span class="cl"><span class="sd">      source /usr/share/ros/os-release
-</span></span></span><span class="line"><span class="cl"><span class="sd">
-</span></span></span><span class="line"><span class="cl"><span class="sd">      STATUS=0
-</span></span></span><span class="line"><span class="cl"><span class="sd">      OS_LOCATION=\`sudo ros os list | head -n1 | awk {&#39;print $2&#39;}\`
-</span></span></span><span class="line"><span class="cl"><span class="sd">      OS_VERSION=\`sudo ros os list | head -n1 | awk {&#39;print $1&#39;} | cut -d : -f 2\`
-</span></span></span><span class="line"><span class="cl"><span class="sd">
-</span></span></span><span class="line"><span class="cl"><span class="sd">      if [ &#34;$OS_LOCATION&#34; == &#34;local&#34; ] &amp;&amp; [ &#34;$OS_VERSION&#34; != &#34;$VERSION&#34; ]; then
-</span></span></span><span class="line"><span class="cl"><span class="sd">        echo &#34;Upgrade available&#34;
-</span></span></span><span class="line"><span class="cl"><span class="sd">        sudo ros os upgrade -f --no-reboot &amp;&gt;&gt; /var/log/os-updater.log
-</span></span></span><span class="line"><span class="cl"><span class="sd">        STATUS=$?
-</span></span></span><span class="line"><span class="cl"><span class="sd">        if [ $STATUS -eq 0 ]; then
-</span></span></span><span class="line"><span class="cl"><span class="sd">          sudo touch /var/lib/rancher/update/need_to_reboot
-</span></span></span><span class="line"><span class="cl"><span class="sd">        else
-</span></span></span><span class="line"><span class="cl"><span class="sd">          echo &#34;Upgrade failed&#34;
-</span></span></span><span class="line"><span class="cl"><span class="sd">        fi
-</span></span></span><span class="line"><span class="cl"><span class="sd">      else
-</span></span></span><span class="line"><span class="cl"><span class="sd">        echo &#34;No upgrade available&#34;
-</span></span></span><span class="line"><span class="cl"><span class="sd">      fi
-</span></span></span><span class="line"><span class="cl"><span class="sd">
-</span></span></span><span class="line"><span class="cl"><span class="sd">      exit $STATUS</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># Check if it&#39;s a good time to reboot</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l">/var/lib/rancher/os-rebooter.sh</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">permissions</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;0755&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l">root</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">content</span><span class="p">:</span><span class="w"> </span><span class="p">|</span><span class="sd">
-</span></span></span><span class="line"><span class="cl"><span class="sd">      #!/bin/sh
-</span></span></span><span class="line"><span class="cl"><span class="sd">      if [ -f /var/lib/rancher/update/reboot_now ] &amp;&amp; [ -f /var/lib/rancher/update/need_to_reboot ]; then
-</span></span></span><span class="line"><span class="cl"><span class="sd">        sudo rm /var/lib/rancher/update/need_to_reboot
-</span></span></span><span class="line"><span class="cl"><span class="sd">        sudo rm /var/lib/rancher/update/reboot_now
-</span></span></span><span class="line"><span class="cl"><span class="sd">        sudo reboot
-</span></span></span><span class="line"><span class="cl"><span class="sd">      fi</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># Rancher cronjob</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">rancher</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">services</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c"># os-updater CRONJOB @hourly</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">os-updater</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">rancher/os-base:v1.5.5</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="l">/var/lib/rancher/os-updater.sh</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">labels</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">io.rancher.os.scope</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;system&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">cron.schedule</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;0 0 * * * ?&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">pid</span><span class="p">:</span><span class="w"> </span><span class="l">host</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">privileged</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">volumes_from</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span>- <span class="l">all-volumes</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c"># os-rebooter CRONJOB @minute</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">os-rebooter</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">rancher/os-base:v1.5.5</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="l">/var/lib/rancher/os-rebooter.sh</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">labels</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">io.rancher.os.scope</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;system&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">cron.schedule</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;0 * * * * ?&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">pid</span><span class="p">:</span><span class="w"> </span><span class="l">host</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">privileged</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">volumes_from</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span>- <span class="l">all-volumes</span><span class="w">
-</span></span></span></code></pre></div><p>Par la suite, avec mon fork de Kured, si le fichier &ndash;reboot-sentinel existe, il creera le fichier &ndash;host-sentinel, qui lui sera gerer par la cronjob systeme <code>os-rebooter</code>.</p>`,readingTime:2,tags:["coding","projet","technologie","Import 2023-04-08 17:32"],title:"Support de RancherOS pour Kured",url:"/posts/2020/support-de-rancheros-pour-kured/"},{author:null,avatar:null,categories:["opinion","observation","Import 2023-04-08 17:32"],description:`<p>Une crise permet toujours de mettre en perspective certain elements que nous prenons pour acquis. Parmis ces elements, certains, meme plusieurs sont negliges. Ici je parle surtout des gens qui s&rsquo;occupent des service essentiels, mais qui sont habituellements mal payes, juges negativement, etc.</p>
-<p>Ces personnes souvant payees un salaire minimum, avec aucun avantage social. Il faudra bien reflechir dans le future afin de revoir et corriger ces lacunes.</p>
-<p>Quelques metiers:</p>`,readingTime:1,tags:["opinion","observation","Import 2023-04-08 17:32"],title:"Covid-19 & services essentiels",url:"/posts/2020/covid-19-services-essentiels/"},{author:null,avatar:null,categories:["observation","opinion","Import 2023-04-08 17:32"],description:`<p>Le crise actuel, la plus grave depuis la fin de la seconde guerre mondial, nous permet de mettre en evidence certains des problemes, relier a la globalisation des marches. Bien que la modialisation a beaucoup d&rsquo;avantages, en temps de crise, ces avantages ne sont plus aussi attrayant et peuvent meme etre des desavantages.</p>
-<p>Plusieur service essentiel dependent de l&rsquo;apprivisionnements exterieur:</p>
-<ul>
-<li>Alimentations</li>
-<li>Medicaments</li>
-<li>Appareil medicaux</li>
-<li>Energie</li>
-<li>Textiles</li>
-</ul>
-<p>Une des lessons que nous devrons tirer rapidement de cette crise, sera la mise en place de lois, qui exigerons que nous soyont independant d&rsquo;autres pays (et provinces) dans ces domaines d&rsquo;expertise.</p>`,readingTime:1,tags:["observation","opinion","Import 2023-04-08 17:32"],title:"Covid-19 & mondialisation",url:"/posts/2019/covid-19-mondialisation/"},{author:null,avatar:null,categories:["observation","Import 2023-04-08 17:32"],description:`<iframe width="480" height="270" src="https://www.youtube.com/embed/ZLW2jkd6E7g?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<p>Cette derniere saison de Clone Wars risque d&rsquo;etre epique, et aussi tres sombre. Le combat entre Maul et Ahsoka va nous donner des frissons dans le dos assurements.</p>`,readingTime:1,tags:["observation","Import 2023-04-08 17:32"],title:"Clone Wars saison 7",url:"/posts/2020/clone-wars-saison-7/"},{author:null,avatar:null,categories:["technologie","observation","Import 2023-04-08 17:32"],description:`<p>Elon Musk a decider d&rsquo;ouvrir ces brevets, ou du moins, ne pas demander de redevance. Pourquoi? Pour accelerer l&rsquo;adoption de vehicules electriques, afin de combattre les changements climatique. Bravo, un tres beau geste, apres l&rsquo;echec cuisant de la COP25 en Espagne.</p>
-<p>Je ne suis pas un tres grand fan de Musk, mais un geste comme celui-ci est un des gestes qu&rsquo;on devrait voir a l&rsquo;echelle mondial de la part des grandes entreprises.</p>`,readingTime:1,tags:["technologie","observation","Import 2023-04-08 17:32"],title:"Tesla ouvre ses brevets",url:"/posts/2019/tesla-ouvre-ses-brevets/"},{author:null,avatar:null,categories:["coding","Import 2023-04-08 17:32"],description:`<p>Dernierement j&rsquo;ai achete le domaine pgauthier.dev. Je vais eventuellement creer quelques choses, c&rsquo;est pas encore claire, mais tout sera hoster sur DKS (Digital Ocean Kubernetes).</p>
-<p>Stay tuned&hellip;</p>`,readingTime:1,tags:["coding","Import 2023-04-08 17:32"],title:"pgauthier.dev",url:"/posts/2019/pgauthier-dev/"},{author:null,avatar:null,categories:["coding","produit","Import 2023-04-08 17:32"],description:`<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-golang" data-lang="golang"><span class="line"><span class="cl"><span class="kn">package</span><span class="w"> </span><span class="nx">main</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kn">import</span><span class="w"> </span><span class="s">&#34;fmt&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">func</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;Hello World&#34;</span><span class="p">)</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
-</span></span></span></code></pre></div><figure><img src="__GHOST_URL__/content/images/2019/12/IMG_20191205_150502-3.jpg"
-    alt="go run main.go"><figcaption>
-      <p>go run main.go</p>
-    </figcaption>
-</figure>`,readingTime:1,tags:["coding","produit","Import 2023-04-08 17:32"],title:"Hello world",url:"/posts/2019/hello-world/"},{author:null,avatar:null,categories:["opinion","Import 2023-04-08 17:32"],description:"<p>Deuxieme etape de la suppression de reseaux sociaux: Twitter. Bien que Twitter soi moins intrusif dans nos vies privees, il est neanmoins une source de propagandes et de bullies de toutes sortes.</p>",readingTime:1,tags:["opinion","Import 2023-04-08 17:32"],title:"Suppression de Twitter",url:"/posts/2019/suppression-de-twitter/"},{author:null,avatar:null,categories:["observation","opinion","technologie","Import 2023-04-08 17:32"],description:`<p>Google News cette semaine m&rsquo;a sortie une nouvelle  extraordinaire&hellip; On a decouvert des insectes sur Mars!</p>
-<figure><img src="__GHOST_URL__/content/images/2019/11/Screenshot_2019-11-22_21-43-31.png">
-</figure>
-
-<p>Comme je ne crois pas n&rsquo;importe quoi, je verifie la source de cette nouvelle: American Association for the Advancement of Science (AAAS). Premier fais a noter, pourquoi la nouvelle ne viens pas de la Nasa, l&rsquo;ESA ou autres agence spaciales serieuse? J&rsquo;ai vite classe cette nouvelle dans la categorie &ldquo;fake news&rdquo; et passer a autres choses.</p>`,readingTime:1,tags:["observation","opinion","technologie","Import 2023-04-08 17:32"],title:"Algorithme de recommandation",url:"/posts/2019/algorithme-de-recommandation/"},{author:null,avatar:null,categories:["opinion","Import 2023-04-08 17:32"],description:`<p>Un sentiment de deja vue ici&hellip;</p>
-<figure><img src="__GHOST_URL__/content/images/2019/11/tesla2-e1574437380471.jpg">
-</figure>`,readingTime:1,tags:["opinion","Import 2023-04-08 17:32"],title:"Tesla Cybertruck VS Homer car",url:"/posts/2019/tesla-cybertruck-vs-homer-car/"},{author:null,avatar:null,categories:["opinion","Import 2023-04-08 17:32"],description:`<p>Le Mandalorian est maintenant disponible en streaming sur Disney+, sous la formule 1 episode par semaine. C&rsquo;est une bonne strategie pour faire en sorte de rester abonner a leur service le plus longtemp possible. A 30 minutes l&rsquo;episode, c&rsquo;est un peu court par contre.</p>
-<p>Bon, est-ce que ce show en vaut la chandelle? oui. C&rsquo;est une bonne serie, probablement plus pour les fan de StarWars que pour des non initier. De belle surprise sont au rendez-vous, du moins pour les deux episode que j&rsquo;ai eu la chance de voir.</p>`,readingTime:1,tags:["opinion","Import 2023-04-08 17:32"],title:"The Mandalorian",url:"/posts/2019/the-mandalorian/"},{author:null,avatar:null,categories:["observation","test","technologie","Import 2023-04-08 17:32"],description:`<p>Experiementation avec DNS over HTTPS et DNS over TLS cette semaine. DoH est maintenant supporte par Firefox, et les prochaines version vont l&rsquo;activer par default, du moins c&rsquo;est ce qui avait ete annonce, jusqu&rsquo;a ce que ca creer un faux scandale au UK (<a href="https://www.theregister.co.uk/2019/09/24/mozilla_backtracks_doh_for_uk_users/" target="_blank">https://www.theregister.co.uk/2019/09/24/mozilla_backtracks_doh_for_uk_users/</a>
-). L&rsquo;avantage du support directement dans le browser viens du fait qu&rsquo;il possede son propre client DNS, ce qui permet de ne pas utiliser le resolver systeme. Donc si votre destination utilise HTTPS, c&rsquo;est tres dur de pouvoir vous espionnez, car l&rsquo;espion peux seulement voir l&rsquo;IP du destinataire.</p>`,readingTime:2,tags:["observation","test","technologie","Import 2023-04-08 17:32"],title:"DoH && DoT",url:"/posts/2019/dos-dot/"},{author:null,avatar:null,categories:["observation","Import 2023-04-08 17:32"],description:`<p>Une serie original de Netflix, qui merite vraiment d&rsquo;etre vue. Produit en Allemagne, c&rsquo;est un genre different des series Americaines. Il faut se fermer les yeux sur certains elements (pas de test d&rsquo;ADN, physique tire par les cheveux), mais une fois que vous avez embarque dans l&rsquo;histoire, c&rsquo;est dur de ne pas continuer l&rsquo;histoire.</p>
-<p>2 saisons disponible, la prochaine sera la derniere.</p>`,readingTime:1,tags:["observation","Import 2023-04-08 17:32"],title:"Dark (Netflix)",url:"/posts/2019/dark-netflix/"},{author:null,avatar:null,categories:["observation","Import 2023-04-08 17:32"],description:`<p>Billet achete, reste a attendre&hellip; voici un petit apercu:</p>
-<iframe width="480" height="270" src="https://www.youtube.com/embed/8Qn_spdM5Zg?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,readingTime:1,tags:["observation","Import 2023-04-08 17:32"],title:"Rise of Skywalker",url:"/posts/2019/rise-of-the-skywalker/"},{author:null,avatar:null,categories:["opinion","observation","Import 2023-04-08 17:32"],description:"<p>C&rsquo;est le temps de vous exprimer, VOTER!</p>",readingTime:1,tags:["opinion","observation","Import 2023-04-08 17:32"],title:"Votez!",url:"/posts/2019/votez/"},{author:null,avatar:null,categories:["aviation","Import 2023-04-08 17:32"],description:`<iframe width="480" height="270" src="https://www.youtube.com/embed/732Y62VZIGc?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<p>J&rsquo;ai decouvert recemment DCS World, un simulateur d&rsquo;avion de chasse. Ce simulateur est tres realiste (selon les dires meme d&rsquo;un ancien pilote), et propose plusieurs types d&rsquo;avions, dont le F-18C et le F-5. Deux avions de chasses que le Canada utilisent, ou utilisaient (F-5). Plein de tutoriaux sont disponibles sur Youtube, et de simulations de combats.</p>
-<figure class="kg-gallery-card kg-width-wide">
-  <div class="kg-gallery-container">
-    <div class="kg-gallery-row">
-    
-
-  <div class="kg-gallery-image">
-    <img src="__GHOST_URL__/content/images/2019/10/IMG_20170916_120117-1.jpg" width="4160" height="3120">
-  </div>
-
-  <div class="kg-gallery-image">
-    <img src="__GHOST_URL__/content/images/2019/10/IMG_20180331_123926.jpg" width="4160" height="3120">
-  </div>
-
-  <div class="kg-gallery-image">
-    <img src="__GHOST_URL__/content/images/2019/10/IMG_20180730_143231-1.jpg" width="4160" height="3120">
-  </div>
-
+  </template>
 </div>
-<div class="kg-gallery-row">
 
+</footer>
+
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  
-</figure>
-<p>Ce simulateur est ce qui se rapproche le plus de mon reve d&rsquo;enfance d&rsquo;etre pilote de chasse.</p>`,readingTime:1,tags:["aviation","Import 2023-04-08 17:32"],title:"DCS World",url:"/posts/2019/dcs-world/"},{author:null,avatar:null,categories:["observation","Import 2023-04-08 17:32"],description:`<figure><img src="__GHOST_URL__/content/images/2019/10/Screenshot_2019-10-15_08-17-18.png">
-</figure>
 
-<p>The Go Programming Language, 40$ paperback, et 15$ e-book. Je me convertie au e-book, avec l&rsquo;achat d&rsquo;un Kindle. Plus de livres qui trainent partout, et la possibilite d&rsquo;avoir avec soi, toute sa librairie, ou que je soie.</p>`,readingTime:1,tags:["observation","Import 2023-04-08 17:32"],title:"e-book",url:"/posts/2019/e-book/"},{author:null,avatar:null,categories:["bike","observation","Import 2023-04-08 17:32"],description:`<p>Couleur d&rsquo;automne sur le bord du fleuve St-Laurent</p>
-<figure class="kg-gallery-card kg-width-wide">
-  <div class="kg-gallery-container">
-    <div class="kg-gallery-row">
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+  <script src="/js/grid.js"></script>
+
+
+
+
+<script src="/js/main.js"></script>
+
     
 
-  <div class="kg-gallery-image">
-    <img src="__GHOST_URL__/content/images/2019/10/IMG_20191013_125946-1.jpg" width="4608" height="3456">
-  </div>
 
-  <div class="kg-gallery-image">
-    <img src="__GHOST_URL__/content/images/2019/10/IMG_20191013_125950.jpg" width="4608" height="3456">
-  </div>
 
-  <div class="kg-gallery-image">
-    <img src="__GHOST_URL__/content/images/2019/10/IMG_20191013_130155.jpg" width="4608" height="3456">
-  </div>
 
-</div>
-<div class="kg-gallery-row">
 
-  <div class="kg-gallery-image">
-    <img src="__GHOST_URL__/content/images/2019/10/IMG_20191013_132018.jpg" width="4608" height="3456">
-  </div>
 
-    </div>
-  </div>
-  
-</figure>`,readingTime:1,tags:["bike","observation","Import 2023-04-08 17:32"],title:"Automne",url:"/posts/2019/automne/"},{author:null,avatar:null,categories:["opinion","Import 2023-04-08 17:32"],description:"<p>Je suis avec Jameet Singh, je vote NDP!</p>",readingTime:1,tags:["opinion","Import 2023-04-08 17:32"],title:"Endossement",url:"/posts/2019/endossement/"},{author:null,avatar:null,categories:["coding","projet","Import 2023-04-08 17:32"],description:`<figure><img src="__GHOST_URL__/content/images/2019/10/Screenshot_2019-10-09_20-54-59.png">
-</figure>
 
-<p>Bon, c&rsquo;est pas grand chose, mais ca fix un bug qui nous affectais a la job. Surment plein d&rsquo;autres personnes aussi, parce que les PDB sont de plus en plus utilises dans Kubernetes.</p>`,readingTime:1,tags:["coding","projet","Import 2023-04-08 17:32"],title:"Premiere contribution a eksctl",url:"/posts/2019/premiere-contribution-a-eksctl/"},{author:null,avatar:null,categories:["technologie","test","Import 2023-04-08 17:32"],description:`<p>C&rsquo;est possible avec CloudReady, un fork de ChromeOS. Pour redonner vie a un vieux laptop de 2011, ca fait la job. Voici quelques bemols:</p>
-<ul>
-<li>Pas de support pour Google Play (application Android), parce que c&rsquo;est proprietaire (DUH)</li>
-<li>Viens avec VirtualBox, pourquoi?? quand KVM est natif et 100 fois mieux?</li>
-</ul>`,readingTime:1,tags:["technologie","test","Import 2023-04-08 17:32"],title:"Transformer un vieux T520 en Chromebook",url:"/posts/2019/transformer-un-vieux-t520-en-chromebook/"},{author:null,avatar:null,categories:["technologie","Import 2023-04-08 17:32"],description:"<p>TADA: <code>sudo xxd /sys/firmware/acpi/tables/MSDM</code></p>",readingTime:1,tags:["technologie","Import 2023-04-08 17:32"],title:"Comment recuperer une license Windows d'un bios de laptop",url:"/posts/2019/comment-recuperer-un-license-windows-dun-bios-de-laptop/"},{author:null,avatar:null,categories:["technologie","Import 2023-04-08 17:32"],description:"<p>Ca y est, c&rsquo;est fait. Compte Facebook supprimer. J&rsquo;ai erradique ce cancer qui cruge peu a peu ce monde &ldquo;moderne&rdquo;.</p>",readingTime:1,tags:["technologie","Import 2023-04-08 17:32"],title:"Supression de Facebook",url:"/posts/2019/supression-de-facebook/"},{author:null,avatar:null,categories:["observation","Import 2023-04-08 17:32"],description:`<p>Une file d&rsquo;attente en ligne. Oui, oui en 2019 il semble que certaines personnes pensent que c&rsquo;est une bonne idee de proceder de cette facon.</p>
-<p>Incroyable</p>
-<figure><img src="__GHOST_URL__/content/images/2019/04/Screenshot-2019-04-27-at-09.04.35.png">
-</figure>
 
-<p>Et apres le temps d&rsquo;attente, je tombe sur ceci:</p>
-<figure><img src="__GHOST_URL__/content/images/2019/04/Screenshot-2019-04-27-at-09.30.36.png">
-</figure>
 
-<p>Vraiment patetique.</p>`,readingTime:1,tags:["observation","Import 2023-04-08 17:32"],title:"File d'attente",url:"/posts/2019/fille-dattente/"},{author:null,avatar:null,categories:["bike","produit","Import 2023-04-08 17:32"],description:`<p>Ca fait longtemps que j&rsquo;y pensais, c&rsquo;est maintenant fait. Le gros avantage de ce trailer, il fit sur tout mes velo (avec l&rsquo;achat d&rsquo;un adapteur pour mes velo de montagne). Je peux faire du singletrack, ou de la route.
-<a href="https://youtu.be/5aMFgMuBXvI" target="_blank"></a>
-</p>
-<iframe width="459" height="344" src="https://www.youtube.com/embed/5aMFgMuBXvI?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,readingTime:1,tags:["bike","produit","Import 2023-04-08 17:32"],title:"Bob Ibex 28 plus",url:"/posts/2019/bob-ibex-28-plus/"},{author:null,avatar:null,categories:["bike","produit","technologie","Import 2023-04-08 17:32"],description:`<p>In case you have this unfortunate event, and are unable to update your firmware. I provide you the restoration procedure sent to me by Tacx support. But before going into this process, I suggest you read this <a href="https://zwiftinsider.com/updating-your-tacx-smart-brake-firmware/" target="_blank">post</a>
-.</p>
-<p>** USE AT YOUR OWN RISK **</p>
-<pre tabindex="0"><code>Can you please try attached download firmware link on your smart trainer with the Tacx Utility app.
 
-Forward his email to an mail address that you can access on your smart phone.
-Now open the email on your smartphone and click on the link below:
 
-https://drive.google.com/file/d/1aqXF87xR-YqtD-Y7kCcHBm-Ev70ZlrGD/view?usp=sharing
 
-Be sure to click on the download button (marked by a red circle in the image below).
 
-Choose to open this file with the Tacx Utility app and connect your trainer (wait for the circle to become green).
-When your trainer is connected choose &#34;Update&#34; to begin the firmware installation.
-Wait for the firmware installation to complete and follow the instructions on screen when necessary.
-Once the firmware is installed, you can use your trainer again.
-</code></pre><p>The procedure take about 10 min to flash, and the final result:</p>`,readingTime:1,tags:["bike","produit","technologie","Import 2023-04-08 17:32"],title:"Amber/Orange light on Tacx Vortex (T2180)",url:"/posts/2019/amber-orange-light-on-tacx-vortex/"},{author:null,avatar:null,categories:["bike","Import 2023-04-08 17:32"],description:'<iframe width="480" height="270" src="https://www.youtube.com/embed/Mr4m7ZoVfwc?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',readingTime:0,tags:["bike","Import 2023-04-08 17:32"],title:"Les effets positifs du velo",url:"/posts/2019/les-effets-positifs-de-velo/"},{author:null,avatar:null,categories:["bike","Import 2023-04-08 17:32"],description:"<p>Complete le tour de Zwift aujourd&rsquo;hui. Tres cool ce genre de simulation. Bonne facon de motiver un rider!</p>",readingTime:1,tags:["bike","Import 2023-04-08 17:32"],title:"Tour de Zwift",url:"/posts/2019/tour-de-zwift/"},{author:null,avatar:null,categories:["observation","Import 2023-04-08 17:32"],description:"<p>Donner son opinion dans le monde d&rsquo;aujourd&rsquo;hui est devenue un acte risque. Peut importe ce que vous dites, quelqu&rsquo;un va souhaiter votre mort.</p>",readingTime:1,tags:["observation","Import 2023-04-08 17:32"],title:"Opinion",url:"/posts/2019/opinion/"},{author:null,avatar:null,categories:["bike","Import 2023-04-08 17:32"],description:`<p>Apres un peu plus d&rsquo;un mois d&rsquo;essaie, 15 hr et 500 km plus tard, mon verdict. Et bien, c&rsquo;est positif, meme a 18$/mois. Zwift rend l&rsquo;experience beaucoup moins penible, et ca peut meme etre agreable de souffrir dans son sous-sol, avec plusieurs milliers d&rsquo;adepte en ligne.</p>
-<p>L&rsquo;experience peut-etre tres differente tout dependant de l&rsquo;equipement que vous possedez. Pour ma part j&rsquo;ai optez pour un smart trainner d&rsquo;entree de gamme. Pour beneficier d&rsquo;un comportement plus realiste, un trainner plus haut de gamme est recommander. Mon but premier etant de rendre l&rsquo;entrainement interieur moins penible,  et c&rsquo;est reussi.</p>`,readingTime:1,tags:["bike","Import 2023-04-08 17:32"],title:"Zwift review",url:"/posts/2019/zwift-review/"},{author:null,avatar:null,categories:["bike","Import 2023-04-08 17:32"],description:`<p>Ca c&rsquo;est trop hot: <a href="https://zwift.com/events/series/the-absa-cape-epic-workout-series/" target="_blank">https://zwift.com/events/series/the-absa-cape-epic-workout-series/</a>
-</p>`,readingTime:1,tags:["bike","Import 2023-04-08 17:32"],title:"THE ABSA CAPE EPIC WORKOUT SERIES",url:"/posts/2019/the-absa-cape-epic-workout-series/"},{author:null,avatar:null,categories:["science","Import 2023-04-08 17:32"],description:`<p>Article interessant de Sabine Hossenfelder a propos de la non-decouverte de nouvelles particules elementaires au LHC: <a href="http://backreaction.blogspot.com/2018/12/how-lhc-may-spell-end-of-particle.html" target="_blank">http://backreaction.blogspot.com/2018/12/how-lhc-may-spell-end-of-particle.html</a>
-. On est decidement a la croise des chemins pour le domaine de la physique des particules. Un analyse et un correction est de mise, mais beaucoup refusent de voir les faits dans le data accumules au cours de ces dernieres annees.</p>
-<p>C&rsquo;est quand meme ironique quand on pense que des scientifiques regardent les experimentations, mais rejettent les resultats, et demande un autre accelerateurs encore plus puissant, et surtout, tres couteux (10 milliard). Je crois qu&rsquo;il serait plus judicieux de consolider notre savoir existant, entre autre sur la physique des neutrinos, et ceci qui risque de nous ouvrir de nouvelles portes.</p>`,readingTime:1,tags:["science","Import 2023-04-08 17:32"],title:"LHC run II",url:"/posts/2018/lhc-run-ii/"},{author:null,avatar:null,categories:["observation","technologie","Import 2023-04-08 17:32"],description:"<p>Deux sujets on particulierement fait parle cette annee: Securite et Kubernetes. L&rsquo;annee 2018 a commence par la publication des fameux bugs de securites des branches de preductions des CPU modernes (Spectre et Meltdown). On peut dire que ce fut un vrai <code>meltdown</code> de la part d&rsquo;Intel particulierement, qui a reussi a s&rsquo;aliener une bonne partie de la comunaute OpenSource, grace a des pratiques de securite innaproprier pour les modeles <code>Ouvert</code>. 2019 va continuer avec la decouverte de nouvelles variantes de ces bugs et vecteurs d&rsquo;attaques.</p>",readingTime:2,tags:["observation","technologie","Import 2023-04-08 17:32"],title:"Revue technologique 2018",url:"/posts/2018/revue-technologique-2018/"},{author:null,avatar:null,categories:["bike","produit","test","Import 2023-04-08 17:32"],description:`<iframe width="480" height="270" src="https://www.youtube.com/embed/q8fArWR-CsE?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<p>Pour me motiver a reprendre l&rsquo;entrainnement, j&rsquo;ai decide de joindre le &ldquo;mouvement&rdquo; Zwift. J&rsquo;ai donc du changer de bike trainer, car pour utiliser Zwift, il faut setup un peu plus evoluer. J&rsquo;ai opte pour un Tacx Vortex smart. C&rsquo;est un model de base, mais ca fera l&rsquo;affaire (c&rsquo;est un hobby, pas une profession).</p>
-<p>Comme je n&rsquo;ai pas d&rsquo;ordinateur Windows ou Mac, j&rsquo;ai installe l&rsquo;application mobile Android, qui se trouve encore en mode beta. L&rsquo;application semble avoir ete porter sur android, sans trop de regard au fais que ca roulle sur un telephone. Une option que j&rsquo;aimerais vraiment voir eventuellement, c&rsquo;est la possibilite de &ldquo;caster&rdquo; sur une TV. Presentement le seul moyen est de caste le telephone sur le TV. Ca fonctionne, mais le telephone doit rester ouvert tout le long de la session.</p>`,readingTime:1,tags:["bike","produit","test","Import 2023-04-08 17:32"],title:"Motivation: Zwift",url:"/posts/2018/motivation-zwift/"},{author:null,avatar:null,categories:["science","Import 2023-04-08 17:32"],description:'<img src="__GHOST_URL__/content/images/2018/12/IMG_20181215_080538.jpg" alt="">',readingTime:0,tags:["science","Import 2023-04-08 17:32"],title:"Never give up",url:"/posts/2018/never-give-up/"},{author:null,avatar:null,categories:["observation","Import 2023-04-08 17:32"],description:`<iframe width="560" height="315" src="https://www.youtube.com/embed/HzeekxtyFOY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<p>Dure de rester insensible a un tel discours, non?</p>`,readingTime:1,tags:["observation","Import 2023-04-08 17:32"],title:"Quand realiserons-nous?",url:"/posts/2018/quand-realiserons-nous/"},{author:null,avatar:null,categories:["histoire","Import 2023-04-08 17:32"],description:`<p>Geneviève Bergeron
-Hélène Colgan
-Nathalie Croteau
-Barbara Daigneault
-Anne-Marie Edward
-Maud Haviernick
-Maryse Laganière
-Maryse Leclair
-Anne-Marie Lemay
-Sonia Pelletier
-Michèle Richard
-Annie St-Arneault
-Annie Turcotte
-Barbara Klucznik-Widajewicz
-<img src="__GHOST_URL__/content/images/2018/12/IMG_20181206_173213.jpg" alt="Geneviève Bergeron
-Hélène Colgan
-Nathalie Croteau
-Barbara Daigneault
-Anne-Marie Edward
-Maud Haviernick
-Maryse Laganière
-Maryse Leclair
-Anne-Marie Lemay
-Sonia Pelletier
-Michèle Richard
-Annie St-Arneault
-Annie Turcotte
-Barbara Klucznik-Widajewicz"></p>`,readingTime:1,tags:["histoire","Import 2023-04-08 17:32"],title:"6 dec",url:"/posts/2018/6-dec/"},{author:null,avatar:null,categories:["histoire","Import 2023-04-08 17:32"],description:`<p>Se souvenir du passe, pour ne pas repeter ces erreurs, et honorer la memoire de ceux qui se sont battus pour nos acquis du present.</p>
-<p>Repose en paix Harry</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/huWBcsQS2vE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,readingTime:1,tags:["histoire","Import 2023-04-08 17:32"],title:"Harry Leslie Smith",url:"/posts/2018/harry-leslie-smith/"},{author:null,avatar:null,categories:["bike","Import 2023-04-08 17:32"],description:`<p>Premiere sortie en fatbike cet automne, et preparation de l&rsquo;entrainement pour 2019. Etablire les objectifs et les courses pour la prochaine saison. En 2018 j&rsquo;ai pas participe a des courses de fatbike, mais 2019 devrait etre different, enfin, j&rsquo;espere.</p>
-<figure><img src="__GHOST_URL__/content/images/2018/11/IMG_20181124_131340.jpg"
-    alt="Bordure du fleuve St-Laurent"><figcaption>
-      <p>Bordure du fleuve St-Laurent</p>
-    </figcaption>
-</figure>`,readingTime:1,tags:["bike","Import 2023-04-08 17:32"],title:"Fatbike",url:"/posts/2018/fatbike/"},{author:null,avatar:null,categories:["technologie","Import 2023-04-08 17:32"],description:`<p>Pourquoi Google developpe Fuchsia? Pour plusieurs raisons et voici selon moi les motivations:</p>
-<p>Securite: Linux contient des dixaines de millions de lignes de codes. Plus de codes, plus de bugs. Une fraction de ces lignes de codes est vraiment necessaires pour un systeme embarque comme un telephone, tablette ou autres.</p>
-<p>Controle: Linux est dirige par un systeme de mainteneurs, et le grand boss est Linus Torvald. Google doit passer par les memes procedures que les autres pour l&rsquo;inclusion de nouveaux codes, et il doit se conformer aux directives demande par les mainteneurs et Linus au final. Android est donc un fork du kernel, et c&rsquo;est un travails de longue halleine d&rsquo;etre &ldquo;in-sync&rdquo; avec le mainline kernel.</p>`,readingTime:1,tags:["technologie","Import 2023-04-08 17:32"],title:"Fuchsia VS Android/Linux",url:"/posts/2018/fuchsia-vs-android-linux/"},{author:null,avatar:null,categories:["technologie","Import 2023-04-08 17:32"],description:`<p>Nouveau clone de Ceph, ecrit en Go, et mis OpenSource par WesternDigital. Semble assez simple, mais plus utilise par WesternDigital, car le fruit d&rsquo;un acquisition. Ce veut eductatif pour le moment, car plus maintenu par son acquereur, WD.</p>
-<p>Je trouve ca vraiment bien qu&rsquo;une compagnie decide d&rsquo;ouvrir les sources dans ces cas particuliers, car les devs qui ont travailles sur ce projet voient pas leur travail jette a la poubelle.</p>`,readingTime:1,tags:["technologie","Import 2023-04-08 17:32"],title:"blb (distributed storage)",url:"/posts/2018/blb-distributed-storage/"},{author:null,avatar:null,categories:["aviation","Import 2023-04-08 17:32"],description:`<p>Apparament il manque de pilotes de CF-18. Un de mes reves d&rsquo;enfance depuis que j&rsquo;ai assiste a une demonstration des snowbirds dans les annees 80. Le Canada venait d&rsquo;acquerir des CF-18 tout neuf.</p>
-<p>J&rsquo;ai eu la chance de m&rsquo;assoir dans un CF-18 mis a la retraite cet ete. J&rsquo;aurais passe des heures la si j&rsquo;aurais pu.</p>
-<p>La photo principal de ce site est un CF-101 Voodoo. Tres bel appareil aussi.</p>`,readingTime:1,tags:["aviation","Import 2023-04-08 17:32"],title:"Pilote de chasse",url:"/posts/2018/pilote-de-chasse/"},{author:null,avatar:null,categories:["science","technologie","observation","Import 2023-04-08 17:32"],description:`<p>Article interessant ici: <a href="https://spectrum.ieee.org/computing/hardware/the-case-against-quantum-computing" target="_blank">https://spectrum.ieee.org/computing/hardware/the-case-against-quantum-computing</a>
-, a propos des recheches actuels sur les ordinateurs quantique. L&rsquo;auteur de l&rsquo;article en question est un physicien francais. Il dresse un portrait plutot realiste sur la possibilite d&rsquo;avoir un jour des ordinateurs quantique reellement utiles, et pas simplement des experimentations universitaires ou industriels (IBM, Intel, Google).</p>
-<p>Parallele avec mon article precedent, je crois qu&rsquo;un ordinateur quantique est possible, mais avec les connaissances et technologies d&rsquo;une civilisation de type II. Pour reference, nous ne sommes pas encore une civilisation de type I.</p>`,readingTime:1,tags:["science","technologie","observation","Import 2023-04-08 17:32"],title:"Faisabilite des ordinateurs quantique",url:"/posts/2018/faisabilite-des-ordinateurs-quantique/"},{author:null,avatar:null,categories:["observation","science","Import 2023-04-08 17:32"],description:`<p>Le paradoxe de Fermi. Pourquoi n&rsquo;avons nous pas encore detecte de traces de civilisations avances?</p>
-<p>Plus j&rsquo;y reflechie, plus je crois que la regle d&rsquo;or est  l&rsquo;auto-destruction. Presque qu&rsquo;impossible d&rsquo;avoir des civilisations de types II.</p>
-<p><a href="https://fr.m.wikipedia.org/wiki/Paradoxe_de_Fermi" target="_blank">https://fr.m.wikipedia.org/wiki/Paradoxe_de_Fermi</a>
 
-<a href="https://fr.m.wikipedia.org/wiki/" target="_blank">https://fr.m.wikipedia.org/wiki/</a>
-Échelle_de_Kardachev</p>`,readingTime:1,tags:["observation","science","Import 2023-04-08 17:32"],title:"Les civilisations avances",url:"/posts/2018/les-civilisations-avances/"},{author:null,avatar:null,categories:["science","Import 2023-04-08 17:32"],description:`<p>Petite animation des etoiles au centre de notre galaxie:</p>
-<img src="__GHOST_URL__/content/images/2018/11/Black-hole-workable.gif" alt=""><p>Je pense qu&rsquo;il y a quelque chose de super massif ;)</p>`,readingTime:1,tags:["science","Import 2023-04-08 17:32"],title:"Supermasive blackhole",url:"/posts/2018/supermasive-blackhole/"},{author:null,avatar:null,categories:["science","histoire","Import 2023-04-08 17:32"],description:`<p>Un peu d&rsquo;histoire ce matin, pour se souvenir d&rsquo;une       des figures importantes en science, Lise Meitner.</p>
-<p>Etant une femme et juive, son chemin a ete particulierement difficile.</p>
-<p>Voyez son parcours sur wikipedia: <a href="https://en.m.wikipedia.org/wiki/Lise_Meitner" target="_blank">https://en.m.wikipedia.org/wiki/Lise_Meitner</a>
-</p>`,readingTime:1,tags:["science","histoire","Import 2023-04-08 17:32"],title:"Lise Meitner",url:"/posts/2018/lise-meitner/"},{author:null,avatar:null,categories:["coding","Import 2023-04-08 17:32"],description:`<p><a href="https://github.com/kelseyhightower/nocode" target="_blank">https://github.com/kelseyhightower/nocode</a>
-</p>`,readingTime:1,tags:["coding","Import 2023-04-08 17:32"],title:"Meilleur projet github",url:"/posts/2018/meilleur-projet-githum/"},{author:null,avatar:null,categories:["observation","Import 2023-04-08 17:32"],description:`<p>On connait rarement les histoires cachees devant de grands exploits. En voici une&hellip;</p>
-<iframe width="480" height="270" src="https://www.youtube.com/embed/tcmH0__c7aw?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,readingTime:1,tags:["observation","Import 2023-04-08 17:32"],title:"Everest",url:"/posts/2018/everest/"},{author:null,avatar:null,categories:["technologie","Import 2023-04-08 17:32"],description:`<p>Je l&rsquo;attendais depuis plusieurs jours, la version 70 de ChromOS. Ce que j&rsquo;attendais en fait, c&rsquo;est le support de Crostini, qui permet de rouller des applications Linux.</p>
-<p>Ca fonctionne, et donne access a un shell bash, qui se trouve a rouller dans une VM Debian. C&rsquo;est pas tres rapide, normal, avec ce genre de CPU et seulement 4G de RAM. J&rsquo;ai installe VSCode, golang et je peux maintenant coder nativement, sans passer par un cloud IDE.</p>`,readingTime:1,tags:["technologie","Import 2023-04-08 17:32"],title:"ChromeOS 70",url:"/posts/2018/chromeos-70/"},{author:null,avatar:null,categories:["science","Import 2023-04-08 17:32"],description:`<p><a href="https://www.newscientist.com/article/mg24032022-600-exclusive-grave-doubts-over-ligos-discovery-of-gravitational-waves/amp/" target="_blank">https://www.newscientist.com/article/mg24032022-600-exclusive-grave-doubts-over-ligos-discovery-of-gravitational-waves/amp/</a>
-</p>
-<p>C&rsquo;est un processus sain et normal en science de toujours remettre en question. Incapable de voir le reste de l&rsquo;article, il est cache derriere un paywall :(</p>`,readingTime:1,tags:["science","Import 2023-04-08 17:32"],title:"Fausses ondes gravitationnels?",url:"/posts/2018/fausses-ondes-gravitationnels/"},{author:null,avatar:null,categories:["observation","Import 2023-04-08 17:32"],description:`<p><a href="https://www.theguardian.com/environment/2018/oct/30/humanity-wiped-out-animals-since-1970-major-report-finds" target="_blank">https://www.theguardian.com/environment/2018/oct/30/humanity-wiped-out-animals-since-1970-major-report-finds</a>
-</p>
-<p>Les prochaines decenies vont etre de plus en plus dure. La terre a connue pire que les humains, par contre les humains ne connaissent que la terre.</p>
-<p>Triste, tres triste&hellip;</p>`,readingTime:1,tags:["observation","Import 2023-04-08 17:32"],title:"Dure realite",url:"/posts/2018/dure-realite/"},{author:null,avatar:null,categories:["coding","test","Import 2023-04-08 17:32"],description:"<p>Dans ma liste de Cloud IDE a essayer ce trouve Cloud9, l&rsquo;IDE developpe par AWS. Mon premier constat est le fait que c&rsquo;est pas bien integre avec Github, et c&rsquo;est vraiment un point a ameliorer, car c&rsquo;est vraiment penible. Sur ce point, Gitpod est de loins tres superieur.</p>",readingTime:1,tags:["coding","test","Import 2023-04-08 17:32"],title:"Cloud9",url:"/posts/2018/cloud9/"},{author:null,avatar:null,categories:["coding","projet","Import 2023-04-08 17:32"],description:`<p>Apres plusieurs jours de reflexions sur le genre de projets que je veux entreprendre pour apprendre GO, j&rsquo;ai finalement eu une bonne idee, du moins selon moi.</p>
-<p>Mon projet consistrera a ecrire un agent client en GO pour calculer le temps reponse d&rsquo;une site web, ou un api. Cet agent pourra etre executer dans un Lambda AWS, dans plusieurs region AWS. Je vais creer les ressources Terraform necessaire pour l&rsquo;installation rapide et securitaire. Comme le cout d&rsquo;utilisation d&rsquo;une Lambda est a la seconde, il sera possible de rouller selon un laps de temps, et un interfal predefinie.</p>`,readingTime:1,tags:["coding","projet","Import 2023-04-08 17:32"],title:"Projet Golang",url:"/posts/2018/projet-golang/"},{author:null,avatar:null,categories:["coding","Import 2023-04-08 17:32"],description:`<p>J&rsquo;ai achete un ChromeBook en partie pour pouvoir coder de petits projets. Je savais bien qu&rsquo;il faudrait que je me trouve un editeur web, car mon Acer R11 ne supporte pas encore la technolohie Crostini (prochaine release de ChromeOS). Gitpod me semble prometteur, mon premier essaie (30 min), semble m&rsquo;indiquer que c&rsquo;est tres inpire de VS Code. Pas encore trouver la commande/touche pour compiller mon petit &ldquo;Hello World&rdquo;!</p>
-<p>Gratuit pour 10 hrs par mois, sinon 19$/mois pour 100 hrs. Je trouve ca pas mal cher pas contre.</p>`,readingTime:1,tags:["coding","Import 2023-04-08 17:32"],title:"Gitpod",url:"/posts/2018/gitpod/"},{author:null,avatar:null,categories:["sante","Import 2023-04-08 17:32"],description:`<p><a href="https://www.bbc.co.uk/news/amp/stories-45971416" target="_blank">https://www.bbc.co.uk/news/amp/stories-45971416</a>
-</p>
-<p>Ahhhh, les supplements alimentaires&hellip;
-Les racourcies menent rarement a bon port!</p>`,readingTime:1,tags:["sante","Import 2023-04-08 17:32"],title:"Supplements",url:"/posts/2018/supplements/"},{author:null,avatar:null,categories:["Getting Started","Import 2023-04-08 17:32"],description:"<p>Vraiment un bon petit site pour se familiariser avec certaines technologies, sans avoir a lire des centaines de pages de documentations, et tout oublier apres 2 jours ;)</p>",readingTime:1,tags:["Getting Started","Import 2023-04-08 17:32"],title:"Katacoda",url:"/posts/2018/katacoda/"},{author:null,avatar:null,categories:["test","Import 2023-04-08 17:32"],description:"<p>J&rsquo;ai demenage les dns de mon domaines pour faire des tests avec leurs produits. Ca me semble vraiment bien. Plus de details a venir&hellip;</p>",readingTime:1,tags:["test","Import 2023-04-08 17:32"],title:"Cloudflare",url:"/posts/2018/cloudflare/"},{author:null,avatar:null,categories:["bike","Import 2023-04-08 17:32"],description:`<p><a href="https://racing.trekbikes.com/sport/mountainbike/2018/world-cup-champion-jolanda-neff-joins-trek-factory-racing-xc/" target="_blank">https://racing.trekbikes.com/sport/mountainbike/2018/world-cup-champion-jolanda-neff-joins-trek-factory-racing-xc/</a>
-</p>`,readingTime:1,tags:["bike","Import 2023-04-08 17:32"],title:"Neff chez Trek Factory Racing",url:"/posts/2018/neff-chez-trek-factory-racing/"},{author:null,avatar:null,categories:["produit","Import 2023-04-08 17:32"],description:"<p>Simple &amp; rapide et decidemment plus secure que Wordpress. L&rsquo;installation via les droplets preconfigure de Digital Ocean est un plus.</p>",readingTime:1,tags:["produit","Import 2023-04-08 17:32"],title:"Ghost",url:"/posts/2018/ghost-post/"}],fuseOptions={keys:["title"]},fuse=new Fuse(fuseData,fuseOptions)</script><script type=module src=https://cdn.jsdelivr.net/npm/ionicons@7.4.0/dist/ionicons/ionicons.esm.js integrity="sha256-/IFmi82bIhdYWctu0UddSlJqpnzWm7Vh2C4CM32wF/k=" crossorigin=anonymous></script><script nomodule src=https://cdn.jsdelivr.net/npm/ionicons@7.4.0/dist/ionicons/ionicons.js integrity="sha256-mr7eJMX3VC3F7G32mk4oWp1C6a2tlMYxUdptfT7uKI8=" crossorigin=anonymous></script></body></html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js" integrity="sha256-42IbU8t3tOwwbexB7ZVRHm3YDRf65aBPPjRtIUufj5I=" crossorigin="anonymous"></script>
+<script>
+  var fuseData = [{"author":null,"avatar":null,"categories":["informations"],"description":"pgauthier - Profil de fonctionnement et guide d'interaction","readingTime":3,"tags":["informations"],"title":"man page","url":"/posts/2025/08/man-page/"},{"author":null,"avatar":null,"categories":["News"],"description":"\u003cp\u003eJ\u0026rsquo;ai longtemps chercher a comprendre pourquoi je suis différent des autres. Plusieurs tests de personnalité en ligne, introverti, feeling, perception, thinking, etc, J\u0026rsquo;ai fini par croire que j\u0026rsquo;étais simplement un weirdo antisocial introverti.\u003c/p\u003e\n\u003cp\u003eOuais, il y a des choses qui pouvaient sonner des cloches. Un intérêts intense pour la physique des particules a 12 ans. Ben quoi, c\u0026rsquo;est pas ça que les ado ont comme passe temps après l\u0026rsquo;école? Une passion intense pour les ordinateurs depuis que j\u0026rsquo;ai vu mon premier Tandy 1000 en 1984,\u003c/p\u003e","readingTime":1,"tags":["News"],"title":"AuDHD","url":"/posts/2025/06/audhd/"},{"author":null,"avatar":null,"categories":["projet","coding","technologie"],"description":"Petit projet personel pour scaler des workload avec des PVC.","readingTime":1,"tags":["projet","coding","technologie"],"title":"pvcscaler","url":"/posts/2025/03/pvcscaler/"},{"author":null,"avatar":null,"categories":null,"description":"Yes we are!","readingTime":0,"tags":null,"title":"We Are Canadian!","url":"/posts/2025/03/we-are-canadian/"},{"author":null,"avatar":null,"categories":["opinion","informations"],"description":"Qui controle l'informations, controlle le monde.","readingTime":1,"tags":["opinion","informations"],"title":"Voila pourquoi les IA sont dangereuses","url":"/posts/2025/02/voila-pourquoi-les-ia-sont-dangereuses/"},{"author":null,"avatar":null,"categories":null,"description":"\u003cp\u003eCe que vous devez savoir a propos de cette industrie.\u003c/p\u003e\n\u003cdiv style=\"position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;\"\u003e\n      \u003ciframe allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen\" loading=\"eager\" referrerpolicy=\"strict-origin-when-cross-origin\" src=\"https://www.youtube.com/embed/kOAbmQasTpnO0Ca-?autoplay=0\u0026amp;controls=1\u0026amp;end=0\u0026amp;loop=0\u0026amp;mute=0\u0026amp;start=0\" style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;\" title=\"YouTube video\"\u003e\u003c/iframe\u003e\n    \u003c/div\u003e","readingTime":1,"tags":null,"title":"L'envers du décors","url":"/posts/2025/02/lenvers-du-decors-2/"},{"author":null,"avatar":null,"categories":["opinion","technologie"],"description":"\u003cdiv style=\"position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;\"\u003e\n      \u003ciframe allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen\" loading=\"eager\" referrerpolicy=\"strict-origin-when-cross-origin\" src=\"https://www.youtube.com/embed/qq5AuDIvNmMvW_6L?autoplay=0\u0026amp;controls=1\u0026amp;end=0\u0026amp;loop=0\u0026amp;mute=0\u0026amp;start=0\" style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;\" title=\"YouTube video\"\u003e\u003c/iframe\u003e\n    \u003c/div\u003e\n\n\u003cp\u003eOui, c\u0026rsquo;est choses doivent être dites et redites. Le temps est venu de se lever, et de se battre pour que la vérité soit répète plus souvent que les mensonges.\nCe n\u0026rsquo;est que le début!\u003c/p\u003e","readingTime":1,"tags":["opinion","technologie"],"title":"La vérité est rafrachissante","url":"/posts/2025/01/la-verite-est-rafrachissante/"},{"author":null,"avatar":null,"categories":null,"description":"\u003cdiv style=\"position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;\"\u003e\n      \u003ciframe allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen\" loading=\"eager\" referrerpolicy=\"strict-origin-when-cross-origin\" src=\"https://www.youtube.com/embed/7ZObMDPR7CQ?autoplay=0\u0026amp;controls=1\u0026amp;end=0\u0026amp;loop=0\u0026amp;mute=0\u0026amp;start=0\" style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;\" title=\"YouTube video\"\u003e\u003c/iframe\u003e\n    \u003c/div\u003e","readingTime":0,"tags":null,"title":"L'ère des Oligarchies en Amérique","url":"/posts/2025/01/lere-des-oligarchies-en-amerique/"},{"author":null,"avatar":null,"categories":null,"description":"\u003cp\u003eIl est grand temps qu\u0026rsquo;on se prennent en mains, qu\u0026rsquo;on ne soit plus entièrement dépendant des États-Unis. Formons des alliance avec les autres nations. Devenons auto-suffisant, serrons nous les coudes et soyons UNIS!\u003c/p\u003e\n\u003cp\u003eOH CANADA!\u003c/p\u003e","readingTime":1,"tags":null,"title":"Buy Canadian Act","url":"/posts/2025/01/buy-canadian-act/"},{"author":null,"avatar":null,"categories":null,"description":"\u003cp\u003ePour la travail j\u0026rsquo;ai un laptop DELL. Celui-ci n\u0026rsquo;aime vraiment pas quand j\u0026rsquo;utilise une power source inférieur a 65W. Dans ce cas, le CPU est ralentie au maxxxiiimmuuummm. J\u0026rsquo;ai l\u0026rsquo;impression d\u0026rsquo;avoir un 386. Après plusieurs essaie infructueuse, la solution consiste a désactiver un module du kernel (Running Average Power Limit):\u003c/p\u003e\n\u003cp\u003esudo rmmod intel_rapl_msr\u003c/p\u003e","readingTime":1,"tags":null,"title":"Intel CPU throttling","url":"/posts/2025/01/intel-cpu-throttling/"},{"author":null,"avatar":null,"categories":["observation"],"description":"Bob love AI Alice, humm ok...","readingTime":1,"tags":["observation"],"title":"AI relationship","url":"/posts/2025/01/ai-relationship/"},{"author":null,"avatar":null,"categories":["observation","opinion"],"description":"\u003cp\u003eJe ne sais pas si vieillir nous permet de prendre plus conscience du monde qui nous entoure? Nous rend plus critique? Mais voila, l\u0026rsquo;avenir n\u0026rsquo;inquiète de plus en plus. On semble avoir terminer un cycle de paix, depuis plusieurs années, j\u0026rsquo;ai l\u0026rsquo;impression qu\u0026rsquo;on glisse vers des temps de guerres.\u003c/p\u003e\n\u003cp\u003eMontée de l\u0026rsquo;autoritarisme partout dans le monde, portée par l\u0026rsquo;individualisme extrême, le populisme et la peur. Ces changements sont amplifier par les réseaux sociaux, qui sont maintenant bien ancrée dans la vie quotidienne de tout le monde, et permet la circulation de mensonges déguiser en vérité, et ne sont plus remis en question, même s\u0026rsquo;il y a des faits pour débusquer ces mensonge. Il n\u0026rsquo;y a desaurmais plus de différence entre des faits et des opinions.\u003c/p\u003e","readingTime":1,"tags":["observation","opinion"],"title":"2025 ou 1925","url":"/posts/2025/01/2025-ou-1925/"},{"author":null,"avatar":null,"categories":["opinion","technologie"],"description":"\u003cp\u003eLa course au AI s’accélère de plus en plus. Notre dépendance a cette technologie deviendra vite une question de sécurité national. Dépendre de AI de compagnie extérieur (OpenAI/Microsoft, Google, Mistral, Anthropic) me semble de bien mauvaise augure. Il me semble logique d\u0026rsquo;avoir une plateforme AI nationale.\u003c/p\u003e\n\u003cp\u003eUne fois que vous avez mis en place du AI, et que vous êtes dépendant, vous êtes aussi dépendant de la compagnie qui offre le service. C\u0026rsquo;est encore le farwest, mais nous allons assister a d’éventuelle acquisition. Jouons a imaginer des acquisition: AWS acquiert Antropic, Oracle prend le controle de Inflection AI, etc.\u003c/p\u003e","readingTime":1,"tags":["opinion","technologie"],"title":"AI indépendance","url":"/posts/2024/ai-independance/"},{"author":null,"avatar":null,"categories":["technologie","observation"],"description":"\u003ciframe width=\"200\" height=\"113\" src=\"https://www.youtube.com/embed/AaU6tI2pb3M?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen title=\"What Ethical AI Really Means\"\u003e\u003c/iframe\u003e\n\u003cp\u003eDocumentaire intéressant, avec un regard critique sur l\u0026rsquo;AI.\u003c/p\u003e","readingTime":1,"tags":["technologie","observation"],"title":"Matière a réflexion","url":"/posts/2023/matiere-a-reflexion/"},{"author":null,"avatar":null,"categories":["coding","projet","technologie"],"description":"\u003cp\u003eAvec tout le buzz autour d\u0026rsquo;OpenAI, j\u0026rsquo;ai cree un petit assistant pour aider mes enfants avec leurs travaux scolaire:\u003c/p\u003e\n\u003cfigure class=\"kg-card kg-bookmark-card\"\u003e\n  \u003ca href=\"https://github.com/laghoule/gptProfNewton\" class=\"kg-bookmark-container\"\u003e\n    \u003cdiv class=\"kg-bookmark-content\"\u003e\n      \u003cdiv class=\"kg-bookmark-title\"\u003eGitHub - laghoule/gptProfNewton: gptProfNewton est un projet qui utilise le modèle GPT pour simuler un professeur.\u003c/div\u003e\n      \u003cdiv class=\"kg-bookmark-description\"\u003egptProfNewton est un projet qui utilise le modèle GPT pour simuler un professeur. - GitHub - laghoule/gptProfNewton: gptProfNewton est un projet qui utilise le modèle GPT pour simuler un professeur.\u003c/div\u003e\n      \u003cdiv class=\"kg-bookmark-metadata\"\u003e\n        \u003cimg src=\"https://github.com/fluidicon.png\" class=\"kg-bookmark-icon\"\u003e\n        \u003cspan class=\"kg-bookmark-author\"\u003elaghoule\u003c/span\u003e\n        \u003cspan class=\"kg-bookmark-publisher\"\u003eGitHub\u003c/span\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n    \n    \u003cdiv class=\"kg-bookmark-thumbnail\"\u003e\n      \u003cimg src=\"https://opengraph.githubassets.com/ef607e920731cb02bfb41fdabd7a644c105acb20334031eabdabd724a8d5295b/laghoule/gptProfNewton\"\u003e\n    \u003c/div\u003e\n    \n  \u003c/a\u003e\n  \n\u003c/figure\u003e\n\u003cp\u003eLe client est en mode texte, et permet de rester centrer sur le sujet, et eviter les distraction.\u003c/p\u003e","readingTime":1,"tags":["coding","projet","technologie"],"title":"GptProfNewton","url":"/posts/2023/06/gptprofnewton/"},{"author":null,"avatar":null,"categories":["produit"],"description":"\u003cp\u003eJ\u0026rsquo;ai dernierement change mon Lenovo T470 par le nouveau Lenovo T14 Gen3 (AMD). Pourquoi? Bien que mon ancien laptop etait parfaitement capable de faire la job, je voullais avoir plus de cores, et de RAM.\u003c/p\u003e\n\u003cp\u003eLe CPU Ryzen 7 6850U offre d\u0026rsquo;excellente performance avec son 8 cores, 16 threads. Pour un prix abordable.\u003c/p\u003e\n\u003cp\u003eJe passe a 32G de RAM, ce qui permet de loader plusieurs VM, et containers. C\u0026rsquo;est maintenant possible de tester un cluster Kubernetes, avec multiple composantes installees (prometheus, grafana, loki, etc).\u003c/p\u003e","readingTime":1,"tags":["produit"],"title":"T14 Gen 3 (AMD)","url":"/posts/2023/t14-gen-3-amd/"},{"author":null,"avatar":null,"categories":["produit"],"description":"\u003cp\u003eAvec la popularite de Kubernetes aujourd\u0026rsquo;hui, de multiples solutions d\u0026rsquo;installation sont disponible. Une de ces \u0026ldquo;distributions\u0026rdquo; est \u003ca href=\"https://web.archive.org/web/20230224143959/https://github.com/k0sproject/k0s\" target=\"_blank\"\u003eK0S\u003c/a\u003e\n. Creer au depart par \u003ca href=\"https://web.archive.org/web/20230224143959/https://www.mirantis.com/\" target=\"_blank\"\u003eMirantis\u003c/a\u003e\n, et par la suite donner publier comme logiciel libre.\u003c/p\u003e\n\u003cp\u003eApres quelques tests sur un cluster de dev, j\u0026rsquo;ai decider de poursuivre avec cette distribution pour mon home cluster \u0026ldquo;prod\u0026rdquo;.\u003c/p\u003e\n\u003cp\u003eLa configuration et l\u0026rsquo;installation est tres simple. Si vous avez deja utilise Rancher RKE1, c\u0026rsquo;est pratiquement la meme approche.\u003c/p\u003e","readingTime":1,"tags":["produit"],"title":"K0S distribution","url":"/posts/2023/k0s-distribution/"},{"author":null,"avatar":null,"categories":["coding"],"description":"\u003cp\u003ePetit outils pour rapidement visualiser le contenue de secrets Kubernetes. Rien de bien extraordinaire, mais pratique quand faut consulter souvant des secrets.\u003c/p\u003e\n\u003cfigure class=\"kg-card kg-bookmark-card\"\u003e\n  \u003ca href=\"https://github.com/laghoule/k64dec\" class=\"kg-bookmark-container\"\u003e\n    \u003cdiv class=\"kg-bookmark-content\"\u003e\n      \u003cdiv class=\"kg-bookmark-title\"\u003eGitHub - laghoule/k64dec: Decode base64 secrets\u003c/div\u003e\n      \u003cdiv class=\"kg-bookmark-description\"\u003eDecode base64 secrets. Contribute to laghoule/k64dec development by creating an account on GitHub.\u003c/div\u003e\n      \u003cdiv class=\"kg-bookmark-metadata\"\u003e\n        \u003cimg src=\"https://github.com/fluidicon.png\" class=\"kg-bookmark-icon\"\u003e\n        \u003cspan class=\"kg-bookmark-author\"\u003elaghoule\u003c/span\u003e\n        \u003cspan class=\"kg-bookmark-publisher\"\u003eGitHub\u003c/span\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n    \n    \u003cdiv class=\"kg-bookmark-thumbnail\"\u003e\n      \u003cimg src=\"https://opengraph.githubassets.com/607808088c45a41a1d78476b96b7f2d39a6ba820162c3cd53958489a9403a24e/laghoule/k64dec\"\u003e\n    \u003c/div\u003e\n    \n  \u003c/a\u003e\n  \n\u003c/figure\u003e","readingTime":1,"tags":["coding"],"title":"k64dec","url":"/posts/2023/k64dec/"},{"author":null,"avatar":null,"categories":["opinion"],"description":"\u003cp\u003eDecouverte de l\u0026rsquo;automne, groupe Francais de DSBM. Vraiment, mais vraiment bon!\u003c/p\u003e\n\u003ciframe width=\"200\" height=\"113\" src=\"https://www.youtube.com/embed/3S1Cx_E8-90?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen title=\"06.03.2015 - Nocturnal Depression live - Soundcheck One, Waldbronn\"\u003e\u003c/iframe\u003e","readingTime":1,"tags":["opinion"],"title":"Nocturnal Depression","url":"/posts/2023/nocturnal-depression/"},{"author":null,"avatar":null,"categories":null,"description":"\u003cp\u003eEt oui, le temps des coupures est arriver, je migre mon cluster K8S vers mon propre cluster Kubernetes a la maison.\u003c/p\u003e\n\u003cp\u003ePlus de details a venir, mais un petit apercu:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eUn Control-plane (oui, oui c\u0026rsquo;est pas en HA): 1 Celeron 4 core, 8G RAM, 128G nvme\u003c/li\u003e\n\u003cli\u003eTrois worker: 1 Celeron (11 gen) 4 core, 16G RAM, 500G nvme\u003c/li\u003e\n\u003c/ul\u003e","readingTime":1,"tags":null,"title":"Migration de DOKS -\u003e cluster K8S@home","url":"/posts/2023/migration-de-doks-cluster-k8s-home/"},{"author":null,"avatar":null,"categories":["Import 2023-04-08 17:32"],"description":"\u003ciframe width=\"200\" height=\"113\" src=\"https://www.youtube.com/embed/i5XJVY6YzWE?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen\u003e\u003c/iframe\u003e\n\u003cp\u003eJe pense que ca represente bien l\u0026rsquo;annee 2021\u0026hellip;\u003c/p\u003e","readingTime":1,"tags":["Import 2023-04-08 17:32"],"title":"Quintessence 2021","url":"/posts/2021/quintessence/"},{"author":null,"avatar":null,"categories":["technologie","Import 2023-04-08 17:32"],"description":"\u003cp\u003eEdit /etc/initramfs-tools/initramfs.conf (Debian) and replace \u003ccode\u003eMODULES=dep\u003c/code\u003e with \u003ccode\u003eMODULES=dep\u003c/code\u003e. This will reduce the size of the initrd.img image by guessing modules to include.\u003c/p\u003e\n\u003cdiv class=\"highlight\"\u003e\u003cpre tabindex=\"0\" class=\"chroma\"\u003e\u003ccode class=\"language-text\" data-lang=\"text\"\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e#\n\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e# MODULES: [ most | netboot | dep | list ]\n\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e#\n\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e# most - Add most filesystem and all harddrive drivers.\n\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e#\n\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e# dep - Try and guess which modules to load.\n\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e#\n\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e# netboot - Add the base modules, network modules, but skip block devices.\n\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e#\n\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e# list - Only include modules from the \u0026#39;additional modules\u0026#39; list\n\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e#\n\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003eMODULES=dep\n\u003c/span\u003e\u003c/span\u003e\u003c/code\u003e\u003c/pre\u003e\u003c/div\u003e\u003cp\u003e\u003cem\u003ePS: Use at your own risk\u003c/em\u003e\u003c/p\u003e","readingTime":1,"tags":["technologie","Import 2023-04-08 17:32"],"title":"Short on space in /boot?","url":"/posts/2021/short-on-space-in-boot/"},{"author":null,"avatar":null,"categories":["opinion","Import 2023-04-08 17:32"],"description":"\u003cp\u003eJe vous partage ma playlist de \u003ccode\u003eBestOF BlackMetal\u003c/code\u003e.\u003c/p\u003e\n\u003ciframe width=\"100%\" height=\"380\" title=\"Spotify Embed: BestOf BlackMetal\" frameborder=\"0\" allowfullscreen allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" src=\"https://open.spotify.com/embed/playlist/3zgZlMMVvIFSlOKfwJDqnc?si=ee8f8a6efb834c51\"\u003e\u003c/iframe\u003e\n\u003cp\u003eBeaucoup de chef d\u0026rsquo;oeuvre de criage extreme!\u003c/p\u003e","readingTime":1,"tags":["opinion","Import 2023-04-08 17:32"],"title":"Spotify playlist","url":"/posts/2021/spotify-playlist/"},{"author":null,"avatar":null,"categories":["Import 2023-04-08 17:32"],"description":"\u003cp\u003eJ\u0026rsquo;ai crer un groupe de velo pour la MRC de Roussillon, si vous etes de la region: \u003ca href=\"https://roussillon-cycling-club.ca\" target=\"_blank\"\u003ehttps://roussillon-cycling-club.ca\u003c/a\u003e\n\u003c/p\u003e","readingTime":1,"tags":["Import 2023-04-08 17:32"],"title":"Roussillon cycling club","url":"/posts/2021/roussillon-cycling-club/"},{"author":null,"avatar":null,"categories":["bike","Import 2023-04-08 17:32"],"description":"\u003cp\u003eNouvelle addition pour la saison 2021:\u003c/p\u003e\n\u003cfigure\u003e\u003cimg src=\"__GHOST_URL__/content/images/2021/03/Screenshot_2021-03-07_11-33-52.png\"\u003e\n\u003c/figure\u003e\n\n\u003cp\u003eComme je passe beaucoup plus de temps sur la route que dans la montagne, j\u0026rsquo;ai decide d\u0026rsquo;investire sur un meilleur velo de route. Bien que j\u0026rsquo;aime mieux le velo de montagne, la route est plus accessible que la montagne (Bromont est quand meme a 1hr de route de chez moi).\u003c/p\u003e","readingTime":1,"tags":["bike","Import 2023-04-08 17:32"],"title":"N+1","url":"/posts/2021/n-1/"},{"author":null,"avatar":null,"categories":["informations","technologie","Import 2023-04-08 17:32"],"description":"\u003cp\u003eSi vous etes un bizarre comme moi qui utilise XTerm au lieux d\u0026rsquo;une fancy console dans XWindows, voici une ressource utile pour vous facilite la vie avec les Copy\u0026amp;Paste: \u003ca href=\"https://wiki.archlinux.org/index.php/Xterm#Copy_and_paste\" target=\"_blank\"\u003ehttps://wiki.archlinux.org/index.php/Xterm#Copy_and_paste\u003c/a\u003e\n\u003c/p\u003e\n\u003cp\u003eFaut donner ca a Arch Linux, ils ont une excellente documentation technique.\u003c/p\u003e","readingTime":1,"tags":["informations","technologie","Import 2023-04-08 17:32"],"title":"Copy\u0026Paste pour XTerm","url":"/posts/2021/copy-paste-pour-xterm/"},{"author":null,"avatar":null,"categories":["Import 2023-04-08 17:32"],"description":"\u003cfigure\u003e\u003cimg src=\"__GHOST_URL__/content/images/2021/01/Screenshot_20210103-164734.gif\"\u003e\n\u003c/figure\u003e","readingTime":0,"tags":["Import 2023-04-08 17:32"],"title":"Stats velo 2020","url":"/posts/2021/stats-velo-2020/"},{"author":null,"avatar":null,"categories":["observation","Import 2023-04-08 17:32"],"description":"\u003cp\u003eJ\u0026rsquo;ai jamais ete un grand lecteur, mais en 2020 j\u0026rsquo;ai vraiment accroche aux romans de StarWars. En fait j\u0026rsquo;ai comme mission de lire tous les livre \u003cem\u003ecanon\u003c/em\u003e de l\u0026rsquo;univers StarWars.\u003c/p\u003e\n\u003cp\u003eVoici la liste de livre lu cette annee:\u003c/p\u003e\n\u003cfigure\u003e\u003cimg src=\"__GHOST_URL__/content/images/2020/12/Screenshot_2020-12-31_18-19-06.gif\"\u003e\n\u003c/figure\u003e","readingTime":1,"tags":["observation","Import 2023-04-08 17:32"],"title":"Lecture 2020","url":"/posts/2020/lecture-2020/"},{"author":null,"avatar":null,"categories":["opinion","Import 2023-04-08 17:32"],"description":"\u003cp\u003eQuel album genial, a toute les fois que je reecoute ce chef d\u0026rsquo;oeuvre du metal ca me retransporte dans les annees \u0026lsquo;90. Pas que je retournerai a cette epoque. J\u0026rsquo;entend encore ma mere dire: \u0026ldquo;maudite musique du Diable!!\u0026rdquo;\u003c/p\u003e\n\u003ciframe width=\"459\" height=\"344\" src=\"https://www.youtube.com/embed/ZpbpOgUybBM?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen\u003e\u003c/iframe\u003e","readingTime":1,"tags":["opinion","Import 2023-04-08 17:32"],"title":"Carcass: Heartwork","url":"/posts/2020/heartwork/"},{"author":null,"avatar":null,"categories":["observation","technologie","Import 2023-04-08 17:32"],"description":"\u003cp\u003ePremiere experience d\u0026rsquo;upgrade du managed K8S de Digital Ocean. Voici quelques observations:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eAppliquer les recommandations que linter d\u0026rsquo;upgrade de DOKS vous propose. AWS EKS devrait s\u0026rsquo;inspirer de ce tools pour proposer quelques choses de similaire.\u003c/li\u003e\n\u003cli\u003eNe pas utiliser les addons proposer par doks (ingress, grafana, prometheus, etc). Utiliser helm pour installer ces tools, car vous aurez pas de controle (possible d\u0026rsquo;aller recupere les values de leur helm, mais pas trivial) sur de modification que vous voudriez mettre en place (Pod Disruption Budget, node Affinity/AntiAffinity).\u003c/li\u003e\n\u003cli\u003eSi vous avez pas d\u0026rsquo;autoscaler de worker de configurer, manuellement doubler le nombre de worker avant de debuter votre upgrade. Vous allez eviter de manquer de ressources. Scale down quand tout est upgrader.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eL\u0026rsquo;upgrade a ete effectuer assez rapidement, et sans heurt.\u003c/p\u003e","readingTime":1,"tags":["observation","technologie","Import 2023-04-08 17:32"],"title":"Upgrade DOKS 1.18 -\u003e 1.19","url":"/posts/2020/upgrade-doks-1-18-1-19/"},{"author":null,"avatar":null,"categories":["coding","informations","Import 2023-04-08 17:32"],"description":"\u003cp\u003eJ\u0026rsquo;ai trouve cette petite lib \u003ca href=\"https://github.com/uniplaces/carbon\" target=\"_blank\"\u003ehttps://github.com/uniplaces/carbon\u003c/a\u003e\n pour manipuler/comparer facilement des dates/times en go.\u003c/p\u003e\n\u003cp\u003eCa m\u0026rsquo;as evite un mal de block\u003c/p\u003e","readingTime":1,"tags":["coding","informations","Import 2023-04-08 17:32"],"title":"Timezone et golang","url":"/posts/2020/timezone-et-golang/"},{"author":null,"avatar":null,"categories":["observation","opinion","technologie","Import 2023-04-08 17:32"],"description":"\u003ciframe width=\"612\" height=\"344\" src=\"https://www.youtube.com/embed/uaaC57tcci0?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen\u003e\u003c/iframe\u003e","readingTime":0,"tags":["observation","opinion","technologie","Import 2023-04-08 17:32"],"title":"The Social Dilemma","url":"/posts/2020/the-social-dillema/"},{"author":null,"avatar":null,"categories":["informations","produit","projet","technologie","Import 2023-04-08 17:32"],"description":"\u003cp\u003eJ\u0026rsquo;ai decide de migrer vers DOKS (DigitalOcean Kubernetes) pour hoster mon blog, et mes projets personnel. Ayant toucher a plusieurs \u0026ldquo;managed\u0026rdquo; Kubernetes, je dois dire que je suis agreablement surpris.\u003c/p\u003e\n\u003cp\u003eexternal-dns et Cloudflare marche bien aussi, etant plus habituer a utiliser Route53.\u003c/p\u003e","readingTime":1,"tags":["informations","produit","projet","technologie","Import 2023-04-08 17:32"],"title":"Migration a DOKS","url":"/posts/2020/golang/"},{"author":null,"avatar":null,"categories":["opinion","observation","Import 2023-04-08 17:32"],"description":"\u003cp\u003eCette triologie se deroulle environ 1 ans apres la bataille d\u0026rsquo;Endor. La Nouvelle Republique est encore fragile et tout n\u0026rsquo;est pas gagner.\u003c/p\u003e\n\u003cp\u003eL\u0026rsquo;histoire du premier roman est un peu lente, et on a un peu de misere a s\u0026rsquo;accrocher a l\u0026rsquo;histoire et aux personnages. Ce premier roman se veut plus une introduction aux personnage, ce qui laisse plus de place aux prochains livres pour developper plus les personnages et l\u0026rsquo;histoire.\u003c/p\u003e","readingTime":1,"tags":["opinion","observation","Import 2023-04-08 17:32"],"title":"Trilogie Starwars Aftermath","url":"/posts/2020/trilogie-starwars-aftermath/"},{"author":null,"avatar":null,"categories":["histoire","observation","opinion","Import 2023-04-08 17:32"],"description":"\u003ciframe width=\"612\" height=\"344\" src=\"https://www.youtube.com/embed/J7GY1Xg6X20?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen\u003e\u003c/iframe\u003e\n\u003cp\u003eToujours aussi pertinant apres toutes ces annees.\u003c/p\u003e","readingTime":1,"tags":["histoire","observation","opinion","Import 2023-04-08 17:32"],"title":"The great dictator speach","url":"/posts/2020/the-great-dictator-speach/"},{"author":null,"avatar":null,"categories":["observation","opinion","Import 2023-04-08 17:32"],"description":"\u003cp\u003eUnissons-nous contre l\u0026rsquo;injustice! Tous ensemble!!\u003c/p\u003e\n\u003cp\u003eLe racisme n\u0026rsquo;a pas sa place dans nos societes.\u003c/p\u003e","readingTime":1,"tags":["observation","opinion","Import 2023-04-08 17:32"],"title":"Black lives matter","url":"/posts/2020/black-lives-matter/"},{"author":null,"avatar":null,"categories":["coding","projet","technologie","Import 2023-04-08 17:32"],"description":"\u003cp\u003eCette semaine j\u0026rsquo;ai \u003ca href=\"https://github.com/FairwindsOps/pluto/pull/79\" target=\"_blank\"\u003econtribue\u003c/a\u003e\n a un petit projet qui permet de vous indiquer les manifestes qui sont a remplacer avant de faire un upgrade de Kubernetes. Ce projet s\u0026rsquo;appele \u003ca href=\"https://github.com/FairwindsOps/pluto\" target=\"_blank\"\u003ePluto\u003c/a\u003e\n.\u003c/p\u003e\n\u003cp\u003eK8S 1.16 a fait un gros menage dans leurs supports d\u0026rsquo;anciennes versions d\u0026rsquo;api. Beaucoup de personnes on eu la mauvaise surprise de voir leurs applications interrompus. Soyez pas cette personne ;)\u003c/p\u003e","readingTime":1,"tags":["coding","projet","technologie","Import 2023-04-08 17:32"],"title":"Petit tool pour garder vos manifestes K8S a jour","url":"/posts/2020/petit-tool-pour-garder-vos-manifeste-k8s-a-jour/"},{"author":null,"avatar":null,"categories":["coding","projet","technologie","Import 2023-04-08 17:32"],"description":"\u003cp\u003ePour ceux qui utilisent RKE/RancherOS pour leur cluster Kubernetes, j\u0026rsquo;ai de quoi pour vous. Un patch a Kured qui permet de gerer les updates de RancherOS de facon securitaire.\u003c/p\u003e\n\u003cfigure class=\"kg-card kg-bookmark-card\"\u003e\n  \u003ca href=\"https://github.com/laghoule/kured\" class=\"kg-bookmark-container\"\u003e\n    \u003cdiv class=\"kg-bookmark-content\"\u003e\n      \u003cdiv class=\"kg-bookmark-title\"\u003elaghoule/kured\u003c/div\u003e\n      \u003cdiv class=\"kg-bookmark-description\"\u003eKubernetes Reboot Daemon. Contribute to laghoule/kured development by creating an account on GitHub.\u003c/div\u003e\n      \u003cdiv class=\"kg-bookmark-metadata\"\u003e\n        \u003cimg src=\"https://github.githubassets.com/favicons/favicon.svg\" class=\"kg-bookmark-icon\"\u003e\n        \u003cspan class=\"kg-bookmark-author\"\u003elaghoule\u003c/span\u003e\n        \u003cspan class=\"kg-bookmark-publisher\"\u003eGitHub\u003c/span\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n    \n    \u003cdiv class=\"kg-bookmark-thumbnail\"\u003e\n      \u003cimg src=\"https://avatars3.githubusercontent.com/u/1598055?s=400\u0026amp;v=4\"\u003e\n    \u003c/div\u003e\n    \n  \u003c/a\u003e\n  \n\u003c/figure\u003e\n\u003cp\u003eComment ca fonctionne? Voici une config cloud-init pour updater et rebooter un node:\u003c/p\u003e\n\u003cdiv class=\"highlight\"\u003e\u003cpre tabindex=\"0\" class=\"chroma\"\u003e\u003ccode class=\"language-yaml\" data-lang=\"yaml\"\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"nt\"\u003ewrite_files\u003c/span\u003e\u003cspan class=\"p\"\u003e:\u003c/span\u003e\u003cspan class=\"w\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e  \u003c/span\u003e\u003cspan class=\"c\"\u003e# Script to upgrade image OS if available (no reboot)\u003c/span\u003e\u003cspan class=\"w\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e  \u003c/span\u003e\u003cspan class=\"c\"\u003e# Reboot is handled by K8S kured daemonset\u003c/span\u003e\u003cspan class=\"w\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e  \u003c/span\u003e- \u003cspan class=\"nt\"\u003epath\u003c/span\u003e\u003cspan class=\"p\"\u003e:\u003c/span\u003e\u003cspan class=\"w\"\u003e \u003c/span\u003e\u003cspan class=\"l\"\u003e/var/lib/rancher/os-updater.sh\u003c/span\u003e\u003cspan class=\"w\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e    \u003c/span\u003e\u003cspan class=\"nt\"\u003epermissions\u003c/span\u003e\u003cspan class=\"p\"\u003e:\u003c/span\u003e\u003cspan class=\"w\"\u003e \u003c/span\u003e\u003cspan class=\"s2\"\u003e\u0026#34;0755\u0026#34;\u003c/span\u003e\u003cspan class=\"w\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e    \u003c/span\u003e\u003cspan class=\"nt\"\u003eowner\u003c/span\u003e\u003cspan class=\"p\"\u003e:\u003c/span\u003e\u003cspan class=\"w\"\u003e \u003c/span\u003e\u003cspan class=\"l\"\u003eroot\u003c/span\u003e\u003cspan class=\"w\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e    \u003c/span\u003e\u003cspan class=\"nt\"\u003econtent\u003c/span\u003e\u003cspan class=\"p\"\u003e:\u003c/span\u003e\u003cspan class=\"w\"\u003e \u003c/span\u003e\u003cspan class=\"p\"\u003e|\u003c/span\u003e\u003cspan class=\"sd\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"sd\"\u003e      #!/bin/sh\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"sd\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"sd\"\u003e      source /usr/share/ros/os-release\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"sd\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"sd\"\u003e      STATUS=0\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"sd\"\u003e      OS_LOCATION=`sudo ros os list | head -n1 | awk {\u0026#39;print $2\u0026#39;}`\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"sd\"\u003e      OS_VERSION=`sudo ros os list | head -n1 | awk {\u0026#39;print $1\u0026#39;} | cut -d : -f 2`\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"sd\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"sd\"\u003e      if [ \u0026#34;$OS_LOCATION\u0026#34; == \u0026#34;local\u0026#34; ] \u0026amp;\u0026amp; [ \u0026#34;$OS_VERSION\u0026#34; != \u0026#34;$VERSION\u0026#34; ]; then\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"sd\"\u003e        echo \u0026#34;Upgrade available\u0026#34;\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"sd\"\u003e        sudo ros os upgrade -f --no-reboot \u0026amp;\u0026gt;\u0026gt; /var/log/os-updater.log\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"sd\"\u003e        STATUS=$?\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"sd\"\u003e        if [ $STATUS -eq 0 ]; then\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"sd\"\u003e          sudo touch /var/lib/rancher/update/need_to_reboot\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"sd\"\u003e        else\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"sd\"\u003e          echo \u0026#34;Upgrade failed\u0026#34;\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"sd\"\u003e        fi\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"sd\"\u003e      else\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"sd\"\u003e        echo \u0026#34;No upgrade available\u0026#34;\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"sd\"\u003e      fi\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"sd\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"sd\"\u003e      exit $STATUS\u003c/span\u003e\u003cspan class=\"w\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e  \u003c/span\u003e\u003cspan class=\"c\"\u003e# Check if it\u0026#39;s a good time to reboot\u003c/span\u003e\u003cspan class=\"w\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e  \u003c/span\u003e- \u003cspan class=\"nt\"\u003epath\u003c/span\u003e\u003cspan class=\"p\"\u003e:\u003c/span\u003e\u003cspan class=\"w\"\u003e \u003c/span\u003e\u003cspan class=\"l\"\u003e/var/lib/rancher/os-rebooter.sh\u003c/span\u003e\u003cspan class=\"w\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e    \u003c/span\u003e\u003cspan class=\"nt\"\u003epermissions\u003c/span\u003e\u003cspan class=\"p\"\u003e:\u003c/span\u003e\u003cspan class=\"w\"\u003e \u003c/span\u003e\u003cspan class=\"s2\"\u003e\u0026#34;0755\u0026#34;\u003c/span\u003e\u003cspan class=\"w\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e    \u003c/span\u003e\u003cspan class=\"nt\"\u003eowner\u003c/span\u003e\u003cspan class=\"p\"\u003e:\u003c/span\u003e\u003cspan class=\"w\"\u003e \u003c/span\u003e\u003cspan class=\"l\"\u003eroot\u003c/span\u003e\u003cspan class=\"w\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e    \u003c/span\u003e\u003cspan class=\"nt\"\u003econtent\u003c/span\u003e\u003cspan class=\"p\"\u003e:\u003c/span\u003e\u003cspan class=\"w\"\u003e \u003c/span\u003e\u003cspan class=\"p\"\u003e|\u003c/span\u003e\u003cspan class=\"sd\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"sd\"\u003e      #!/bin/sh\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"sd\"\u003e      if [ -f /var/lib/rancher/update/reboot_now ] \u0026amp;\u0026amp; [ -f /var/lib/rancher/update/need_to_reboot ]; then\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"sd\"\u003e        sudo rm /var/lib/rancher/update/need_to_reboot\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"sd\"\u003e        sudo rm /var/lib/rancher/update/reboot_now\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"sd\"\u003e        sudo reboot\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"sd\"\u003e      fi\u003c/span\u003e\u003cspan class=\"w\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e\u003c/span\u003e\u003cspan class=\"c\"\u003e# Rancher cronjob\u003c/span\u003e\u003cspan class=\"w\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e\u003c/span\u003e\u003cspan class=\"nt\"\u003erancher\u003c/span\u003e\u003cspan class=\"p\"\u003e:\u003c/span\u003e\u003cspan class=\"w\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e  \u003c/span\u003e\u003cspan class=\"nt\"\u003eservices\u003c/span\u003e\u003cspan class=\"p\"\u003e:\u003c/span\u003e\u003cspan class=\"w\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e    \u003c/span\u003e\u003cspan class=\"c\"\u003e# os-updater CRONJOB @hourly\u003c/span\u003e\u003cspan class=\"w\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e    \u003c/span\u003e\u003cspan class=\"nt\"\u003eos-updater\u003c/span\u003e\u003cspan class=\"p\"\u003e:\u003c/span\u003e\u003cspan class=\"w\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e      \u003c/span\u003e\u003cspan class=\"nt\"\u003eimage\u003c/span\u003e\u003cspan class=\"p\"\u003e:\u003c/span\u003e\u003cspan class=\"w\"\u003e \u003c/span\u003e\u003cspan class=\"l\"\u003erancher/os-base:v1.5.5\u003c/span\u003e\u003cspan class=\"w\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e      \u003c/span\u003e\u003cspan class=\"nt\"\u003ecommand\u003c/span\u003e\u003cspan class=\"p\"\u003e:\u003c/span\u003e\u003cspan class=\"w\"\u003e \u003c/span\u003e\u003cspan class=\"l\"\u003e/var/lib/rancher/os-updater.sh\u003c/span\u003e\u003cspan class=\"w\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e      \u003c/span\u003e\u003cspan class=\"nt\"\u003elabels\u003c/span\u003e\u003cspan class=\"p\"\u003e:\u003c/span\u003e\u003cspan class=\"w\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e        \u003c/span\u003e\u003cspan class=\"nt\"\u003eio.rancher.os.scope\u003c/span\u003e\u003cspan class=\"p\"\u003e:\u003c/span\u003e\u003cspan class=\"w\"\u003e \u003c/span\u003e\u003cspan class=\"s2\"\u003e\u0026#34;system\u0026#34;\u003c/span\u003e\u003cspan class=\"w\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e        \u003c/span\u003e\u003cspan class=\"nt\"\u003ecron.schedule\u003c/span\u003e\u003cspan class=\"p\"\u003e:\u003c/span\u003e\u003cspan class=\"w\"\u003e \u003c/span\u003e\u003cspan class=\"s2\"\u003e\u0026#34;0 0 * * * ?\u0026#34;\u003c/span\u003e\u003cspan class=\"w\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e      \u003c/span\u003e\u003cspan class=\"nt\"\u003epid\u003c/span\u003e\u003cspan class=\"p\"\u003e:\u003c/span\u003e\u003cspan class=\"w\"\u003e \u003c/span\u003e\u003cspan class=\"l\"\u003ehost\u003c/span\u003e\u003cspan class=\"w\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e      \u003c/span\u003e\u003cspan class=\"nt\"\u003eprivileged\u003c/span\u003e\u003cspan class=\"p\"\u003e:\u003c/span\u003e\u003cspan class=\"w\"\u003e \u003c/span\u003e\u003cspan class=\"kc\"\u003etrue\u003c/span\u003e\u003cspan class=\"w\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e      \u003c/span\u003e\u003cspan class=\"nt\"\u003evolumes_from\u003c/span\u003e\u003cspan class=\"p\"\u003e:\u003c/span\u003e\u003cspan class=\"w\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e        \u003c/span\u003e- \u003cspan class=\"l\"\u003eall-volumes\u003c/span\u003e\u003cspan class=\"w\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e    \u003c/span\u003e\u003cspan class=\"c\"\u003e# os-rebooter CRONJOB @minute\u003c/span\u003e\u003cspan class=\"w\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e    \u003c/span\u003e\u003cspan class=\"nt\"\u003eos-rebooter\u003c/span\u003e\u003cspan class=\"p\"\u003e:\u003c/span\u003e\u003cspan class=\"w\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e      \u003c/span\u003e\u003cspan class=\"nt\"\u003eimage\u003c/span\u003e\u003cspan class=\"p\"\u003e:\u003c/span\u003e\u003cspan class=\"w\"\u003e \u003c/span\u003e\u003cspan class=\"l\"\u003erancher/os-base:v1.5.5\u003c/span\u003e\u003cspan class=\"w\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e      \u003c/span\u003e\u003cspan class=\"nt\"\u003ecommand\u003c/span\u003e\u003cspan class=\"p\"\u003e:\u003c/span\u003e\u003cspan class=\"w\"\u003e \u003c/span\u003e\u003cspan class=\"l\"\u003e/var/lib/rancher/os-rebooter.sh\u003c/span\u003e\u003cspan class=\"w\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e      \u003c/span\u003e\u003cspan class=\"nt\"\u003elabels\u003c/span\u003e\u003cspan class=\"p\"\u003e:\u003c/span\u003e\u003cspan class=\"w\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e        \u003c/span\u003e\u003cspan class=\"nt\"\u003eio.rancher.os.scope\u003c/span\u003e\u003cspan class=\"p\"\u003e:\u003c/span\u003e\u003cspan class=\"w\"\u003e \u003c/span\u003e\u003cspan class=\"s2\"\u003e\u0026#34;system\u0026#34;\u003c/span\u003e\u003cspan class=\"w\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e        \u003c/span\u003e\u003cspan class=\"nt\"\u003ecron.schedule\u003c/span\u003e\u003cspan class=\"p\"\u003e:\u003c/span\u003e\u003cspan class=\"w\"\u003e \u003c/span\u003e\u003cspan class=\"s2\"\u003e\u0026#34;0 * * * * ?\u0026#34;\u003c/span\u003e\u003cspan class=\"w\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e      \u003c/span\u003e\u003cspan class=\"nt\"\u003epid\u003c/span\u003e\u003cspan class=\"p\"\u003e:\u003c/span\u003e\u003cspan class=\"w\"\u003e \u003c/span\u003e\u003cspan class=\"l\"\u003ehost\u003c/span\u003e\u003cspan class=\"w\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e      \u003c/span\u003e\u003cspan class=\"nt\"\u003eprivileged\u003c/span\u003e\u003cspan class=\"p\"\u003e:\u003c/span\u003e\u003cspan class=\"w\"\u003e \u003c/span\u003e\u003cspan class=\"kc\"\u003etrue\u003c/span\u003e\u003cspan class=\"w\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e      \u003c/span\u003e\u003cspan class=\"nt\"\u003evolumes_from\u003c/span\u003e\u003cspan class=\"p\"\u003e:\u003c/span\u003e\u003cspan class=\"w\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e        \u003c/span\u003e- \u003cspan class=\"l\"\u003eall-volumes\u003c/span\u003e\u003cspan class=\"w\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003c/code\u003e\u003c/pre\u003e\u003c/div\u003e\u003cp\u003ePar la suite, avec mon fork de Kured, si le fichier \u0026ndash;reboot-sentinel existe, il creera le fichier \u0026ndash;host-sentinel, qui lui sera gerer par la cronjob systeme \u003ccode\u003eos-rebooter\u003c/code\u003e.\u003c/p\u003e","readingTime":2,"tags":["coding","projet","technologie","Import 2023-04-08 17:32"],"title":"Support de RancherOS pour Kured","url":"/posts/2020/support-de-rancheros-pour-kured/"},{"author":null,"avatar":null,"categories":["opinion","observation","Import 2023-04-08 17:32"],"description":"\u003cp\u003eUne crise permet toujours de mettre en perspective certain elements que nous prenons pour acquis. Parmis ces elements, certains, meme plusieurs sont negliges. Ici je parle surtout des gens qui s\u0026rsquo;occupent des service essentiels, mais qui sont habituellements mal payes, juges negativement, etc.\u003c/p\u003e\n\u003cp\u003eCes personnes souvant payees un salaire minimum, avec aucun avantage social. Il faudra bien reflechir dans le future afin de revoir et corriger ces lacunes.\u003c/p\u003e\n\u003cp\u003eQuelques metiers:\u003c/p\u003e","readingTime":1,"tags":["opinion","observation","Import 2023-04-08 17:32"],"title":"Covid-19 \u0026 services essentiels","url":"/posts/2020/covid-19-services-essentiels/"},{"author":null,"avatar":null,"categories":["observation","opinion","Import 2023-04-08 17:32"],"description":"\u003cp\u003eLe crise actuel, la plus grave depuis la fin de la seconde guerre mondial, nous permet de mettre en evidence certains des problemes, relier a la globalisation des marches. Bien que la modialisation a beaucoup d\u0026rsquo;avantages, en temps de crise, ces avantages ne sont plus aussi attrayant et peuvent meme etre des desavantages.\u003c/p\u003e\n\u003cp\u003ePlusieur service essentiel dependent de l\u0026rsquo;apprivisionnements exterieur:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eAlimentations\u003c/li\u003e\n\u003cli\u003eMedicaments\u003c/li\u003e\n\u003cli\u003eAppareil medicaux\u003c/li\u003e\n\u003cli\u003eEnergie\u003c/li\u003e\n\u003cli\u003eTextiles\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eUne des lessons que nous devrons tirer rapidement de cette crise, sera la mise en place de lois, qui exigerons que nous soyont independant d\u0026rsquo;autres pays (et provinces) dans ces domaines d\u0026rsquo;expertise.\u003c/p\u003e","readingTime":1,"tags":["observation","opinion","Import 2023-04-08 17:32"],"title":"Covid-19 \u0026 mondialisation","url":"/posts/2019/covid-19-mondialisation/"},{"author":null,"avatar":null,"categories":["observation","Import 2023-04-08 17:32"],"description":"\u003ciframe width=\"480\" height=\"270\" src=\"https://www.youtube.com/embed/ZLW2jkd6E7g?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen\u003e\u003c/iframe\u003e\n\u003cp\u003eCette derniere saison de Clone Wars risque d\u0026rsquo;etre epique, et aussi tres sombre. Le combat entre Maul et Ahsoka va nous donner des frissons dans le dos assurements.\u003c/p\u003e","readingTime":1,"tags":["observation","Import 2023-04-08 17:32"],"title":"Clone Wars saison 7","url":"/posts/2020/clone-wars-saison-7/"},{"author":null,"avatar":null,"categories":["technologie","observation","Import 2023-04-08 17:32"],"description":"\u003cp\u003eElon Musk a decider d\u0026rsquo;ouvrir ces brevets, ou du moins, ne pas demander de redevance. Pourquoi? Pour accelerer l\u0026rsquo;adoption de vehicules electriques, afin de combattre les changements climatique. Bravo, un tres beau geste, apres l\u0026rsquo;echec cuisant de la COP25 en Espagne.\u003c/p\u003e\n\u003cp\u003eJe ne suis pas un tres grand fan de Musk, mais un geste comme celui-ci est un des gestes qu\u0026rsquo;on devrait voir a l\u0026rsquo;echelle mondial de la part des grandes entreprises.\u003c/p\u003e","readingTime":1,"tags":["technologie","observation","Import 2023-04-08 17:32"],"title":"Tesla ouvre ses brevets","url":"/posts/2019/tesla-ouvre-ses-brevets/"},{"author":null,"avatar":null,"categories":["coding","Import 2023-04-08 17:32"],"description":"\u003cp\u003eDernierement j\u0026rsquo;ai achete le domaine pgauthier.dev. Je vais eventuellement creer quelques choses, c\u0026rsquo;est pas encore claire, mais tout sera hoster sur DKS (Digital Ocean Kubernetes).\u003c/p\u003e\n\u003cp\u003eStay tuned\u0026hellip;\u003c/p\u003e","readingTime":1,"tags":["coding","Import 2023-04-08 17:32"],"title":"pgauthier.dev","url":"/posts/2019/pgauthier-dev/"},{"author":null,"avatar":null,"categories":["coding","produit","Import 2023-04-08 17:32"],"description":"\u003cdiv class=\"highlight\"\u003e\u003cpre tabindex=\"0\" class=\"chroma\"\u003e\u003ccode class=\"language-golang\" data-lang=\"golang\"\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"kn\"\u003epackage\u003c/span\u003e\u003cspan class=\"w\"\u003e \u003c/span\u003e\u003cspan class=\"nx\"\u003emain\u003c/span\u003e\u003cspan class=\"w\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e\u003c/span\u003e\u003cspan class=\"kn\"\u003eimport\u003c/span\u003e\u003cspan class=\"w\"\u003e \u003c/span\u003e\u003cspan class=\"s\"\u003e\u0026#34;fmt\u0026#34;\u003c/span\u003e\u003cspan class=\"w\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e\u003c/span\u003e\u003cspan class=\"kd\"\u003efunc\u003c/span\u003e\u003cspan class=\"w\"\u003e \u003c/span\u003e\u003cspan class=\"nf\"\u003emain\u003c/span\u003e\u003cspan class=\"p\"\u003e()\u003c/span\u003e\u003cspan class=\"w\"\u003e \u003c/span\u003e\u003cspan class=\"p\"\u003e{\u003c/span\u003e\u003cspan class=\"w\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e  \u003c/span\u003e\u003cspan class=\"nx\"\u003efmt\u003c/span\u003e\u003cspan class=\"p\"\u003e.\u003c/span\u003e\u003cspan class=\"nf\"\u003ePrintln\u003c/span\u003e\u003cspan class=\"p\"\u003e(\u003c/span\u003e\u003cspan class=\"s\"\u003e\u0026#34;Hello World\u0026#34;\u003c/span\u003e\u003cspan class=\"p\"\u003e)\u003c/span\u003e\u003cspan class=\"w\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003cspan class=\"line\"\u003e\u003cspan class=\"cl\"\u003e\u003cspan class=\"w\"\u003e\u003c/span\u003e\u003cspan class=\"p\"\u003e}\u003c/span\u003e\u003cspan class=\"w\"\u003e\n\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003c/code\u003e\u003c/pre\u003e\u003c/div\u003e\u003cfigure\u003e\u003cimg src=\"__GHOST_URL__/content/images/2019/12/IMG_20191205_150502-3.jpg\"\n    alt=\"go run main.go\"\u003e\u003cfigcaption\u003e\n      \u003cp\u003ego run main.go\u003c/p\u003e\n    \u003c/figcaption\u003e\n\u003c/figure\u003e","readingTime":1,"tags":["coding","produit","Import 2023-04-08 17:32"],"title":"Hello world","url":"/posts/2019/hello-world/"},{"author":null,"avatar":null,"categories":["opinion","Import 2023-04-08 17:32"],"description":"\u003cp\u003eDeuxieme etape de la suppression de reseaux sociaux: Twitter. Bien que Twitter soi moins intrusif dans nos vies privees, il est neanmoins une source de propagandes et de bullies de toutes sortes.\u003c/p\u003e","readingTime":1,"tags":["opinion","Import 2023-04-08 17:32"],"title":"Suppression de Twitter","url":"/posts/2019/suppression-de-twitter/"},{"author":null,"avatar":null,"categories":["observation","opinion","technologie","Import 2023-04-08 17:32"],"description":"\u003cp\u003eGoogle News cette semaine m\u0026rsquo;a sortie une nouvelle  extraordinaire\u0026hellip; On a decouvert des insectes sur Mars!\u003c/p\u003e\n\u003cfigure\u003e\u003cimg src=\"__GHOST_URL__/content/images/2019/11/Screenshot_2019-11-22_21-43-31.png\"\u003e\n\u003c/figure\u003e\n\n\u003cp\u003eComme je ne crois pas n\u0026rsquo;importe quoi, je verifie la source de cette nouvelle: American Association for the Advancement of Science (AAAS). Premier fais a noter, pourquoi la nouvelle ne viens pas de la Nasa, l\u0026rsquo;ESA ou autres agence spaciales serieuse? J\u0026rsquo;ai vite classe cette nouvelle dans la categorie \u0026ldquo;fake news\u0026rdquo; et passer a autres choses.\u003c/p\u003e","readingTime":1,"tags":["observation","opinion","technologie","Import 2023-04-08 17:32"],"title":"Algorithme de recommandation","url":"/posts/2019/algorithme-de-recommandation/"},{"author":null,"avatar":null,"categories":["opinion","Import 2023-04-08 17:32"],"description":"\u003cp\u003eUn sentiment de deja vue ici\u0026hellip;\u003c/p\u003e\n\u003cfigure\u003e\u003cimg src=\"__GHOST_URL__/content/images/2019/11/tesla2-e1574437380471.jpg\"\u003e\n\u003c/figure\u003e","readingTime":1,"tags":["opinion","Import 2023-04-08 17:32"],"title":"Tesla Cybertruck VS Homer car","url":"/posts/2019/tesla-cybertruck-vs-homer-car/"},{"author":null,"avatar":null,"categories":["opinion","Import 2023-04-08 17:32"],"description":"\u003cp\u003eLe Mandalorian est maintenant disponible en streaming sur Disney+, sous la formule 1 episode par semaine. C\u0026rsquo;est une bonne strategie pour faire en sorte de rester abonner a leur service le plus longtemp possible. A 30 minutes l\u0026rsquo;episode, c\u0026rsquo;est un peu court par contre.\u003c/p\u003e\n\u003cp\u003eBon, est-ce que ce show en vaut la chandelle? oui. C\u0026rsquo;est une bonne serie, probablement plus pour les fan de StarWars que pour des non initier. De belle surprise sont au rendez-vous, du moins pour les deux episode que j\u0026rsquo;ai eu la chance de voir.\u003c/p\u003e","readingTime":1,"tags":["opinion","Import 2023-04-08 17:32"],"title":"The Mandalorian","url":"/posts/2019/the-mandalorian/"},{"author":null,"avatar":null,"categories":["observation","test","technologie","Import 2023-04-08 17:32"],"description":"\u003cp\u003eExperiementation avec DNS over HTTPS et DNS over TLS cette semaine. DoH est maintenant supporte par Firefox, et les prochaines version vont l\u0026rsquo;activer par default, du moins c\u0026rsquo;est ce qui avait ete annonce, jusqu\u0026rsquo;a ce que ca creer un faux scandale au UK (\u003ca href=\"https://www.theregister.co.uk/2019/09/24/mozilla_backtracks_doh_for_uk_users/\" target=\"_blank\"\u003ehttps://www.theregister.co.uk/2019/09/24/mozilla_backtracks_doh_for_uk_users/\u003c/a\u003e\n). L\u0026rsquo;avantage du support directement dans le browser viens du fait qu\u0026rsquo;il possede son propre client DNS, ce qui permet de ne pas utiliser le resolver systeme. Donc si votre destination utilise HTTPS, c\u0026rsquo;est tres dur de pouvoir vous espionnez, car l\u0026rsquo;espion peux seulement voir l\u0026rsquo;IP du destinataire.\u003c/p\u003e","readingTime":2,"tags":["observation","test","technologie","Import 2023-04-08 17:32"],"title":"DoH \u0026\u0026 DoT","url":"/posts/2019/dos-dot/"},{"author":null,"avatar":null,"categories":["observation","Import 2023-04-08 17:32"],"description":"\u003cp\u003eUne serie original de Netflix, qui merite vraiment d\u0026rsquo;etre vue. Produit en Allemagne, c\u0026rsquo;est un genre different des series Americaines. Il faut se fermer les yeux sur certains elements (pas de test d\u0026rsquo;ADN, physique tire par les cheveux), mais une fois que vous avez embarque dans l\u0026rsquo;histoire, c\u0026rsquo;est dur de ne pas continuer l\u0026rsquo;histoire.\u003c/p\u003e\n\u003cp\u003e2 saisons disponible, la prochaine sera la derniere.\u003c/p\u003e","readingTime":1,"tags":["observation","Import 2023-04-08 17:32"],"title":"Dark (Netflix)","url":"/posts/2019/dark-netflix/"},{"author":null,"avatar":null,"categories":["observation","Import 2023-04-08 17:32"],"description":"\u003cp\u003eBillet achete, reste a attendre\u0026hellip; voici un petit apercu:\u003c/p\u003e\n\u003ciframe width=\"480\" height=\"270\" src=\"https://www.youtube.com/embed/8Qn_spdM5Zg?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen\u003e\u003c/iframe\u003e","readingTime":1,"tags":["observation","Import 2023-04-08 17:32"],"title":"Rise of Skywalker","url":"/posts/2019/rise-of-the-skywalker/"},{"author":null,"avatar":null,"categories":["opinion","observation","Import 2023-04-08 17:32"],"description":"\u003cp\u003eC\u0026rsquo;est le temps de vous exprimer, VOTER!\u003c/p\u003e","readingTime":1,"tags":["opinion","observation","Import 2023-04-08 17:32"],"title":"Votez!","url":"/posts/2019/votez/"},{"author":null,"avatar":null,"categories":["aviation","Import 2023-04-08 17:32"],"description":"\u003ciframe width=\"480\" height=\"270\" src=\"https://www.youtube.com/embed/732Y62VZIGc?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen\u003e\u003c/iframe\u003e\n\u003cp\u003eJ\u0026rsquo;ai decouvert recemment DCS World, un simulateur d\u0026rsquo;avion de chasse. Ce simulateur est tres realiste (selon les dires meme d\u0026rsquo;un ancien pilote), et propose plusieurs types d\u0026rsquo;avions, dont le F-18C et le F-5. Deux avions de chasses que le Canada utilisent, ou utilisaient (F-5). Plein de tutoriaux sont disponibles sur Youtube, et de simulations de combats.\u003c/p\u003e\n\u003cfigure class=\"kg-gallery-card kg-width-wide\"\u003e\n  \u003cdiv class=\"kg-gallery-container\"\u003e\n    \u003cdiv class=\"kg-gallery-row\"\u003e\n    \n\n  \u003cdiv class=\"kg-gallery-image\"\u003e\n    \u003cimg src=\"__GHOST_URL__/content/images/2019/10/IMG_20170916_120117-1.jpg\" width=\"4160\" height=\"3120\"\u003e\n  \u003c/div\u003e\n\n  \u003cdiv class=\"kg-gallery-image\"\u003e\n    \u003cimg src=\"__GHOST_URL__/content/images/2019/10/IMG_20180331_123926.jpg\" width=\"4160\" height=\"3120\"\u003e\n  \u003c/div\u003e\n\n  \u003cdiv class=\"kg-gallery-image\"\u003e\n    \u003cimg src=\"__GHOST_URL__/content/images/2019/10/IMG_20180730_143231-1.jpg\" width=\"4160\" height=\"3120\"\u003e\n  \u003c/div\u003e\n\n\u003c/div\u003e\n\u003cdiv class=\"kg-gallery-row\"\u003e\n\n    \u003c/div\u003e\n  \u003c/div\u003e\n  \n\u003c/figure\u003e\n\u003cp\u003eCe simulateur est ce qui se rapproche le plus de mon reve d\u0026rsquo;enfance d\u0026rsquo;etre pilote de chasse.\u003c/p\u003e","readingTime":1,"tags":["aviation","Import 2023-04-08 17:32"],"title":"DCS World","url":"/posts/2019/dcs-world/"},{"author":null,"avatar":null,"categories":["observation","Import 2023-04-08 17:32"],"description":"\u003cfigure\u003e\u003cimg src=\"__GHOST_URL__/content/images/2019/10/Screenshot_2019-10-15_08-17-18.png\"\u003e\n\u003c/figure\u003e\n\n\u003cp\u003eThe Go Programming Language, 40$ paperback, et 15$ e-book. Je me convertie au e-book, avec l\u0026rsquo;achat d\u0026rsquo;un Kindle. Plus de livres qui trainent partout, et la possibilite d\u0026rsquo;avoir avec soi, toute sa librairie, ou que je soie.\u003c/p\u003e","readingTime":1,"tags":["observation","Import 2023-04-08 17:32"],"title":"e-book","url":"/posts/2019/e-book/"},{"author":null,"avatar":null,"categories":["bike","observation","Import 2023-04-08 17:32"],"description":"\u003cp\u003eCouleur d\u0026rsquo;automne sur le bord du fleuve St-Laurent\u003c/p\u003e\n\u003cfigure class=\"kg-gallery-card kg-width-wide\"\u003e\n  \u003cdiv class=\"kg-gallery-container\"\u003e\n    \u003cdiv class=\"kg-gallery-row\"\u003e\n    \n\n  \u003cdiv class=\"kg-gallery-image\"\u003e\n    \u003cimg src=\"__GHOST_URL__/content/images/2019/10/IMG_20191013_125946-1.jpg\" width=\"4608\" height=\"3456\"\u003e\n  \u003c/div\u003e\n\n  \u003cdiv class=\"kg-gallery-image\"\u003e\n    \u003cimg src=\"__GHOST_URL__/content/images/2019/10/IMG_20191013_125950.jpg\" width=\"4608\" height=\"3456\"\u003e\n  \u003c/div\u003e\n\n  \u003cdiv class=\"kg-gallery-image\"\u003e\n    \u003cimg src=\"__GHOST_URL__/content/images/2019/10/IMG_20191013_130155.jpg\" width=\"4608\" height=\"3456\"\u003e\n  \u003c/div\u003e\n\n\u003c/div\u003e\n\u003cdiv class=\"kg-gallery-row\"\u003e\n\n  \u003cdiv class=\"kg-gallery-image\"\u003e\n    \u003cimg src=\"__GHOST_URL__/content/images/2019/10/IMG_20191013_132018.jpg\" width=\"4608\" height=\"3456\"\u003e\n  \u003c/div\u003e\n\n    \u003c/div\u003e\n  \u003c/div\u003e\n  \n\u003c/figure\u003e","readingTime":1,"tags":["bike","observation","Import 2023-04-08 17:32"],"title":"Automne","url":"/posts/2019/automne/"},{"author":null,"avatar":null,"categories":["opinion","Import 2023-04-08 17:32"],"description":"\u003cp\u003eJe suis avec Jameet Singh, je vote NDP!\u003c/p\u003e","readingTime":1,"tags":["opinion","Import 2023-04-08 17:32"],"title":"Endossement","url":"/posts/2019/endossement/"},{"author":null,"avatar":null,"categories":["coding","projet","Import 2023-04-08 17:32"],"description":"\u003cfigure\u003e\u003cimg src=\"__GHOST_URL__/content/images/2019/10/Screenshot_2019-10-09_20-54-59.png\"\u003e\n\u003c/figure\u003e\n\n\u003cp\u003eBon, c\u0026rsquo;est pas grand chose, mais ca fix un bug qui nous affectais a la job. Surment plein d\u0026rsquo;autres personnes aussi, parce que les PDB sont de plus en plus utilises dans Kubernetes.\u003c/p\u003e","readingTime":1,"tags":["coding","projet","Import 2023-04-08 17:32"],"title":"Premiere contribution a eksctl","url":"/posts/2019/premiere-contribution-a-eksctl/"},{"author":null,"avatar":null,"categories":["technologie","test","Import 2023-04-08 17:32"],"description":"\u003cp\u003eC\u0026rsquo;est possible avec CloudReady, un fork de ChromeOS. Pour redonner vie a un vieux laptop de 2011, ca fait la job. Voici quelques bemols:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003ePas de support pour Google Play (application Android), parce que c\u0026rsquo;est proprietaire (DUH)\u003c/li\u003e\n\u003cli\u003eViens avec VirtualBox, pourquoi?? quand KVM est natif et 100 fois mieux?\u003c/li\u003e\n\u003c/ul\u003e","readingTime":1,"tags":["technologie","test","Import 2023-04-08 17:32"],"title":"Transformer un vieux T520 en Chromebook","url":"/posts/2019/transformer-un-vieux-t520-en-chromebook/"},{"author":null,"avatar":null,"categories":["technologie","Import 2023-04-08 17:32"],"description":"\u003cp\u003eTADA: \u003ccode\u003esudo xxd /sys/firmware/acpi/tables/MSDM\u003c/code\u003e\u003c/p\u003e","readingTime":1,"tags":["technologie","Import 2023-04-08 17:32"],"title":"Comment recuperer une license Windows d'un bios de laptop","url":"/posts/2019/comment-recuperer-un-license-windows-dun-bios-de-laptop/"},{"author":null,"avatar":null,"categories":["technologie","Import 2023-04-08 17:32"],"description":"\u003cp\u003eCa y est, c\u0026rsquo;est fait. Compte Facebook supprimer. J\u0026rsquo;ai erradique ce cancer qui cruge peu a peu ce monde \u0026ldquo;moderne\u0026rdquo;.\u003c/p\u003e","readingTime":1,"tags":["technologie","Import 2023-04-08 17:32"],"title":"Supression de Facebook","url":"/posts/2019/supression-de-facebook/"},{"author":null,"avatar":null,"categories":["observation","Import 2023-04-08 17:32"],"description":"\u003cp\u003eUne file d\u0026rsquo;attente en ligne. Oui, oui en 2019 il semble que certaines personnes pensent que c\u0026rsquo;est une bonne idee de proceder de cette facon.\u003c/p\u003e\n\u003cp\u003eIncroyable\u003c/p\u003e\n\u003cfigure\u003e\u003cimg src=\"__GHOST_URL__/content/images/2019/04/Screenshot-2019-04-27-at-09.04.35.png\"\u003e\n\u003c/figure\u003e\n\n\u003cp\u003eEt apres le temps d\u0026rsquo;attente, je tombe sur ceci:\u003c/p\u003e\n\u003cfigure\u003e\u003cimg src=\"__GHOST_URL__/content/images/2019/04/Screenshot-2019-04-27-at-09.30.36.png\"\u003e\n\u003c/figure\u003e\n\n\u003cp\u003eVraiment patetique.\u003c/p\u003e","readingTime":1,"tags":["observation","Import 2023-04-08 17:32"],"title":"File d'attente","url":"/posts/2019/fille-dattente/"},{"author":null,"avatar":null,"categories":["bike","produit","Import 2023-04-08 17:32"],"description":"\u003cp\u003eCa fait longtemps que j\u0026rsquo;y pensais, c\u0026rsquo;est maintenant fait. Le gros avantage de ce trailer, il fit sur tout mes velo (avec l\u0026rsquo;achat d\u0026rsquo;un adapteur pour mes velo de montagne). Je peux faire du singletrack, ou de la route.\n\u003ca href=\"https://youtu.be/5aMFgMuBXvI\" target=\"_blank\"\u003e\u003c/a\u003e\n\u003c/p\u003e\n\u003ciframe width=\"459\" height=\"344\" src=\"https://www.youtube.com/embed/5aMFgMuBXvI?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen\u003e\u003c/iframe\u003e","readingTime":1,"tags":["bike","produit","Import 2023-04-08 17:32"],"title":"Bob Ibex 28 plus","url":"/posts/2019/bob-ibex-28-plus/"},{"author":null,"avatar":null,"categories":["bike","produit","technologie","Import 2023-04-08 17:32"],"description":"\u003cp\u003eIn case you have this unfortunate event, and are unable to update your firmware. I provide you the restoration procedure sent to me by Tacx support. But before going into this process, I suggest you read this \u003ca href=\"https://zwiftinsider.com/updating-your-tacx-smart-brake-firmware/\" target=\"_blank\"\u003epost\u003c/a\u003e\n.\u003c/p\u003e\n\u003cp\u003e** USE AT YOUR OWN RISK **\u003c/p\u003e\n\u003cpre tabindex=\"0\"\u003e\u003ccode\u003eCan you please try attached download firmware link on your smart trainer with the Tacx Utility app.\n\nForward his email to an mail address that you can access on your smart phone.\nNow open the email on your smartphone and click on the link below:\n\nhttps://drive.google.com/file/d/1aqXF87xR-YqtD-Y7kCcHBm-Ev70ZlrGD/view?usp=sharing\n\nBe sure to click on the download button (marked by a red circle in the image below).\n\nChoose to open this file with the Tacx Utility app and connect your trainer (wait for the circle to become green).\nWhen your trainer is connected choose \u0026#34;Update\u0026#34; to begin the firmware installation.\nWait for the firmware installation to complete and follow the instructions on screen when necessary.\nOnce the firmware is installed, you can use your trainer again.\n\u003c/code\u003e\u003c/pre\u003e\u003cp\u003eThe procedure take about 10 min to flash, and the final result:\u003c/p\u003e","readingTime":1,"tags":["bike","produit","technologie","Import 2023-04-08 17:32"],"title":"Amber/Orange light on Tacx Vortex (T2180)","url":"/posts/2019/amber-orange-light-on-tacx-vortex/"},{"author":null,"avatar":null,"categories":["bike","Import 2023-04-08 17:32"],"description":"\u003ciframe width=\"480\" height=\"270\" src=\"https://www.youtube.com/embed/Mr4m7ZoVfwc?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen\u003e\u003c/iframe\u003e","readingTime":0,"tags":["bike","Import 2023-04-08 17:32"],"title":"Les effets positifs du velo","url":"/posts/2019/les-effets-positifs-de-velo/"},{"author":null,"avatar":null,"categories":["bike","Import 2023-04-08 17:32"],"description":"\u003cp\u003eComplete le tour de Zwift aujourd\u0026rsquo;hui. Tres cool ce genre de simulation. Bonne facon de motiver un rider!\u003c/p\u003e","readingTime":1,"tags":["bike","Import 2023-04-08 17:32"],"title":"Tour de Zwift","url":"/posts/2019/tour-de-zwift/"},{"author":null,"avatar":null,"categories":["observation","Import 2023-04-08 17:32"],"description":"\u003cp\u003eDonner son opinion dans le monde d\u0026rsquo;aujourd\u0026rsquo;hui est devenue un acte risque. Peut importe ce que vous dites, quelqu\u0026rsquo;un va souhaiter votre mort.\u003c/p\u003e","readingTime":1,"tags":["observation","Import 2023-04-08 17:32"],"title":"Opinion","url":"/posts/2019/opinion/"},{"author":null,"avatar":null,"categories":["bike","Import 2023-04-08 17:32"],"description":"\u003cp\u003eApres un peu plus d\u0026rsquo;un mois d\u0026rsquo;essaie, 15 hr et 500 km plus tard, mon verdict. Et bien, c\u0026rsquo;est positif, meme a 18$/mois. Zwift rend l\u0026rsquo;experience beaucoup moins penible, et ca peut meme etre agreable de souffrir dans son sous-sol, avec plusieurs milliers d\u0026rsquo;adepte en ligne.\u003c/p\u003e\n\u003cp\u003eL\u0026rsquo;experience peut-etre tres differente tout dependant de l\u0026rsquo;equipement que vous possedez. Pour ma part j\u0026rsquo;ai optez pour un smart trainner d\u0026rsquo;entree de gamme. Pour beneficier d\u0026rsquo;un comportement plus realiste, un trainner plus haut de gamme est recommander. Mon but premier etant de rendre l\u0026rsquo;entrainement interieur moins penible,  et c\u0026rsquo;est reussi.\u003c/p\u003e","readingTime":1,"tags":["bike","Import 2023-04-08 17:32"],"title":"Zwift review","url":"/posts/2019/zwift-review/"},{"author":null,"avatar":null,"categories":["bike","Import 2023-04-08 17:32"],"description":"\u003cp\u003eCa c\u0026rsquo;est trop hot: \u003ca href=\"https://zwift.com/events/series/the-absa-cape-epic-workout-series/\" target=\"_blank\"\u003ehttps://zwift.com/events/series/the-absa-cape-epic-workout-series/\u003c/a\u003e\n\u003c/p\u003e","readingTime":1,"tags":["bike","Import 2023-04-08 17:32"],"title":"THE ABSA CAPE EPIC WORKOUT SERIES","url":"/posts/2019/the-absa-cape-epic-workout-series/"},{"author":null,"avatar":null,"categories":["science","Import 2023-04-08 17:32"],"description":"\u003cp\u003eArticle interessant de Sabine Hossenfelder a propos de la non-decouverte de nouvelles particules elementaires au LHC: \u003ca href=\"http://backreaction.blogspot.com/2018/12/how-lhc-may-spell-end-of-particle.html\" target=\"_blank\"\u003ehttp://backreaction.blogspot.com/2018/12/how-lhc-may-spell-end-of-particle.html\u003c/a\u003e\n. On est decidement a la croise des chemins pour le domaine de la physique des particules. Un analyse et un correction est de mise, mais beaucoup refusent de voir les faits dans le data accumules au cours de ces dernieres annees.\u003c/p\u003e\n\u003cp\u003eC\u0026rsquo;est quand meme ironique quand on pense que des scientifiques regardent les experimentations, mais rejettent les resultats, et demande un autre accelerateurs encore plus puissant, et surtout, tres couteux (10 milliard). Je crois qu\u0026rsquo;il serait plus judicieux de consolider notre savoir existant, entre autre sur la physique des neutrinos, et ceci qui risque de nous ouvrir de nouvelles portes.\u003c/p\u003e","readingTime":1,"tags":["science","Import 2023-04-08 17:32"],"title":"LHC run II","url":"/posts/2018/lhc-run-ii/"},{"author":null,"avatar":null,"categories":["observation","technologie","Import 2023-04-08 17:32"],"description":"\u003cp\u003eDeux sujets on particulierement fait parle cette annee: Securite et Kubernetes. L\u0026rsquo;annee 2018 a commence par la publication des fameux bugs de securites des branches de preductions des CPU modernes (Spectre et Meltdown). On peut dire que ce fut un vrai \u003ccode\u003emeltdown\u003c/code\u003e de la part d\u0026rsquo;Intel particulierement, qui a reussi a s\u0026rsquo;aliener une bonne partie de la comunaute OpenSource, grace a des pratiques de securite innaproprier pour les modeles \u003ccode\u003eOuvert\u003c/code\u003e. 2019 va continuer avec la decouverte de nouvelles variantes de ces bugs et vecteurs d\u0026rsquo;attaques.\u003c/p\u003e","readingTime":2,"tags":["observation","technologie","Import 2023-04-08 17:32"],"title":"Revue technologique 2018","url":"/posts/2018/revue-technologique-2018/"},{"author":null,"avatar":null,"categories":["bike","produit","test","Import 2023-04-08 17:32"],"description":"\u003ciframe width=\"480\" height=\"270\" src=\"https://www.youtube.com/embed/q8fArWR-CsE?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen\u003e\u003c/iframe\u003e\n\u003cp\u003ePour me motiver a reprendre l\u0026rsquo;entrainnement, j\u0026rsquo;ai decide de joindre le \u0026ldquo;mouvement\u0026rdquo; Zwift. J\u0026rsquo;ai donc du changer de bike trainer, car pour utiliser Zwift, il faut setup un peu plus evoluer. J\u0026rsquo;ai opte pour un Tacx Vortex smart. C\u0026rsquo;est un model de base, mais ca fera l\u0026rsquo;affaire (c\u0026rsquo;est un hobby, pas une profession).\u003c/p\u003e\n\u003cp\u003eComme je n\u0026rsquo;ai pas d\u0026rsquo;ordinateur Windows ou Mac, j\u0026rsquo;ai installe l\u0026rsquo;application mobile Android, qui se trouve encore en mode beta. L\u0026rsquo;application semble avoir ete porter sur android, sans trop de regard au fais que ca roulle sur un telephone. Une option que j\u0026rsquo;aimerais vraiment voir eventuellement, c\u0026rsquo;est la possibilite de \u0026ldquo;caster\u0026rdquo; sur une TV. Presentement le seul moyen est de caste le telephone sur le TV. Ca fonctionne, mais le telephone doit rester ouvert tout le long de la session.\u003c/p\u003e","readingTime":1,"tags":["bike","produit","test","Import 2023-04-08 17:32"],"title":"Motivation: Zwift","url":"/posts/2018/motivation-zwift/"},{"author":null,"avatar":null,"categories":["science","Import 2023-04-08 17:32"],"description":"\u003cimg src=\"__GHOST_URL__/content/images/2018/12/IMG_20181215_080538.jpg\" alt=\"\"\u003e","readingTime":0,"tags":["science","Import 2023-04-08 17:32"],"title":"Never give up","url":"/posts/2018/never-give-up/"},{"author":null,"avatar":null,"categories":["observation","Import 2023-04-08 17:32"],"description":"\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/HzeekxtyFOY\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen\u003e\u003c/iframe\u003e\n\u003cp\u003eDure de rester insensible a un tel discours, non?\u003c/p\u003e","readingTime":1,"tags":["observation","Import 2023-04-08 17:32"],"title":"Quand realiserons-nous?","url":"/posts/2018/quand-realiserons-nous/"},{"author":null,"avatar":null,"categories":["histoire","Import 2023-04-08 17:32"],"description":"\u003cp\u003eGeneviève Bergeron\nHélène Colgan\nNathalie Croteau\nBarbara Daigneault\nAnne-Marie Edward\nMaud Haviernick\nMaryse Laganière\nMaryse Leclair\nAnne-Marie Lemay\nSonia Pelletier\nMichèle Richard\nAnnie St-Arneault\nAnnie Turcotte\nBarbara Klucznik-Widajewicz\n\u003cimg src=\"__GHOST_URL__/content/images/2018/12/IMG_20181206_173213.jpg\" alt=\"Geneviève Bergeron\nHélène Colgan\nNathalie Croteau\nBarbara Daigneault\nAnne-Marie Edward\nMaud Haviernick\nMaryse Laganière\nMaryse Leclair\nAnne-Marie Lemay\nSonia Pelletier\nMichèle Richard\nAnnie St-Arneault\nAnnie Turcotte\nBarbara Klucznik-Widajewicz\"\u003e\u003c/p\u003e","readingTime":1,"tags":["histoire","Import 2023-04-08 17:32"],"title":"6 dec","url":"/posts/2018/6-dec/"},{"author":null,"avatar":null,"categories":["histoire","Import 2023-04-08 17:32"],"description":"\u003cp\u003eSe souvenir du passe, pour ne pas repeter ces erreurs, et honorer la memoire de ceux qui se sont battus pour nos acquis du present.\u003c/p\u003e\n\u003cp\u003eRepose en paix Harry\u003c/p\u003e\n\u003ciframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/huWBcsQS2vE\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen\u003e\u003c/iframe\u003e","readingTime":1,"tags":["histoire","Import 2023-04-08 17:32"],"title":"Harry Leslie Smith","url":"/posts/2018/harry-leslie-smith/"},{"author":null,"avatar":null,"categories":["bike","Import 2023-04-08 17:32"],"description":"\u003cp\u003ePremiere sortie en fatbike cet automne, et preparation de l\u0026rsquo;entrainement pour 2019. Etablire les objectifs et les courses pour la prochaine saison. En 2018 j\u0026rsquo;ai pas participe a des courses de fatbike, mais 2019 devrait etre different, enfin, j\u0026rsquo;espere.\u003c/p\u003e\n\u003cfigure\u003e\u003cimg src=\"__GHOST_URL__/content/images/2018/11/IMG_20181124_131340.jpg\"\n    alt=\"Bordure du fleuve St-Laurent\"\u003e\u003cfigcaption\u003e\n      \u003cp\u003eBordure du fleuve St-Laurent\u003c/p\u003e\n    \u003c/figcaption\u003e\n\u003c/figure\u003e","readingTime":1,"tags":["bike","Import 2023-04-08 17:32"],"title":"Fatbike","url":"/posts/2018/fatbike/"},{"author":null,"avatar":null,"categories":["technologie","Import 2023-04-08 17:32"],"description":"\u003cp\u003ePourquoi Google developpe Fuchsia? Pour plusieurs raisons et voici selon moi les motivations:\u003c/p\u003e\n\u003cp\u003eSecurite: Linux contient des dixaines de millions de lignes de codes. Plus de codes, plus de bugs. Une fraction de ces lignes de codes est vraiment necessaires pour un systeme embarque comme un telephone, tablette ou autres.\u003c/p\u003e\n\u003cp\u003eControle: Linux est dirige par un systeme de mainteneurs, et le grand boss est Linus Torvald. Google doit passer par les memes procedures que les autres pour l\u0026rsquo;inclusion de nouveaux codes, et il doit se conformer aux directives demande par les mainteneurs et Linus au final. Android est donc un fork du kernel, et c\u0026rsquo;est un travails de longue halleine d\u0026rsquo;etre \u0026ldquo;in-sync\u0026rdquo; avec le mainline kernel.\u003c/p\u003e","readingTime":1,"tags":["technologie","Import 2023-04-08 17:32"],"title":"Fuchsia VS Android/Linux","url":"/posts/2018/fuchsia-vs-android-linux/"},{"author":null,"avatar":null,"categories":["technologie","Import 2023-04-08 17:32"],"description":"\u003cp\u003eNouveau clone de Ceph, ecrit en Go, et mis OpenSource par WesternDigital. Semble assez simple, mais plus utilise par WesternDigital, car le fruit d\u0026rsquo;un acquisition. Ce veut eductatif pour le moment, car plus maintenu par son acquereur, WD.\u003c/p\u003e\n\u003cp\u003eJe trouve ca vraiment bien qu\u0026rsquo;une compagnie decide d\u0026rsquo;ouvrir les sources dans ces cas particuliers, car les devs qui ont travailles sur ce projet voient pas leur travail jette a la poubelle.\u003c/p\u003e","readingTime":1,"tags":["technologie","Import 2023-04-08 17:32"],"title":"blb (distributed storage)","url":"/posts/2018/blb-distributed-storage/"},{"author":null,"avatar":null,"categories":["aviation","Import 2023-04-08 17:32"],"description":"\u003cp\u003eApparament il manque de pilotes de CF-18. Un de mes reves d\u0026rsquo;enfance depuis que j\u0026rsquo;ai assiste a une demonstration des snowbirds dans les annees 80. Le Canada venait d\u0026rsquo;acquerir des CF-18 tout neuf.\u003c/p\u003e\n\u003cp\u003eJ\u0026rsquo;ai eu la chance de m\u0026rsquo;assoir dans un CF-18 mis a la retraite cet ete. J\u0026rsquo;aurais passe des heures la si j\u0026rsquo;aurais pu.\u003c/p\u003e\n\u003cp\u003eLa photo principal de ce site est un CF-101 Voodoo. Tres bel appareil aussi.\u003c/p\u003e","readingTime":1,"tags":["aviation","Import 2023-04-08 17:32"],"title":"Pilote de chasse","url":"/posts/2018/pilote-de-chasse/"},{"author":null,"avatar":null,"categories":["science","technologie","observation","Import 2023-04-08 17:32"],"description":"\u003cp\u003eArticle interessant ici: \u003ca href=\"https://spectrum.ieee.org/computing/hardware/the-case-against-quantum-computing\" target=\"_blank\"\u003ehttps://spectrum.ieee.org/computing/hardware/the-case-against-quantum-computing\u003c/a\u003e\n, a propos des recheches actuels sur les ordinateurs quantique. L\u0026rsquo;auteur de l\u0026rsquo;article en question est un physicien francais. Il dresse un portrait plutot realiste sur la possibilite d\u0026rsquo;avoir un jour des ordinateurs quantique reellement utiles, et pas simplement des experimentations universitaires ou industriels (IBM, Intel, Google).\u003c/p\u003e\n\u003cp\u003eParallele avec mon article precedent, je crois qu\u0026rsquo;un ordinateur quantique est possible, mais avec les connaissances et technologies d\u0026rsquo;une civilisation de type II. Pour reference, nous ne sommes pas encore une civilisation de type I.\u003c/p\u003e","readingTime":1,"tags":["science","technologie","observation","Import 2023-04-08 17:32"],"title":"Faisabilite des ordinateurs quantique","url":"/posts/2018/faisabilite-des-ordinateurs-quantique/"},{"author":null,"avatar":null,"categories":["observation","science","Import 2023-04-08 17:32"],"description":"\u003cp\u003eLe paradoxe de Fermi. Pourquoi n\u0026rsquo;avons nous pas encore detecte de traces de civilisations avances?\u003c/p\u003e\n\u003cp\u003ePlus j\u0026rsquo;y reflechie, plus je crois que la regle d\u0026rsquo;or est  l\u0026rsquo;auto-destruction. Presque qu\u0026rsquo;impossible d\u0026rsquo;avoir des civilisations de types II.\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"https://fr.m.wikipedia.org/wiki/Paradoxe_de_Fermi\" target=\"_blank\"\u003ehttps://fr.m.wikipedia.org/wiki/Paradoxe_de_Fermi\u003c/a\u003e\n\n\u003ca href=\"https://fr.m.wikipedia.org/wiki/\" target=\"_blank\"\u003ehttps://fr.m.wikipedia.org/wiki/\u003c/a\u003e\nÉchelle_de_Kardachev\u003c/p\u003e","readingTime":1,"tags":["observation","science","Import 2023-04-08 17:32"],"title":"Les civilisations avances","url":"/posts/2018/les-civilisations-avances/"},{"author":null,"avatar":null,"categories":["science","Import 2023-04-08 17:32"],"description":"\u003cp\u003ePetite animation des etoiles au centre de notre galaxie:\u003c/p\u003e\n\u003cimg src=\"__GHOST_URL__/content/images/2018/11/Black-hole-workable.gif\" alt=\"\"\u003e\u003cp\u003eJe pense qu\u0026rsquo;il y a quelque chose de super massif ;)\u003c/p\u003e","readingTime":1,"tags":["science","Import 2023-04-08 17:32"],"title":"Supermasive blackhole","url":"/posts/2018/supermasive-blackhole/"},{"author":null,"avatar":null,"categories":["science","histoire","Import 2023-04-08 17:32"],"description":"\u003cp\u003eUn peu d\u0026rsquo;histoire ce matin, pour se souvenir d\u0026rsquo;une       des figures importantes en science, Lise Meitner.\u003c/p\u003e\n\u003cp\u003eEtant une femme et juive, son chemin a ete particulierement difficile.\u003c/p\u003e\n\u003cp\u003eVoyez son parcours sur wikipedia: \u003ca href=\"https://en.m.wikipedia.org/wiki/Lise_Meitner\" target=\"_blank\"\u003ehttps://en.m.wikipedia.org/wiki/Lise_Meitner\u003c/a\u003e\n\u003c/p\u003e","readingTime":1,"tags":["science","histoire","Import 2023-04-08 17:32"],"title":"Lise Meitner","url":"/posts/2018/lise-meitner/"},{"author":null,"avatar":null,"categories":["coding","Import 2023-04-08 17:32"],"description":"\u003cp\u003e\u003ca href=\"https://github.com/kelseyhightower/nocode\" target=\"_blank\"\u003ehttps://github.com/kelseyhightower/nocode\u003c/a\u003e\n\u003c/p\u003e","readingTime":1,"tags":["coding","Import 2023-04-08 17:32"],"title":"Meilleur projet github","url":"/posts/2018/meilleur-projet-githum/"},{"author":null,"avatar":null,"categories":["observation","Import 2023-04-08 17:32"],"description":"\u003cp\u003eOn connait rarement les histoires cachees devant de grands exploits. En voici une\u0026hellip;\u003c/p\u003e\n\u003ciframe width=\"480\" height=\"270\" src=\"https://www.youtube.com/embed/tcmH0__c7aw?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen\u003e\u003c/iframe\u003e","readingTime":1,"tags":["observation","Import 2023-04-08 17:32"],"title":"Everest","url":"/posts/2018/everest/"},{"author":null,"avatar":null,"categories":["technologie","Import 2023-04-08 17:32"],"description":"\u003cp\u003eJe l\u0026rsquo;attendais depuis plusieurs jours, la version 70 de ChromOS. Ce que j\u0026rsquo;attendais en fait, c\u0026rsquo;est le support de Crostini, qui permet de rouller des applications Linux.\u003c/p\u003e\n\u003cp\u003eCa fonctionne, et donne access a un shell bash, qui se trouve a rouller dans une VM Debian. C\u0026rsquo;est pas tres rapide, normal, avec ce genre de CPU et seulement 4G de RAM. J\u0026rsquo;ai installe VSCode, golang et je peux maintenant coder nativement, sans passer par un cloud IDE.\u003c/p\u003e","readingTime":1,"tags":["technologie","Import 2023-04-08 17:32"],"title":"ChromeOS 70","url":"/posts/2018/chromeos-70/"},{"author":null,"avatar":null,"categories":["science","Import 2023-04-08 17:32"],"description":"\u003cp\u003e\u003ca href=\"https://www.newscientist.com/article/mg24032022-600-exclusive-grave-doubts-over-ligos-discovery-of-gravitational-waves/amp/\" target=\"_blank\"\u003ehttps://www.newscientist.com/article/mg24032022-600-exclusive-grave-doubts-over-ligos-discovery-of-gravitational-waves/amp/\u003c/a\u003e\n\u003c/p\u003e\n\u003cp\u003eC\u0026rsquo;est un processus sain et normal en science de toujours remettre en question. Incapable de voir le reste de l\u0026rsquo;article, il est cache derriere un paywall :(\u003c/p\u003e","readingTime":1,"tags":["science","Import 2023-04-08 17:32"],"title":"Fausses ondes gravitationnels?","url":"/posts/2018/fausses-ondes-gravitationnels/"},{"author":null,"avatar":null,"categories":["observation","Import 2023-04-08 17:32"],"description":"\u003cp\u003e\u003ca href=\"https://www.theguardian.com/environment/2018/oct/30/humanity-wiped-out-animals-since-1970-major-report-finds\" target=\"_blank\"\u003ehttps://www.theguardian.com/environment/2018/oct/30/humanity-wiped-out-animals-since-1970-major-report-finds\u003c/a\u003e\n\u003c/p\u003e\n\u003cp\u003eLes prochaines decenies vont etre de plus en plus dure. La terre a connue pire que les humains, par contre les humains ne connaissent que la terre.\u003c/p\u003e\n\u003cp\u003eTriste, tres triste\u0026hellip;\u003c/p\u003e","readingTime":1,"tags":["observation","Import 2023-04-08 17:32"],"title":"Dure realite","url":"/posts/2018/dure-realite/"},{"author":null,"avatar":null,"categories":["coding","test","Import 2023-04-08 17:32"],"description":"\u003cp\u003eDans ma liste de Cloud IDE a essayer ce trouve Cloud9, l\u0026rsquo;IDE developpe par AWS. Mon premier constat est le fait que c\u0026rsquo;est pas bien integre avec Github, et c\u0026rsquo;est vraiment un point a ameliorer, car c\u0026rsquo;est vraiment penible. Sur ce point, Gitpod est de loins tres superieur.\u003c/p\u003e","readingTime":1,"tags":["coding","test","Import 2023-04-08 17:32"],"title":"Cloud9","url":"/posts/2018/cloud9/"},{"author":null,"avatar":null,"categories":["coding","projet","Import 2023-04-08 17:32"],"description":"\u003cp\u003eApres plusieurs jours de reflexions sur le genre de projets que je veux entreprendre pour apprendre GO, j\u0026rsquo;ai finalement eu une bonne idee, du moins selon moi.\u003c/p\u003e\n\u003cp\u003eMon projet consistrera a ecrire un agent client en GO pour calculer le temps reponse d\u0026rsquo;une site web, ou un api. Cet agent pourra etre executer dans un Lambda AWS, dans plusieurs region AWS. Je vais creer les ressources Terraform necessaire pour l\u0026rsquo;installation rapide et securitaire. Comme le cout d\u0026rsquo;utilisation d\u0026rsquo;une Lambda est a la seconde, il sera possible de rouller selon un laps de temps, et un interfal predefinie.\u003c/p\u003e","readingTime":1,"tags":["coding","projet","Import 2023-04-08 17:32"],"title":"Projet Golang","url":"/posts/2018/projet-golang/"},{"author":null,"avatar":null,"categories":["coding","Import 2023-04-08 17:32"],"description":"\u003cp\u003eJ\u0026rsquo;ai achete un ChromeBook en partie pour pouvoir coder de petits projets. Je savais bien qu\u0026rsquo;il faudrait que je me trouve un editeur web, car mon Acer R11 ne supporte pas encore la technolohie Crostini (prochaine release de ChromeOS). Gitpod me semble prometteur, mon premier essaie (30 min), semble m\u0026rsquo;indiquer que c\u0026rsquo;est tres inpire de VS Code. Pas encore trouver la commande/touche pour compiller mon petit \u0026ldquo;Hello World\u0026rdquo;!\u003c/p\u003e\n\u003cp\u003eGratuit pour 10 hrs par mois, sinon 19$/mois pour 100 hrs. Je trouve ca pas mal cher pas contre.\u003c/p\u003e","readingTime":1,"tags":["coding","Import 2023-04-08 17:32"],"title":"Gitpod","url":"/posts/2018/gitpod/"},{"author":null,"avatar":null,"categories":["sante","Import 2023-04-08 17:32"],"description":"\u003cp\u003e\u003ca href=\"https://www.bbc.co.uk/news/amp/stories-45971416\" target=\"_blank\"\u003ehttps://www.bbc.co.uk/news/amp/stories-45971416\u003c/a\u003e\n\u003c/p\u003e\n\u003cp\u003eAhhhh, les supplements alimentaires\u0026hellip;\nLes racourcies menent rarement a bon port!\u003c/p\u003e","readingTime":1,"tags":["sante","Import 2023-04-08 17:32"],"title":"Supplements","url":"/posts/2018/supplements/"},{"author":null,"avatar":null,"categories":["Getting Started","Import 2023-04-08 17:32"],"description":"\u003cp\u003eVraiment un bon petit site pour se familiariser avec certaines technologies, sans avoir a lire des centaines de pages de documentations, et tout oublier apres 2 jours ;)\u003c/p\u003e","readingTime":1,"tags":["Getting Started","Import 2023-04-08 17:32"],"title":"Katacoda","url":"/posts/2018/katacoda/"},{"author":null,"avatar":null,"categories":["test","Import 2023-04-08 17:32"],"description":"\u003cp\u003eJ\u0026rsquo;ai demenage les dns de mon domaines pour faire des tests avec leurs produits. Ca me semble vraiment bien. Plus de details a venir\u0026hellip;\u003c/p\u003e","readingTime":1,"tags":["test","Import 2023-04-08 17:32"],"title":"Cloudflare","url":"/posts/2018/cloudflare/"},{"author":null,"avatar":null,"categories":["bike","Import 2023-04-08 17:32"],"description":"\u003cp\u003e\u003ca href=\"https://racing.trekbikes.com/sport/mountainbike/2018/world-cup-champion-jolanda-neff-joins-trek-factory-racing-xc/\" target=\"_blank\"\u003ehttps://racing.trekbikes.com/sport/mountainbike/2018/world-cup-champion-jolanda-neff-joins-trek-factory-racing-xc/\u003c/a\u003e\n\u003c/p\u003e","readingTime":1,"tags":["bike","Import 2023-04-08 17:32"],"title":"Neff chez Trek Factory Racing","url":"/posts/2018/neff-chez-trek-factory-racing/"},{"author":null,"avatar":null,"categories":["produit","Import 2023-04-08 17:32"],"description":"\u003cp\u003eSimple \u0026amp; rapide et decidemment plus secure que Wordpress. L\u0026rsquo;installation via les droplets preconfigure de Digital Ocean est un plus.\u003c/p\u003e","readingTime":1,"tags":["produit","Import 2023-04-08 17:32"],"title":"Ghost","url":"/posts/2018/ghost-post/"}];
+  var fuseOptions = {
+    keys: [
+      "title",
+    ]
+  };
+
+  var fuse = new Fuse(fuseData, fuseOptions);
+</script>
+
+
+
+    
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@7.4.0/dist/ionicons/ionicons.esm.js" integrity="sha256-/IFmi82bIhdYWctu0UddSlJqpnzWm7Vh2C4CM32wF/k=" crossorigin="anonymous"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@7.4.0/dist/ionicons/ionicons.js" integrity="sha256-mr7eJMX3VC3F7G32mk4oWp1C6a2tlMYxUdptfT7uKI8=" crossorigin="anonymous"></script>
+  </body>
+</html>

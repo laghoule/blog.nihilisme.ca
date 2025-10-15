@@ -1,108 +1,628 @@
-<!doctype html><html lang=en x-data :class=$store.darkMode.class() :data-theme=$store.darkMode.theme()><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>man page | SIG11</title><link href=/favicon.ico rel=icon type=image/x-icon><link rel=canonical href=http://localhost:1313/posts/2025/08/man-page/><meta name=author content="Pascal Gauthier"><meta name=description content="pgauthier - Profil de fonctionnement et guide d'interaction"><meta name=keywords content="Informations"><meta name=generator content="Hugo 0.151.0"><meta property="og:url" content="http://localhost:1313/posts/2025/08/man-page/"><meta property="og:site_name" content="SIG11"><meta property="og:title" content="man page"><meta property="og:description" content="pgauthier - Profil de fonctionnement et guide d'interaction"><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2025-08-29T00:20:12+00:00"><meta property="article:modified_time" content="2025-08-29T00:20:12+00:00"><meta property="article:tag" content="Informations"><meta property="og:image" content="http://localhost:1313/img/IMG_20180730_143710.jpg"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="http://localhost:1313/img/IMG_20180730_143710.jpg"><meta name=twitter:title content="man page"><meta name=twitter:description content="pgauthier - Profil de fonctionnement et guide d'interaction"><link rel=stylesheet href=/css/output.css><style>pre{padding:1em;overflow:auto}</style><script defer src=https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js integrity="sha256-4EHxtjnR5rL8JzbY12OKQJr81ESm7JBEb49ORPo29AY=" crossorigin=anonymous></script></head><body x-data="{
+<!DOCTYPE html>
+<html lang="en"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>man page | SIG11</title>
+
+    
+  
+    <link href="/favicon.ico" rel="icon" type="image/x-icon" />
+  
+
+
+<link rel="canonical" href="http://localhost:1313/posts/2025/08/man-page/" />
+
+
+
+<meta name="author" content="Pascal Gauthier" />
+<meta name="description" content="pgauthier - Profil de fonctionnement et guide d&#39;interaction" />
+
+
+<meta name="keywords" content="Informations">
+
+
+
+<meta name="generator" content="Hugo 0.151.0">
+
+
+<meta property="og:url" content="http://localhost:1313/posts/2025/08/man-page/">
+  <meta property="og:site_name" content="SIG11">
+  <meta property="og:title" content="man page">
+  <meta property="og:description" content="pgauthier - Profil de fonctionnement et guide d&#39;interaction">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-08-29T00:20:12+00:00">
+    <meta property="article:modified_time" content="2025-08-29T00:20:12+00:00">
+    <meta property="article:tag" content="Informations">
+    <meta property="og:image" content="http://localhost:1313/img/IMG_20180730_143710.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/img/IMG_20180730_143710.jpg">
+  <meta name="twitter:title" content="man page">
+  <meta name="twitter:description" content="pgauthier - Profil de fonctionnement et guide d&#39;interaction">
+
+
+
+
+<link rel="stylesheet" href="/css/output.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js" integrity="sha256-4EHxtjnR5rL8JzbY12OKQJr81ESm7JBEb49ORPo29AY=" crossorigin="anonymous"></script>
+  </head>
+
+  <body x-data="{
     flip: false,
-  }"><div id=dream-global-bg></div><nav x-data="{ isSticky: false }" x-init="window.addEventListener('scroll', () => { isSticky = window.scrollY > 30 })" class="sticky top-0 z-30 mt-4 lg:mt-8 py-4" :class="{ 'bg-base-100 shadow-lg dark:border-b dark:border-base-content/30': isSticky }"><div class="container flex justify-between px-4"><section class="flex items-center gap-4"><div class="avatar cursor-pointer hover:avatar-online" @click="flip = !flip" title="Flip it!"><div class="h-10 rounded-full"><img src=/ alt=SIG11></div></div><div><a href=http://localhost:1313/ class="text-lg font-semibold cursor-pointer">SIG11</a><div class="text-base-content/60 text-sm">Observation, Experimentation et R&amp;D</div></div></section><div class="dropdown dropdown-end sm:hidden"><div tabindex=0 role=button class="btn btn-ghost btn-square" aria-label="Select an option"><ion-icon name=menu class=text-2xl></ion-icon></div><ul tabindex=0 class="dropdown-content menu w-36 bg-base-100 rounded-box z-1 shadow-md"><li><a class="group inline-flex items-center p-2 cursor-pointer" href=/search title=Search><ion-icon name=search></ion-icon>Search</a></li><li><a class="inline-flex items-center p-2 cursor-pointer" href=/index.xml title=RSS><ion-icon name=logo-rss></ion-icon>RSS</a></li><li><a class="inline-flex items-center p-2 cursor-pointer" href=/posts title=Archives><ion-icon name=archive></ion-icon>Archives</a></li><li><a class="inline-flex items-center p-2 cursor-pointer" href=/categories title="All Categories"><ion-icon name=grid></ion-icon>All Categories</a></li><li><a class="inline-flex items-center p-2 cursor-pointer" href=/tags title="All Tags"><ion-icon name=pricetags></ion-icon>All Tags</a></li></ul></div><section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4"><a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href=/search title=Search><ion-icon class=group-hover:text-primary-content name=search></ion-icon></a><a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href=/index.xml title=RSS><ion-icon class=group-hover:text-primary-content name=logo-rss></ion-icon></a><a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href=/posts title=Archives><ion-icon class=group-hover:text-primary-content name=archive></ion-icon></a><a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href=/categories title="All Categories"><ion-icon class=group-hover:text-primary-content name=grid></ion-icon></a><a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href=/tags title="All Tags"><ion-icon class=group-hover:text-primary-content name=pricetags></ion-icon></a></section></div></nav><div class=flip-container :class="{ 'flip-it': flip }"><div class=flipper><div class=front><div class=container><div class="lg:grid lg:grid-cols-4 gap-4 mt-4 px-4"><div class="hidden lg:block"></div><div class=lg:col-span-2><article class="mx-auto prose prose-quoteless dark:prose-invert" id=dream-single-post-main itemscope itemtype=http://schema.org/Article><meta itemprop=name content="man page"><meta itemprop=description content="pgauthier - Profil de fonctionnement et guide d'interaction"><meta itemprop=datePublished content="2025-08-29T00:20:12+00:00"><meta itemprop=dateModified content="2025-08-29T00:20:12+00:00"><meta itemprop=wordCount content="451"><meta itemprop=image content="http://localhost:1313/img/IMG_20180730_143710.jpg"><meta itemprop=keywords content="Informations"><header><h1 itemprop=headline>man page</h1><p class=text-sm>Friday, Aug 29, 2025
-| <span>3 minute read</span>
-| <span>Updated at
-Friday, Aug 29, 2025</span></p><div class="flex justify-between"><div class="flex items-center"><span>@</span>
-<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=name>Pascal Gauthier</span></span></div><div class="flex items-center gap-2"><a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href target=_blank rel="noopener noreferrer" title="Share on "><ion-icon class=group-hover:text-primary-content name=logo-></ion-icon></a></div></div></header><section id=dream-single-post-content itemprop=articleBody><figure><img class=z-30 src=/posts/2025/08/book.jpg alt="man page"></figure><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>PGAUTHIER(1)                             Manuel de l&#39;Utilisateur                               9 mai 2025
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>NOM
-</span></span><span class=line><span class=cl>     pgauthier - Profil de fonctionnement et guide d&#39;interaction
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>SYNOPSIS
-</span></span><span class=line><span class=cl>     pgauthier [OPTIONS] &lt;tâche_technique&gt;
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>DESCRIPTION
-</span></span><span class=line><span class=cl>     pgauthier(1) est un utilitaire SRE spécialisé, optimisé pour l&#39;analyse de systèmes complexes,
-</span></span><span class=line><span class=cl>     la reconnaissance de schémas et la résolution de problèmes. Son architecture AuDHD (Autisme + TDAH)
-</span></span><span class=line><span class=cl>     implique des modes d&#39;opération spécifiques et offre des capacités uniques. Ce guide vise 
-</span></span><span class=line><span class=cl>     une collaboration optimale.
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>FORCES (FEATURES)
-</span></span><span class=line><span class=cl>     Pensée Systémique &amp; Résolution de Problèmes
-</span></span><span class=line><span class=cl>          Visualisation globale des systèmes, du plus haut au plus bas niveau. Très efficace pour le
-</span></span><span class=line><span class=cl>          troubleshooting d&#39;incidents complexes via une immersion profonde (hyperfocus).
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>     Logique et Itération
-</span></span><span class=line><span class=cl>          Conception via une approche empirique basée sur des cycles rapides d&#39;expérimentation (essai),
-</span></span><span class=line><span class=cl>          d&#39;observation et d&#39;ajustement logique (correction). Cette méthode est particulièrement efficace
-</span></span><span class=line><span class=cl>          pour naviguer des systèmes complexes où la documentation est incomplète ou les comportements 
-</span></span><span class=line><span class=cl>          imprévisibles.
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>     Calme en Crise Technique
-</span></span><span class=line><span class=cl>          Haute performance et rationalité maintenues lors d&#39;incidents techniques majeurs. Performance
-</span></span><span class=line><span class=cl>          optimale lorsque l&#39;accès au système est autonome et l&#39;environnement calme.
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>MODES D&#39;OPÉRATION (OPTIONS)
-</span></span><span class=line><span class=cl>     -c, --communication-asynchrone
-</span></span><span class=line><span class=cl>          Privilégier l&#39;écrit (chats, tickets). L&#39;écrit est essentiel pour la précision et le traitement
-</span></span><span class=line><span class=cl>          en profondeur de l&#39;information.
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>     -v, --contexte-explicite
-</span></span><span class=line><span class=cl>          Fournir des objectifs clairs et des attentes directes. Les non-dits et l&#39;implicite sont des 
-</span></span><span class=line><span class=cl>          vecteurs d&#39;erreurs.
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>     -f, --focus-mono-tache
-</span></span><span class=line><span class=cl>          L&#39;efficacité est maximale sur une tâche complexe à la fois. Les interruptions et le multi-tâches
-</span></span><span class=line><span class=cl>          ont un coût de performance élevé.
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>     --feedback-factuel=&lt;&#34;faits, impact, suggestion&#34;&gt;
-</span></span><span class=line><span class=cl>          Pour être efficace, le feedback doit être basé sur des faits observables et des impacts concrets,
-</span></span><span class=line><span class=cl>          et non sur des interprétations subjectives.
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>BUGS CONNUS &amp; DEBUGGING
-</span></span><span class=line><span class=cl>     Mémoire Tampon (Working Memory) Limitée
-</span></span><span class=line><span class=cl>          La mémoire de travail pour les informations auditives volatiles est limitée. Les instructions 
-</span></span><span class=line><span class=cl>          verbales complexes peuvent être perdues.
-</span></span><span class=line><span class=cl>          DEBUG: Fournir les informations importantes par écrit.
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>     Traitement Asynchrone (Asynchronous Processing)
-</span></span><span class=line><span class=cl>          Le processeur est optimisé pour des calculs profonds et mono-thread (`hyperfocus`). Cependant,
-</span></span><span class=line><span class=cl>          les interactions sociales en temps réel déclenchent des processus de gestion de l&#39;anxiété qui
-</span></span><span class=line><span class=cl>          monopolisent les ressources, entraînant une latence de réponse élevée sur la tâche principale.
-</span></span><span class=line><span class=cl>          DEBUG: Pour des requêtes complexes, utiliser un mode de communication 
-</span></span><span class=line><span class=cl>                 asynchrone (`--communication-asynchrone`).
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>     Surcharge &amp; Latence
-</span></span><span class=line><span class=cl>          Les environnements bruyants, les interruptions multiples ou le stress interpersonnel peuvent
-</span></span><span class=line><span class=cl>          entraîner une dégradation des performances et activer un mode de protection 
-</span></span><span class=line><span class=cl>          `porcupine_mode`: retrait, réponses brèves, ton sec ou défensif.
-</span></span><span class=line><span class=cl>          DEBUG: Un redémarrage dans un environnement calme est requis.
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>     Interface Non Verbale
-</span></span><span class=line><span class=cl>          L&#39;interface non verbale (langage corporel, ton) retourne souvent un état neutre 
-</span></span><span class=line><span class=cl>          (`HTTP 204 No Content`). Cela n&#39;indique ni un désintérêt, ni un désaccord. L&#39;engagement est 
-</span></span><span class=line><span class=cl>          dans le travail.
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>ENVIRONNEMENT OPTIMAL
-</span></span><span class=line><span class=cl>     Autonomie, défis techniques clairs, communication asynchrone et un faible niveau de &#34;politique&#34; 
-</span></span><span class=line><span class=cl>     organisationnelle.
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>VOIR AUSSI
-</span></span><span class=line><span class=cl>     kubernetes(1), go(1), man(7), gdb(1), linux(1)
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>     Pour plus de contexte sur l&#39;architecture sous-jacente :
-</span></span><span class=line><span class=cl>     - https://theneurodivergentbrain.org/audhd/
-</span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl>AUTEUR
-</span></span><span class=line><span class=cl>     Documenté par P. Gauthier, basé sur les spécifications d&#39;un neuropsychologue.
-</span></span></code></pre></div></section><div class=divider></div><div class="flex flex-col md:flex-row justify-between gap-4 py-4"><div></div><a role=button class="btn btn-outline h-12" href=/posts/2025/06/audhd/ title=AuDHD><div class="inline-flex flex-col items-end"><span class="text-base-content/60 text-xs font-normal">Next page</span>
-<span class="max-w-48 truncate">AuDHD</span></div><ion-icon name=chevron-forward></ion-icon></a></div></article></div><div x-data=tocHighlighter() @scroll.window=debouncedScroll class="hidden lg:flex lg:flex-col lg:items-end"><nav id=TableOfContents></nav></div></div><footer class="flex justify-between items-center gap-2 px-4 py-12"><div><p>© 2025 SIG11</p><p class=text-sm>🌱
-<span class=text-base-content/60>Powered by <a class=hover:underline href=https://gohugo.io/ target=_blank>Hugo</a> with theme
-<a class=hover:underline href=https://github.com/g1eny0ung/hugo-theme-dream target=_blank>Dream</a>.</span></p></div><div x-data="{ icons: [
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav x-data="{ isSticky: false }"
+  x-init="window.addEventListener('scroll', () => { isSticky = window.scrollY > 30 })"
+  class="sticky top-0 z-30 mt-4 lg:mt-8 py-4"
+  :class="{ 'bg-base-100 shadow-lg dark:border-b dark:border-base-content/30': isSticky }">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:avatar-online" @click="flip = !flip" title="Flip it!">
+        <div class="h-10 rounded-full">
+          <img src="/" alt="SIG11" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="http://localhost:1313/" class="text-lg font-semibold cursor-pointer">
+          SIG11
+        </a>
+        
+        
+        <div class="text-base-content/60 text-sm">Observation, Experimentation et R&amp;D</div>
+        
+      </div>
+      
+    </section>
+
+    
+    
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-1 shadow-md">
+        
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="Search">
+    <ion-icon name="search"></ion-icon>
+    Search
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="Archives">
+    <ion-icon name="archive"></ion-icon>
+    Archives
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="All Categories">
+    <ion-icon name="grid"></ion-icon>
+    All Categories
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="All Tags">
+    <ion-icon name="pricetags"></ion-icon>
+    All Tags
+  </a>
+</li>
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+
+      
+      
+
+
+
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="Search">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/index.xml" title="RSS">
+  <ion-icon class="group-hover:text-primary-content" name="logo-rss"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="Archives">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/categories" title="All Categories">
+  <ion-icon class="group-hover:text-primary-content" name="grid"></ion-icon>
+</a>
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/tags" title="All Tags">
+  <ion-icon class="group-hover:text-primary-content" name="pricetags"></ion-icon>
+</a>
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="lg:grid lg:grid-cols-4 gap-4 mt-4 px-4">
+  <div class="hidden lg:block">
+    
+  </div>
+
+  <div class="lg:col-span-2">
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="man page">
+  <meta itemprop="description" content="pgauthier - Profil de fonctionnement et guide d&#39;interaction">
+  <meta itemprop="datePublished" content="2025-08-29T00:20:12+00:00">
+  <meta itemprop="dateModified" content="2025-08-29T00:20:12+00:00">
+  <meta itemprop="wordCount" content="451">
+  <meta itemprop="image" content="http://localhost:1313/img/IMG_20180730_143710.jpg">
+  <meta itemprop="keywords" content="Informations">
+
+      <header>
+        <h1 itemprop="headline">man page</h1>
+        <p class="text-sm">
+          
+            Friday, Aug 29, 2025
+          
+
+          | <span>3 minute read</span>
+
+          
+          | <span>Updated at
+            
+              Friday, Aug 29, 2025
+            </span>
+          
+        </p>
+
+        
+        <div class="flex justify-between">
+          
+            <div class="flex items-center">
+  
+  <span>@</span>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    <span itemprop="name">Pascal Gauthier</span>
+  
+  </span>
+</div>
+
+          
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+    
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="" target="_blank" rel="noopener noreferrer"
+      title="Share on ">
+      <ion-icon class="group-hover:text-primary-content" name="logo-"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      <section id="dream-single-post-content" itemprop="articleBody">
+        
+          <figure>
+            <img class="z-30" src="/posts/2025/08/book.jpg" alt="man page" />
+            
+          </figure>
+        
+
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">PGAUTHIER(1)                             Manuel de l&#39;Utilisateur                               9 mai 2025
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">NOM
+</span></span><span class="line"><span class="cl">     pgauthier - Profil de fonctionnement et guide d&#39;interaction
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">SYNOPSIS
+</span></span><span class="line"><span class="cl">     pgauthier [OPTIONS] &lt;tâche_technique&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">DESCRIPTION
+</span></span><span class="line"><span class="cl">     pgauthier(1) est un utilitaire SRE spécialisé, optimisé pour l&#39;analyse de systèmes complexes,
+</span></span><span class="line"><span class="cl">     la reconnaissance de schémas et la résolution de problèmes. Son architecture AuDHD (Autisme + TDAH)
+</span></span><span class="line"><span class="cl">     implique des modes d&#39;opération spécifiques et offre des capacités uniques. Ce guide vise 
+</span></span><span class="line"><span class="cl">     une collaboration optimale.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">FORCES (FEATURES)
+</span></span><span class="line"><span class="cl">     Pensée Systémique &amp; Résolution de Problèmes
+</span></span><span class="line"><span class="cl">          Visualisation globale des systèmes, du plus haut au plus bas niveau. Très efficace pour le
+</span></span><span class="line"><span class="cl">          troubleshooting d&#39;incidents complexes via une immersion profonde (hyperfocus).
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">     Logique et Itération
+</span></span><span class="line"><span class="cl">          Conception via une approche empirique basée sur des cycles rapides d&#39;expérimentation (essai),
+</span></span><span class="line"><span class="cl">          d&#39;observation et d&#39;ajustement logique (correction). Cette méthode est particulièrement efficace
+</span></span><span class="line"><span class="cl">          pour naviguer des systèmes complexes où la documentation est incomplète ou les comportements 
+</span></span><span class="line"><span class="cl">          imprévisibles.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">     Calme en Crise Technique
+</span></span><span class="line"><span class="cl">          Haute performance et rationalité maintenues lors d&#39;incidents techniques majeurs. Performance
+</span></span><span class="line"><span class="cl">          optimale lorsque l&#39;accès au système est autonome et l&#39;environnement calme.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">MODES D&#39;OPÉRATION (OPTIONS)
+</span></span><span class="line"><span class="cl">     -c, --communication-asynchrone
+</span></span><span class="line"><span class="cl">          Privilégier l&#39;écrit (chats, tickets). L&#39;écrit est essentiel pour la précision et le traitement
+</span></span><span class="line"><span class="cl">          en profondeur de l&#39;information.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">     -v, --contexte-explicite
+</span></span><span class="line"><span class="cl">          Fournir des objectifs clairs et des attentes directes. Les non-dits et l&#39;implicite sont des 
+</span></span><span class="line"><span class="cl">          vecteurs d&#39;erreurs.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">     -f, --focus-mono-tache
+</span></span><span class="line"><span class="cl">          L&#39;efficacité est maximale sur une tâche complexe à la fois. Les interruptions et le multi-tâches
+</span></span><span class="line"><span class="cl">          ont un coût de performance élevé.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">     --feedback-factuel=&lt;&#34;faits, impact, suggestion&#34;&gt;
+</span></span><span class="line"><span class="cl">          Pour être efficace, le feedback doit être basé sur des faits observables et des impacts concrets,
+</span></span><span class="line"><span class="cl">          et non sur des interprétations subjectives.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">BUGS CONNUS &amp; DEBUGGING
+</span></span><span class="line"><span class="cl">     Mémoire Tampon (Working Memory) Limitée
+</span></span><span class="line"><span class="cl">          La mémoire de travail pour les informations auditives volatiles est limitée. Les instructions 
+</span></span><span class="line"><span class="cl">          verbales complexes peuvent être perdues.
+</span></span><span class="line"><span class="cl">          DEBUG: Fournir les informations importantes par écrit.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">     Traitement Asynchrone (Asynchronous Processing)
+</span></span><span class="line"><span class="cl">          Le processeur est optimisé pour des calculs profonds et mono-thread (`hyperfocus`). Cependant,
+</span></span><span class="line"><span class="cl">          les interactions sociales en temps réel déclenchent des processus de gestion de l&#39;anxiété qui
+</span></span><span class="line"><span class="cl">          monopolisent les ressources, entraînant une latence de réponse élevée sur la tâche principale.
+</span></span><span class="line"><span class="cl">          DEBUG: Pour des requêtes complexes, utiliser un mode de communication 
+</span></span><span class="line"><span class="cl">                 asynchrone (`--communication-asynchrone`).
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">     Surcharge &amp; Latence
+</span></span><span class="line"><span class="cl">          Les environnements bruyants, les interruptions multiples ou le stress interpersonnel peuvent
+</span></span><span class="line"><span class="cl">          entraîner une dégradation des performances et activer un mode de protection 
+</span></span><span class="line"><span class="cl">          `porcupine_mode`: retrait, réponses brèves, ton sec ou défensif.
+</span></span><span class="line"><span class="cl">          DEBUG: Un redémarrage dans un environnement calme est requis.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">     Interface Non Verbale
+</span></span><span class="line"><span class="cl">          L&#39;interface non verbale (langage corporel, ton) retourne souvent un état neutre 
+</span></span><span class="line"><span class="cl">          (`HTTP 204 No Content`). Cela n&#39;indique ni un désintérêt, ni un désaccord. L&#39;engagement est 
+</span></span><span class="line"><span class="cl">          dans le travail.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">ENVIRONNEMENT OPTIMAL
+</span></span><span class="line"><span class="cl">     Autonomie, défis techniques clairs, communication asynchrone et un faible niveau de &#34;politique&#34; 
+</span></span><span class="line"><span class="cl">     organisationnelle.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">VOIR AUSSI
+</span></span><span class="line"><span class="cl">     kubernetes(1), go(1), man(7), gdb(1), linux(1)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">     Pour plus de contexte sur l&#39;architecture sous-jacente :
+</span></span><span class="line"><span class="cl">     - https://theneurodivergentbrain.org/audhd/
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">AUTEUR
+</span></span><span class="line"><span class="cl">     Documenté par P. Gauthier, basé sur les spécifications d&#39;un neuropsychologue.
+</span></span></code></pre></div>
+
+        
+      </section>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <div></div>
+        
+
+        
+        <a role="button" class="btn btn-outline h-12" href="/posts/2025/06/audhd/" title="AuDHD">
+          <div class="inline-flex flex-col items-end">
+            <span class="text-base-content/60 text-xs font-normal">Next page</span>
+            <span class="max-w-48 truncate">AuDHD</span>
+          </div>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </a>
+        
+      </div>
+      
+
+      
+    </article>
+  </div>
+
+  <div
+    x-data="tocHighlighter()"
+    @scroll.window="debouncedScroll"
+    class="hidden lg:flex lg:flex-col lg:items-end"
+  >
+    
+      <nav id="TableOfContents"></nav>
+    
+  </div>
+</div>
+
+
+            
+<footer class="flex justify-between items-center gap-2 px-4 py-12">
+
+  <div>
+  
+  <p>© 2025 SIG11</p>
+  
+
+  
+  <p class="text-sm">
+    🌱
+    <span class="text-base-content/60">
+      Powered by <a class="hover:underline" href="https://gohugo.io/" target="_blank">Hugo</a> with theme
+      <a class="hover:underline" href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</span
+    >
+  </p>
+  
+</div>
+
+  <div
+  x-data="{ icons: [
     { name: 'sunny', status: 'n' },
     { name: 'moon', status: 'y' },
     { name: 'desktop', status: 'auto' }
-  ] }" class="flex items-center gap-2 h-[32px] px-2 bg-base-100 border border-base-content/30 rounded-full"><template x-for="icon in icons"><div role=button tabindex=0 :aria-label="'Select ' + icon.name + ' mode'" class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary" :class="$store.darkMode.icon() === icon.name && 'bg-primary'" @click=$store.darkMode.toggle(icon.status)><ion-icon :name="`${icon.name}-outline`" class=group-hover:text-primary-content :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"></ion-icon></div></template></div></footer></div></div><div class=back><div class=container><div class="dream-grid dream-grid-about"></div><footer class="flex justify-between items-center gap-2 px-4 py-12"><div><p>© 2025 SIG11</p><p class=text-sm>🌱
-<span class=text-base-content/60>Powered by <a class=hover:underline href=https://gohugo.io/ target=_blank>Hugo</a> with theme
-<a class=hover:underline href=https://github.com/g1eny0ung/hugo-theme-dream target=_blank>Dream</a>.</span></p></div><div x-data="{ icons: [
+  ] }"
+  class="flex items-center gap-2 h-[32px] px-2 bg-base-100 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+</footer>
+
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid dream-grid-about">
+  
+
+  
+
+  
+</div>
+
+            
+
+            
+<footer class="flex justify-between items-center gap-2 px-4 py-12">
+
+  <div>
+  
+  <p>© 2025 SIG11</p>
+  
+
+  
+  <p class="text-sm">
+    🌱
+    <span class="text-base-content/60">
+      Powered by <a class="hover:underline" href="https://gohugo.io/" target="_blank">Hugo</a> with theme
+      <a class="hover:underline" href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</span
+    >
+  </p>
+  
+</div>
+
+  <div
+  x-data="{ icons: [
     { name: 'sunny', status: 'n' },
     { name: 'moon', status: 'y' },
     { name: 'desktop', status: 'auto' }
-  ] }" class="flex items-center gap-2 h-[32px] px-2 bg-base-100 border border-base-content/30 rounded-full"><template x-for="icon in icons"><div role=button tabindex=0 :aria-label="'Select ' + icon.name + ' mode'" class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary" :class="$store.darkMode.icon() === icon.name && 'bg-primary'" @click=$store.darkMode.toggle(icon.status)><ion-icon :name="`${icon.name}-outline`" class=group-hover:text-primary-content :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"></ion-icon></div></template></div></footer></div></div></div></div><script>window.lightTheme="emerald",window.darkTheme="forest"</script><script src=https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin=anonymous></script><script src=https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin=anonymous></script><script src=/js/grid.js></script><script src=/js/main.js></script><script src=/js/toc.js></script><script type=module>
+  ] }"
+  class="flex items-center gap-2 h-[32px] px-2 bg-base-100 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+</footer>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+  <script src="/js/grid.js"></script>
+
+
+
+
+<script src="/js/main.js"></script>
+
+    
+
+
+
+
+
+
+
+<script src="/js/toc.js"></script>
+
+
+  
+    <script type="module">
       import mediumZoom from 'https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/+esm';
       mediumZoom('#dream-single-post-content img', {
         background: 'oklch(var(--b1))',
         margin: 24,
       })
-    </script><script type=module src=https://cdn.jsdelivr.net/npm/ionicons@7.4.0/dist/ionicons/ionicons.esm.js integrity="sha256-/IFmi82bIhdYWctu0UddSlJqpnzWm7Vh2C4CM32wF/k=" crossorigin=anonymous></script><script nomodule src=https://cdn.jsdelivr.net/npm/ionicons@7.4.0/dist/ionicons/ionicons.js integrity="sha256-mr7eJMX3VC3F7G32mk4oWp1C6a2tlMYxUdptfT7uKI8=" crossorigin=anonymous></script></body></html>
+    </script>
+  
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@7.4.0/dist/ionicons/ionicons.esm.js" integrity="sha256-/IFmi82bIhdYWctu0UddSlJqpnzWm7Vh2C4CM32wF/k=" crossorigin="anonymous"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@7.4.0/dist/ionicons/ionicons.js" integrity="sha256-mr7eJMX3VC3F7G32mk4oWp1C6a2tlMYxUdptfT7uKI8=" crossorigin="anonymous"></script>
+  </body>
+</html>

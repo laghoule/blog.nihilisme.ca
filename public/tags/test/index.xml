@@ -1,8 +1,47 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Test on SIG11</title><link>http://localhost:1313/tags/test/</link><description>Recent content in Test on SIG11</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 12 Nov 2019 14:58:29 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/test/index.xml" rel="self" type="application/rss+xml"/><item><title>DoH &amp;&amp; DoT</title><link>http://localhost:1313/posts/2019/dos-dot/</link><pubDate>Tue, 12 Nov 2019 14:58:29 +0000</pubDate><guid>http://localhost:1313/posts/2019/dos-dot/</guid><description>&lt;p&gt;Experiementation avec DNS over HTTPS et DNS over TLS cette semaine. DoH est maintenant supporte par Firefox, et les prochaines version vont l&amp;rsquo;activer par default, du moins c&amp;rsquo;est ce qui avait ete annonce, jusqu&amp;rsquo;a ce que ca creer un faux scandale au UK (&lt;a href="https://www.theregister.co.uk/2019/09/24/mozilla_backtracks_doh_for_uk_users/" target="_blank"&gt;https://www.theregister.co.uk/2019/09/24/mozilla_backtracks_doh_for_uk_users/&lt;/a&gt;
-). L&amp;rsquo;avantage du support directement dans le browser viens du fait qu&amp;rsquo;il possede son propre client DNS, ce qui permet de ne pas utiliser le resolver systeme. Donc si votre destination utilise HTTPS, c&amp;rsquo;est tres dur de pouvoir vous espionnez, car l&amp;rsquo;espion peux seulement voir l&amp;rsquo;IP du destinataire.&lt;/p&gt;</description></item><item><title>Transformer un vieux T520 en Chromebook</title><link>http://localhost:1313/posts/2019/transformer-un-vieux-t520-en-chromebook/</link><pubDate>Tue, 08 Oct 2019 00:42:27 +0000</pubDate><guid>http://localhost:1313/posts/2019/transformer-un-vieux-t520-en-chromebook/</guid><description>&lt;p&gt;C&amp;rsquo;est possible avec CloudReady, un fork de ChromeOS. Pour redonner vie a un vieux laptop de 2011, ca fait la job. Voici quelques bemols:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Pas de support pour Google Play (application Android), parce que c&amp;rsquo;est proprietaire (DUH)&lt;/li&gt;
-&lt;li&gt;Viens avec VirtualBox, pourquoi?? quand KVM est natif et 100 fois mieux?&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Motivation: Zwift</title><link>http://localhost:1313/posts/2018/motivation-zwift/</link><pubDate>Sun, 16 Dec 2018 13:33:21 +0000</pubDate><guid>http://localhost:1313/posts/2018/motivation-zwift/</guid><description>&lt;iframe width="480" height="270" src="https://www.youtube.com/embed/q8fArWR-CsE?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;p&gt;Pour me motiver a reprendre l&amp;rsquo;entrainnement, j&amp;rsquo;ai decide de joindre le &amp;ldquo;mouvement&amp;rdquo; Zwift. J&amp;rsquo;ai donc du changer de bike trainer, car pour utiliser Zwift, il faut setup un peu plus evoluer. J&amp;rsquo;ai opte pour un Tacx Vortex smart. C&amp;rsquo;est un model de base, mais ca fera l&amp;rsquo;affaire (c&amp;rsquo;est un hobby, pas une profession).&lt;/p&gt;
-&lt;p&gt;Comme je n&amp;rsquo;ai pas d&amp;rsquo;ordinateur Windows ou Mac, j&amp;rsquo;ai installe l&amp;rsquo;application mobile Android, qui se trouve encore en mode beta. L&amp;rsquo;application semble avoir ete porter sur android, sans trop de regard au fais que ca roulle sur un telephone. Une option que j&amp;rsquo;aimerais vraiment voir eventuellement, c&amp;rsquo;est la possibilite de &amp;ldquo;caster&amp;rdquo; sur une TV. Presentement le seul moyen est de caste le telephone sur le TV. Ca fonctionne, mais le telephone doit rester ouvert tout le long de la session.&lt;/p&gt;</description></item><item><title>Cloud9</title><link>http://localhost:1313/posts/2018/cloud9/</link><pubDate>Sun, 28 Oct 2018 13:42:46 +0000</pubDate><guid>http://localhost:1313/posts/2018/cloud9/</guid><description>&lt;p&gt;Dans ma liste de Cloud IDE a essayer ce trouve Cloud9, l&amp;rsquo;IDE developpe par AWS. Mon premier constat est le fait que c&amp;rsquo;est pas bien integre avec Github, et c&amp;rsquo;est vraiment un point a ameliorer, car c&amp;rsquo;est vraiment penible. Sur ce point, Gitpod est de loins tres superieur.&lt;/p&gt;</description></item><item><title>Cloudflare</title><link>http://localhost:1313/posts/2018/cloudflare/</link><pubDate>Wed, 24 Oct 2018 23:44:58 +0000</pubDate><guid>http://localhost:1313/posts/2018/cloudflare/</guid><description>&lt;p&gt;J&amp;rsquo;ai demenage les dns de mon domaines pour faire des tests avec leurs produits. Ca me semble vraiment bien. Plus de details a venir&amp;hellip;&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Test on SIG11</title>
+    <link>http://localhost:1313/tags/test/</link>
+    <description>Recent content in Test on SIG11</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 12 Nov 2019 14:58:29 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/test/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DoH &amp;&amp; DoT</title>
+      <link>http://localhost:1313/posts/2019/dos-dot/</link>
+      <pubDate>Tue, 12 Nov 2019 14:58:29 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2019/dos-dot/</guid>
+      <description>&lt;p&gt;Experiementation avec DNS over HTTPS et DNS over TLS cette semaine. DoH est maintenant supporte par Firefox, et les prochaines version vont l&amp;rsquo;activer par default, du moins c&amp;rsquo;est ce qui avait ete annonce, jusqu&amp;rsquo;a ce que ca creer un faux scandale au UK (&lt;a href=&#34;https://www.theregister.co.uk/2019/09/24/mozilla_backtracks_doh_for_uk_users/&#34; target=&#34;_blank&#34;&gt;https://www.theregister.co.uk/2019/09/24/mozilla_backtracks_doh_for_uk_users/&lt;/a&gt;&#xA;). L&amp;rsquo;avantage du support directement dans le browser viens du fait qu&amp;rsquo;il possede son propre client DNS, ce qui permet de ne pas utiliser le resolver systeme. Donc si votre destination utilise HTTPS, c&amp;rsquo;est tres dur de pouvoir vous espionnez, car l&amp;rsquo;espion peux seulement voir l&amp;rsquo;IP du destinataire.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Transformer un vieux T520 en Chromebook</title>
+      <link>http://localhost:1313/posts/2019/transformer-un-vieux-t520-en-chromebook/</link>
+      <pubDate>Tue, 08 Oct 2019 00:42:27 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2019/transformer-un-vieux-t520-en-chromebook/</guid>
+      <description>&lt;p&gt;C&amp;rsquo;est possible avec CloudReady, un fork de ChromeOS. Pour redonner vie a un vieux laptop de 2011, ca fait la job. Voici quelques bemols:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Pas de support pour Google Play (application Android), parce que c&amp;rsquo;est proprietaire (DUH)&lt;/li&gt;&#xA;&lt;li&gt;Viens avec VirtualBox, pourquoi?? quand KVM est natif et 100 fois mieux?&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Motivation: Zwift</title>
+      <link>http://localhost:1313/posts/2018/motivation-zwift/</link>
+      <pubDate>Sun, 16 Dec 2018 13:33:21 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2018/motivation-zwift/</guid>
+      <description>&lt;iframe width=&#34;480&#34; height=&#34;270&#34; src=&#34;https://www.youtube.com/embed/q8fArWR-CsE?feature=oembed&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&#xA;&lt;p&gt;Pour me motiver a reprendre l&amp;rsquo;entrainnement, j&amp;rsquo;ai decide de joindre le &amp;ldquo;mouvement&amp;rdquo; Zwift. J&amp;rsquo;ai donc du changer de bike trainer, car pour utiliser Zwift, il faut setup un peu plus evoluer. J&amp;rsquo;ai opte pour un Tacx Vortex smart. C&amp;rsquo;est un model de base, mais ca fera l&amp;rsquo;affaire (c&amp;rsquo;est un hobby, pas une profession).&lt;/p&gt;&#xA;&lt;p&gt;Comme je n&amp;rsquo;ai pas d&amp;rsquo;ordinateur Windows ou Mac, j&amp;rsquo;ai installe l&amp;rsquo;application mobile Android, qui se trouve encore en mode beta. L&amp;rsquo;application semble avoir ete porter sur android, sans trop de regard au fais que ca roulle sur un telephone. Une option que j&amp;rsquo;aimerais vraiment voir eventuellement, c&amp;rsquo;est la possibilite de &amp;ldquo;caster&amp;rdquo; sur une TV. Presentement le seul moyen est de caste le telephone sur le TV. Ca fonctionne, mais le telephone doit rester ouvert tout le long de la session.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cloud9</title>
+      <link>http://localhost:1313/posts/2018/cloud9/</link>
+      <pubDate>Sun, 28 Oct 2018 13:42:46 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2018/cloud9/</guid>
+      <description>&lt;p&gt;Dans ma liste de Cloud IDE a essayer ce trouve Cloud9, l&amp;rsquo;IDE developpe par AWS. Mon premier constat est le fait que c&amp;rsquo;est pas bien integre avec Github, et c&amp;rsquo;est vraiment un point a ameliorer, car c&amp;rsquo;est vraiment penible. Sur ce point, Gitpod est de loins tres superieur.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cloudflare</title>
+      <link>http://localhost:1313/posts/2018/cloudflare/</link>
+      <pubDate>Wed, 24 Oct 2018 23:44:58 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2018/cloudflare/</guid>
+      <description>&lt;p&gt;J&amp;rsquo;ai demenage les dns de mon domaines pour faire des tests avec leurs produits. Ca me semble vraiment bien. Plus de details a venir&amp;hellip;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

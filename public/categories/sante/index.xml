@@ -1,4 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sante on SIG11</title><link>http://localhost:1313/categories/sante/</link><description>Recent content in Sante on SIG11</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 25 Oct 2018 12:35:35 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/sante/index.xml" rel="self" type="application/rss+xml"/><item><title>Supplements</title><link>http://localhost:1313/posts/2018/supplements/</link><pubDate>Thu, 25 Oct 2018 12:35:35 +0000</pubDate><guid>http://localhost:1313/posts/2018/supplements/</guid><description>&lt;p&gt;&lt;a href="https://www.bbc.co.uk/news/amp/stories-45971416" target="_blank"&gt;https://www.bbc.co.uk/news/amp/stories-45971416&lt;/a&gt;
-&lt;/p&gt;
-&lt;p&gt;Ahhhh, les supplements alimentaires&amp;hellip;
-Les racourcies menent rarement a bon port!&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sante on SIG11</title>
+    <link>http://localhost:1313/categories/sante/</link>
+    <description>Recent content in Sante on SIG11</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 25 Oct 2018 12:35:35 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/sante/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Supplements</title>
+      <link>http://localhost:1313/posts/2018/supplements/</link>
+      <pubDate>Thu, 25 Oct 2018 12:35:35 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2018/supplements/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.bbc.co.uk/news/amp/stories-45971416&#34; target=&#34;_blank&#34;&gt;https://www.bbc.co.uk/news/amp/stories-45971416&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;Ahhhh, les supplements alimentaires&amp;hellip;&#xA;Les racourcies menent rarement a bon port!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

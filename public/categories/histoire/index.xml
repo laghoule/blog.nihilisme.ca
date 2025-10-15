@@ -1,34 +1,40 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Histoire on SIG11</title><link>http://localhost:1313/categories/histoire/</link><description>Recent content in Histoire on SIG11</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 08 Jul 2020 13:45:47 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/histoire/index.xml" rel="self" type="application/rss+xml"/><item><title>The great dictator speach</title><link>http://localhost:1313/posts/2020/the-great-dictator-speach/</link><pubDate>Wed, 08 Jul 2020 13:45:47 +0000</pubDate><guid>http://localhost:1313/posts/2020/the-great-dictator-speach/</guid><description>&lt;iframe width="612" height="344" src="https://www.youtube.com/embed/J7GY1Xg6X20?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;p&gt;Toujours aussi pertinant apres toutes ces annees.&lt;/p&gt;</description></item><item><title>6 dec</title><link>http://localhost:1313/posts/2018/6-dec/</link><pubDate>Thu, 06 Dec 2018 22:36:48 +0000</pubDate><guid>http://localhost:1313/posts/2018/6-dec/</guid><description>&lt;p&gt;Geneviève Bergeron
-Hélène Colgan
-Nathalie Croteau
-Barbara Daigneault
-Anne-Marie Edward
-Maud Haviernick
-Maryse Laganière
-Maryse Leclair
-Anne-Marie Lemay
-Sonia Pelletier
-Michèle Richard
-Annie St-Arneault
-Annie Turcotte
-Barbara Klucznik-Widajewicz
-&lt;img src="__GHOST_URL__/content/images/2018/12/IMG_20181206_173213.jpg" alt="Geneviève Bergeron
-Hélène Colgan
-Nathalie Croteau
-Barbara Daigneault
-Anne-Marie Edward
-Maud Haviernick
-Maryse Laganière
-Maryse Leclair
-Anne-Marie Lemay
-Sonia Pelletier
-Michèle Richard
-Annie St-Arneault
-Annie Turcotte
-Barbara Klucznik-Widajewicz"&gt;&lt;/p&gt;</description></item><item><title>Harry Leslie Smith</title><link>http://localhost:1313/posts/2018/harry-leslie-smith/</link><pubDate>Wed, 28 Nov 2018 13:27:48 +0000</pubDate><guid>http://localhost:1313/posts/2018/harry-leslie-smith/</guid><description>&lt;p&gt;Se souvenir du passe, pour ne pas repeter ces erreurs, et honorer la memoire de ceux qui se sont battus pour nos acquis du present.&lt;/p&gt;
-&lt;p&gt;Repose en paix Harry&lt;/p&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/huWBcsQS2vE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</description></item><item><title>Lise Meitner</title><link>http://localhost:1313/posts/2018/lise-meitner/</link><pubDate>Thu, 08 Nov 2018 13:40:00 +0000</pubDate><guid>http://localhost:1313/posts/2018/lise-meitner/</guid><description>&lt;p&gt;Un peu d&amp;rsquo;histoire ce matin, pour se souvenir d&amp;rsquo;une des figures importantes en science, Lise Meitner.&lt;/p&gt;
-&lt;p&gt;Etant une femme et juive, son chemin a ete particulierement difficile.&lt;/p&gt;
-&lt;p&gt;Voyez son parcours sur wikipedia: &lt;a href="https://en.m.wikipedia.org/wiki/Lise_Meitner" target="_blank"&gt;https://en.m.wikipedia.org/wiki/Lise_Meitner&lt;/a&gt;
-&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Histoire on SIG11</title>
+    <link>http://localhost:1313/categories/histoire/</link>
+    <description>Recent content in Histoire on SIG11</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 08 Jul 2020 13:45:47 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/histoire/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The great dictator speach</title>
+      <link>http://localhost:1313/posts/2020/the-great-dictator-speach/</link>
+      <pubDate>Wed, 08 Jul 2020 13:45:47 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2020/the-great-dictator-speach/</guid>
+      <description>&lt;iframe width=&#34;612&#34; height=&#34;344&#34; src=&#34;https://www.youtube.com/embed/J7GY1Xg6X20?feature=oembed&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&#xA;&lt;p&gt;Toujours aussi pertinant apres toutes ces annees.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>6 dec</title>
+      <link>http://localhost:1313/posts/2018/6-dec/</link>
+      <pubDate>Thu, 06 Dec 2018 22:36:48 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2018/6-dec/</guid>
+      <description>&lt;p&gt;Geneviève Bergeron&#xA;Hélène Colgan&#xA;Nathalie Croteau&#xA;Barbara Daigneault&#xA;Anne-Marie Edward&#xA;Maud Haviernick&#xA;Maryse Laganière&#xA;Maryse Leclair&#xA;Anne-Marie Lemay&#xA;Sonia Pelletier&#xA;Michèle Richard&#xA;Annie St-Arneault&#xA;Annie Turcotte&#xA;Barbara Klucznik-Widajewicz&#xA;&lt;img src=&#34;__GHOST_URL__/content/images/2018/12/IMG_20181206_173213.jpg&#34; alt=&#34;Geneviève Bergeron&#xA;Hélène Colgan&#xA;Nathalie Croteau&#xA;Barbara Daigneault&#xA;Anne-Marie Edward&#xA;Maud Haviernick&#xA;Maryse Laganière&#xA;Maryse Leclair&#xA;Anne-Marie Lemay&#xA;Sonia Pelletier&#xA;Michèle Richard&#xA;Annie St-Arneault&#xA;Annie Turcotte&#xA;Barbara Klucznik-Widajewicz&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Harry Leslie Smith</title>
+      <link>http://localhost:1313/posts/2018/harry-leslie-smith/</link>
+      <pubDate>Wed, 28 Nov 2018 13:27:48 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2018/harry-leslie-smith/</guid>
+      <description>&lt;p&gt;Se souvenir du passe, pour ne pas repeter ces erreurs, et honorer la memoire de ceux qui se sont battus pour nos acquis du present.&lt;/p&gt;&#xA;&lt;p&gt;Repose en paix Harry&lt;/p&gt;&#xA;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/huWBcsQS2vE&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;</description>
+    </item>
+    <item>
+      <title>Lise Meitner</title>
+      <link>http://localhost:1313/posts/2018/lise-meitner/</link>
+      <pubDate>Thu, 08 Nov 2018 13:40:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2018/lise-meitner/</guid>
+      <description>&lt;p&gt;Un peu d&amp;rsquo;histoire ce matin, pour se souvenir d&amp;rsquo;une       des figures importantes en science, Lise Meitner.&lt;/p&gt;&#xA;&lt;p&gt;Etant une femme et juive, son chemin a ete particulierement difficile.&lt;/p&gt;&#xA;&lt;p&gt;Voyez son parcours sur wikipedia: &lt;a href=&#34;https://en.m.wikipedia.org/wiki/Lise_Meitner&#34; target=&#34;_blank&#34;&gt;https://en.m.wikipedia.org/wiki/Lise_Meitner&lt;/a&gt;&#xA;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

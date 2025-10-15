@@ -1,7 +1,7 @@
 +++
 categories = ["observation"]
 date = 2025-01-19T21:49:37Z
-description = ""
+description = "Bob love AI_lice, humm ok..."
 draft = false
 cover = "https://images.unsplash.com/photo-1579208570378-8c970854bc23"
 slug = "ai-relationship"

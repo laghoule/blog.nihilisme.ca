@@ -1,0 +1,23 @@
+name: release
+on:
+  release:
+    types: [created]
+
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set VERSION env
+        run: echo VERSION=$(echo ${GITHUB_REF} | rev | cut -d'/' -f 1 | rev ) >> ${GITHUB_ENV}
+      - name: Publish to Docker Registry
+        uses: elgohr/Publish-Docker-Github-Action@v5
+        env:
+          VERSION: ${{ env.VERSION }}
+        with:
+          name: laghoule/blog
+          username: ${{ secrets.DOCKERHUB_USER }}
+          password: ${{ secrets.DOCKERHUB_PASSWORD }}
+          buildargs: VERSION
+          tags: "latest,${{ env.VERSION }}"
+          tag_semver: true
