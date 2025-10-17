@@ -1,9 +1,9 @@
 +++
 categories = ["produit"]
 date = 2023-04-09T00:37:47Z
-description = ""
+description = "K8S onPrem"
 draft = false
-image = "/posts/2023/04/k0s-logo-full-color-light.svg"
+cover = "/posts/2023/04/k0s-logo-full-color-light.svg"
 slug = "k0s-distribution"
 tags = ["produit"]
 title = "K0S distribution"
