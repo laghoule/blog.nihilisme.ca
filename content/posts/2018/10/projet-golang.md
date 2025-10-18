@@ -1,15 +1,14 @@
 +++
-categories = ["coding", "projet", "Import 2023-04-08 17:32"]
+categories = ["coding", "projet" ]
 date = 2018-10-27T20:38:29Z
 description = ""
 draft = false
-image = "__GHOST_URL__/content/images/2018/10/Human_resource_strategy-12-512.png"
+cover = "/posts/2018/10/Human_resource_strategy-12-512.png"
 slug = "projet-golang"
-tags = ["coding", "projet", "Import 2023-04-08 17:32"]
+tags = ["coding", "projet" ]
 title = "Projet Golang"
 
 +++
-
 
 Apres plusieurs jours de reflexions sur le genre de projets que je veux entreprendre pour apprendre GO, j'ai finalement eu une bonne idee, du moins selon moi.
 
@@ -19,7 +18,4 @@ Cet agent utilisera une Queue SQS pour stocker temporairement ces donnees, qui s
 
 Je vais fournir les dashboards Grafana pour afficher les metriques selon les differente regions du monde ou seront deployer les Lambda.
 
-<a href="https://github.com/laghoule/reptime">Projet Github: reptime</a>
-
-
-
+{{< bookmark url="https://github.com/laghoule/reptime" thumbnail="https://opengraph.githubassets.com/ef607e920731cb02bfb41fdabd7a644c105acb20334031eabdabd724a8d5295b/laghoule/reptime" caption="" >}}

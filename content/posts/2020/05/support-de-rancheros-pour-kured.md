@@ -13,7 +13,7 @@ title = "Support de RancherOS pour Kured"
 
 Pour ceux qui utilisent RKE/RancherOS pour leur cluster Kubernetes, j'ai de quoi pour vous. Un patch a Kured qui permet de gerer les updates de RancherOS de facon securitaire.
 
-{{< bookmark url="https://github.com/laghoule/kured" thumbnail="https://avatars3.githubusercontent.com/u/1598055?s=400&v=4" caption="" >}}
+{{< bookmark url="https://github.com/laghoule/kured" thumbnail="https://opengraph.githubassets.com/ef607e920731cb02bfb41fdabd7a644c105acb20334031eabdabd724a8d5295b/laghoule/kured" caption="" >}}
 
 Comment ca fonctionne? Voici une config cloud-init pour updater et rebooter un node:
 
