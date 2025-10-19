@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://blog.nihilisme.ca/"
 #disablePathToLower = true
 title = "SIG11"
 theme = "dream"
@@ -41,7 +41,7 @@ rss = true
  
 email = "pgauthier@nihilisme.ca"
  
-favicon = "img/personal/favicon.ico"
+#favicon = "img/personal/favicon.ico"
 
 # options
 stickyNav = true

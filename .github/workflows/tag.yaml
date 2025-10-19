@@ -1,4 +1,4 @@
-name: tags-to-docker
+name: tag-to-docker
 on:
   push:
     tags:
