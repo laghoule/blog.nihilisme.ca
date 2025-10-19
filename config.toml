@@ -27,11 +27,11 @@ noClasses = false
 lightTheme = "emerald"
 darkTheme = "forest"
  
-images = ["img/IMG_20180730_143710.jpg"]
+images = ["img/personal/logo.png"]
  
 author = "Pascal Gauthier"
 description = "SIG11"
-#avatar = "img/personal/avatar.jpg"
+avatar = "img/personal/avatar.png"
 headerTitle = "SIG11"
 motto = "Observation, Experimentation et R&D"
  
@@ -41,7 +41,7 @@ rss = true
  
 email = "pgauthier@nihilisme.ca"
  
-favicon = "favicon.ico"
+favicon = "img/personal/favicon.ico"
 
 # options
 stickyNav = true
