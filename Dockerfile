@@ -18,4 +18,4 @@ USER 65534
 
 EXPOSE 8080
 
-CMD ["hugo", "server", "-D", "-b", "--minify", "--gc", "http://0.0.0.0/", "--bind=0.0.0.0", "--port=8080"]
+CMD ["hugo", "server", "-D", "-b", "http://0.0.0.0/", "--bind=0.0.0.0", "--port=8080"]
