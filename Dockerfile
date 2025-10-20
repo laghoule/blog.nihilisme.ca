@@ -18,4 +18,4 @@ USER 65534
 
 EXPOSE 8080
 
-CMD ["hugo", "server", "-D", "--minify", "--bind=0.0.0.0", "--appendPort=false", "--port=8080"]
+CMD ["hugo", "server", "-D", "-b", "https://blog.nihilisme.ca", "--minify", "--bind=0.0.0.0", "--appendPort=false", "--port=8080"]
