@@ -1,4 +1,4 @@
-baseURL = "https://blog.nihilisme.ca"
+baseurl = "https://blog.nihilisme.ca"
 #disablePathToLower = true
 title = "SIG11"
 theme = "dream"
@@ -27,7 +27,7 @@ noClasses = false
 lightTheme = "emerald"
 darkTheme = "forest"
  
-images = ["img/personal/logo.png"]
+#images = ["img/personal/logo.png"]
  
 author = "Pascal Gauthier"
 description = "SIG11"
@@ -40,6 +40,8 @@ motto = "Observation, Experimentation et R&D"
 rss = true
  
 email = "pgauthier@nihilisme.ca"
+
+siteStartYear = 2018
  
 #favicon = "img/personal/favicon.ico"
 
@@ -52,4 +54,4 @@ showTableOfContents = true
 showSummaryCoverInPost = true
 imageZoomableInPost = true
 showPrevNextPost = true
-reorderShares = [""]
+#reorderShares = [""]
