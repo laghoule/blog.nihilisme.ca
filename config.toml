@@ -1,4 +1,4 @@
-baseURL = "https://blog.nihilisme.ca/"
+baseURL = "https://blog.nihilisme.ca"
 #disablePathToLower = true
 title = "SIG11"
 theme = "dream"
