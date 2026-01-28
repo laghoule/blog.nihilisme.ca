@@ -7,4 +7,4 @@ tags = ["antifa"]
 title = "How to spot a fascist?"
 +++
 
-{{< youtube _POclg1uogZ0 >}}
+{{< youtube POclg1uogZ0 >}}

@@ -10,7 +10,7 @@ title = "La vérité est rafrachissante"
 
 +++
 
-{{< youtube qq5AuDIvNmMvW_6L >}}
+{{< youtube wQYoCojO7XI >}}
 
 Oui, c'est choses doivent être dites et redites. Le temps est venu de se lever, et de se battre pour que la vérité soit répète plus souvent que les mensonges.
 Ce n'est que le début!

@@ -10,7 +10,7 @@ title = "DCS World"
 
 +++
 
-{{< youtube _732Y62VZIGc >}}
+{{< youtube 732Y62VZIGc >}}
 
 J'ai decouvert recemment DCS World, un simulateur d'avion de chasse. Ce simulateur est tres realiste (selon les dires meme d'un ancien pilote), et propose plusieurs types d'avions, dont le F-18C et le F-5. Deux avions de chasses que le Canada utilisent, ou utilisaient (F-5). Plein de tutoriaux sont disponibles sur Youtube, et de simulations de combats.
 

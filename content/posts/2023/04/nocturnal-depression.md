@@ -12,4 +12,4 @@ title = "Nocturnal Depression"
 
 Decouverte de l'automne, groupe Francais de DSBM. Vraiment, mais vraiment bon!
 
-{{< youtube _3S1Cx_E8-90 >}}
+{{< youtube 3S1Cx_E8-90 >}}

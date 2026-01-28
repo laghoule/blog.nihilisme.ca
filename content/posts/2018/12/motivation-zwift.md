@@ -10,7 +10,7 @@ title = "Motivation: Zwift"
 
 +++
 
-{{< youtube _q8fArWR-CsE >}}
+{{< youtube q8fArWR-CsE >}}
 
 Pour me motiver a reprendre l'entrainnement, j'ai decide de joindre le "mouvement" Zwift. J'ai donc du changer de bike trainer, car pour utiliser Zwift, il faut setup un peu plus evoluer. J'ai opte pour un Tacx Vortex smart. C'est un model de base, mais ca fera l'affaire (c'est un hobby, pas une profession).
 

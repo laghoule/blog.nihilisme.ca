@@ -13,4 +13,4 @@ title = "Bob Ibex 28 plus"
 
 Ca fait longtemps que j'y pensais, c'est maintenant fait. Le gros avantage de ce trailer, il fit sur tout mes velo (avec l'achat d'un adapteur pour mes velo de montagne). Je peux faire du singletrack, ou de la route.
 
-{{< youtube _5aMFgMuBXvI >}}
+{{< youtube 5aMFgMuBXvI >}}

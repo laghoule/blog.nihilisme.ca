@@ -10,6 +10,6 @@ title = "Matière a réflexion"
 
 +++
 
-{{< youtube _AaU6tI2pb3M >}}
+{{< youtube AaU6tI2pb3M >}}
 
 Documentaire intéressant, avec un regard critique sur l'AI.

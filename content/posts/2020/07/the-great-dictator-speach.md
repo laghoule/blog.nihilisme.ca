@@ -10,6 +10,6 @@ title = "The great dictator speach"
 
 +++
 
-{{< youtube _J7GY1Xg6X20 >}}
+{{< youtube J7GY1Xg6X20 >}}
 
 Toujours aussi pertinant apres toutes ces annees.
