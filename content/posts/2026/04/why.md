@@ -1,7 +1,7 @@
 +++
 categories = ["personel"]
 date = 2026-04-01T08:37:00Z
-description = "Pourquoi?"
+description = ""
 draft = false
 tags = ["personel", "questionnement"]
 cover = "/posts/2026/04/why.jpg"
