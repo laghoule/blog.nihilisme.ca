@@ -4,7 +4,7 @@ RUN apt-get update && apt-get install -y \
     wget \
     && rm -rf /var/lib/apt/lists/*
 
-ARG HUGO_VERSION=0.166.0
+ARG HUGO_VERSION=0.167.0
 
 RUN wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-amd64.deb \
     && dpkg -i hugo_extended_${HUGO_VERSION}_Linux-amd64.deb \
