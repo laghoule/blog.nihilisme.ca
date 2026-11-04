@@ -1,10 +1,11 @@
 FROM debian:stable
 
-RUN apt-get update && apt-get install -y \
+RUN apt-get update && \
+    apt-get install -y \
     wget \
     && rm -rf /var/lib/apt/lists/*
 
-ARG HUGO_VERSION=0.168.0
+ARG HUGO_VERSION=0.169.0
 
 RUN wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-amd64.deb \
     && dpkg -i hugo_extended_${HUGO_VERSION}_Linux-amd64.deb \
